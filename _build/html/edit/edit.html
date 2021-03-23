@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. Edit your project &mdash; VSE 2.93 documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2.1. Edit your sound" href="sound/sound.html" />
+    <link rel="prev" title="1.3. Extend your environment" href="../setup/extend/extend-environment.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VSE 2.93 documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">1. Setup your project</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Edit your project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sound/sound.html">2.1. Edit your sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#timeline-basics">2.2. Timeline basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zooming-navigating">2.2.1. Zooming &amp; navigating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scrubbing-playing">2.2.2. Scrubbing &amp; playing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-basics">2.3. Editing basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-strips">2.3.1. Adding strips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#moving-strips">2.3.2. Moving strips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grouping-strips-metastrips">2.3.3. Grouping strips (metastrips)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cutting-strips">2.3.4. Cutting strips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trimming-strips">2.3.5. Trimming strips</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#effects">2.4. Effects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transition-effects">2.4.1. Transition effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fade-effects">2.4.2. Fade effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#speed-effects">2.4.3. Speed effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#masking">2.4.4. Masking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#animating-keyframing">2.4.5. Animating &amp; keyframing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sound">2.5. Sound</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#measuring-the-sound-volume">2.5.1. Measuring the Sound Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-sound-within-audacity">2.5.2. Editing sound within Audacity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#color-grading">2.6. Color grading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modifiers">2.6.1. Modifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scopes">2.6.2. Scopes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../render/render.html">3. Render your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflow/workflow.html">4. Specific workflows</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VSE 2.93 documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>Edit your project</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/edit/edit.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="edit-your-project">
+<h1><span class="section-number">2. </span>Edit your project<a class="headerlink" href="#edit-your-project" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sound/sound.html">2.1. Edit your sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sound/measuring/volume.html">2.1.1. Volume level</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sound/measuring/volume.html#relationship-between-volume-level-value-and-loudness">Relationship between Volume level value and loudness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sound/measuring/volume.html#how-to-calculate-the-db-value-in-blender-python">How to calculate the dB value in Blender Python?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sound/audacity/audacity.html">2.1.2. Audacity</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="timeline-basics">
+<h2><span class="section-number">2.2. </span>Timeline basics<a class="headerlink" href="#timeline-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="zooming-navigating">
+<h3><span class="section-number">2.2.1. </span>Zooming &amp; navigating<a class="headerlink" href="#zooming-navigating" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="scrubbing-playing">
+<h3><span class="section-number">2.2.2. </span>Scrubbing &amp; playing<a class="headerlink" href="#scrubbing-playing" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="editing-basics">
+<h2><span class="section-number">2.3. </span>Editing basics<a class="headerlink" href="#editing-basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-strips">
+<h3><span class="section-number">2.3.1. </span>Adding strips<a class="headerlink" href="#adding-strips" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="moving-strips">
+<h3><span class="section-number">2.3.2. </span>Moving strips<a class="headerlink" href="#moving-strips" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="grouping-strips-metastrips">
+<h3><span class="section-number">2.3.3. </span>Grouping strips (metastrips)<a class="headerlink" href="#grouping-strips-metastrips" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="cutting-strips">
+<h3><span class="section-number">2.3.4. </span>Cutting strips<a class="headerlink" href="#cutting-strips" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="trimming-strips">
+<h3><span class="section-number">2.3.5. </span>Trimming strips<a class="headerlink" href="#trimming-strips" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="effects">
+<h2><span class="section-number">2.4. </span>Effects<a class="headerlink" href="#effects" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="transition-effects">
+<h3><span class="section-number">2.4.1. </span>Transition effects<a class="headerlink" href="#transition-effects" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fade-effects">
+<h3><span class="section-number">2.4.2. </span>Fade effects<a class="headerlink" href="#fade-effects" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="speed-effects">
+<h3><span class="section-number">2.4.3. </span>Speed effects<a class="headerlink" href="#speed-effects" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="masking">
+<h3><span class="section-number">2.4.4. </span>Masking<a class="headerlink" href="#masking" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="animating-keyframing">
+<h3><span class="section-number">2.4.5. </span>Animating &amp; keyframing<a class="headerlink" href="#animating-keyframing" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="sound">
+<h2><span class="section-number">2.5. </span>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="measuring-the-sound-volume">
+<h3><span class="section-number">2.5.1. </span>Measuring the Sound Volume<a class="headerlink" href="#measuring-the-sound-volume" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="editing-sound-within-audacity">
+<h3><span class="section-number">2.5.2. </span>Editing sound within Audacity<a class="headerlink" href="#editing-sound-within-audacity" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="color-grading">
+<h2><span class="section-number">2.6. </span>Color grading<a class="headerlink" href="#color-grading" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="modifiers">
+<h3><span class="section-number">2.6.1. </span>Modifiers<a class="headerlink" href="#modifiers" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="scopes">
+<h3><span class="section-number">2.6.2. </span>Scopes<a class="headerlink" href="#scopes" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="sound/sound.html" class="btn btn-neutral float-right" title="2.1. Edit your sound" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../setup/extend/extend-environment.html" class="btn btn-neutral float-left" title="1.3. Extend your environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1.3. Extend your environment &mdash; VSE 2.93 documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. Edit your project" href="../../edit/edit.html" />
+    <link rel="prev" title="1.2.2. The Video Editing workspace" href="../customize/workspace/video-editing-workspace.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> VSE 2.93 documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../setup.html">1. Setup your project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../organize/organize-assets.html">1.1. Organize your assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../customize/customize-environment.html">1.2. Customize your environment</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. Extend your environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-functionality-with-add-ons">1.3.1. Adding functionality with add-ons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#built-in-add-ons">Built-in add-ons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#external-add-ons">External add-ons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tweaking-performance-with-proxies-cache">1.3.2. Tweaking performance with proxies &amp; cache</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#proxies">Proxies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cache">cache</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../edit/edit.html">2. Edit your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/render.html">3. Render your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../workflow/workflow.html">4. Specific workflows</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">VSE 2.93 documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../setup.html"><span class="section-number">1. </span>Setup your project</a> &raquo;</li>
+        
+      <li><span class="section-number">1.3. </span>Extend your environment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/setup/extend/extend-environment.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extend-your-environment">
+<h1><span class="section-number">1.3. </span>Extend your environment<a class="headerlink" href="#extend-your-environment" title="Permalink to this headline">¶</a></h1>
+<p>Blender’s Video Sequencer is a fairly good editor but, nevertheless, it lacks some (vital) components. For example, sound editing is for the most part neglected. Sound level monitoring, normalizing sound level, can easily be done in an open-source package as Audacity. So, there is an add-on to export your sound data to Audacity and importing it back.</p>
+<p><a href="#id1"><span class="problematic" id="id2">`</span></a>Tin2Tin &lt;<a class="reference external" href="https://blenderartists.org/t/video-sequence-editor-news-add-ons/1188770">https://blenderartists.org/t/video-sequence-editor-news-add-ons/1188770</a>&gt;`_has compiled a webpage on Blenderartists.org with more than 100 links to add-ons. They fit into categories such as toolboxes, (multi-threaded) export and import, effects, strip editing, generate, audio, scene strips, markers, organization, Multicam, user interface, shortcut keys, and templates.</p>
+<p>The working environment can also be heavily extended/improved by the use of proxies. A proxy is a low-resolution video file that can take the place of a larger-resolution video file in your timeline. This way you can render faster.</p>
+<div class="section" id="adding-functionality-with-add-ons">
+<h2><span class="section-number">1.3.1. </span>Adding functionality with add-ons<a class="headerlink" href="#adding-functionality-with-add-ons" title="Permalink to this headline">¶</a></h2>
+<p>Here about an image of the add-ons panel of the preferences.</p>
+<p>For installing add-ons: see manual …</p>
+<div class="section" id="built-in-add-ons">
+<h3>Built-in add-ons<a class="headerlink" href="#built-in-add-ons" title="Permalink to this headline">¶</a></h3>
+<p>There is one built-in add-on that is not activated by default: Power Sequencer.</p>
+<p>Here about a screenshot of the UI eg the menu.</p>
+</div>
+<div class="section" id="external-add-ons">
+<h3>External add-ons<a class="headerlink" href="#external-add-ons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Reference to the overview on tintwotin.</p></li>
+<li><p>How installing (zip-file or py-file); refering to the manual?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tweaking-performance-with-proxies-cache">
+<h2><span class="section-number">1.3.2. </span>Tweaking performance with proxies &amp; cache<a class="headerlink" href="#tweaking-performance-with-proxies-cache" title="Permalink to this headline">¶</a></h2>
+<p>Playback performance can be improved through several ways. The biggest impact on performance is to allow the Video Sequencer to cache the playback. There are two levels of cache, the first is a RAM cache, this is enabled by default but can be increased based on the amount of RAM available. The next level of cache is a disk cache which stores cached strips on disk. A disk cache can generally cache more than a RAM cache, but it can be slower. Both of these cache options can be configured in the Preferences.</p>
+<p>Another way to improve performance is by using Strip Proxies These are used to cache images or movies in a file that is easier to playback by reducing the image quality by either decreasing the resolution and/or compressing the image.</p>
+<div class="section" id="proxies">
+<h3>Proxies<a class="headerlink" href="#proxies" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Will probably heavily changed in upcoming version?</p></li>
+<li><p>Settings: location, %</p></li>
+</ul>
+</div>
+<div class="section" id="cache">
+<h3>cache<a class="headerlink" href="#cache" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../edit/edit.html" class="btn btn-neutral float-right" title="2. Edit your project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../customize/workspace/video-editing-workspace.html" class="btn btn-neutral float-left" title="1.2.2. The Video Editing workspace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

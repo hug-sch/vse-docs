@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.3. FFMPEG &mdash; VSE 2.93 documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="4. Specific workflows" href="../../../workflow/workflow.html" />
+    <link rel="prev" title="3.2.2. Subtitles" href="../subtitles/subtitles.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> VSE 2.93 documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../setup/setup.html">1. Setup your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../edit/edit.html">2. Edit your project</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../render.html">3. Render your project</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../codec/codec.html">3.1. Choose your codec</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../postprocessing.html">3.2. Postprocessing</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../compositor/compositor.html">3.2.1. Compositor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../subtitles/subtitles.html">3.2.2. Subtitles</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.2.3. FFMPEG</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../workflow/workflow.html">4. Specific workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../extra-tools/extra-tools.html">5. Extra tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">VSE 2.93 documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../render.html"><span class="section-number">3. </span>Render your project</a> &raquo;</li>
+        
+          <li><a href="../postprocessing.html"><span class="section-number">3.2. </span>Postprocessing</a> &raquo;</li>
+        
+      <li><span class="section-number">3.2.3. </span>FFMPEG</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/render/postprocessing/ffmpeg/ffmpeg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ffmpeg">
+<h1><span class="section-number">3.2.3. </span>FFMPEG<a class="headerlink" href="#ffmpeg" title="Permalink to this headline">¶</a></h1>
+<p>Here you’ll find a few useful commands for FFMPEG to work with video and audio. FFMPEG is a command line tool for handling (decode, encode, convert, …) video and audio files. It is used by many commercial and free software products, including Blender.  The core is the FFMPEG program, together with a video &amp; audio player (FFPLAY) and a stream analyzer (FFPROBE).</p>
+<p>## 1. Generate testfiles</p>
+<p>Sometimes you need a test video or test image with a specific resolution, duration or framerate. You can first try with ffplay to view the test video. Replace afterwards the ffplay command with ffmpeg and add the outputfile parameter.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ffplay</span> <span class="o">-</span><span class="n">f</span> <span class="n">lavfi</span> <span class="o">-</span><span class="n">i</span> <span class="n">testsrc</span><span class="o">=</span><span class="n">duration</span><span class="o">=</span><span class="mi">10</span><span class="p">:</span><span class="n">size</span><span class="o">=</span><span class="mi">1280</span><span class="n">x720</span><span class="p">:</span><span class="n">rate</span><span class="o">=</span><span class="mi">30</span>
+
+<span class="n">ffmpeg</span> <span class="o">-</span><span class="n">f</span> <span class="n">lavfi</span> <span class="o">-</span><span class="n">i</span> <span class="n">testsrc</span><span class="o">=</span><span class="n">duration</span><span class="o">=</span><span class="mi">10</span><span class="p">:</span><span class="n">size</span><span class="o">=</span><span class="mi">1280</span><span class="n">x720</span><span class="p">:</span><span class="n">rate</span><span class="o">=</span><span class="mi">30</span> <span class="n">test</span><span class="o">.</span><span class="n">mp4</span>
+</pre></div>
+</div>
+<p>This command will show/create a count-up video with a resolution of 1280 x 720 pixels, a framerate of 30 frames per second with a duration of 10 seconds in MP4-format
+More commands and test formats can be found at [bogotobogo](<a class="reference external" href="https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php">https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php</a>).</p>
+<p>The following command will show/create a red color background with opacity set to 0.2, with a duration of 10 seconds and a resolution of 640x480 in MP4-format.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ffplay</span> <span class="o">-</span><span class="n">f</span> <span class="n">lavfi</span> <span class="o">-</span><span class="n">i</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="o">=</span><span class="n">red</span><span class="o">@</span><span class="mf">0.2</span><span class="p">:</span><span class="n">duration</span><span class="o">=</span><span class="mi">5</span><span class="p">:</span><span class="n">s</span><span class="o">=</span><span class="mi">640</span><span class="n">x480</span><span class="p">:</span><span class="n">r</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">ffmpeg</span> <span class="o">-</span><span class="n">f</span> <span class="n">lavfi</span> <span class="o">-</span><span class="n">i</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="o">=</span><span class="n">red</span><span class="o">@</span><span class="mf">0.2</span><span class="p">:</span><span class="n">duration</span><span class="o">=</span><span class="mi">5</span><span class="p">:</span><span class="n">s</span><span class="o">=</span><span class="mi">640</span><span class="n">x480</span><span class="p">:</span><span class="n">r</span><span class="o">=</span><span class="mi">10</span> <span class="n">test</span><span class="o">.</span><span class="n">mp4</span>
+</pre></div>
+</div>
+<p>## 2. Combine several video fragments into one file</p>
+<p>I used to create my videos in separate scenes; e.g. one scene for each month of a yearly review montage. During the year I could render the separate scenes into a video fragment. At the end of the year I need then to combine them into one piece.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">concatenate</span><span class="p">:</span> <span class="n">ffmpeg</span> <span class="o">-</span><span class="n">safe</span> <span class="mi">0</span> <span class="o">-</span><span class="n">f</span> <span class="n">concat</span> <span class="o">-</span><span class="n">i</span> <span class="nb">list</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">c</span> <span class="n">copy</span> <span class="n">output</span><span class="o">.</span><span class="n">mp4</span>
+</pre></div>
+</div>
+<p>The output file is called “output.mp4”. The monthly fragments are named in a separate file “list.txt” which contains 12 lines with the name of the fragments, eg. “01-jan.mp4 02-feb.mp4 … 12-dec.mp4”. You have to run the command in the folder where the fragments are located.</p>
+<p>## 3. Check for variable frame rate</p>
+<p>The following command will check for VFR. It uses the videofilter vfrdet.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ffmpeg</span> <span class="o">-</span><span class="n">i</span> <span class="n">test_input</span><span class="o">.</span><span class="n">mp4</span> <span class="o">-</span><span class="n">vf</span> <span class="n">vfrdet</span> <span class="o">-</span><span class="n">f</span> <span class="n">null</span> <span class="o">-</span>
+</pre></div>
+</div>
+<p>The output is directed to the screen. The VFR parameter shows the percentage of variable frame rate. Between brackets are the number of frames with VFR (0 in this example) and with CFR (532 in this example); see below.</p>
+<p><code class="docutils literal notranslate"><span class="pre">[Parsed_vfrdet_0</span> <span class="pre">&#64;</span> <span class="pre">000001f8b3902e80]</span> <span class="pre">VFR:0.000000</span> <span class="pre">(0/532)</span></code></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../workflow/workflow.html" class="btn btn-neutral float-right" title="4. Specific workflows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../subtitles/subtitles.html" class="btn btn-neutral float-left" title="3.2.2. Subtitles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

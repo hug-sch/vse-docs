@@ -14,3 +14,4 @@ This is the homepage for the refactoring attempt of the Blender Video Sequencer 
    edit/edit
    render/render
    workflow/workflow
+   extra-tools/extra-tools

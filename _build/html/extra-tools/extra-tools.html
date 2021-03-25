@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Extra tools &mdash; VSE 2.93 documentation  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="4. Specific workflows" href="../workflow/workflow.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VSE 2.93 documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../setup/setup.html">1. Setup your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../edit/edit.html">2. Edit your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../render/render.html">3. Render your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflow/workflow.html">4. Specific workflows</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Extra tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-the-script-editor-efficiently">5.1. How to use the script editor efficiently?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#layout-the-workspace">5.1.1. Layout the workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-the-python-console">5.1.2. Use the Python console</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-autocompletion-intellisense">5.1.3. Use autocompletion/intellisense</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-vs-code-efficiently">5.2. How to use VS Code efficiently?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#use-vs-code-as-a-standalone-editor">5.2.1. Use VS Code as a standalone editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-vs-code-as-an-integrated-editor">5.2.2. Use VS Code as an integrated editor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VSE 2.93 documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li><span class="section-number">5. </span>Extra tools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/extra-tools/extra-tools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="extra-tools">
+<h1><span class="section-number">5. </span>Extra tools<a class="headerlink" href="#extra-tools" title="Permalink to this headline">¶</a></h1>
+<p>Blender has a dedicated workspace “Scripting” with 7 windows (areas): the Text Editor (middle area), the Info editor (left bottom), the Python console (left middle) and the 3D Viewport (left top). At the right you find the Properties window (bottom) and two versions of the outliner (top); see fig. 1.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="https://devtalk.blender.org/uploads/default/optimized/2X/6/65c4bd501c6df0b0aaa19baf4244f83589822595_2_1035x582.jpg"><img alt="The scripting workspace as defined in the call for workspaces in 2018" src="https://devtalk.blender.org/uploads/default/optimized/2X/6/65c4bd501c6df0b0aaa19baf4244f83589822595_2_1035x582.jpg" /></a>
+<p class="caption"><span class="caption-text">Figure 1: The scripting workspace (2.92 in 2021).</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>You can use the built-in text editor to write and test your code. But there are, of course numerous other code editors on the market such as Microsoft Visual Studio Code (VS Code), Atom, Sublime, … and complete integrated code environments (IDE) such as Microsoft Visual Studio (not to be confused with VS Code), Eclipse, Pycharm, …</p>
+<p>There are also numerous addons for the Script Editor.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tin2tin/Script_Editing/">TintwoTin</a> has integrated a few free addons into a script editor template.</p></li>
+<li><p><a class="reference external" href="https://blendersensei.com/hacker-manual/">Blender Sensei</a> has developed a very advanced but paid improvement of the script editor.</p></li>
+</ul>
+<div class="section" id="how-to-use-the-script-editor-efficiently">
+<h2><span class="section-number">5.1. </span>How to use the script editor efficiently?<a class="headerlink" href="#how-to-use-the-script-editor-efficiently" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Blender, keystrokes are sent to the window where the mouse is over. This works very well in, for example, the 3D view but is contra-productive in the Scripting workspace. Each time I want to type something in the Python console, the mouse should be hoovering above that window. A click is not necessary or sufficient as in a standard GUI program.</p>
+</div>
+<div class="section" id="layout-the-workspace">
+<h3><span class="section-number">5.1.1. </span>Layout the workspace<a class="headerlink" href="#layout-the-workspace" title="Permalink to this headline">¶</a></h3>
+<p>To minimize the above mentioned annoyance, I should rearrange the scripting workspace into two main windows (see fig 1). At the left is the editor for which you are writing code (for example the sequence editor). At the right is the text editor. If that isn’t still enough space, you can always go full screen with Ctrl-Tab or Alt-Shift-Tab.</p>
+<p>At first sight, you loose a few handy editors within hand reach, in particular the Python console. But for my taste, that area are too small in the default workspace. Besides, it’s very easy to replace one of the big windows with another editor. The shortcut Shift-F4 replaces the window with the Python console. To return to the code editor, use Shift-F11. That way, you can keep the mouse cursor most of the time above the text editor (who will receive the keystrokes). For faster coding, it is best to keep the hands as much as possible on the keyboard.</p>
+</div>
+<div class="section" id="use-the-python-console">
+<h3><span class="section-number">5.1.2. </span>Use the Python console<a class="headerlink" href="#use-the-python-console" title="Permalink to this headline">¶</a></h3>
+<p>Why would you need the Python console? Among other things (you can use it as a calculator for instance), it is a very handy tool to try things out. What again was the instruction to place the playhead at a certain frame in the Video Sequence Editor (VSE)? Change the text editor temporarily with the Python (Shift-F4), start typing: bpy.context. … In case of doubt, press Tab to get a list of possible command (code completion). This is also one of the reasons why you need a large window; the code completion list can be quite long. You can’t select one of the options, but you can type further and press tab to narrow down the list until you’ve got the actual keyword.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unfortunately the copy/paste and selection functions of the Python console are rather limited. Selection can only be done with the mouse (but see above). The shortcut Ctrl-Shift-C will copy the complete Python console buffer (the complete history; not the few commands that you see on the screen). You can clear the screen with the commands &lt;code&gt;import os&lt;/code&gt; and &lt;code&gt;os.system(‘cls’)&lt;/code&gt; for Windows or &lt;code&gt;os.system(‘clear’)&lt;/code&gt; for Linux.</p>
+</div>
+<p>You can copy and paste complete code blocks (with for next loops, …) to the Python console to run and test, for example to inspect the value of some variables.  Refrain however from using blanc lines. You can also run the complete open text editor code with the following command.</p>
+<p><code class="docutils literal notranslate"><span class="pre">exec(compile(bpy.data.texts['Text'].as_string(),</span> <span class="pre">'textblock',</span> <span class="pre">'exec'))</span></code></p>
+<p>This will run the code from the open text editor window. You can use a <a class="reference external" href="https://github.com/Pullusb/snippetsLibrary">snippet addon</a> to store these snippets.</p>
+</div>
+<div class="section" id="use-autocompletion-intellisense">
+<h3><span class="section-number">5.1.3. </span>Use autocompletion/intellisense<a class="headerlink" href="#use-autocompletion-intellisense" title="Permalink to this headline">¶</a></h3>
+<p>The text editor itself has autocompletion built-in but it is rather limited to the code objects from the file itself. You can install the <a class="reference external" href="https://github.com/tin2tin/Intellisense_for_Blender_Text_Editor">Intellisense for Blender Text Editor</a> addon by Mackraken and Tintwotin. This works nice albeit that you have to use a weird key combination to invoke it. Another method is presented by <a class="reference external" href="https://www.youtube.com/watch?v=IQgLBnPO2uo">GDQuest</a> which makes use of the fake bpy modules from <a class="reference external" href="https://github.com/nutti/fake-bpy-module">Nutti</a>.</p>
+<p>You can also copy code (multiple lines) from the text editor and paste it in the Python console to execute it and to inspect some variables. Sometimes, this does not work very well (empty lines, …). An alternative is to execute the following command in the console. This will run the open text file in the editor.</p>
+<p>The Blender Sensei version of the text editor (see above) has also a very nice autocompletion function.</p>
+<p>`` exec(compile(bpy.data.texts[‘Text’].as_string(), ‘textblock’, ‘exec’))``</p>
+</div>
+</div>
+<div class="section" id="how-to-use-vs-code-efficiently">
+<h2><span class="section-number">5.2. </span>How to use VS Code efficiently?<a class="headerlink" href="#how-to-use-vs-code-efficiently" title="Permalink to this headline">¶</a></h2>
+<p>There are, of course, several professional code editors on the market. Most of the time they work better, more fluently, have better support and endless extensions for the most diverse things. The only advantage of the Blender text editor is that it integrates smoothly with the other Blender modules and that running code is very easy. However, the integration of VS Code with Blender comes very closely to it.
+The setup is however a little more involved. <a class="reference external" href="https://www.youtube.com/playlist?list=PLlu-PIRg8u2nVGQMKRhiqK0KhKqBZfkax">Michael Bridges</a> has created three extensive tutorials for setting up VS Code &amp; Blender on Windows, Linux and Mac.</p>
+<p>On finishing this tutorial, VS Code with the Python extension and the fake-module autocompletion list is installed. You can then use VS Code in two ways:</p>
+<div class="section" id="use-vs-code-as-a-standalone-editor">
+<h3><span class="section-number">5.2.1. </span>Use VS Code as a standalone editor<a class="headerlink" href="#use-vs-code-as-a-standalone-editor" title="Permalink to this headline">¶</a></h3>
+<p>Write your code in VS Code, save it as a .py file, open that file in the Blender Text Editor, run it, edit it and save it again (attention: shortcut key is Alt-S). Continue in VS Code (the code is real-time updated), save it, switch to Blender text Editor, push Refresh button and continue. Of course, this doesn’t offer much advantage except you are using the VS Code editor to enter code.</p>
+</div>
+<div class="section" id="use-vs-code-as-an-integrated-editor">
+<h3><span class="section-number">5.2.2. </span>Use VS Code as an integrated editor<a class="headerlink" href="#use-vs-code-as-an-integrated-editor" title="Permalink to this headline">¶</a></h3>
+<p>First, you have to install the amazing Blender extension by Jaques Luke. Search in the extension library for Blender Development.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/script_editor_VSCode_extension.png"><img alt="Blender extension for VSCode" src="../_images/script_editor_VSCode_extension.png" style="width: 661.0px; height: 138.5px;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: Blender extension for VCode.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Start an instance of Blender from within VS Code with the command (shortcut = Alt-Shift-P) and choose “Blender: Start”. This will start up Blender and move the System Console of Blender into the terminal window of VS Code. You can now access the system console in the Terminal tab. The Python console is available under the debug console tab. You can creates other instances of Blender manually but remember that this particular instance of Blender can only be managed (closed for example) from within VS Code.</p>
+<p>You can create a new empty script with the command “Blender: New Script” or open an existing script. Edit this script within VS Code. Set the correct context (eg VIDEO SEQUENCER, VIEW_3D, …) with the command “Blender: Set Script Context” at the beginning of the script. You can run the script from within VS Code with the command “Blender: Run Script”. If everything went well, your script will be executed within the Blender environment.  If there are any errors, they will be print in the System Console (Terminal) or the Python console (Debug console).
+![terminal window of Blender extension](/images/script_editor_VSCode_terminal-1.png)</p>
+<p>For debugging, you can set one or more breakpoints and start the script. The script will stop at the breakpoint. There you can inspect variables, and step through the code. Another debugger is made by <a class="reference external" href="https://github.com/alanscodelog/blender-debugger-for-vscode">Alan</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../workflow/workflow.html" class="btn btn-neutral float-left" title="4. Specific workflows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

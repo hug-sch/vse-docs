@@ -1,21 +1,9 @@
+******************
 Render your project
-===================
+****************** 
 
-Choose your codec
------------------
-
-
-Rendering video
-,,,,,,,,,,,,,,,
-
-Rendering audio
-,,,,,,,,,,,,,,,
-
-Post processing
----------------
-
-Use the Compositor
-,,,,,,,,,,,,,,,,,,
-
-Adding subtitles
-,,,,,,,,,,,,,,,,
+.. toctree::
+   :maxdepth: 3
+ 
+   codec/codec.rst
+   postprocessing/postprocessing.rst

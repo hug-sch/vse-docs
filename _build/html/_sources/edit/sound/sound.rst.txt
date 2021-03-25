@@ -7,6 +7,6 @@ A picture is a thousand words ... but a good sound is even worth more. The Sound
 .. toctree::
     :maxdepth: 3
   
-    measuring/volume.rst
-    audacity/audacity.rst
+    measuring/volume
+    audacity/audacity
   

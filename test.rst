@@ -2,20 +2,22 @@
 testing
 #######
 
-This is a first line
+Reference to an internal doc
 
-* First Level A
+:doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`
 
-  - First sub-level A. this is more text and more text and more text and more text and more text and more text and more text
-  - First sub level B
+table
+
+
+.. csv-table:: Table 1: Time code fields in UI and from Python API
+   :header: "#", "UI field", "Python API (1)"
+   :widths: 5, 50,50
  
-* First level B
-* First level C
+   0, Channel (2), channel
+   1, row2, value 2
 
-This is a last line.
 
-:html:`<a href="#">`
+code (red color and border)
 
-and further text
+``bpy.context.scene.sequence_editor.active_strip.frame_start``
 
-:guilabel:`&Cancel`

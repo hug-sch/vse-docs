@@ -83,4 +83,4 @@ The easiest solution is to create three spot lights. So, start Blender, delete t
    
    Figure 3: Evee render of of the additive color mix of 3 spotlights.
 
-Figure 4 shows a nice additive color mix diagram. Note, however the status bar with extra info concerning the red color (obtained by Right-clicking on the red circle in the render preview).
+Figure 3 shows a nice additive color mix diagram. Note, however the status bar with extra info concerning the red color (obtained by Right-clicking on the red circle in the render preview).

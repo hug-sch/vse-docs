@@ -6,6 +6,9 @@ Reference to an internal doc
 
 :doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`
 
+external link
+`Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_
+Niet vergeten een spatie na de underscore.
 table
 
 
@@ -21,3 +24,8 @@ code (red color and border)
 
 ``bpy.context.scene.sequence_editor.active_strip.frame_start``
 
+Figure: change source to http for external _images
+.. figure:: img/time_code.svg
+   :alt: Time properties
+
+   Figure 1: Time properties of a Movie strip.

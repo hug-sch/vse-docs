@@ -57,8 +57,6 @@ But why all those time codes? Why do you need them? And what do they mean? Let's
    Figure 2: Strip with Start offset = 2
 
 
-2. The field is shown as a SMPTE-timecode, followed by a frame number. A SMPTE-timecode is a standard format, adopted by the Society of Motion Picture and Television Engineers (SMPTE) in the late 1960's. It is in the format of HH:MM:SS:FF.You cannot enter the SMPTE time code directly in Blender, you have to enter the frame number. The conversion from frame to SMPTE code is done by a Python function smpte_from_frame. This function takes one parameter (the frame number) and converts it to a timecode.
-
 2. The actual start or frame_final_start in Python parlance is also shown at the left border of the strip when selected.
 3. You cannot add a strip before frame 0 (because the play head cannot be moved before frame 0) but you can move it later on. You can add however add a strip past the scene range.
 4. You can change the `Start` field by entering a frame number or by dragging the strip to another location even before frame zero. The Start field becomes then negative.
@@ -165,14 +163,7 @@ The strip from fig. 1 was originally positioned starting at frame 39, but, due t
 ## 1. The timeline
 As you can see from fig. 1, the timeline codes are given in so called SMPTE-timecodes (first code) and frame numbers (second field). A SMPTE-timecode is a standard format, adopted by the Society of Motion Picture and Television Engineers (SMPTE) in the late 1960's. It is in the format of HH:MM:SS:FF.
 
-As a video editor, you probably are most interested in the SMPTE-timecode. It seems more natural to refer to a video fragment with a time indication, e.g. 00:01:15:10 or 1' 15'' and 10 frames than with a frame number, e.g. frame 55. Blender, however, is in the first place a 3D modeling tool where framenumbers are much more common.
 
-Also don't make the mistake to think that timecode is equal to time. For modern video, all time information, you'll get is the timestamp at the start of the recording and the duration in frames of the video. So, the time codes should be calculated. 
-
-As the name implies, the timeline represents time (seconds). But, because the unit of a video clip (or strip in Blender talk) is one frame, the timeline is sometimes labeled in frames or a combination of time and frames. For example, in Blender you can choose to show the timeline in seconds or in frames. But, even the "seconds"-view is in fact a combination. The time code 01:21+11 indicates "1 minute and 21 seconds and 11 frames". Because each project has a frame-per-seconds `fps` parameter, you can always derive one code from the other. In a 30 fps project:
-
-* frame 155 is at time 115/30 = 3.8333 seconds or in Blender notation: 00:03+25.
-* time 2.5s falls within frame  2.5 * 30 = 75.
 
 With the following code, you can print the different time codes that Blender uses internally (see [Script Editor](script_editor.md) for an introduction to scripting). For this example, I have dragged the left handle of figure 1 to frame 0 and the right handle to frame 39; extending the original clip with 5 + 5 frames.
 

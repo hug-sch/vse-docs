@@ -1,17 +1,11 @@
-****************
-Basic techniques
-****************
+***********
+Time code
+***********
+As you can see from figure 1 (sidebar), the timeline codes are given in so called SMPTE-timecodes (first code) and frame numbers (second field). A SMPTE-timecode is a standard format, adopted by the Society of Motion Picture and Television Engineers (SMPTE) in the late 1960's. It is written as HH:MM:SS:FF, e.g. 00:01:12:06. This means the time after 1 minute, 12 seconds and 6 frames. If your project has a framerate of 24 fps, the 6 frames will add another 0.25 seconds to the timecode.
 
-.. toctree::
-    :maxdepth: 3
-  
-    adding/adding.rst
-    cutting/cutting.rst
-    moving/moving.rst
-    trimming/trimming.rst
-    grouping/grouping.rst
+You cannot enter the SMPTE time code directly in Blender, you have to enter the frame number. The conversion from frame to SMPTE code is done by a Python function *smpte_from_frame*. This function takes one parameter (the frame number) and converts it to a timecode.
 
-Video editing is like editing a book chapter. Adding some text, shuffling around a few paragraphs, shortening here and there ... and so on. The editing of video files is mostly done by changing the time codes. Blender keeps track of several time codes. Some - but not all - are exposed in the sidebar under the Strip > Time panel (see figure 1).
+Blender keeps track of several time codes. Some - but not all - are exposed in the sidebar under the Strip > Time panel (see figure 1).
 
 .. figure:: img/time_code.svg
    :alt: Time properties

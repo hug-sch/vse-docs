@@ -6,7 +6,7 @@ In a video project it is important that you can zoom in on the section you're wo
 
 .. raw:: html
 
-   <video width="640" height="480" src="/_static/videos//zoom.mp4" controls></video>
+   <video width="640" height="480" src="/_static/videos/zoom.mp4" controls></video>
 
 Figure 1: Demo of the different zoom shortcuts.
 

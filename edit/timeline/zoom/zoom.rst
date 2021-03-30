@@ -4,10 +4,11 @@ Zoom
 
 In a video project it is important that you can zoom in on the section you're working on. On the other hand it's also important to have an overview of your timeline. Zooming in and out is thus a frequent occurring action.
 
-.. figure:: img/zoom.mp4
-   :alt: Zoom shortcuts
+.. raw:: html
 
-   Figure 1: Demo of the different zoom shortcuts.
+   <video width="640" height="480" src="/_images/zoom.mp4" controls></video>
+
+Figure 1: Demo of the different zoom shortcuts.
 
 :kbd:`Home`: zooms in on the total project; from start to finish. When you ever get lost in your timeline, press the Home key to get the complete picture. With the menu: View > Frame All.
 
@@ -20,4 +21,6 @@ In a video project it is important that you can zoom in on the section you're wo
 :kbd:`Ctrl-MMB` and drag left/right  or drag on the circles on the horizontal scrollbar.
 
 You can also zoom in vertically; make the strip bars wider or narrower. Use :kbd:`Shift-Wheel`, or drag on the circles of the left scrollbar. Or: :kbd:`Ctrl-MMB` and drag up/down
+
+
 

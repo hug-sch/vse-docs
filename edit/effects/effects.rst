@@ -7,7 +7,7 @@ Effects
   
     transition/transition
     fade/fade
-    speed/Speed
+    speed/speed
     masking/masking
     animating/animating
   

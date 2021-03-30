@@ -29,3 +29,12 @@ Figure: change source to http for external _images
    :alt: Time properties
 
    Figure 1: Time properties of a Movie strip.
+
+
+insert non-youtube video. The video is copied to the _images directory in the html folder
+
+.. raw:: html
+
+    <video width="640" height="480" src="/_images/zoom.mp4" controls></video>
+
+Figure 1: Output from FFMPEG command (see above)

@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1.1.3. Blender’s strip types &mdash; VSE 2.93 documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="1.2. Customize your environment" href="../../customize/customize-environment.html" />
+    <link rel="prev" title="1.1.2. Creating test files" href="../dir-structure/creating-test-files.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> VSE 2.93 documentation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../setup.html">1. Setup your project</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../organize-assets.html">1.1. Organize your assets</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../dir-structure/creating-directory-structure.html">1.1.1. Creating a directory structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dir-structure/creating-test-files.html">1.1.2. Creating test files</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1.1.3. Blender’s strip types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#a-movie-strip">A. Movie strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#b-sound-strip">B.Sound strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#c-image-image-sequence-strip">C. Image/Image Sequence strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#d-clip-strip">D. Clip strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#e-scene-strip">E. Scene strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#f-mask-strip">F. Mask strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g-color-strip">G. Color strip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#h-text-strip">H. Text strip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../customize/customize-environment.html">1.2. Customize your environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../extend/extend-environment.html">1.3. Extend your environment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../edit/edit.html">2. Edit your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../render/render.html">3. Render your project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../workflow/workflow.html">4. Specific workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../extra-tools/extra-tools.html">5. Extra tools</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">VSE 2.93 documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../setup.html"><span class="section-number">1. </span>Setup your project</a> &raquo;</li>
+        
+          <li><a href="../organize-assets.html"><span class="section-number">1.1. </span>Organize your assets</a> &raquo;</li>
+        
+      <li><span class="section-number">1.1.3. </span>Blender’s strip types</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/setup/organize/strip-types/blender-striptypes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="blender-s-strip-types">
+<h1><span class="section-number">1.1.3. </span>Blender’s strip types<a class="headerlink" href="#blender-s-strip-types" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="../../../_images/strip-types.svg"><img alt="Available strip types" src="../../../_images/strip-types.svg" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Available strip types with color code and properties.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>A strip is a sequence of images, displayed as a colored horizontal bar. Each image occupies one frame in the timeline. In figure 1 the 8 basic strip types are added (menu <span class="menuselection">Add</span> or shortcut key Shift+A). They run from frame 1 up to frame 300.</p>
+<p>The strip types are separated into 4 groups: (1) the input source is created in another Blender module (2) the input source is external (3) the input is created within the Sequence Editor (4) the input source is another strip.</p>
+<p>Each strip type is uniquely color-coded. In figure 1, from top to bottom: Scene strip (Light Green),  Mask strip (Dark Grey), Movie strip (Aquamarine), Sound strip (Turquoise), Image/Sequence strip (Brown), Color (Light Grey + selected color), and , Text (Purple).</p>
+<p>Each strip has multiple Properties. Figure 1 shows the Properties of a Movie strip. This sidebar can be displayed with <span class="menuselection">View ‣ Sidebar</span> or shortcut key N. These Properties are organized into sub panels, e.g. Compositing, Transform, Crop, … and preceded by a header with the icon of the strip type, the name of the strip and a Mute checkbox. You can name or rename your strips here. If the Mute button is checked the strip will still be visible in the Sequencer but will not produce any output.</p>
+<div class="section" id="a-movie-strip">
+<h2>A. Movie strip<a class="headerlink" href="#a-movie-strip" title="Permalink to this headline">¶</a></h2>
+<p>The input source of a movie strip is a video file with extension <code class="docutils literal notranslate"><span class="pre">.mp4</span></code>, <code class="docutils literal notranslate"><span class="pre">.mpg</span></code>, <code class="docutils literal notranslate"><span class="pre">.mpeg</span></code>, <code class="docutils literal notranslate"><span class="pre">.dvd</span></code>, <code class="docutils literal notranslate"><span class="pre">.vob</span></code>,  <code class="docutils literal notranslate"><span class="pre">.avi</span></code>, <code class="docutils literal notranslate"><span class="pre">.mov</span></code>, <code class="docutils literal notranslate"><span class="pre">.dv</span></code>, <code class="docutils literal notranslate"><span class="pre">.ogg</span></code>, <code class="docutils literal notranslate"><span class="pre">.ogv</span></code>, <code class="docutils literal notranslate"><span class="pre">.mkv</span></code>, <code class="docutils literal notranslate"><span class="pre">.flv</span></code>, or <code class="docutils literal notranslate"><span class="pre">.webm</span></code> (see <a class="reference external" href="https://docs.blender.org/manual/en/dev/files/media/video_formats.html">video formats</a>). Blender uses the <code class="docutils literal notranslate"><span class="pre">ffmpeg</span></code> library to process the video files. Which codecs are available depends on the operating system and FFmpeg version.</p>
+<p>Each video file contains a sequence of image frames (the actual movie) and some meta information such as resolution and frame rate (fps). The resolution info is exposed in the source panel. Unfortunately, the source FPS is not.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is important that the Project Settings parameters are in accordance with the strip parameters. For example, if the project is set to a frame rate of 30 fps, and your clip is only 24 fps, then the clip will appear accelerated. A 1 second play back time will contain 30 frames or 1.2 s of original footage.</p>
+<p>Also, if your clip has variable framerate; e.g. footage from some smart phones, then you’ll get an audio sync problem because Blender uses a constant frame rate.</p>
+</div>
+<p>The movie strip is the most commonly used strip type and has a lot of properties. They are organized in panels in the sidebar.</p>
+<p><strong>Compositing</strong></p>
+<div class="figure align-right" id="id8">
+<a class="reference internal image-reference" href="../../../_images/panel-compositing.png"><img alt="Compositing property" src="../../../_images/panel-compositing.png" style="width: 239.0px; height: 81.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: Compositing Property</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Blend</span></code> When two strips are placed on top of each other, e.g. channel 1 and channel 2, the strip of channel 1 is completely covered by the strip of channel 2 as if channel 1 does not exist. This is because the Blend Mode of the channel 2 strip is set to Cross (default value). The Blend mode of a strip on the upper channel specifies how the strip on a lower channel should combine or blend with the strip on the upper channel. There are 27 blend modes, some with <a class="reference external" href="https://docs.blender.org/manual/en/dev/video_editing/sequencer/strips/effects/index.html">exotic names</a> as “Color Dodge” or “Color Burn”.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Opacity</span></code> The opacity or alpha value of the image is multiplied with this value. A value of 1 has no effect on the opacity of the strip. A value of zero will make the strip fully transparent. See the <a href="#id23"><span class="problematic" id="id24">`Mask strip`_</span></a> for more details on transparency/opacity.</p>
+<p><strong>Transform</strong></p>
+<div class="figure align-right" id="id9">
+<a class="reference internal image-reference" href="../../../_images/panel-transform.png"><img alt="Transform Property" src="../../../_images/panel-transform.png" style="width: 241.0px; height: 172.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Transform Property</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Position</span> <span class="pre">X,</span> <span class="pre">Y</span></code> The view area of the sequencer output is set with the project dimensons (see <a class="reference internal" href="../dir-structure/creating-directory-structure.html"><span class="doc">Creating a directory structure</span></a>). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Scale</span> <span class="pre">X,</span> <span class="pre">Y</span></code> With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity. A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it. To scale the frame proportionally, you have to use the same value for X and Y.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Rotation</span></code> Rotates the frame along the Z axis; expressed in degrees. A negative value will rotate counter clockwise. This value can be &gt; 360°, e.g. in animations you can rotate a frame 3 times around its Z axis by entering the value 1080° = 3 x 360°.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Mirror</span></code>  Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).</p>
+<p><strong>Crop</strong></p>
+<div class="figure align-right" id="id10">
+<a class="reference internal image-reference" href="../../../_images/panel-crop.png"><img alt="Crop Property" src="../../../_images/panel-crop.png" style="width: 244.0px; height: 122.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: Crop Property</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Crop</span></code> Cropping is the removal of unwanted outer areas from an image. Use (from) <em>Top</em>, <em>Left</em>, <em>Bottom</em>, and <em>Right</em> to remove pixels from the top, Left, …</p>
+<p>Crop is often combined with Transform, for example to create a Picture-in-Picture (PIP) effect.</p>
+<p><strong>Video</strong></p>
+<div class="figure align-right" id="id11">
+<a class="reference internal image-reference" href="../../../_images/panel-video-strip-movie.png"><img alt="Video Property" src="../../../_images/panel-video-strip-movie.png" style="width: 243.0px; height: 83.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 5: Video Property</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Strobe</span></code> A strobe is a device used to produce regular flashes of light. In this context, the floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the strip will only display frames 1, 11, 21, 31, 41… of the source. You can use this property to sync your video to a sound beat.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Reverse</span> <span class="pre">Frames</span></code> The strip is played backwards starting from the last frame in the sequence to the first frame.</p>
+<p><strong>Color</strong></p>
+<div class="figure align-right" id="id12">
+<a class="reference internal image-reference" href="../../../_images/panel-color.png"><img alt="Color Property" src="../../../_images/panel-color.png" style="width: 242.0px; height: 109.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 6: Color Property</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Saturation</span></code> Increases or decreases the color saturation or the vividness of an image.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Multiply</span></code> Multiplies the colors by this value. This will increases the brightness for values &gt; 1. Using a value &lt; 1 will reduce the brightness. A value of zero will produce a uniformly black image; the color code of black is RGB (0,0,0).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Convert</span> <span class="pre">to</span> <span class="pre">Float</span></code> Converts the multiply value to a float data.</p>
+<p><strong>Time</strong></p>
+<div class="figure align-right" id="id13">
+<a class="reference internal image-reference" href="../../../_images/panel-time.png"><img alt="Time Property" src="../../../_images/panel-time.png" style="width: 244.0px; height: 246.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 7: Time Property</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Channel</span></code> Strips are placed in channels; rows stacked upon each other. Upon adding a movie clip, Blender searches for the next free channel to place the movie strip. With this property you can change the channel number, e.g. the row number of the strip. If the channel is already taken by another strip, the strip will be positioned at the next higher available channel.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Start</span></code>: The starting frame number of the strip.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The time codes in Blender are not very coherent. The Start frame is the original frame number where the strip is added or moved. But, you can trim the strip so that it starts later; this is done with the Strip Offset Start time code. Visually, you see in the sequencer that the strip starts later than the Start frame indicates.</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Duration</span></code> The length, in frames of the strip</p>
+<p><code class="docutils literal notranslate"><span class="pre">End</span></code> Specifies the ending time and ending frame number for the strip. This value cannot be edited.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Strip</span> <span class="pre">Offset</span> <span class="pre">Start/End</span></code>: Can be used to either extend the strip beyond the end frame by repeating the last frame. Or it can be used to shorten the strip, as if you were cropping the end frame. This is the same as adjusting the strip handles.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Hold</span> <span class="pre">Offset</span> <span class="pre">Start/End</span></code> Offset of the uncut strip content.
+<code class="docutils literal notranslate"><span class="pre">Current</span> <span class="pre">Frame</span></code> Position of the Playhead relative to the start of the active strip.</p>
+<p><strong>Source</strong></p>
+<div class="figure align-right" id="id14">
+<a class="reference internal image-reference" href="../../../_images/panel-source-movie-strip.png"><img alt="Source Property" src="../../../_images/panel-source-movie-strip.png" style="width: 242.0px; height: 183.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 8: Source Property</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">File</span></code> The directory and filename that contains the source file. When a file is moved this field can be updated instead of re-creating the strip.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">Space</span></code> To specify the color space of the source file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">MPEG</span> <span class="pre">Preseek</span></code> Use Preseek field to tell Blender to look backward and compose an image based on the specified amount of previous frames (e.g. 15 for MPEG-2 DVD).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Stream</span> <span class="pre">Index</span></code> For files with several movie streams, use the stream with the given index.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Deinterlace</span></code> Removes fields in a video file. For example, if it is an analog video and it has even or odd interlacing fields.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Resolution</span></code> Dimension (width x height in pixels) of the active strip image output. This property is not editable. Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.</p>
+<p><strong>Custom Properties</strong></p>
+<div class="figure align-right" id="id15">
+<a class="reference internal image-reference" href="../../../_images/panel-custom.png"><img alt="Custom Property" src="../../../_images/panel-custom.png" style="width: 246.0px; height: 65.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 9: Custom Property</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here you can create custom properties for this.</p>
+</div>
+<div class="section" id="b-sound-strip">
+<h2>B.Sound strip<a class="headerlink" href="#b-sound-strip" title="Permalink to this headline">¶</a></h2>
+<p>The input source of a Sound strip is an audio file with extension <code class="docutils literal notranslate"><span class="pre">.AAC</span></code>, <code class="docutils literal notranslate"><span class="pre">.AC3</span></code>, <code class="docutils literal notranslate"><span class="pre">.FLAC</span></code>, <code class="docutils literal notranslate"><span class="pre">.MP2</span></code>, <code class="docutils literal notranslate"><span class="pre">.MP3</span></code>,  <code class="docutils literal notranslate"><span class="pre">.opus</span></code>, <code class="docutils literal notranslate"><span class="pre">.PCM</span></code>,  or``.vorbis`` (see <a class="reference external" href="https://docs.blender.org/manual/en/dev/files/media/video_formats.html">audio formats</a>). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip aren’t the same length. This is the result of a mismatch between the Frame rate (fps) of the project and the video clip. Suppose, you are adding a 24 fps video with a duration of 1 second or 24 frames to a 30 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, … But, due to the different framerates, frame 30 in the sequencer is really frame 24 (1 s) in the video file, which is the end of the video and embedded audio. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.</p>
+</div>
+<p>There are no Compositing, Transform, Crop, Video and Color panels for the Sound strip. The Header, Time, Source, and Custom panels are the same as for a Movie strip. The following properties are specific for sound strips.</p>
+<p><strong>Sound</strong></p>
+<div class="figure align-right" id="id16">
+<a class="reference internal image-reference" href="../../../_images/panel-sound.png"><img alt="Sound Property of Sound Strip" src="../../../_images/panel-sound.png" style="width: 241.0px; height: 216.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 10: Sound Property of Sound Strip</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Volume</span></code> The volume of the sound. Setting the Volume to zero will mute the sound, a value of 1 results in the original sound level and a value &gt; 1 will increase the sound level. However, does a sound with level 2 sounds double as loud as the original; a more detailed explanation is given in the advanced section.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Pitch</span></code> Pitch (lower versus higher tones) is closely related to the frequency of a sound. The Pitch value of the Sound strip will change the playback speed or frequency of the sound. Increasing the value will make the sound appear higher in tone, decreasing will lower the tone. Because the playback rate is also changed, the length of the sound is changed. This is however not visually represented in the timeline. The Sound strip appears equally long as before but the sound will stop earlier or premature.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Pan</span></code> Depending on your sound system, you have one, two or more speakers. Panning is the distribution of the sound over those speakers. It is mainly used to pan (distribute) the audio from left and right channels.  Pan values can be between -2 and 2. A value of zero means front/center (12 o’clock). Equal amount of sound is sent to the left and right speaker. A value of -1 means that all sound is sent to the left channel and 1 to the right (10 o’clock). And a value of +1 means that the sound will appear at 2 o’clock).  In case of multichannel audio (rear speakers) you can pan to those with the higher values: -2 (7 o’clock) and +2 (5 o’clock). So this value basically represents the angle at which the sound is played. Only works for mono sources.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">Waveform</span></code> Display an approximate waveform of the sound file inside of the sound strip. The waveform reflects strip volume and its animation using keyframes. If the waveform is not displayed, you’ll have to turn on the Overlays (button at the top right; see figure 10).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Mono</span></code> Mixdown all audio channels into a single one.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Pack</span></code> Packing the sound file means that the sound is embedded -not linked- in the blend-file. This can ease the job of transferring a project to another computer because you have to distribute only one file. But, remember, we advocate the use of a single, all-containing project folder  (see <a class="reference internal" href="../dir-structure/creating-directory-structure.html"><span class="doc">Creating a directory structure</span></a>).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Caching</span></code> The sound file is decoded and loaded into RAM for fluent playing.</p>
+</div>
+<div class="section" id="c-image-image-sequence-strip">
+<h2>C. Image/Image Sequence strip<a class="headerlink" href="#c-image-image-sequence-strip" title="Permalink to this headline">¶</a></h2>
+<p>The input source of an Image strip is a graphics file with extension <code class="docutils literal notranslate"><span class="pre">.BMP</span></code>, <code class="docutils literal notranslate"><span class="pre">.Iris</span></code>, <code class="docutils literal notranslate"><span class="pre">.PNG</span></code>, <code class="docutils literal notranslate"><span class="pre">.JPEG</span></code>, <code class="docutils literal notranslate"><span class="pre">.JPG2000</span></code>,  <code class="docutils literal notranslate"><span class="pre">.targa</span></code>, <code class="docutils literal notranslate"><span class="pre">.cineon</span> <span class="pre">&amp;</span> <span class="pre">DPX</span></code>,  <code class="docutils literal notranslate"><span class="pre">openEXR</span></code>, <code class="docutils literal notranslate"><span class="pre">Radiance</span> <span class="pre">HDR</span></code> or <code class="docutils literal notranslate"><span class="pre">.TIFF</span></code>. (see <a class="reference external" href="https://docs.blender.org/manual/en/dev/files/media/image_formats.html">graphics formats</a>).</p>
+<p>Although an image is normally only one frame, the resulting Image strip has a length of 25 identical frames or stills. This is done by manipulating the time codes.</p>
+<p>The input source of an Image Sequence strip is a sequence of (numbered) graphic files (e.g. *-0001.png, *-0002.png, *-0003.png, etc. In the input source you can retrieve the individual image names. The strip however is treated as one indivisible movie and is as such indistinguishable from a movie strip.</p>
+<p>The Image/image Sequence strip has a brown color while the Movie strip is Aquamarine (see figure 1). Image sequences can use placeholder files. This is done by enabling Use placeholders checkbox when adding an image strip (see TODO).</p>
+<p>The properties are mostly the same as a Movie strip.  Only in the Source panel, there is a minor change. The default setting for Blend mode is however AlphaOver for an Image/Sequence strip and Cross for a Movie Strip.</p>
+<p><strong>Source</strong></p>
+<div class="figure align-right" id="id17">
+<a class="reference internal image-reference" href="../../../_images/panel-source-movie-strip.png"><img alt="Source Property of Image Strip" src="../../../_images/panel-source-movie-strip.png" style="width: 242.0px; height: 183.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 11: Source Property of Image Strip</span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+<p>In contrast to the Movie strip, the Source property is split into a directory and a file component.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Directory</span></code> The directory that contains the source files. When the image files are moved this field can be updated instead of having to recreate the strip.</p>
+<p><code class="docutils literal notranslate"><span class="pre">File</span></code>: The filename of the image for that particular frame, e.g. <a href="#id1"><span class="problematic" id="id2">*</span></a>-0001.png, <a href="#id3"><span class="problematic" id="id4">*</span></a>-0002.png, <a href="#id5"><span class="problematic" id="id6">*</span></a>-0003.png, …</p>
+<p><code class="docutils literal notranslate"><span class="pre">Color</span> <span class="pre">Space</span></code>: see <cite>Movie strip</cite>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Alpha</span></code>: Premultiplied (RGB channels in transparent pixels are multiplied by the alpha channel) or Straight (RGB channels in transparent pixels are unaffected by the alpha channel) of the image.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Change</span> <span class="pre">Datafile</span></code>: replaces the complete image sequence with the selected images.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Resolution</span></code> See <cite>Movie strip</cite></p>
+</div>
+<div class="section" id="d-clip-strip">
+<h2>D. Clip strip<a class="headerlink" href="#d-clip-strip" title="Permalink to this headline">¶</a></h2>
+<p>A clip strip is created from the output of the Movie Clip Editor. There is nothing in the Clip menu unless you’ve opened media (video or images) in the Movie Clip Editor. At all other times it’s just a blank menu. The Movie Clip Editor is used to create advanced edits such as motion tracking and advanced masking. See special workflows for an example.</p>
+<p>The property panels of Compositing, Transform, Crop, … are the same as in the Movie Clip Editor. There isn’t any Source panel because the Clip strip is created from an in-memory data block of the Movie Clip Editor. There can be multiple data blocks and they are stored within the Blend-file upon saving.</p>
+<p><strong>Video</strong></p>
+<div class="figure align-right" id="id18">
+<a class="reference internal image-reference" href="../../../_images/panel-video-strip-clip.png"><img alt="Video Property of Clip Strip" src="../../../_images/panel-video-strip-clip.png" style="width: 242.0px; height: 187.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 12: Video Property of Clip Strip</span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+<p>Two extra properties are added underneath the Video panel.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tracker:</span> <span class="pre">Stabilize</span> <span class="pre">2D</span> <span class="pre">clip</span></code> The purpose of Tracking in the Movie Clip Editor is mostly to stabilize the video. With this checkbox you can use the stabilized version of the clip.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Distortion:</span> <span class="pre">Undistort</span> <span class="pre">clip</span></code> Stabilizing of a video is done by moving and rotating the video. With this option you can remove the distortion of the clip which is the result of stabilizing it.</p>
+</div>
+<div class="section" id="e-scene-strip">
+<h2>E. Scene strip<a class="headerlink" href="#e-scene-strip" title="Permalink to this headline">¶</a></h2>
+<p>Blender has next to its VSE also a very impressive 3D and 2D modeling environment. You can model and render animated realistic scenes with it. But, instead of rendering out that scene to a video, and then inserting the video file in the sequence editor, you can insert the scene directly. Scene strips are a way to insert the render output of another scene into your sequence.</p>
+<p>The strip length will be determined based on the animation settings in that scene.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Each scene has its own Video Sequencer. Scene strips cannot be used to insert the sequence’s own scene. If you have a 3D animation in scene_1, you can insert it as a scene strip in scene_2 but not in scene_1.</p>
+</div>
+<p>The Compositing, Transform, Crop, Video, Color, Time, and Custom panels are unchanged. In the Time a new property is added: <code class="docutils literal notranslate"><span class="pre">Original</span> <span class="pre">Frame</span> <span class="pre">Range</span></code> . As the name indicates, this new property shows the the number of frames of the original scene held. A new Scene panel is also added.</p>
+<p><strong>Scene</strong></p>
+<div class="figure align-right" id="id19">
+<a class="reference internal image-reference" href="../../../_images/panel-scene.png"><img alt="Scene Property of Scene Strip" src="../../../_images/panel-scene.png" style="width: 241.0px; height: 218.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 13: Scene Property of Scene Strip</span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Scene</span> <span class="pre">header</span></code> with logo, name and link/unlink checkbox. This header seems to be a duplicate of the header of the Properties Sidebar.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Input</span></code> Choice between Camera or Sequencer. The original Scene -where this Scene strip came from- can also have a Video Sequencer. Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene. In the original scene, this could be set in the Post Processing panel of the Output Properties. But, of course, it is not a good habit to change this setting from within another scene. So, With this input choice, you can choose between the two possibilities.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Camera</span></code> The same reasoning holds for multiple cameras. The active camera is set in the original scene. But the receiving scene can choose to use another camera. If the original scene has multiple cameras, you can choose here which camera to use. This is very useful in multicam-editing.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Volume</span></code> The volume of the original audio can be increased (&gt; 1) or reduced (&lt; 1) with this setting.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Grease</span> <span class="pre">Pencil</span></code> Shows Grease Pencil strokes in OpenGL previews.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Transparent</span></code> Creates a transparent background. This is useful for doing overlays like rendering out Grease Pencil films via the Sequencer.</p>
+</div>
+<div class="section" id="f-mask-strip">
+<h2>F. Mask strip<a class="headerlink" href="#f-mask-strip" title="Permalink to this headline">¶</a></h2>
+<p>In general, any strip could be a masking strip. The VSE Mask strip however is rather restricted to the masks, created in the Movie Clip Editor. There will be nothing in the Mask menu unless you have created a mask in the Movie Clip Editor. At all other times it’s just a blank menu. If there are multiple masks in the Movie Clip Editor, you can choose the appropriate mask from the drop-down menu. These masks could also be used as a modifier.</p>
+<p>A mask is a grey-scale image. The Movie Clip Editor generates this image as you create a mask but also a common Image strip can be used. You place this mask image on top of a background image and apply the <code class="docutils literal notranslate"><span class="pre">Multiply</span></code> blend mode. Because the color White is coded as RGB(1,1,1), multiplying a color from the background (underlying strip) with 1 will return the same color as the background. A white area of the mask is thus fully transparent, the background image ‘shines’ through. A black color is coded as RGB (0,0,0). So, multiplying this color to the background color will result in 0 or black. The mask is opaque.</p>
+<p>The Compositing, Transform, Crop, Video, Color, Time, and Custom panels are unchanged. A mask panel is added to the Properties.</p>
+<p><strong>Mask</strong></p>
+<div class="figure align-right" id="id20">
+<a class="reference internal image-reference" href="../../../_images/panel-mask.png"><img alt="Mask Property of Mask Strip" src="../../../_images/panel-mask.png" style="width: 235.0px; height: 83.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 14: Mask Property of Mask Strip</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Header</span></code> with logo of strip, mask selector (if there are more than one), Fake User button and link/unlink checkbox.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Original</span> <span class="pre">Frame</span> <span class="pre">Range</span></code> In the Movie Clip Editor you have to set the Frame Range that the mask will be applied. By default, this range is set to frame 1 -100.</p>
+</div>
+<div class="section" id="g-color-strip">
+<h2>G. Color strip<a class="headerlink" href="#g-color-strip" title="Permalink to this headline">¶</a></h2>
+<p>The Color strip is a sequence of 25 frames with a solid color. Its Duration is set by the same mechanism as the Image strip. The resolution is derived from the Project Settings and by default takes the complete movie screen area.</p>
+<p>You’ll use this strip heavily to create some custom transitions and in combination with the Crop and/or Transform property to create some horizontal or vertical colored bars.</p>
+<p>The Compositing, Transform, Crop, Video, Color, Time, and Custom panels are unchanged. An Effect panel is added to the Properties. The existing Color panel has some overlap with the Effect panel. The Time panel has no Strip Offset and Hold Offset properties.</p>
+<p><strong>Effect</strong></p>
+<div class="figure align-right" id="id21">
+<a class="reference internal image-reference" href="../../../_images/panel-effect-strip-color.png"><img alt="Effect Property of Color Strip" src="../../../_images/panel-effect-strip-color.png" style="width: 237.0px; height: 195.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 15: Effect Property of Color Strip</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+<p>With the vertical slider you can set the brightness of the color. Clicking on the horizontal slider will display a standard Color Picker.</p>
+</div>
+<div class="section" id="h-text-strip">
+<h2>H. Text strip<a class="headerlink" href="#h-text-strip" title="Permalink to this headline">¶</a></h2>
+<p>The Text strip allows you to directly display text in the Sequence editor.
+The strip will display the text inserted in its text field on the final sequence.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>All Text strips in a video sequence can be exported as a <a class="reference external" href="https://en.wikipedia.org/wiki/SubRip">SubRip</a> file. This is useful when using Text strips as subtitles.</p>
+</div>
+<p>The Compositing, Transform, Crop, Video, Color, and Custom panels are unchanged. The Time panel has no Strip Offset and Hold Offset properties. An Effect panel is added to the Properties.  There is no Source panel because the text is defined in the Effect panel.</p>
+<div class="figure align-right" id="id22">
+<a class="reference internal image-reference" href="../../../_images/panel-effect-strip-text-.png"><img alt="Effect Property of Text Strip" src="../../../_images/panel-effect-strip-text-.png" style="width: 237.0px; height: 434.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 16: Effect Property of Text Strip</span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Effect</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">Text</span></code> The actual text that is displayed. This text can be 511 characters long.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Wrap</span> <span class="pre">Width</span></code> Wraps the text by the percentage of the frame width. Setting this to zero will disable word wrapping. A value of 0.5 will wrap the text at the middle of the frame.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Font</span></code> Clicking on the Open button will show a File Browser window with the Fonts directory of your system. There you can choose a new font for the selected Text strip. This directory is set in the Preferences &gt; File Path &gt; Data.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Size</span></code> Size of the text. Value between 0 and 2000.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Color</span></code> The text color. Clicking on the color button will display a standard Color Picker.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Shadow</span></code> Creates a shadow of the specified color under the text.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Box</span></code> Creates a background for the text to improve the readability and clarity of text in some situations. The color and opacity of the box can be adjusted using the color selector.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Style:</span> <span class="pre">Box</span> <span class="pre">Margin</span></code> The distance the box boundaries extends from the boundaries of the font glyphs. The distance is measured as a factor of the image’s width.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Layout:</span> <span class="pre">Location</span> <span class="pre">X,</span> <span class="pre">Y</span></code> With the values <em>X</em> and <em>Y</em> you can position the text in the frame. The value (0,0) refers to the bottom left and (1,1) to the top right. A value of (0.5, 0.5) sets the text in the middle of the frame. Pay attention also to the Anchor (see below).</p>
+<p><code class="docutils literal notranslate"><span class="pre">Layout:</span> <span class="pre">Anchor</span> <span class="pre">X,</span> <span class="pre">Y</span></code>  Horizontal (Left, Center, Right) or vertical (Top, Center, Bottom) anchor point of the text. With this value you can align the text horizontally or vertically.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../customize/customize-environment.html" class="btn btn-neutral float-right" title="1.2. Customize your environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../dir-structure/creating-test-files.html" class="btn btn-neutral float-left" title="1.1.2. Creating test files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright This page is licensed under a CC-BY-SA 4.0 Int. License..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

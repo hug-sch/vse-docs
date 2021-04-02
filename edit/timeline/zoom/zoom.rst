@@ -6,12 +6,9 @@ In a video project it is important that you can zoom in on the section you're wo
 
 .. raw:: html
 
-   <video width="640" height="480" src="/_images/zoom.mp4" controls></video>
+   <video width="640" height="480" src="/_static/videos/zoom.mp4" controls></video>
 
-.. figure::
-   <video src="ex-b.mov"></video>
- 
-   
+
 
 
 
@@ -27,12 +24,6 @@ In a video project it is important that you can zoom in on the section you're wo
 
 You can also zoom in vertically; make the strip bars wider or narrower. Use :kbd:`Shift-Wheel`, or drag on the circles of the left scrollbar. Or: :kbd:`Ctrl-MMB` and drag up/down
 
-aa
-
-.. raw:: html
-
-   <video width="640" height="480" src="/_static/videos/zoom.mp4" controls></video>
 
 
-bb
-dd
+ 

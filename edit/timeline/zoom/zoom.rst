@@ -20,7 +20,4 @@ In a video project it is important that you can zoom in on the section you're wo
 :kbd:`Ctrl-MMB` and drag left/right  or drag on the circles on the horizontal scrollbar.
 
 You can also zoom in vertically; make the strip bars wider or narrower. Use :kbd:`Shift-Wheel`, or drag on the circles of the left scrollbar. Or: :kbd:`Ctrl-MMB` and drag up/down
-
-
-
  

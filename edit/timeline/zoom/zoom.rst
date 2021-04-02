@@ -6,10 +6,7 @@ In a video project it is important that you can zoom in on the section you're wo
 
 .. raw:: html
 
-   <video width="640" height="480" src="/_static/videos/zoom.mp4" controls></video>
-
-
-
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/mgmaP45gKqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 :kbd:`Home`: zooms in on the total project; from start to finish. When you ever get lost in your timeline, press the Home key to get the complete picture. With the menu: View > Frame All.

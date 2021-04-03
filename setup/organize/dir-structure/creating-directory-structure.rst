@@ -15,7 +15,7 @@ Together they can form rapidly an intangible heap of files. It's good practice t
 
 It's also good practice to use some kind of naming convention and add metadata. Figure 1 shows a possible example, based on our categorization of the assets above. The directories are numbered so that they mimic a normal workflow.
 
-.. figure:: /images/setup/vse_setup_organize_dir-structure_example.svg
+.. figure:: img/dir-structure-example.svg
    :scale: 50 %
    :alt: Organizing your project
 

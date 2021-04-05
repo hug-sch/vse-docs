@@ -27,6 +27,8 @@ code (red color and border)
 Figure: change source to http for external _images
 .. figure:: img/time_code.svg
    :alt: Time properties
+   :scale: 50%
+   :align: right
 
    Figure 1: Time properties of a Movie strip.
 

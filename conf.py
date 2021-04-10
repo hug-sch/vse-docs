@@ -28,6 +28,7 @@ author = 'hugsch'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -47,7 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 
 # Display todos by setting to True
-#todo_include_todos = True
+todo_include_todos = True
 
 
 # Add any paths that contain custom static files (such as style sheets) here,

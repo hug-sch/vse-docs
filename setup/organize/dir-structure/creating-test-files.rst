@@ -121,7 +121,7 @@ Attention: this scene strip will always start at time 0, no matter where you pos
 
 An image placeholder is a dummy image. There are several websites that can either provide you with the link to these images or give you the possibility to generate these images yourself on your computer. Of course, you can always save the online images behind the link.
 
-For example, the URL http://via.placeholder.com/640x360 will show you a placeholder image of 640x360 pixels in the browser, which you can save to your computer.
+For example, the URL http://via.placeholder.com/640x360 or https://placekitten.com/640/360 will show you a placeholder image of 640x360 pixels in the browser, which you can save to your computer.
 
 .. figure:: http://via.placeholder.com/640x360
    :align: center
@@ -141,7 +141,5 @@ These placeholder images are mostly used in website design to create mockups of 
 
 **E. Useful websites**
 
-.. todo::
-    Perhaps better examples to find.
-
-1. https://file-examples.com/: This website is a service designed for developers, designers, testers. Various categories: video, audio, documents, images, ...
+1. https://www.demolandia.net/: Demolandia is, essentially, an audiovisual library where you will find a great diversity of images, audio and video files (e.g. 4K) related to the cinema. 
+2. https://file-examples.com/: This website is a service designed for developers, designers, testers. Various categories: video, audio, documents, images, ...

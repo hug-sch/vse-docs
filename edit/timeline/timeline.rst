@@ -10,14 +10,22 @@ Timeline basics
     navigate/navigate.rst
     scrub/scrub.rst
   
-The concept *Timeline* can refer to different things. In Blender, it refers in the first place to the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon, and used for manipulating keyframes and scrubbing the playhead.
+The concept *Timeline* can refer to different things. In Blender, it refers in the first place to the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon, and used for manipulating keyframes and scrubbing the playhead. This Timeline editor was originally intended for editing the animations in 3D modeling.
 
-.. figure:: https://docs.blender.org/manual/en/dev/_images/editors_timeline_interface.png
-   :alt: Timelines
+.. figure:: timeline-editor.svg
+   :alt: Timeline editor
 
-    Figure 1: The Timeline Editor in Blender
+   Figure 1: The Timeline Editor in Blender
 
-You can find :doc:`this Timeline Editor </setup/customize/workspace/video-editing-workspace>` also in de Video Sequence Editor, all the way at the bottom of the screen. The Sequencer however has also a kind of timeline on its own: the area where the strip bars are painted. Practically all the regular operations like zoom, navigate, ... can be done here. Only the Frame and Transport controls are missing. These can however easily be added to the workspace (see the addon by TintwoTin; `Playback_control_in_VSE_header.zip <https://github.com/tin2tin/Sequence_Editing>`_ ). 
+You can find this Timeline Editor also in the :doc:`Video Sequence Editor workspace </setup/customize/workspace/video-editing-workspace>`, all the way at the bottom of the screen. The Sequencer however has also a kind of timeline on its own: the area where the strip bars are painted. Practically all the regular operations like zoom, navigate, ... can be done here. Only the Frame and Transport controls are missing.
+
+.. figure:: timeline-sequencer.svg
+   :alt: Sequencer timeline
+
+   Figure 2: The timeline of the SequencerTimeline Editor in Blender
+
+
+These can however easily be added to the workspace (see the addon by TintwoTin; `Playback_control_in_VSE_header.zip <https://github.com/tin2tin/Sequence_Editing>`_ ). 
 
 In Blender you can choose to show the timeline in seconds or in frames (menu View > Show seconds). As a video editor, you probably are most interested in the :doc:`SMPTE-timecode <timecode/timecode>`. It seems more natural to refer to a video fragment with a time indication, e.g. 00:01:15:10 or 1' 15'' and 10 frames than with a frame number, e.g. frame 55.
 

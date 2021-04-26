@@ -40,3 +40,10 @@ insert non-youtube video. The video is copied to the _images directory in the ht
     <video width="640" height="480" src="/_images/zoom.mp4" controls></video>
 
 Figure 1: Output from FFMPEG command (see above)
+
+
+internal link to anchor
+
+    1. Use .. _refname: to create a target; a line on itself.
+    2. Use refname_ to reference the target, anywhere on the page.
+

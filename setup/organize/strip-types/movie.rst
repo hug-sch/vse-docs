@@ -1,49 +1,69 @@
 Movie strip
 ===========
 
-The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ``ffmpeg`` library to process the video files. Which codecs are available depends on the operating system and FFmpeg version.
+The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see :doc:`Video formats </files/media/video_formats>`). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version.
 
-Each video file contains a sequence of image frames (the actual movie) and some meta information such as resolution and frame rate (fps). The resolution info is exposed in the source panel. Unfortunately, the source FPS is not.
+Each video file contains a sequence of image frames (the actual movie) and some meta information such as resolution and frame rate (fps). The resolution info for example is exposed in the source-panel_. Unfortunately, the source FPS is not.
+
+
+source-panel_ to reference the target.
+
 
 .. warning:: 
-   It is important that the Project Settings parameters are in accordance with the strip parameters. For example, if the project is set to a frame rate of 30 fps, and your clip is only 24 fps, then the clip will appear accelerated. A 1 second play back time will contain 30 frames or 1.2 s of original footage.
+   It is important that the Project Settings parameters are in accordance with the strip parameters. For example, if the project is set to a frame rate of 30 fps, and your clip is only 24 fps, then the clip will appear accelerated. A 1 second play back time will contain 30 frames; according to the project settings. But, these 30 frames take 1.2 s in the original footage. Compressing 1.2s in 1s during playback will induce the acceleration. 
 
-   Also, if your clip has variable framerate; e.g. footage from some smart phones, then you'll get an audio sync problem because Blender uses a constant frame rate.
+   Also, if your clip has variable framerate; e.g. footage from some smart phones, then you'll get an audio sync problem because Blender uses a constant frame rate. So, you have to convert your clip to a constant frame rate with programs as `ffmpeg <https://ffmpeg.org/>`_ or `Handbrake <https://handbrake.fr/>`_
 
 The movie strip is the most commonly used strip type and has a lot of properties. They are organized in panels in the sidebar.
 
-**Compositing**
+.. admonition:: Reference
+   :class: refbox
+
+   :Panel:     :menuselection:`Sidebar --> Strip --> Compositing`
 
 .. figure:: img/panel-compositing.png
    :scale: 50 %
    :alt: Compositing property
    :align: Right
 
-   Figure 2: Compositing Property
+   Figure 2: Compositing Panel
 
-``Blend`` When two strips are placed on top of each other, e.g. channel 1 and channel 2, the strip of channel 1 is completely covered by the strip of channel 2 as if channel 1 does not exist. This is because the Blend Mode of the channel 2 strip is set to Cross (default value). The Blend mode of a strip on the upper channel specifies how the strip on a lower channel should combine or blend with the strip on the upper channel. There are 27 blend modes, some with `exotic names <https://docs.blender.org/manual/en/dev/video_editing/sequencer/strips/effects/index.html>`_ as "Color Dodge" or "Color Burn".
+In the Compositing panel you can set the properties `Blend` and `Opacity` (see figure 1).
 
-.. todo::
-   The blend modes (see above) and their functional differences are described in detail in section ...
+Blend
+   When two strips are placed on top of each other, e.g. channel 2 on top of channel 1, the strip of channel 1 is completely covered by the strip of channel 2 as if channel 1 does not exist. This is because the Blend Mode of the channel 2 strip is set to Cross (default value). The Blend mode of a strip on the upper channel specifies how the strip on a lower channel should combine or blend with the strip on the upper channel. There are plenty of blend modes,such as Replace and Darken but also with less intuitive names such as Color Dodge or Alpha Over.
 
-``Opacity`` The opacity or alpha value of the image is multiplied with this value. A value of 1 has no effect on the opacity of the strip. A value of zero will make the strip fully transparent. See the `Mask strip`_ for more details on transparency/opacity.
+   .. todo::
+      The blend modes and their functional differences are described in detail in section ...
 
-**Transform**
+Opacity
+   The opacity or alpha value of the image is multiplied with this value. A value of 1 has no effect on the opacity of the strip. If the strip is semi-transparent (e.g. alpha=0.6), then it remains semi-transparent. A value of zero will make the strip fully transparent because the alpha-value of the strips becomes zero. See :doc:`Mask strips <mask>` for more details on transparency/opacity.
+
+.. admonition:: Reference
+   :class: refbox
+
+   :Panel:     :menuselection:`Sidebar --> Strip --> Transform`
 
 .. figure:: img/panel-transform.png
    :scale: 50%
    :alt: Transform Property
    :align: Right
 
-   Figure 3: Transform Property
+   Figure 2: Transform Panel
 
-``Position X, Y`` The view area of the sequencer output is set with the project dimensons (see :doc:`../dir-structure/creating-directory-structure`). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.
+The Transform panel is probably the panel that you'll need to have open most of the time. It contains the Position, Scale and Rotation properties and the less important Mirror property.
 
-``Scale X, Y`` With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity. A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it. To scale the frame proportionally, you have to use the same value for X and Y.
+Position X, Y
+   The view area of the sequencer output is set with the project dimensions (see :doc:`../dir-structure/creating-directory-structure`). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.
 
-``Rotation`` Rotates the frame along the Z axis; expressed in degrees. A negative value will rotate counter clockwise. This value can be > 360°, e.g. in animations you can rotate a frame 3 times around its Z axis by entering the value 1080° = 3 x 360°.
+Scale X, Y
+   With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity. A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it. To scale the frame proportionally, you have to use the same value for X and Y.
 
-``Mirror``  Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).
+Rotation
+   Rotates the frame along the Z axis; expressed in degrees. A negative value will rotate counter clockwise. This value can be > 360°, e.g. in animations you can rotate a frame 3 times around its Z axis by entering the value 1080° = 3 x 360°.
+
+Mirror
+   Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).
 
 **Crop**
 
@@ -116,6 +136,9 @@ Crop is often combined with Transform, for example to create a Picture-in-Pictur
 
 ``Hold Offset Start/End`` Offset of the uncut strip content.
 ``Current Frame`` Position of the Playhead relative to the start of the active strip.
+
+
+.. _source-panel:
 
 **Source**
 

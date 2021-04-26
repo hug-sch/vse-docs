@@ -1,4 +1,4 @@
-F. Mask strip
+Mask strip
 =============
 
 In general, any strip could be a masking strip. The VSE Mask strip however is rather restricted to the masks, created in the Movie Clip Editor. There will be nothing in the Mask menu unless you have created a mask in the Movie Clip Editor. At all other times it's just a blank menu. If there are multiple masks in the Movie Clip Editor, you can choose the appropriate mask from the drop-down menu. These masks could also be used as a modifier.

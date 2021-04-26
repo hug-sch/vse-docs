@@ -7,7 +7,7 @@ Even a moderate-sized video project can contain hundreds of assets. It's very ea
    :maxdepth: 2
  
    dir-structure/creating-directory-structure
-   strip-types/blender-striptypes.rst
+   strip-types/striptypes.rst
    dir-structure/creating-test-files.rst
 
 .. figure:: organize-example.png

@@ -10,14 +10,17 @@ Timeline basics
     navigate/navigate.rst
     scrub/scrub.rst
   
-The concept *Timeline* can refer to different things. In Blender, it refers in the first place to the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon, and used for manipulating keyframes and scrubbing the playhead. This Timeline editor was originally intended for editing the animations in 3D modeling.
+The concept *Timeline* can refer to different things. In Blender, it denotes in the first place the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon, and used for manipulating keyframes and scrubbing the playhead. This Timeline Editor was originally intended for editing the animations in 3D modeling.
 
 .. figure:: timeline-editor.svg
    :alt: Timeline editor
 
    Figure 1: The Timeline Editor in Blender
 
-You can find this Timeline Editor also in the :doc:`Video Sequence Editor workspace </setup/customize/workspace/video-editing-workspace>`, all the way at the bottom of the screen. The Sequencer however has also a kind of timeline on its own: the area where the strip bars are painted. Practically all the regular operations like zoom, navigate, ... can be done here. Only the Frame and Transport controls are missing.
+You can find this Timeline Editor also in the :doc:`Video Sequence Editor workspace </setup/customize/workspace/video-editing-workspace>`, all the way at the bottom of the screen. Only the header is visible; so you have to drag the horizontal top border to reveal the time codes and keyframes.
+
+The use of this Timeline Editor within the Video Editor workspace is however rather limited and its functions can easily be overtaken by the Sequencer, which is right on top of it. An exception is perhaps the Auto keyframing button and the xxx. The record button (⏺) enables Auto Keyframe. It will add and/or replace existing keyframes for the selected strip when you change some properties; for example the Opacity to create a Fade effect. transform it in the 3D Viewport. 
+The Sequencer however has also a kind of timeline on its own: the area where the strip bars are painted. Practically all the regular operations like zoom, navigate, ... can be done here. Only the Frame and Transport controls are missing.
 
 .. figure:: timeline-sequencer.svg
    :alt: Sequencer timeline

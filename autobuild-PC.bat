@@ -1,0 +1,1 @@
+sphinx-autobuild . e:/temp/_build/html --open-browser

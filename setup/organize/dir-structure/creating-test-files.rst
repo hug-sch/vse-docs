@@ -26,7 +26,7 @@ You can first try out the command with *ffplay* to preview the output.
 
 Figure 1: Output from FFMPEG command (see above)
 
-If you are satisfied with the result, replace the *ffplay*command with *ffmpeg*and add the output file; eg test.mp4
+If you are satisfied with the result, replace the *ffplay* command with *ffmpeg* and add the output file; eg test.mp4
 
 .. code-block::
 

@@ -1,4 +1,4 @@
-D. Clip strip
+Clip strip
 ==========
 
 A clip strip is created from the output of the Movie Clip Editor. There is nothing in the Clip menu unless you've opened media (video or images) in the Movie Clip Editor. At all other times it's just a blank menu. The Movie Clip Editor is used to create advanced edits such as motion tracking and advanced masking. See special workflows for an example.

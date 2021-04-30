@@ -4,7 +4,6 @@ The Video Editing workspace
 Upon opening Blender, the `splash screen <https://docs.blender.org/manual/en/dev/interface/window_system/splash.html>`_ gives you the possibility to create a Video Editing project. Choosing this option takes you immediately into the Video Editing workspace. This workspace is a smart combination of five editors: File Browser (top left), Video Sequencer: Preview (top middle), Properties (top right),Video Sequencer: Sequencer (near bottom) and Timeline (bottom). Together they provide you with all the necessary tools to edit your videos.
 
 .. figure:: video-editing-workspace.svg
-   :scale: 100 %
    :alt: The Video Editing Workspace
 
    Figure 1: screenshot of the video editing workspace
@@ -27,7 +26,6 @@ The Properties panel shows and allows editing of many active data. They are orga
 The built-in Video Editing workspace is very handy and it can be customized easily. Each editor area can be sized, moved, replaced or removed from the workspace. As example, an alternative workspace with auto-installed add-ons can be download from `tin2tin's github <https://github.com/tin2tin/Sequence_Editing>`_. A screenshot is provided below.
 
 .. figure:: https://raw.githubusercontent.com/tin2tin/Sequence_Editing/main/Sequence_Editing.png
-   :scale: 100 %
    :alt: A customized Video Editing Workspace
    
    Figure 2: a customized Video Editing Workspace.

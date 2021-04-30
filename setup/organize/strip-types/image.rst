@@ -28,7 +28,7 @@ In contrast to the Movie strip, the Source property is split into a directory an
 
 ``Directory`` The directory that contains the source files. When the image files are moved this field can be updated instead of having to recreate the strip.
 
-``File``: The filename of the image for that particular frame, e.g. *-0001.png, *-0002.png, *-0003.png, ... 
+``File``: The filename of the image for that particular frame, e.g. \*-0001.png, \*-0002.png, \*-0003.png, ... 
 
 ``Color Space``: see `Movie strip`.
 

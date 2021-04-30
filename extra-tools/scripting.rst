@@ -6,7 +6,6 @@ Blender has a dedicated workspace "Scripting" with 7 windows (areas): the Text E
 
 .. figure::
     https://devtalk.blender.org/uploads/default/optimized/2X/6/65c4bd501c6df0b0aaa19baf4244f83589822595_2_1035x582.jpg
-   :scale: 50 %
    :alt: The scripting workspace as defined in the call for workspaces in 2018
 
    Figure 1: The scripting workspace (2.92 in 2021).

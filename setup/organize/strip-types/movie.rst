@@ -1,13 +1,9 @@
 Movie strip
 ===========
 
-The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see :doc:`Video formats </files/media/video_formats>`). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version.
+The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version.
 
 Each video file contains a sequence of image frames (the actual movie) and some meta information such as resolution and frame rate (fps). The resolution info for example is exposed in the source-panel_. Unfortunately, the source FPS is not.
-
-
-source-panel_ to reference the target.
-
 
 .. warning:: 
    It is important that the Project Settings parameters are in accordance with the strip parameters. For example, if the project is set to a frame rate of 30 fps, and your clip is only 24 fps, then the clip will appear accelerated. A 1 second play back time will contain 30 frames; according to the project settings. But, these 30 frames take 1.2 s in the original footage. Compressing 1.2s in 1s during playback will induce the acceleration. 
@@ -16,10 +12,10 @@ source-panel_ to reference the target.
 
 The movie strip is the most commonly used strip type and has a lot of properties. They are organized in panels in the sidebar.
 
-.. admonition:: Reference
+.. admonition:: Panel Compositing
    :class: refbox
 
-   :Panel:     :menuselection:`Sidebar --> Strip --> Compositing`
+   :menuselection:` --> Strip --> Sidebar --> Panel --> Compositing`
 
 .. figure:: img/panel-compositing.png
    :scale: 50 %
@@ -39,10 +35,10 @@ Blend
 Opacity
    The opacity or alpha value of the image is multiplied with this value. A value of 1 has no effect on the opacity of the strip. If the strip is semi-transparent (e.g. alpha=0.6), then it remains semi-transparent. A value of zero will make the strip fully transparent because the alpha-value of the strips becomes zero. See :doc:`Mask strips <mask>` for more details on transparency/opacity.
 
-.. admonition:: Reference
+.. admonition:: Panel Transform
    :class: refbox
 
-   :Panel:     :menuselection:`Sidebar --> Strip --> Transform`
+   :menuselection:` --> Strip --> Sidebar --> Panel --> Transform`
 
 .. figure:: img/panel-transform.png
    :scale: 50%
@@ -54,7 +50,7 @@ Opacity
 The Transform panel is probably the panel that you'll need to have open most of the time. It contains the Position, Scale and Rotation properties and the less important Mirror property.
 
 Position X, Y
-   The view area of the sequencer output is set with the project dimensions (see :doc:`../dir-structure/creating-directory-structure`). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.
+   The view area of the sequencer output is set formats the project dimensions (see :doc:`../dir-structure/creating-directory-structure`). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.
 
 Scale X, Y
    With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity. A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it. To scale the frame proportionally, you have to use the same value for X and Y.
@@ -65,7 +61,11 @@ Rotation
 Mirror
    Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).
 
-**Crop**
+.. admonition:: Panel Crop
+   :class: refbox
+
+   :menuselection:` --> Strip --> Sidebar --> Panel --> Crop`
+
 
 .. figure:: img/panel-crop.png
    :scale: 50%
@@ -74,11 +74,16 @@ Mirror
 
    Figure 5: Crop Property
 
-``Crop`` Cropping is the removal of unwanted outer areas from an image. Use (from) *Top*, *Left*, *Bottom*, and *Right* to remove pixels from the top, Left, ...
+Crop
+   Cropping is the removal of unwanted outer areas from an image. Use (from) *Top*, *Left*, *Bottom*, and *Right* to remove pixels from the top, Left, ...
 
 Crop is often combined with Transform, for example to create a Picture-in-Picture (PIP) effect.
 
-**Video**
+.. admonition:: Panel Video
+   :class: refbox
+
+   :menuselection:` --> Strip --> Sidebar --> Panel --> Video`
+
 
 .. figure:: img/panel-video-strip-movie.png
    :scale: 50%
@@ -87,9 +92,11 @@ Crop is often combined with Transform, for example to create a Picture-in-Pictur
 
    Figure 5: Video Property
 
-``Strobe`` A strobe is a device used to produce regular flashes of light. In this context, the floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the strip will only display frames 1, 11, 21, 31, 41... of the source. You can use this property to sync your video to a sound beat.
+Strobe
+   A strobe is a device used to produce regular flashes of light. In this context, the floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the strip will only display frames 1, 11, 21, 31, 41... of the source. You can use this property to sync your video to a sound beat.
 
-``Reverse Frames`` The strip is played backwards starting from the last frame in the sequence to the first frame.
+Reverse Frames
+   The strip is played backwards starting from the last frame in the sequence to the first frame.
 
 **Color**
 

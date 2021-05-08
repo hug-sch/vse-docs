@@ -21,9 +21,16 @@ With these time codes, Blender can calculate and draw the strip bars in the Prev
 
 With the *Start* and the *Duration* the *End* field can be calculated.  This is what Blender insinuates by making this field non-editable. However, there is no reason for that and changing this field could for example result in the recalculation of the *Duration*.
 
-In figure 1, the original strip has a *Duration* of 30 frames. It starts as frame 5; so the *end* should be at frame 35. Because there is some trimming, the actual start is at frame 12: *Start* + *Strip Offset Start*. The actual end is at frame 27: *(Original) End* - *Strip Offset End*. The (actual) *Duration* is thus 15 frames: *(Actual) End - (Actual) Start*. The Offset values could be made visible in the Preview as small blue bars with the Show Overlays button (tp right in figure 1).
+In figure 1, the original strip has a *Duration* of 30 frames. It starts as frame 5; so the *end* should be at frame 35. Because there is some trimming, the actual start is at frame 12: *Start* + *Strip Offset Start*. The actual end is at frame 27: *(Original) End* - *Strip Offset End*. The (actual) *Duration* is thus 15 frames: *(Actual) End - (Actual) Start*. The Offset values could be made visible in the Preview as small blue bars with the Show Overlays button (top right in figure 1).
 
-The *Hold Offset Start* and *Hold Offset End* are used to store the position of a strip cut. The *frame_still_start* and *frame_still_end* codes are not exposed in the side bar and are used to extend a one frame strip, e.g. a still image.
+The Hold Offset fields are used to store the position of a Hold Split (shortcut Shift + K). Suppose we have a test strip, starting at frame 1 with a duration of 300 frames. When you make a Hold Split at frame 100, the following fields are filled in.
+
+For the first part: the Start remains at frame 1 with a duration of 99 and an End frame = 100. The Hold Offset End field is set to 201, indicating that the Hold Split has occurred at Frame 100 (frame 301 (original End) - 201 (Hold Offset End)).
+
+For the second part: the Start frame becomes 100 and the duration 201, so that the End frame is equal to the original End. The Hold Offset Start is set to 99, indicating that the Hold Split occurred at 100 from the original strip (frame 1 (original Start) + 99 (Hold Offset Start)). 
+
+
+The *frame_still_start* and *frame_still_end* codes are not exposed in the side bar and are used to extend a one frame strip, e.g. a still image.
 
 .. note::
    The naming of the fields in the previous paragraph is not quite accurate. There isn't any field with the name *Actual Start*. On the other hand, Blender's naming system also isn't very logical. You can look up the name of every Python generated field by enabling Developer Extras, User Tooltips and Python Tooltips in the Blender Preferences > Interface > Display. Hovering over the field in the UI. For example, the *Start* field is called  *frame_start* and the *End* field is called *frame_final_end*.

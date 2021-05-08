@@ -33,7 +33,7 @@ If you are satisfied with the result, replace the *ffplay* command with *ffmpeg*
    ffmpeg -f lavfi -i testsrc=duration=10:size=1280x720:rate=30 test.mp4
 
 
-More commands and test formats can be found at `bogotobogo <https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php>`_).
+More commands and test formats can be found at `bogotobogo <https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php>`_.
 
 **B. Generate a timecode overlay with FFMPEG**
 

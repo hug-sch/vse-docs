@@ -31,8 +31,14 @@ Sometimes you need a test video or test image with a specific resolution, durati
 
 This command will show/create a count-up video with a resolution of 1280 x 720 pixels, a framerate of 30 frames per second with a duration of 10 seconds in MP4-format More commands and test formats can be found at `bogotobogo <https://www.bogotobogo.com/FFMpeg/ffmpeg_video_test_patterns_src.php>`_.
 
-The following command will show/create a red color background with opacity set to 0.2, with a duration of 10 seconds and a resolution of 640x480 in MP4-format.
+The following command will show/create a red color background with opacity set to 0.2, with a duration of 5 seconds and a resolution of 640x480 with 10 a framerate of 10 fps in MP4-format.
 
 ``ffplay -f lavfi -i color=c=red@0.2:duration=5:s=640x480:r=10``
 
 ``ffmpeg -f lavfi -i color=c=red@0.2:duration=5:s=640x480:r=10 test.mp4``
+
+**4. Create multiple video channels into one container
+
+Some video containers can contain multiple video and audio channels; for example two surveillance camera outputs next to each other. In Blender you can select the channel to preview (not both at the same time) with Strip > Source panel > Stream index. The following command creates a two video channels  into one container.
+
+ffmpeg -i input-1.mp4 -i input-2.mp4 -map 0:0 -map 1:0 output.mkv

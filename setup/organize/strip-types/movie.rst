@@ -247,7 +247,11 @@ MPEG Preseek
    Use Preseek field to tell Blender to look backward and compose an image based on the specified amount of previous frames (e.g. 15 for MPEG-2 DVD).
 
 Stream Index
-   For files with several movie streams, use the stream with the given index.
+   Some video filesFor files with several movie streams, use the stream with the given index.
+
+   Some video containers can contain multiple video and audio channels; for example two surveillance camera outputs next to each other. In Blender you can select the channel to preview (not both at the same time) with this property. See :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
+
+ffmpeg -i input-1.mp4 -i input-2.mp4 -map 0:0 -map 1:0 output.mkv
    To create multiple streams, use map function of ffmpeg:
    ffmpeg -i... -i... -map 0:0 -map 1:0 output.mkv
 

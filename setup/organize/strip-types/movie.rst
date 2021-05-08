@@ -108,7 +108,7 @@ Crop and Scale are two very much different operations. Take a look at figure 5. 
    Figure 6: Video Property
 
 Strobe
-   A strobe is a device used to produce regular flashes of light. In this context, the floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10, frame 11 for the time-lapse 11-20, frame 21 for ... You can easily check this out with the timecode overlay test file (see :doc:`Creating testfiles - section C </setup/organize/dir-structure/creating-test-files>`).
+  The floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10, frame 11 for the time-lapse 11-20, frame 21 for ... You can easily check this out with the timecode overlay test file (see :doc:`Creating testfiles - section C </setup/organize/dir-structure/creating-test-files>`).
 
 Reverse Frames
    The strip is played backwards starting from the last frame in the sequence to the first frame. This will also work with cutted strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.

@@ -182,7 +182,7 @@ Strip Offset Start
 Strip Offset End
    This field repositions the LV frame. If positive, the strip will be shortened. If negative, the strip is lengthened, thereby repeating (freezing) the LA frame.
    
-.. figure:: img/strip-offset.svg
+.. figure:: img/offset-strip.svg
    :alt: Strip Offset fields
 
    Figure 9: Visualization of the Strip Offset fields. 
@@ -195,6 +195,27 @@ Hold Offset Start
 Hold Offset End
    This field will reposition the LA frame. A positive number will reduce the LA value. The effect is also a shortening of the strip.
 
+.. figure:: img/offset-hold.svg
+   :alt: Hold Offset fields
+
+   Figure 10: Visualization of the Hold Offset fields. 
+
+Of course, you can combine both types of offset. In figure 11, there is a combined offset of 8 frames. So, the original duration of 10 frames is reduced to two frames.
+
+.. figure:: img/offset-both.svg
+   :alt: Both Offset fields
+
+   Figure 11: Visualization of both Strip and Hold Offset fields. 
+
+In the previous text, we mentioned a few times the "freezing" effect or the repeating of the first or last frame. This can be done by for example extending the LV frame beyond the LA frame (entering a larger number in the Duration field). Or by dragging the left or right handle beyond the FA or LA frame. In figure 12 there is one repeating first frame and two repeating last frames. The Still Offset fields are added to the Time panel via a Python script.
+
+.. todo::
+   Adding this script & explanation in section 5 Extra-tools
+
+.. figure:: img/offset-still.svg
+   :alt: Still Offset fields
+
+   Figure 12: Visualization of the Still Offset fields. 
 
 Current Frame
    Position of the Playhead relative to the FA frame of the active strip. So, if the strip starts at frame 10 and the Playhead is positioned at (timeline) frame 15, the Current Frame will be 5. 
@@ -247,10 +268,3 @@ Resolution
    Figure 10: Custom Property
 
 Custom properties are a way to store your own metadata in a strip. For example, you could use it to store some copyright information of a strip or instructions for further post-processing.  More information can be found in the `data-blocks section <https://docs.blender.org/manual/en/dev/files/data_blocks.html#files-data-blocks-custom-properties>`_. 
-
-
-
-
-
-   .. warning:: 
-      The time code names in Blender can be confusing. The Start frame is in fact the Baseline Start frame (the position when the strip is added or moved). The Baseline Start can differ from the Actual Start (the beginning of the blue bar in the sequencer). The Duration however refers to the Actual Duration (the length of the blue bar); not the Baseline Duration or original duration. See :doc:`Timecodes </edit/timeline/timecode/timecode>` for a more in depth discussion. 

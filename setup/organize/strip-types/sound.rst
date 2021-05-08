@@ -1,15 +1,20 @@
-B.Sound strip
-=============
+Sound strip
+===========
 
 The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room).
 
 .. warning::
 
-   Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip aren't the same length. This is the result of a mismatch between the Frame rate (fps) of the project and the video clip. Suppose, you are adding a 24 fps video with a duration of 1 second or 24 frames to a 30 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... But, due to the different framerates, frame 30 in the sequencer is really frame 24 (1 s) in the video file, which is the end of the video and embedded audio. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
+   Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip aren't the same length. This is the result of a mismatch between the Frame rate (fps) of the project and the video clip.
+
+   Suppose, you are adding a 30 fps video with a duration of 1 second or 30 frames to a 24 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... But, due to the different framerates, frame 24 in the sequencer is really frame 30 (1 s) in the video file, which is the end of the video and embedded audio. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
 
 There are no Compositing, Transform, Crop, Video and Color panels for the Sound strip. The Header, Time, Source, and Custom panels are the same as for a Movie strip. The following properties are specific for sound strips.
 
-**Sound**
+.. admonition:: Sound Panel
+   
+   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Sound`
+
 
 .. figure:: img/panel-sound.png
    :scale: 50%
@@ -25,7 +30,12 @@ There are no Compositing, Transform, Crop, Video and Color panels for the Sound 
 
 ``Pitch`` Pitch (lower versus higher tones) is closely related to the frequency of a sound. The Pitch value of the Sound strip will change the playback speed or frequency of the sound. Increasing the value will make the sound appear higher in tone, decreasing will lower the tone. Because the playback rate is also changed, the length of the sound is changed. This is however not visually represented in the timeline. The Sound strip appears equally long as before but the sound will stop earlier or premature.
 
+!!!!!! For sound strip, the pitch could have a link to the speed strip - because it is commonly used with that: youtube.com/watch?v=VqP1j87aeU4 
+
 ``Pan`` Depending on your sound system, you have one, two or more speakers. Panning is the distribution of the sound over those speakers. It is mainly used to pan (distribute) the audio from left and right channels.  Pan values can be between -2 and 2. A value of zero means front/center (12 o'clock). Equal amount of sound is sent to the left and right speaker. A value of -1 means that all sound is sent to the left channel and 1 to the right (10 o'clock). And a value of +1 means that the sound will appear at 2 o'clock).  In case of multichannel audio (rear speakers) you can pan to those with the higher values: -2 (7 o'clock) and +2 (5 o'clock). So this value basically represents the angle at which the sound is played. Only works for mono sources.
+
+!!! Pan really needs a widget where you can drag the sound around to make it more intuitive, but until that is implemented maybe some image in the docs with the values could be used: 
+see also figure in doc
 
 ``Display Waveform`` Display an approximate waveform of the sound file inside of the sound strip. The waveform reflects strip volume and its animation using keyframes. If the waveform is not displayed, you'll have to turn on the Overlays (button at the top right; see figure 10).
 

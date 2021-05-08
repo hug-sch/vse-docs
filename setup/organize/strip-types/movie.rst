@@ -10,7 +10,7 @@ Each video file contains a sequence of image frames (the actual movie) and some 
 
    Also, if your clip has variable framerate; e.g. footage from some smart phones, then you'll get an audio sync problem because Blender uses a constant frame rate. So, you have to convert your clip to a constant frame rate with programs as `ffmpeg <https://ffmpeg.org/>`_ or `Handbrake <https://handbrake.fr/>`_
 
-The movie strip is the most commonly used strip type and has lots of properties. They are organized in panels in the sidebar.
+The movie strip is a much used strip type and has lots of properties. They are organized in panels in the sidebar.
 
 .. admonition:: Compositing Panel
    
@@ -45,7 +45,10 @@ Opacity Property
 
    Figure 2: Transform Panel
 
-The Transform panel is probably the panel that you'll need to have open most of the time. It contains the Position, Scale and Rotation properties and the less important Mirror property.
+The Transform panel contains the Position, Scale and Rotation properties and the -perhaps  less- important Mirror property.
+
+.. todo:
+   Add a link to the Image Transform menu (Scale to Fit, Scale to Fill, ...).
 
 Position X, Y Property
    The dimensions of the view area of the sequencer output is set by the project dimensions; e.g. 1920 x 1080 by default (see :doc:`../dir-structure/creating-directory-structure`). A movie is centered (and scaled) within this view area. With the position X, Y values, you can move the frame along the X and Y axis. The values are expressed in pixels.
@@ -93,8 +96,6 @@ Crop and Scale are two very much different operations. Take a look at figure 5. 
 
    Figure 5: Crop vs Scale example
 
-
-
 .. admonition:: Video Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Video`
@@ -108,10 +109,10 @@ Crop and Scale are two very much different operations. Take a look at figure 5. 
    Figure 6: Video Property
 
 Strobe
-  The floating point number indicates that only each nth frame will be displayed. For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10, frame 11 for the time-lapse 11-20, frame 21 for ... You can easily check this out with the timecode overlay test file (see :doc:`Creating testfiles - section C </setup/organize/dir-structure/creating-test-files>`).
+  The Strobe value indicates that only each nth frame will be displayed. For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10 frames, frame 11 for the time-lapse 11-20, frame 21 for ... It is not really a strobe-effect because the frames 2-9, 11-19, ... aren't blacked out.  You can easily check this out with the timecode overlay test file (see :doc:`Creating testfiles - section C </setup/organize/dir-structure/creating-test-files>`).
 
 Reverse Frames
-   The strip is played backwards starting from the last frame in the sequence to the first frame. This will also work with cutted strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.
+   The strip is played backwards starting from the last frame in the sequence to the first frame. This will also work with split strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.
 
 .. admonition:: Color Panel
 

@@ -139,7 +139,13 @@ For example, the URL http://via.placeholder.com/640x360 or https://placekitten.c
 
 These placeholder images are mostly used in website design to create mockups of webpages (together with Lorem Ipsum generators for text). Search in Google for "image placeholder" to find other websites or generators.
 
-**E. Useful websites**
+**E. Blender Open-Movies**
+
+The WebM-format of the Spring open-movie can be downloaded from `Wikimedia Commons <https://commons.wikimedia.org/wiki/File:Spring_-_Blender_Open_Movie.webm>`_.
+
+
+
+**F. Useful websites**
 
 1. https://www.demolandia.net/: Demolandia is, essentially, an audiovisual library where you will find a great diversity of images, audio and video files (e.g. 4K) related to the cinema. 
 2. https://file-examples.com/: This website is a service designed for developers, designers, testers. Various categories: video, audio, documents, images, ...

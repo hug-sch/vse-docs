@@ -47,3 +47,8 @@ internal link to anchor
     1. Use .. _refname: to create a target; a line on itself.
     2. Use refname_ to reference the target, anywhere on the page.
 
+unicode
+
+.. |notequal| unicode:: 0x2260
+
+Use in 2 |notequal| 3

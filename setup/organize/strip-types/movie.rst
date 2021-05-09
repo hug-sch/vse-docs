@@ -240,23 +240,19 @@ File
 Color Space
    To specify the color space of the source file of this strip.  The color space for the Sequencer is globally set in the Color Management panel of the Render Properties but you can deviate from it here. Most of the imported clips however have a sRGB color space. For :doc:`Scene strip <./scene>` it can be beneficial to set the color space to Filmic. 
 
-.. todo::
-   The following properties must be described in more detail
-
 MPEG Preseek
-   Use Preseek field to tell Blender to look backward and compose an image based on the specified amount of previous frames (e.g. 15 for MPEG-2 DVD).
+   Preseek is used to decide for the fastest way to decode a specific frame. It should match the Group of Pictures (GOP) size of the video; see `Bryan Samis blog <https://aws.amazon.com/blogs/media/part-1-back-to-basics-gops-explained/>`_ for an in depth explanation of GOP. Finding the GOP-size of a video however is not a trivial thing (see the above link for a manual approach). Setting preseek to a high value like 200 could negatively impact seek performance. Therefore it is limited to max = 50 where it makes little to no difference. So, in practice, you will not use this option very often.
 
 Stream Index
    Some video filesFor files with several movie streams, use the stream with the given index.
 
-   Some video containers can contain multiple video and audio channels; for example two surveillance camera outputs next to each other. In Blender you can select the channel to preview (not both at the same time) with this property. See :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
-
-ffmpeg -i input-1.mp4 -i input-2.mp4 -map 0:0 -map 1:0 output.mkv
-   To create multiple streams, use map function of ffmpeg:
-   ffmpeg -i... -i... -map 0:0 -map 1:0 output.mkv
+   Some video files can contain multiple video and audio streams; for example two surveillance camera outputs. However, most video players cannot simultaneously preview both streams next to each other. With this property you can select the stream to preview (but again not both at the same time). Of course, you can add the same movie strip twice, set the stream index appropriately and use the Picture-in-Picture approach from above. For the reverse: see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
 
 Deinterlace
-   Removes fields in a video file. For example, if it is an analog video and it has even or odd interlacing fields.
+   Some (old) TV broadcasts use interlaced technology. A HD (1920 x 1080) image is split in half and the odd and even lines are transmitted separately. Most modern TV's and computers screens work with Progressive technology where the full image is transmitted at once; line per line.
+
+   .. todo::
+      Need more clarification
 
 Resolution
    Dimension (width x height in pixels) of the active strip image output. This property is not editable. Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.

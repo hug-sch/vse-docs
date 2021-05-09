@@ -64,7 +64,7 @@ Mirror Property
 
 Figure 3 shows an example of a Picture-in-Picture (PIP) setup. There are three channels.  Channel 1 contains the audio. Channels 2 forms the background. Channel 3 contains the foreground picture. This picture is scaled and re-positioned to create a PIP. 
 
-.. figure:: img/pip-example.svg
+.. figure:: img/PIP-example.svg
    :alt: PIP example
 
    Figure 3: Example of Picture-in-Picture   

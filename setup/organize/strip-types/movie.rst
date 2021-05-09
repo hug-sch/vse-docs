@@ -82,7 +82,7 @@ The foreground picture (same open-movie Spring) is scaled with a factor of 0.3. 
    :alt: Crop Property
    :align: Right
 
-   Figure 4: Crop Property
+   Figure 4: Crop Panel
 
 Cropping is the removal of unwanted outer areas from an image.
 
@@ -106,7 +106,7 @@ Crop and Scale are two very much different operations. Take a look at figure 5. 
    :alt: Video Property
    :align: Right
 
-   Figure 6: Video Property
+   Figure 6: Video Panel
 
 Strobe
   The Strobe value indicates that only each nth frame will be displayed. For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10 frames, frame 11 for the time-lapse 11-20, frame 21 for ... It is not really a strobe-effect because the frames 2-9, 11-19, ... aren't blacked out.  You can easily check this out with the timecode overlay test file (see :doc:`Creating testfiles - section C </setup/organize/dir-structure/creating-test-files>`).
@@ -123,7 +123,7 @@ Reverse Frames
    :alt: Color Property
    :align: Right
 
-   Figure 7: Color Property
+   Figure 7: Color Panel
 
 The properties in this panel seem to be an easy shortcut for some effects or modifiers.  The Saturation could be changed (for each color independent) with the Color Hue modifier.  The Multiply property could be achieved with the Multiply effect and a color strip.
 
@@ -148,7 +148,7 @@ Convert to Float
    :alt: Time Property
    :align: Right
 
-   Figure 8: Time Property
+   Figure 8: Time Panel
 
 Most - but not all - of the available time codes can be updated in this panel. A general introduction of the Timeline and time codes can be found in :doc:`Timeline basics </edit/timeline/timeline>`. A clear understanding of these time codes is essential in trimming and freezing clips.
 
@@ -232,7 +232,7 @@ Current Frame
    :alt: Source Property
    :align: Right
 
-   Figure 9: Source Property
+   Figure 9: Source Panel
 
 File
    The directory and filename that contains the source file. When a file is moved this field can be updated instead of re-creating the strip.
@@ -244,9 +244,7 @@ MPEG Preseek
    Preseek is used to decide for the fastest way to decode a specific frame. It should match the Group of Pictures (GOP) size of the video; see `Bryan Samis blog <https://aws.amazon.com/blogs/media/part-1-back-to-basics-gops-explained/>`_ for an in depth explanation of GOP. Finding the GOP-size of a video however is not a trivial thing (see the above link for a manual approach). Setting preseek to a high value like 200 could negatively impact seek performance. Therefore it is limited to max = 50 where it makes little to no difference. So, in practice, you will not use this option very often.
 
 Stream Index
-   Some video filesFor files with several movie streams, use the stream with the given index.
-
-   Some video files can contain multiple video and audio streams; for example two surveillance camera outputs. However, most video players cannot simultaneously preview both streams next to each other. With this property you can select the stream to preview (but again not both at the same time). Of course, you can add the same movie strip twice, set the stream index appropriately and use the Picture-in-Picture approach from above. For the reverse: see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
+     Some video files can contain multiple video and audio streams; for example two surveillance camera outputs. However, most video players cannot simultaneously preview both streams next to each other. With this property you can select the stream to preview (but again not both at the same time). Of course, you can add the same movie strip twice, set the stream index appropriately and use the Picture-in-Picture approach from above. For the inverse: see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
 
 Deinterlace
    Some (old) TV broadcasts use interlaced technology. A HD (1920 x 1080) image is split in half and the odd and even lines are transmitted separately. Most modern TV's and computers screens work with Progressive technology where the full image is transmitted at once; line per line.
@@ -266,6 +264,6 @@ Resolution
    :alt: Custom Property
    :align: Right
 
-   Figure 10: Custom Property
+   Figure 10: Custom Panel
 
 Custom properties are a way to store your own metadata in a strip. For example, you could use it to store some copyright information of a strip or instructions for further post-processing.  More information can be found in the `data-blocks section <https://docs.blender.org/manual/en/dev/files/data_blocks.html#files-data-blocks-custom-properties>`_. 

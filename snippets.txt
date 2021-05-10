@@ -6,6 +6,12 @@ Reference to an internal doc
 
 :doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`
 
+link to an anchor in another doc or in the same doc
+ 
+ :ref:`Time <time-panel>`
+
+anchor is defined as .. _custom-panel:
+
 external link
 `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_
 Niet vergeten een spatie na de underscore.

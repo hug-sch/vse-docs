@@ -139,6 +139,7 @@ Convert to Float
 .. todo::
    The Convert to Float does not seem to do anything. But see Stackexchange: https://blender.stackexchange.com/questions/57528/whats-the-convert-float-checkbox-in-the-vse-for/57535. Valid?
   
+.. _time-panel:
 .. admonition:: Time Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Time`
@@ -255,6 +256,7 @@ Deinterlace
 Resolution
    Dimension (width x height in pixels) of the active strip image output. This property is not editable. Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
 
+.. _custom-panel:
 .. admonition:: Custom Properties Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Custom Properties`

@@ -1,3 +1,6 @@
-1. in text strip-types/movie.rst elaborate on the example to position a rotated rectangle in the top-right corner. Need some trigonometric functions.
+1. in text strip-types movie.rst (example PIP) elaborate on the example to position a rotated (!) rectangle in the top-right corner. Need some trigonometric functions.
 2. adding to default start-up template (e.g. proxy off, ...)
 3. Expand extra tools with ffmpeg, handbrake, mediainfo, ...
+4. testing out deinterlace with a 1080i file
+5. Importing files via file browser (ingest function)
+6. Explanation of script to add fields as still_offset_start

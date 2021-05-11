@@ -1,6 +1,6 @@
-*********
-Scripting
-*********
+*******************
+Scripting Workspace
+*******************
 
 Blender has a dedicated workspace "Scripting" with 7 windows (areas): the Text Editor (middle area), the Info editor (left bottom), the Python console (left middle) and the 3D Viewport (left top). At the right you find the Properties window (bottom) and two versions of the outliner (top); see fig. 1.
 

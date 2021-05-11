@@ -248,10 +248,17 @@ Stream Index
      Some video files can contain multiple video and audio streams; for example two surveillance camera outputs. However, most video players cannot simultaneously preview both streams next to each other. With this property you can select the stream to preview (but again not both at the same time). Of course, you can add the same movie strip twice, set the stream index appropriately and use the Picture-in-Picture approach from above. For the inverse: see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
 
 Deinterlace
-   Some (old) TV broadcasts use interlaced technology. A HD (1920 x 1080) image is split in half and the odd and even lines are transmitted separately. Most modern TV's and computers screens work with Progressive technology where the full image is transmitted at once; line per line.
+   Most (old) TV broadcasts use interlaced scan technology. A HD (1920 x 1080) image is split in half (two fields) and the odd and even lines are transmitted separately, one after the other. So, there is a very small time delay between the two fields. Most modern TV's and computers screens work with Progressive technology where the full image is transmitted at once; line per line. Viewing an interlaced image/movie on a computer monitor shows interlacing artifacts such as saw teeth or combing.
 
-   .. todo::
-      Need more clarification
+   Figure 10 shows an interlaced (left) and deinterlaced (right) still from a movie. Perhaps you have to zoom in to see the artifacts. In the movie the blue square is moving. Interlacing artifacts are more noticeable with movement because the scanned fields are not taken at the same time (one after the other!). And with movement this becomes more apparent.
+
+.. figure:: img/deinterlace.svg
+   :alt: Interlace vs deinterlace
+   :align: Right
+
+   Figure 10: Interlaced and deinterlaced scan
+
+You can download the testfile form figure 10 from the `Grass Valley Developers <http://www.gvgdevelopers.com/concrete/products/summit/test_clips/>`_ website.
 
 Resolution
    Dimension (width x height in pixels) of the active strip image output. This property is not editable. Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
@@ -266,6 +273,6 @@ Resolution
    :alt: Custom Property
    :align: Right
 
-   Figure 10: Custom Panel
+   Figure 11: Custom Panel
 
 Custom properties are a way to store your own metadata in a strip. For example, you could use it to store some copyright information of a strip or instructions for further post-processing.  More information can be found in the `data-blocks section <https://docs.blender.org/manual/en/dev/files/data_blocks.html#files-data-blocks-custom-properties>`_. 

@@ -1,7 +1,7 @@
 Sound strip
 ===========
 
-The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem.
+The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem. The default color of the Sound strip bar is: :sound:`███` 
 
 .. warning::
 
@@ -13,8 +13,13 @@ The input source of a Sound strip is an audio file with extension ``.AAC``, ``.A
 
    Figure 1: Synchronization problem, due to unmatched fps.
 
-   Suppose, you are adding a 30 fps video with a duration of 1 second or 30 frames to a 24 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... In figure 1, there is a beep at timecode 0.27 s (frame 8) and at 0.73 s (frame 22). But, the project runs at 24 fps. The beeps still occur at 0.27 and 0.73 s but frames 8 and 22 are shifted to the right. Frame 24 in the project is after all at time code 1 s, so, frame 22 is lightly before that at timecode 0.91 s. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
-There are :red:`no` *Compositing*, *Transform*, *Crop*, *Video* and *Color* panels for the Sound strip. The Header, :ref:`Time <time-panel>`, :ref:`Source <source-panel>`, and :ref:`Custom <custom-panel>` panels are the **same** as for a Movie strip. The following properties are **specific** for sound strips.
+Suppose, you are adding a 30 fps video with a duration of 1 second or 30 frames to a 24 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... In figure 1, there is a beep at timecode 0.27 s (frame 8) and at 0.73 s (frame 22). But, the project runs at 24 fps. The beeps still occur at 0.27 and 0.73 s but frames 8 and 22 are shifted to the right. Frame 24 in the project is after all at time code 1 s, so, frame 22 is lightly before that at timecode 0.91 s. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
+
+.. admonition:: Panels documented elsewhere!
+
+   The following panels are identical to those of the Movie strip: :ref:`Time <time-panel>`, :ref:`Source <source-panel>` and :ref:`Custom <custom-panel>`.
+   
+There are **no** *Compositing*, *Transform*, *Crop*, *Video* and *Color* panels for the Sound strip. The following properties are **specific** for sound strips.
 
 .. admonition:: Sound Panel
 

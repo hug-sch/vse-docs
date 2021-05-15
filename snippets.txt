@@ -4,7 +4,7 @@ testing
 
 Reference to an internal doc
 
-:doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`
+:doc:`Striptypes </setup/organize/strip-types/striptypes>`
 
 link to an anchor in another doc or in the same doc
  
@@ -50,8 +50,9 @@ Figure 1: Output from FFMPEG command (see above)
 
 internal link to anchor
 
-    1. Use .. _refname: to create a target; a line on itself.
+    1. Use .. _refname: to create a target; a line on itself, eg. .. _image-source-panel:
     2. Use refname_ to reference the target, anywhere on the page.
+    3 or for custom text :ref:`Source panel <image-source-panel>`
 
 unicode
 

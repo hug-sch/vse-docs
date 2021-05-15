@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Blender VSE 2.93 documentation'
+project = 'Blender VSE 3.0 documentation'
 copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License.'
 author = 'hugsch'
 
@@ -58,9 +58,18 @@ html_static_path = ['_static']
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = ['css/custom.css']
+html_css_files = ['/css/custom.css']
 
 # to support colors?
 rst_prolog = """
 .. include:: <s5defs.txt>
+.. role:: red
+.. role:: sound
+.. role:: movie
+.. role:: scene
+.. role:: clip
+.. role:: mask
+.. role:: image
+.. role:: text
+.. role:: color
 """

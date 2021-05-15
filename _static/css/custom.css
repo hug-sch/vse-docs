@@ -2,6 +2,18 @@
     font-style: italic;
     font-size: small;
 }
+/* color codes of the striptypes */
+.movie {color:#4D6890;}
+.sound {color:#4C8F8F;}
+.clip {color:#8F4C4C;}
+.image {color:#8F744B;}
+.scene {color:#828F50;}
+.effect {color:#514A73;}
+.color {color:#8F8F8F;}
+.meta {color:#5B4D91;}
+.mask {color:#666666;}
+.text {color:#824C8F;}
+
 .black {
     color: black;
 }

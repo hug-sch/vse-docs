@@ -1,7 +1,7 @@
 Movie strip
 ===========
 
-The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version.
+The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version. The default color of the movie strip bar is: :movie:`███` 
 
 Each video file contains a sequence of image frames (the actual movie) and some meta information such as resolution and frame rate (fps). The resolution info for example is exposed in the source-panel_. Unfortunately, the source FPS is not.
 
@@ -11,6 +11,8 @@ Each video file contains a sequence of image frames (the actual movie) and some 
    Also, if your clip has variable framerate; e.g. footage from some smart phones, then you'll get an audio sync problem because Blender uses a constant frame rate. So, you have to convert your clip to a constant frame rate with programs as `ffmpeg <https://ffmpeg.org/>`_ or `Handbrake <https://handbrake.fr/>`_
 
 The movie strip is a much used strip type and has lots of properties. They are organized in panels in the sidebar.
+
+.. _compositing-panel:
 
 .. admonition:: Compositing Panel
    
@@ -33,6 +35,9 @@ Blend property
 
 Opacity Property
    The opacity or alpha value of the image is multiplied with this value. A value of 1 has no effect on the opacity of the strip. If the strip is semi-transparent (e.g. alpha=0.6), then it remains semi-transparent. A value of zero will make the strip fully transparent because the alpha-value of the strips becomes zero. See :doc:`Mask strips <mask>` for more details on transparency/opacity.
+
+
+.. _transform-panel:
 
 .. admonition:: Transform Panel
 
@@ -73,6 +78,8 @@ The "Spring" open-movie in figure 3 has non-default dimensions: 2048 x 858. To d
 
 The foreground picture (same open-movie Spring) is scaled with a factor of 0.3. This leads to the following pixel sizes: 2048 x 0.3 = 614 and 858 x 0.3 = 257. If you want to position this strip into the top-right corner, you have to change the X and Y position. But how much? The center of each picture is position (0,0). So, the background picture runs from bottom-left (-1024,-429) to top-right (1024, 429). To tuck the small picture in the top-right corner, you have to move it on the X-axis to position: 1024 - (614/2) = 717. And on the Y-axis to position 429 - (257/2) = 300.
 
+.. _crop-panel:
+
 .. admonition:: Crop Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Crop`
@@ -96,6 +103,8 @@ Crop and Scale are two very much different operations. Take a look at figure 5. 
 
    Figure 5: Crop vs Scale example
 
+.. _video-panel:
+
 .. admonition:: Video Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Video`
@@ -113,6 +122,8 @@ Strobe
 
 Reverse Frames
    The strip is played backwards starting from the last frame in the sequence to the first frame. This will also work with split strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.
+
+   .. _color-panel:
 
 .. admonition:: Color Panel
 
@@ -140,6 +151,7 @@ Convert to Float
    The Convert to Float does not seem to do anything. But see Stackexchange: https://blender.stackexchange.com/questions/57528/whats-the-convert-float-checkbox-in-the-vse-for/57535. Valid?
   
 .. _time-panel:
+
 .. admonition:: Time Panel
 
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Time`
@@ -209,10 +221,7 @@ Of course, you can combine both types of offset. In figure 11, there is a combin
 
    Figure 11: Visualization of both Strip and Hold Offset fields. 
 
-In the previous text, we mentioned a few times the "freezing" effect or the repeating of the first or last frame. This can be done by for example extending the LV frame beyond the LA frame (entering a larger number in the Duration field). Or by dragging the left or right handle beyond the FA or LA frame. In figure 12 there is one repeating first frame and two repeating last frames. The Still Offset fields are added to the Time panel via a Python script.
-
-.. todo::
-   Adding this script & explanation in section 5 Extra-tools
+In the previous text, we mentioned a few times the "freezing" effect or the repeating of the first or last frame. This can be done by for example extending the LV frame beyond the LA frame (entering a larger number in the Duration field). Or by dragging the left or right handle beyond the FA or LA frame. In figure 12 there is one repeating first frame and two repeating last frames. The Still Offset fields are added to the Time panel via a Python script. For an in-depth explanation of how to do this, see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.
 
 .. figure:: img/offset-still.svg
    :alt: Still Offset fields
@@ -259,6 +268,8 @@ Deinterlace
    Figure 10: Interlaced and deinterlaced scan
 
 You can download the testfile form figure 10 from the `Grass Valley Developers <http://www.gvgdevelopers.com/concrete/products/summit/test_clips/>`_ website.
+
+.. _resolution:
 
 Resolution
    Dimension (width x height in pixels) of the active strip image output. This property is not editable. Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.

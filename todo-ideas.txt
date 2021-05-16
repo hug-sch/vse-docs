@@ -4,3 +4,5 @@
 4. testing out deinterlace with a 1080i file
 5. Importing files via file browser (ingest function)
 6. Explanation of script to add fields as still_offset_start
+7. Expand on premultiplication
+8. Animated GIF alternatives?

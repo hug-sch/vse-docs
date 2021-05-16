@@ -1,7 +1,7 @@
 Scene strip
 ===========
 
-Blender is first and foremost a `3D and 2D modeling <https://docs.blender.org/manual/en/dev/index.html>`_ environment. You can create, animate, and render beautiful realistic or stylized scenes with it. But, instead of rendering out that scene to a video, and then inserting the video file in the sequence editor, you can insert the scene directly. Scene strips are a way to insert the render output of another scene into your sequence. A typical usecase is the creation of a 3D logo or an animated intro of your video. 
+Blender is first and foremost a `3D and 2D modeling <https://docs.blender.org/manual/en/dev/index.html>`_ environment. You can create, animate, and render beautiful realistic or stylized scenes with it. But, instead of rendering out that scene to a video, and then inserting the video file in the sequence editor, you can insert the scene directly. Scene strips are a way to insert the render output of another scene into your sequence. A typical use case is the creation of a 3D logo or an animated intro of your video. 
 
 The :ref:`default <default-color>` color of the scene strip bar is: :scene:`███`. The strip length is determined by the Start & End frame of the imported scene. See the manual to `work with scenes <https://docs.blender.org/manual/en/dev/scene_layout/scene/introduction.html#controls>`_
 
@@ -31,9 +31,9 @@ Scene header
    With icon, name, and link/unlink checkbox. This header seems to be a duplicate of the header of the Properties Sidebar.
 
 Input
-   You can choose between between Camera or Sequencer. The original Scene -where this Scene strip came from- could also have a Video Sequencer with content in it. Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene. In the original scene, you make the choice in the `Post Processing panel <https://docs.blender.org/manual/en/dev/render/output/properties/post_processing.html?highlight=post%20processing%20panel>`_ of the Output Properties. But, of course, it is not a good habit to change that setting from within another scene. So, with this input choice, you can choose between the two possibilities.
+   You can choose between Camera or Sequencer. The original Scene -where this Scene strip came from- could also have a Video Sequencer with content in it. Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene. In the original scene, you choose the `Post Processing panel <https://docs.blender.org/manual/en/dev/render/output/properties/post_processing.html?highlight=post%20processing%20panel>`_ of the Output Properties. But, of course, it is not a good habit to change that setting from within another scene. So, with this input choice, you can choose between the two possibilities.
 
-   A nice example is illustrated in figure 2. Suppose that you are responsible for the quaterly reporting. So, each month, you made a nice video and you used a separate scene for that. At the end of the quarter, you want to combine them into an overview video. Figure 2 shows your project file. It contains 5 scenes (see figure 2 at the top). The sequener of Scene Overview contains fours Scene strips; the three months and an intro. From the color, you can deduce that this intro is a text strip. You can see this also in the Preview. Scene Month-2 contains one Movie/Sound strip (blue and green color). Scene Month-3 contains a Text strip (purple) and a color strip (orange). All four scenes have selected the Sequencer as it input.
+   A nice example is illustrated in figure 2. Suppose that you are responsible for the quarterly reporting. So, each month, you made a nice video and you used a separate scene for that. At the end of the quarter, you want to combine them into an overview video. Figure 2 shows your project file. It contains 5 scenes (see figure 2 at the top). The sequencer of Scene Overview contains four Scene strips; the three months and an intro. From the color, you can deduce that this intro is a text strip. You can see this also in the Preview. Scene Month-2 contains one Movie/Sound strip (blue and green color). Scene Month-3 contains a Text strip (purple) and a color strip (orange). All four scenes have selected the Sequencer as input.
    
    .. figure:: img/scene.svg
       :alt: Scene containing scene strips
@@ -52,7 +52,7 @@ Input
    Last but not least, the speed of a (complex) scene strip is far from optimal.
 
 Camera
-   The same reasoning holds for multiple cameras. The active camera is set in the original scene. But the receiving scene can choose to use another camera. If the original scene has multiple cameras, you can choose here which camera to use. This is very useful in multicam-editing.
+   The same reasoning holds for multiple cameras. The active camera is set in the original scene. But the receiving scene can choose to use another camera. If the original scene has multiple cameras, you can choose here which camera to use. This is very useful in Multicam-editing.
 
    Following options ``Show Grease Pencil`` and ``Transparent`` only appear if Camera (see above) has been selected.
 

@@ -9,7 +9,7 @@ Image/Image Sequence strip
 
    Figure 1: Add command
 
-Image and Image Strip are two different strip types. Nevertheless you need the same command to add them to the timeline (see figure 1). The :ref:`default <default-color>` color of the Image/Image Sequence strip bar is: :image:`███` 
+Image and Image Strip are two different strip types. Nevertheless, you need the same command to add them to the timeline (see figure 1). The :ref:`default <default-color>` color of the Image/Image Sequence strip bar is: :image:`███` 
 
 The input source of an Image/Image Sequence strip is a graphics file or a collection of graphics files with extension ``.BMP``, ``.Iris``, ``.PNG``, ``.JPEG``, ``.JPG2000``,  ``.targa``, ``.cineon & DPX``,  ``openEXR``, ``Radiance HDR`` or ``.TIFF``. For more in-depth information about these formats, see `graphics formats <https://docs.blender.org/manual/en/dev/files/media/image_formats.html>`_.
 
@@ -27,14 +27,14 @@ The input of an Image Sequence strip is a sequence of graphic files, e.g. *0001.
 
 When this image sequence is added to the timeline, the resulting strip is treated as one movie. In the :ref:`Source panel <image-source-panel>` of the sidebar you can retrieve the individual image names.
 
-Sometimes, you don't have all of the image files available at the time you want to create the Image Sequence. You can then enable the Use placeholders checkbox when adding the image strip. This will create the image strip with empty -but named- frames for the missing images. Suppose 0002.png is missing in the previous example. Creating the Image Sequence - with Use Placeholders checked - will create a strip of three frames. The second frame appears as black but is named as 0002.png. Later on, you can add this file to the folder with the others. This method will only work with correctly numbered sequences. Our previous example with *a.png*, *b.png*, *c.png* will not succeed.
+Sometimes, you don't have all of the image files available at the time you want to create the Image Sequence. You can then enable the Use placeholders checkbox when adding the image strip. This will create the image strip with empty -but named- frames for the missing images. Suppose 0002.png is missing in the previous example. Creating the Image Sequence - with Use Placeholders checked - will create a strip of three frames. The second frame appears as black but is named 0002.png. Later on, you can add this file to the folder with the others. This method will only work with correctly numbered sequences. Our previous example with *a.png*, *b.png*, *c.png* will not succeed.
    
 .. admonition:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip: :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`, :ref:`Crop <crop-panel>`, :ref:`Video <video-panel>`, :ref:`Color <color-panel>`, :ref:`Time <time-panel>`, :ref:`Source <source-panel>`  and :ref:`Custom <custom-panel>`.
 
 
-Only in the Source panel there are minor changes.
+Only in the Source panel, there are minor changes.
 
 .. _image-source-panel:
 .. admonition:: Source Panel

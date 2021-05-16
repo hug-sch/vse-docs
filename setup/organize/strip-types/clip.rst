@@ -1,7 +1,7 @@
 Clip strip
 ==========
 
-A clip strip is created from the output of the `Movie Clip Editor <https://docs.blender.org/manual/en/dev/editors/clip/introduction.html>`_ . There is nothing in the Clip menu of the VSE unless you've opened media (video or images) in the Movie Clip Editor. At all other times it's just a blank menu. Together with ``Scene`` and ``Mask``, the Clip strip forms a group where the source of the strip must be generated within Blender. The :ref:`default <default-color>` color of the Clip strip bar is: :clip:`███` 
+A clip strip is created from the output of the `Movie Clip Editor <https://docs.blender.org/manual/en/dev/editors/clip/introduction.html>`_. There is nothing in the Clip menu of the VSE unless you've opened media (video or images) in the Movie Clip Editor. At all other times it's just a blank menu. Together with ``Scene`` and ``Mask``, the Clip strip forms a group where the source of the strip must be generated within Blender. The :ref:`default <default-color>` color of the Clip strip bar is: :clip:`███` 
 
 The Movie Clip Editor is used for advanced editing such as motion tracking and advanced masking. See :doc:`Special workflows </workflow/workflow>` for an example.
 

@@ -1,11 +1,11 @@
 Sound strip
 ===========
 
-The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem. The :ref:`default <default-color>` color of the Sound strip bar is: :sound:`███` 
+The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above-mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem. The :ref:`default <default-color>` color of the Sound strip bar is: :sound:`███` 
 
 .. warning::
 
-   Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip aren't the same length. This is the result of a mismatch between the Frame rate (fps) of the project and the video clip.
+   Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip have not the same length. This is the result of a mismatch between the Frame rate (fps) of the project and the video clip.
 
 .. figure:: img/sound.svg
    :alt: Synchronization problem
@@ -13,13 +13,13 @@ The input source of a Sound strip is an audio file with extension ``.AAC``, ``.A
 
    Figure 1: Synchronization problem, due to unmatched fps.
 
-Suppose, you are adding a 30 fps video with a duration of 1 second or 30 frames to a 24 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... In figure 1, there is a beep at timecode 0.27 s (frame 8) and at 0.73 s (frame 22). But, the project runs at 24 fps. The beeps still occur at 0.27 and 0.73 s but frames 8 and 22 are shifted to the right. Frame 24 in the project is after all at time code 1 s, so, frame 22 is lightly before that at timecode 0.91 s. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
+Suppose, you are adding a 30 fps video with a duration of 1 second or 30 frames to a 24 fps project. The embedded audio in the video file is of course synchronized with the frame sequence of the video. Frame 1 of the video file is synced with a specific time code in the audio, and so is frame 2, frame 3, ... In figure 1, there is a beep at timecode 0.27 s (frame 8) and at 0.73 s (frame 22). But, the project runs at 24 fps. The beeps still occur at 0.27 and 0.73 s but frame 8 and 22 are shifted to the right. Frame 24 in the project is after all at time code 1 s, so, frame 22 is lightly before that at timecode 0.91 s. The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
 
 .. admonition:: Panels documented elsewhere!
 
    The following panels are identical to those of the Movie strip: :ref:`Time <time-panel>`, :ref:`Source <source-panel>` and :ref:`Custom <custom-panel>`.
    
-There are **no** *Compositing*, *Transform*, *Crop*, *Video* and *Color* panels for the Sound strip. The following properties are **specific** for sound strips.
+There are **no** *Compositing*, *Transform*, *Crop*, *Video*, and *Color* panels for the Sound strip. The following properties are **specific** for sound strips.
 
 .. admonition:: Sound Panel
 
@@ -33,7 +33,7 @@ There are **no** *Compositing*, *Transform*, *Crop*, *Video* and *Color* panels 
    Figure 2: Sound Panel
 
 Volume
-   The volume or loudness of the sound. Setting the Volume to zero will mute the sound. A value of 0 - 1 will reduce the volume,  while a value = 1 results in the original sound level. Above 1 will increase the sound level. However, does a sound with value = 2 sounds double as loud or with value = 0.5 half as loud as the original? Not at all! 
+   The volume or loudness of the sound. Setting the Volume to zero will mute the sound. A value of 0 - 1 will reduce the volume,  while a value = 1 results in the original sound level. Above 1 will increase the sound level. However, does a sound with value = 2 sound double as loud or with value = 0.5 half as loud as the original? Not at all! 
 
    For more detailed information about the interpretation of the sound level in terms of decibels; see :doc:`Volume level </edit/sound/measuring/volume>`.
 
@@ -60,7 +60,7 @@ Pan
 
       Figure 4: Pan values
    
-   Depending on your sound system, you have one, two or more speakers. Panning is the distribution of the sound over those speakers. It is mainly used to pan (distribute) the audio from left and right channels.  Pan values can be between -2 and 2 (see figure 4). A value of zero means front/center (12 o'clock). Equal amount of sound is sent to the left and right speaker. A value of -1 means that all sound is sent to the left channel (10 o'clock). And a value of +1 means that the sound will appear at 2 o'clock).  In case of multichannel audio (rear speakers) you can pan to those with the higher values: -2 (7 o'clock) and +2 (5 o'clock). So this value basically represents the angle at which the sound is played. Only works for mono sources.
+   Depending on your sound system, you have one, two, or more speakers. Panning is the distribution of the sound over those speakers. It is mainly used to pan (distribute) the audio from left and right channels.  Pan values can be between -2 and 2 (see figure 4). A value of zero means front/center (12 o'clock). An equal amount of sound is sent to the left and right speakers. A value of -1 means that all sound is sent to the left channel (10 o'clock). And a value of +1 means that the sound will appear at 2 o'clock).  In the case of multichannel audio (rear speakers), you can pan to those with the higher values: -2 (7 o'clock) and +2 (5 o'clock). So this value basically represents the angle at which the sound is played. Only works for mono sources.
 
 
 Display Waveform

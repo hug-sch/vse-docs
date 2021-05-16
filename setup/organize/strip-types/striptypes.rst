@@ -16,14 +16,17 @@ Strip types
 .. figure:: img/strip-types.svg
    :alt: Available strip types
    
-
    Figure 1: Available strip types with color code and properties.
 
-A strip is a sequence of images, displayed as a colored horizontal bar. Each image occupies one frame in the timeline. In figure 1 the basic strip types are added with the menu :menuselection:`Add` or the shortcut key Shift+A). They run from frame 1 up to frame 300. 
+A strip a sequence of images, displayed as a colored horizontal bar. Each image occupies one frame in the timeline. In figure 1 the basic strip types are added with the menu :menuselection:`Add` or the shortcut key Shift+A. They run from frame 1 up to frame 300. 
 
 The strip types are classified into 4 groups: (1) the input source is created in another Blender module (2) the input source is external (3) the input is created within the Sequence Editor (4) the input source is another strip.
 
-Each strip type is uniquely color-coded. In figure 1, from top to bottom: Scene strip :scene:`███`,  Clip strip :clip:`███`, Mask strip :mask:`███`, Movie strip :movie:`███` , Sound strip :sound:`███`, Image/Sequence strip :image:`███`, Color :color:`███` + selected color), and Text :text:`███`. These colors are defined and can be changed with the menu :menuselection:`Edit --> Preferences --> Themes --> Video Sequencer`.
+Each strip type is uniquely color-coded. In figure 1, from top to bottom: Scene strip :scene:`███`  Clip strip :clip:`███` Mask strip :mask:`███` Movie strip :movie:`███` Sound strip :sound:`███` Image/Sequence strip :image:`███` Color :color:`███` + selected color) and Text :text:`███`
+
+.. _default-color:
+
+These colors are defined in the User Preferences and can be changed with the menu :menuselection:`Edit --> Preferences --> Themes --> Video Sequencer`.
 
 The Group 4 strip types are not shown in figure 1 and will be discussed in a separate section. They presume the existence of one or more of the above basic strips.
 

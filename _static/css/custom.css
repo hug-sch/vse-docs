@@ -1,6 +1,6 @@
 .menuselection{
-    font-style: italic;
     font-size: small;
+    font-style: italic;
 }
 /* color codes of the striptypes */
 .movie {color:#4D6890;}
@@ -14,122 +14,33 @@
 .mask {color:#666666;}
 .text {color:#824C8F;}
 
-.black {
-    color: black;
-}
-
-.gray {
-    color: gray;
-}
-
-.grey {
-    color: gray;
-}
-
-.silver {
-    color: silver;
-}
-
-.white {
-    color: white;
-}
-
-.maroon {
-    color: maroon;
-}
-
-.red {
-    color: red;
-}
-
-.magenta {
-    color: magenta;
-}
-
-.fuchsia {
-    color: fuchsia;
-}
-
-.pink {
-    color: pink;
-}
-
-.orange {
-    color: orange;
-}
-
-.yellow {
-    color: yellow;
-}
-
-.lime {
-    color: lime;
-}
-
-.green {
-    color: green;
-}
-
-.olive {
-    color: olive;
-}
-
-.teal {
-    color: teal;
-}
-
-.cyan {
-    color: cyan;
-}
-
-.aqua {
-    color: aqua;
-}
-
-.blue {
-    color: blue;
-}
-
-.navy {
-    color: navy;
-}
-
-.purple {
-    color: purple;
-}
-
-.under {
-    text-decoration: underline;
-}
-
-.over {
-    text-decoration: overline;
-}
-
-.blink {
-    text-decoration: blink;
-}
-
-.line {
-    text-decoration: line-through;
-}
-
-.strike {
-    text-decoration: line-through;
-}
-
-.it {
-    font-style: italic;
-}
-
-.ob {
-    font-style: oblique;
-}
-
-.small {
-    font-size: small;
-}
-
-.large {
-    font-size: large;
-}
+.black {color: black;}
+.gray {color: gray;}
+.grey {color: gray;}
+.silver {color: silver;}
+.white {color: white;}
+.maroon {color: maroon;}
+.red {color: red;}
+.magenta {color: magenta;}
+.fuchsia {color: fuchsia;}
+.pink {color: pink;}
+.orange {color: orange;}
+.yellow {color: yellow;}
+.lime {color: lime;}
+.green {color: green;}
+.olive {color: olive;}
+.teal {color: teal;}
+.cyan {color: cyan;}
+.aqua {color: aqua;}
+.blue {color: blue;}
+.navy {color: navy;}
+.purple {color: purple;}
+.under {text-decoration: underline;}
+.over {text-decoration: overline;}
+.blink {text-decoration: blink;}
+.line {text-decoration: line-through;}
+.strike {text-decoration: line-through;}
+.it {font-style: italic;}
+.ob {font-style: oblique;}
+.small {font-size: small;}
+.large {font-size: large;}

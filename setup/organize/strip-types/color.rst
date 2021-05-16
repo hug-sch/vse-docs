@@ -1,7 +1,7 @@
 Color strip
 ===========
 
-The Color strip is a sequence of 25 frames with a solid color. It fills the complete preview area with the selected color. The resolution is derived from the Project Settings. Its Duration is set by the same mechanism as the Image strip (see :ref:`Movie strip - Time panel <time-panel>`.
+The Color strip is a sequence of 25 frames with a solid color. It fills the complete preview area with the selected color. The resolution is derived from the Project Settings. Its Duration is set by the same mechanism as the Image strip (see :ref:`Movie strip - Time panel <time-panel>`. The :ref:`default <default-color>` color of the Color strip bar is: :color:`███`. However, the selected color will also be shown in the lower half of the strip bar (see figure 1).
 
 The Color strip is used to create some custom transitions and in combination with the Crop and/or Transform property to create some horizontal or vertical colored bars (see figure 1).
 
@@ -33,6 +33,6 @@ An Effect panel is added to the Properties.
    Figure 2: Effect Property of Color Strip
 
 Effect Strip
-   With the vertical slider you can set the brightness of the color. Clicking on the horizontal slider will display a standard Color Picker. More info about the :doc:`Color Picker </edit/color-grading/terminology/terminology>` in the Color grading section.
+   With the vertical slider you can set the brightness of the color. Clicking on the horizontal slider will display a standard Color Picker. More info about the :doc:`Color Picker </edit/color-grading/terminology/terminology>` in the Color grading section. This Color Picker has some additional settings, i.e. opacity.
 
    The existing Color panel has some overlap with the Effect Strip panel, for example the Saturation field.

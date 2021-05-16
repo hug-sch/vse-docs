@@ -1,7 +1,7 @@
 Sound strip
 ===========
 
-The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem. The default color of the Sound strip bar is: :sound:`███` 
+The input source of a Sound strip is an audio file with extension ``.AAC``, ``.AC3``, ``.FLAC``, ``.MP2``, ``.MP3``,  ``.opus``, ``.PCM``,  or ``.vorbis`` (see `audio formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). You can add a Sound strip directly from one of the above mentioned filetypes. It is also indirectly created when you add a Movie strip from a video file with an embedded audio channel. Blender will automatically extract the sound strip and put it in the channel beneath the video strip (if there is room). There is no linking between the source video file and the embedded audio. So, you can move the sound strip without moving the movie strip and vice versa; thereby creating a synchronization problem. The :ref:`default <default-color>` color of the Sound strip bar is: :sound:`███` 
 
 .. warning::
 

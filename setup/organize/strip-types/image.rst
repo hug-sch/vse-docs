@@ -9,7 +9,7 @@ Image/Image Sequence strip
 
    Figure 1: Add command
 
-Image and Image Strip are two different strip types. Nevertheless you need the same command to add them to the timeline (see figure 1). The default color of the Image/Image Sequence strip bar is: :image:`███` 
+Image and Image Strip are two different strip types. Nevertheless you need the same command to add them to the timeline (see figure 1). The :ref:`default <default-color>` color of the Image/Image Sequence strip bar is: :image:`███` 
 
 The input source of an Image/Image Sequence strip is a graphics file or a collection of graphics files with extension ``.BMP``, ``.Iris``, ``.PNG``, ``.JPEG``, ``.JPG2000``,  ``.targa``, ``.cineon & DPX``,  ``openEXR``, ``Radiance HDR`` or ``.TIFF``. For more in-depth information about these formats, see `graphics formats <https://docs.blender.org/manual/en/dev/files/media/image_formats.html>`_.
 

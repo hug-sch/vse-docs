@@ -7,8 +7,9 @@ Even a moderate-sized video project can contain hundreds of assets. It's very ea
    :maxdepth: 2
  
    dir-structure/creating-directory-structure
-   strip-types/striptypes.rst
-   dir-structure/creating-test-files.rst
+   strip-types/striptypes
+   importing/importing
+   dir-structure/creating-test-files
 
 .. figure:: organize-example.png
    :align: center

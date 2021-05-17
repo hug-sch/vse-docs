@@ -27,8 +27,8 @@ A new property is added to the Time panel: ``Original Frame Range``. As the name
    Figure 1: Scene Property
 
 
-Scene header
-   With icon, name, and link/unlink checkbox. This header seems to be a duplicate of the header of the Properties Sidebar.
+Scene
+   Clicking the icon lets you pick the source scene; e.g. Scene1 from a drop-down. With the link/unlink button (X), you can remove the chosen source scene. The stripbar becomes red as a visual indication.
 
 Input
    You can choose between Camera or Sequencer. The original Scene -where this Scene strip came from- could also have a Video Sequencer with content in it. Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene. In the original scene, you choose the `Post Processing panel <https://docs.blender.org/manual/en/dev/render/output/properties/post_processing.html?highlight=post%20processing%20panel>`_ of the Output Properties. But, of course, it is not a good habit to change that setting from within another scene. So, with this input choice, you can choose between the two possibilities.

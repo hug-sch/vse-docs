@@ -11,8 +11,12 @@ After setting up a central project directory with all your files (see :doc:`Crea
 These three import techniques are clearly explained in a video by `Mikeycal Meyers <https://www.youtube.com/watch?v=zslAZxC29rk>`_.
 
 
-.. figure:: img/importing-methods.gif
+.. figure:: /setup/organize/importing/img/importing-methods.gif
      :alt: Importing methods
 
      Figure 1: Importing methods
+
+.. raw:: html
+
+    <object data="/_static/include/importing-methods.svg" type="image/svg+xml"></object>
 

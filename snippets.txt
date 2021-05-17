@@ -59,3 +59,8 @@ unicode
 .. |notequal| unicode:: 0x2260
 
 Use in 2 |notequal| 3
+
+embed svg (with js code) in html; the svg-file is stored in _static folder
+.. raw:: html
+
+    <object data="/_static/include/importing-methods.svg" type="image/svg+xml"></object>

@@ -8,7 +8,7 @@ The Text strip allows you to directly display text in a frame. It is meant to di
    
    Figure 1: Example of Text strip
 
-As is obvious from figure 1 that the Text strip is not meant to write essays. Even for credit rolls as in figure 1, things get complicated very quickly. For small texts however it is ideal. With the Location and Anchor fields, you could position the text in the Preview window.
+As is obvious from figure 1, the Text strip is not meant to write essays. Even for credit rolls as in figure 1, things get complicated very quickly. For small texts however it is ideal. With the Location and Anchor fields, you could position the text in the Preview window.
 
 .. admonition:: Panels documented elsewhere!
 
@@ -23,7 +23,7 @@ An Effect panel is added to the Properties (see figure 2).
    :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Effect Strip`
 
 .. figure:: img/panel-effect-strip-text-.png
-   :scale: 50%
+   :scale: 60%
    :alt: Effect Property of Text Strip
    :align: Right
 
@@ -36,7 +36,7 @@ Wrap Width
    Wraps the text by a percentage of the frame width. Setting this to zero will disable word wrapping. A value of 1 will wrap the text at the right border of the Preview (there is a slight left and right margin). This option however works in combination with the Anchor and Location fields (see below). The previous effect occurs only with a Center anchor and an X Location of 0.5 (default setting). If a left-aligned anchor however is specified, then the X location should be at 0 to have a split at the borders.
 
 Style: Font
-   The default font is Blender's own BMonoFont. You could find it in ``datafiles/fonts`` folder of your Blender installation. Clicking on the Open button will show a File Browser window with probably the Fonts directory of *your* system selected. This directory is set in the Preferences > File Path > Data. Of course, you can navigate to another folder. There you can choose a new font for the selected Text strip.
+   The default font is Blender's own BMonoFont. You could find it in the  ``datafiles/fonts`` folder of your Blender installation. Clicking on the Open button will show a File Browser window with probably the Fonts directory of *your* system selected. This directory is set in the Preferences > File Path > Data. Of course, you can navigate to another folder. There you can choose a new font for the selected Text strip.
 
    Next to the Font selector, you find the Bold and Italic toggle buttons.  
 

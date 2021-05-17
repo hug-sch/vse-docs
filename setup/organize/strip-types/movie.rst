@@ -1,7 +1,7 @@
 Movie strip
 ===========
 
-The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version. The default color of the movie strip bar is: :movie:`███` 
+The input source of a movie strip is a video file with extension ``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm`` (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_). Blender uses the ffmpeg library to process the video files. Which codecs are available depends on the operating system and ffmpeg version. The :ref:`default <default-color>` color of the movie strip bar is: :movie:`███` 
 
 Each video file contains a sequence of image frames (the actual movie) and some meta-information such as resolution and frame rate (fps). The resolution info for example is exposed in the source-panel_. Unfortunately, the source FPS is not.
 

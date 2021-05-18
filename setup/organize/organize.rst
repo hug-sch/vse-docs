@@ -8,7 +8,7 @@ Even a moderate-sized video project can contain hundreds of assets. It's very ea
  
    dir-structure/creating-directory-structure
    strip-types/striptypes
-   importing/importing
+   import/import
    dir-structure/creating-test-files
 
 .. figure:: organize-example.png

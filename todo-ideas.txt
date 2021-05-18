@@ -6,3 +6,7 @@
 6. Explanation of script to add fields as still_offset_start
 7. Expand on premultiplication
 8. Animated GIF alternatives?
+
+
+From tintwotin:
+File Browser and it's limitations(ex. no import options, one file only, no image sequence etc.), The pop-up filebrowser(multifile, image sequence, import options(+copy fps/colorspace from source to render settings(+Set Render Size from Strip menu - which also should have been in the import settings)) ect.), and drag and drop from OS file browser. It could also cover all of the mismatch issues like different lengths of video and audio from the same file and the playback rate will suffer if there is a mismatch between source and render resolutions. And the problems if the resolution isn't set correct at import, but changed after import and the scaling breaks. There is also the variable frame rate problems(vfr), where users will need to reencode their footage - but Blender doesn't detect or offers to solve this problem. There is also problems if source fps mismatches render fps. 

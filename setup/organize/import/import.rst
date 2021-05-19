@@ -92,4 +92,4 @@ Organize timeline
 
 .. raw:: html
 
-    <object data="/_static/include/importing-methods.svg" type="image/svg+xml"></object>
+    <object data="img/importing-methods.svg" type="image/svg+xml"></object>

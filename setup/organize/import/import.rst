@@ -86,3 +86,10 @@ Use Movie Frame Rate
 
 Organize timeline
 ==================
+
+- Organize the channels: choice between keep audio & video together; could be done with parenting and the use of the VSQF addon
+- another possibility is to have functional bands: e.g. channel 1-5: audio, 5-10: video
+
+.. raw:: html
+
+    <object data="/_static/include/importing-methods.svg" type="image/svg+xml"></object>

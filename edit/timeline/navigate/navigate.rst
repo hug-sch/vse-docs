@@ -33,6 +33,8 @@ Dragging the circles on the scrollbar lets you also reduce or enlarge the timeli
 
 The same reasoning holds for the vertical scrollbar circles.
 
+.. warning::
+   The messages in the statusbar are not very helpful, nor correct. For example :kbd:`Ctrl MMB` shows the status message of "Zoom 2D view" which seems not to be correct. The other modifier keys are not mentioned.
 
 
 - Pan: :kbd:`MMB`

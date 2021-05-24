@@ -1,6 +1,5 @@
-****
 Zoom
-****
+----
 
 In a video project it is important that you can zoom in on the section you're working on. On the other hand it's also important to have an overview of your timeline. Zooming in and out is thus a frequent occurring action.
 

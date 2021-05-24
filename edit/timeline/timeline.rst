@@ -1,14 +1,14 @@
-***************
 Timeline basics
-***************
+===============
 
 .. toctree::
     :maxdepth: 3
   
-    timecode/timecode.rst
-    zoom/zoom.rst
-    navigate/navigate.rst
-    scrub/scrub.rst
+    timecode/timecode
+    zoom/zoom
+    navigate/navigate
+    select/select
+    scrub/scrub
   
 The concept *Timeline* can refer to different things. In Blender, it denotes in the first place the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon and used for manipulating keyframes and scrubbing the playhead. This Timeline Editor was originally intended for editing the animations in 3D modeling.
 

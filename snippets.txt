@@ -55,7 +55,7 @@ internal link to anchor
     3 or for custom text :ref:`Source panel <image-source-panel>`
 
 unicode
-
+for a list of code: see https://unicode-table.com; use Ox2260 in stead of U+2260
 .. |notequal| unicode:: 0x2260
 
 Use in 2 |notequal| 3

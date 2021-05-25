@@ -5,8 +5,8 @@ Timeline basics
     :maxdepth: 3
   
     timecode/timecode
+    move/move
     zoom/zoom
-    navigate/navigate
     select/select
     scrub/scrub
   
@@ -19,9 +19,9 @@ The concept *Timeline* can refer to different things. In Blender, it denotes in 
 
 You can find this Timeline Editor also in the :doc:`Video Sequence Editor workspace </setup/customize/workspace/video-editing-workspace>`, all the way at the bottom of the screen. Only the header is visible; so you have to drag the horizontal top border to reveal the time codes and keyframes.
 
-The use of *this* Timeline Editor within the Video Editor workspace is rather *limited* and a case could be made to remove it from the Video Editing workspace. Its functions can easily be overtaken by the Sequencer (see figure 2), which is right on top of it. Some of them also don't work in the VSE; e.g. the Auto Keyframe button.
+The use of *this* Timeline Editor within the Video Editor workspace is rather *limited* and a case could be made to remove it from the Video Editing workspace. Its functions can easily be overtaken by the Sequencer (see figure 2), which is right on top of it.
 
-The Sequencer however has also a kind of timeline on its own: the area where the strip bars are painted. Practically all the regular operations like zoom, navigate, ... can be done here. Only the Frame and Transport controls are missing. These can however easily be added to the workspace (see the addon by TintwoTin; `Playback_control_in_VSE_header.zip <https://github.com/tin2tin/Sequence_Editing>`_ ). 
+The Sequencer has indeed also a kind of timeline on its own. Practically all the regular operations like zoom, move, ... can be done here. Only the Frame and Transport controls are missing. These can however easily be added to the workspace (see the addon by TintwoTin; `Playback_control_in_VSE_header.zip <https://github.com/tin2tin/Sequence_Editing>`_ ). 
 
 
 .. figure:: timeline-sequencer.svg

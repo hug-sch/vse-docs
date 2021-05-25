@@ -22,38 +22,35 @@ Figure 1: Annotated video with all the Zoom commands.
    :scale: 60%
 
 Ctrl-Spacebar
-   The :kbd:`Ctrl-Spacebar` key will switch the area under the mouse cursor into full view. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you especially in the vertical dimension.
+   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels).
 Home
-   Pressing the :kbd:`Home` key zooms in on the total project; from start to finish and for all channels. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Most Zoom commands can also be issued from the menu (see figure 2). The :kbd:`Home` equivalent is: View > Frame All.
+   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <../move/move>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Most Zoom commands can also be issued from the menu (see figure 2). The :kbd:`Home` equivalent is: View > Frame All.
 
 NumpadPeriod
    Pressing the :kbd:`NumpadPeriod` key zooms the timeline to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
 
-Shift-B
-   After pressing the :kbd:`Shift-B` key (from Box Select), a crosshair cursor appears and you can click and drag to draw a rectangle in the sequencer area. Upon releasing the mouse button, the display is zoomed to this rectangle. The menu equivalent of pressing :kbd:`Shift-B` is: View > Zoom (see figure 2).
+   .. Warning::
+      If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad. 
+      
+      You can however change these shortcuts or make some of your own. Blender Frenzy has a nice video about creating these `Custom Keymaps <https://www.youtube.com/watch?v=2RtlvZfv8TI>`_.
 
-Wheel
+Shift-B
+   After pressing the :kbd:`Shift-B` key (from Box Select), a crosshair cursor appears and you can click and drag to draw a rectangle in the Sequencer window. Upon releasing the mouse button, the Sequencer window is zoomed to this rectangle. The menu equivalent of pressing :kbd:`Shift-B` is: View > Zoom (see figure 2).
+
+MMB + Wheel Roll
    Scrolling the middle mouse wheel will zoom in horizontally on the section where the cursor is. Scrolling towards yourself will zoom out. Scrolling towards the screen will zoom in.
 
-   You can modify this behavior by pressing the SHIFT, CTRL or ALT key.
-   - SHIFT: pressing :kbd:`Shift` in combination with MMB will zoom vertically.
-   - CTRL: pressing :kbd:`Ctrl` in combination with MMB will pan horizontally.
-   - ALT: pressing :kbd:`Alt` in combination with MMB will move the playhead.
+   Using the MMB wheel roll in combination with Ctrl or Shift will change the behavior from zoom to move (see :doc:`Moving the Timeline window <../move/move>`).
 
-.. Warning::
-   The User Preferences can change the function of the above modifiers.
-
-   If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad. You can change these shortcuts or make some of your own. Blender Frenzy has a nice video about creating these `Custom Keymaps <https://www.youtube.com/watch?v=2RtlvZfv8TI>`_.
-
-   The situation is a little different if you don't have a middle mouse button. In the User Preferences you can set Emulate 3 button mouse. Pressing :kbd:`Alt-Shift-LMB` and dragging Left will zoom out and dragging right will zoom in (see also below). 
-
-Ctrl-MMB
+Ctrl-MMB + drag
    Pressing :kbd:`Ctrl-MMB` and dragging left will zoom out or dragging right will zoom in. Dragging up will zoom in vertically and dragging down will zoom out vertically.
 
-Scrollbar circles
-   At the bottom and far right of the sequencer area, there are scrollbars. These scrollbars span the whole available width or height if all strips are visible. The length or height of the scrollbar gives you an indication how much percentage of the strips are not visible. Pressing the :keyb:`Home` key for example will make the scrollbars at full length and height.
+   It's important to press the :kbd:`Ctrl-MMB` first and then drag. 
 
-   Each scrollbar has a circle at the beginning and end (see figure 3). Dragging these circles will shorten the scrollbars and as a result also the area of visible strips.
+Scrollbar circles
+   At the bottom and far right of the sequencer area, there are scrollbars. These scrollbars span the whole available width or height if all strips are visible. The length or the height of the scrollbar gives you an indication how much percentage of the Timeline window is visible. Pressing the :kbd:`Home` key for example will make the scrollbars at full length and height.
+
+   Each scrollbar has a circle at the beginning and end (see figure 3). Dragging these circles will shrink or expand the scrollbar length or height and therefore also the Timeline window. For example, in figure 3, dragging the left zoom circle  to the left, will expand the Timeline window from frame 50 to frame 1 (which is the start of the project). The right zoom circle can be dragged up to frame 485 (End of the project). At that moment the scrollbar is full length and cannot be expanded more.
 
 .. figure:: img/scrollbars.svg
    :alt: Scrollbars
@@ -61,7 +58,4 @@ Scrollbar circles
 
    Figure 3: Vertical and horizontal scrollbars with zoom circles.
    
-Zoom vertically or horizontally
-   Most commands from above will zoom in or out on both dimensions simultaneously. For example, the :kbd:`Home` will zoom until all strips are visible, both on the horizontal and vertical dimension.
-   
-   With the :kbd:`MMB`, :kbd:`Ctrl-MMB` and the scrollbar circles, you can zoom in or out in one dimension only.
+Most commands from above will zoom in or out on both dimensions simultaneously. For example, the :kbd:`Home` will zoom until all strips are visible, both on the horizontal and vertical dimension. With the scrollbar circles, you can zoom in or out in one dimension only and choose in which direction you want to zoom.

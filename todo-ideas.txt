@@ -5,7 +5,7 @@
 5. Importing files via file browser (ingest function)
 6. Explanation of script to add fields as still_offset_start
 7. Expand on premultiplication
-8. Animated GIF alternatives?
+8. Animated GIF alternatives? (svgator, https://www.thewwwmagazine.com/6-amazing-svg-animation-tools-and-libraries/)
 9. Zoom to playhead (small window with overview of project, large window zoomed in. Something like an image map. Zoom to cursor is possible with VSEQF addon)
 
 

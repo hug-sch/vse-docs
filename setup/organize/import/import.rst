@@ -105,6 +105,7 @@ Working with a long and complex timeline isn't easy. Some kind of organization i
 Figure 4: How to create "Bins"? *Click on the image or use the keyboard arrows to view the next slide.*
 
 When doing fiction, you could organize your footage in:
+
 - Sequence: a series of scenes. S. Kubrick always told his stories in 8 sequences.
 - Scene: a situation that plays out in one location in continuity.
 - Shot: a camera set up to cover the entire scene or a part of it.

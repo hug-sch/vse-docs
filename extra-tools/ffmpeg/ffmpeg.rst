@@ -37,8 +37,25 @@ The following command will show/create a red color background with opacity set t
 
 ``ffmpeg -f lavfi -i color=c=red@0.2:duration=5:s=640x480:r=10 test.mp4``
 
-**4. Create multiple video channels into one container
+**4. Create multiple video channels into one container**
 
 Some video containers can contain multiple video and audio channels; for example two surveillance camera outputs next to each other. In Blender you can select the channel to preview (not both at the same time) with Strip > Source panel > Stream index. The following command creates a two video channels  into one container.
 
-ffmpeg -i input-1.mp4 -i input-2.mp4 -map 0:0 -map 1:0 output.mkv
+``ffmpeg -i input-1.mp4 -i input-2.mp4 -map 0:0 -map 1:0 output.mkv``
+
+**4. Fix the "not divisible by 2" error**
+
+Sometimes you need a render resolution, other than the classic 1080p (1920 x 1080). You can then enter your X and Y Resolution in the Dimensions panel of the Output Properties. However, when you try for example 1500 px x 399 px and use the H.264 codec you'll get the "not divisible by 2" error (or worse sometimes, a crash). The reason for this error is that the H.264 encoder uses macroblocks of a fixed size (e.g. 4x4) to compress your movie. Each frame is divided into these small macroblocks and to compress your video, it only encodes the differences between these macroblocks.  However, this adds the requirement that the width and height of your movie must be divisible by 2.  Changing the Y-resolution to 400 will fix the problem.
+
+If, for some reason, you want to stick with the original resolution of 1500 x 399, then you have to render your animation first as a PNG sequence. The PNG format does not has this restriction on width & height. Of course, you don't have a playable movie.
+
+Therefore, you need FFMPEG to create a movie (e.g. MP4) of it. To create a movie out of a sequence of images, you need the following command:
+
+``ffmpeg -f image2 -r 24 -i %04d.png test.mp4``
+
+- ``-f image2`` specifies the filter to convert from images to movie
+- ``-r 24`` sets the framerate to 24 fps
+- ``-i %04d.png`` specifies the input as a 4 digit number, followed by .png, e.g. 0001.png, 0002.png, ...
+- ``test.mp4`` specifies the output file.
+
+

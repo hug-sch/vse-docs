@@ -1,7 +1,7 @@
 
 ***********
 Scene Strip
-===========
+***********
 
 Blender is first and foremost a `3D and 2D modeling <https://docs.blender.org/manual/en/dev/index.html>`_ environment.
 You can create, animate, and render beautiful realistic or stylized scenes with it.

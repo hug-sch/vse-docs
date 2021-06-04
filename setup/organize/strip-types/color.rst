@@ -1,7 +1,7 @@
 
 ***********
 Color Strip
-===========
+***********
 
 The Color strip is a sequence of 25 frames with a solid color.
 It fills the complete preview area with the selected color.

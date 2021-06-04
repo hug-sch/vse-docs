@@ -369,7 +369,7 @@ Stream Index
      With this property, you can select the stream to preview (but again not both at the same time).
      Of course, you can add the same movie strip twice, set the stream index appropriately,
      and use the Picture-in-Picture approach from above. For the inverse:
-     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>` to merge two video channels into one container.
+     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg/ffmpeg>` to merge two video channels into one container.
 
 Deinterlace
    Most (old) TV broadcasts use interlaced scan technology.

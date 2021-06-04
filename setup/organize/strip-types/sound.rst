@@ -91,7 +91,7 @@ Please, note also that the file is stereo in Audacity but mono in Blender.
 
 So, changing the pitch or duration of a sound file can -and is usually- also done
 with the :doc:`speed control </edit/effects/speed/speed>` in Blender.
-:doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`
+:doc:`Strip types </setup/organize/strip-types/index>`
 
 Pan
    Depending on your sound system, you have one, two, or more speakers.

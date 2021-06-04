@@ -44,7 +44,7 @@ These three import techniques are also clearly explained in a short video by
 There are subtle but sometimes annoying differences between the three methods.
 
 - Only with the Add (2nd) method can you add all of the
-:doc:`available strip types </setup/organize/strip-types/striptypes>`.
+  :doc:`available strip types </setup/organize/strip-types/index>`.
   The other methods only allow adding Movie, Sound, or Image/Image Sequence strips.
 - Also, only the Add method offers the Import options (Scale To Fit, ...).
   A discussion of these options is in the next section.
@@ -63,7 +63,7 @@ Options
 
    Figure 2: Import options Movie strip
 
-There are only import options for :doc:`strip types of group 2 </setup/organize/strip-types/striptypes>`:
+There are only import options for :doc:`strip types of group 2 </setup/organize/strip-types/index>`:
 Movie, Sound, and Image/Image Sequence because they have an external source.
 
 Relative Path

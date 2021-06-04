@@ -11,7 +11,6 @@ Figure 1: Annotated video with all the Zoom commands.
 
 .. figure:: img/menu-view.svg
    :alt: Menu View
-   :scale: 20%
    :align: right
 
    Figure 2: Menu View
@@ -30,8 +29,8 @@ NumpadPeriod
    Pressing the :kbd:`NumpadPeriod` key zooms the timeline to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
 
    .. Warning::
-      If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad. 
-      
+      If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad.
+
       You can however change these shortcuts or make some of your own. Blender Frenzy has a nice video about creating these `Custom Keymaps <https://www.youtube.com/watch?v=2RtlvZfv8TI>`_.
 
 Shift-B
@@ -45,7 +44,7 @@ MMB + Wheel Roll
 Ctrl-MMB + drag
    Pressing :kbd:`Ctrl-MMB` and dragging left will zoom out or dragging right will zoom in. Dragging up will zoom in vertically and dragging down will zoom out vertically.
 
-   It's important to press the :kbd:`Ctrl-MMB` first and then drag. 
+   It's important to press the :kbd:`Ctrl-MMB` first and then drag.
 
 Scrollbar circles
    At the bottom and far right of the sequencer area, there are scrollbars. These scrollbars span the whole available width or height if all strips are visible. The length or the height of the scrollbar gives you an indication how much percentage of the Timeline window is visible. Pressing the :kbd:`Home` key for example will make the scrollbars at full length and height.
@@ -57,5 +56,5 @@ Scrollbar circles
    :align: right
 
    Figure 3: Vertical and horizontal scrollbars with zoom circles.
-   
+
 Most commands from above will zoom in or out on both dimensions simultaneously. For example, the :kbd:`Home` will zoom until all strips are visible, both on the horizontal and vertical dimension. With the scrollbar circles, you can zoom in or out in one dimension only and choose in which direction you want to zoom.

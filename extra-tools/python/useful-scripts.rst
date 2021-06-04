@@ -1,7 +1,12 @@
+
 **************
 Useful scripts
 **************
-The following scripts could best be tested in an adapted workspace. (1) From an existing video editing project, switch to the Scripting Workspace (eventually, click on the Add Workspace button in the menu bar) (2) Replace the 3D Editor window (top left) with the Video Sequencer. (3) Select an appropriate object (e.g. movie strip) in the sequencer ( See figure 1). Working within this workspace is explained in :doc:`<scripting-workspace>`.
+
+The following scripts could best be tested in an adapted workspace.
+(1) From an existing video editing project, switch to the Scripting Workspace (eventually, click on the Add Workspace button in the menu bar)
+(2) Replace the 3D Editor window (top left) with the Video Sequencer.
+(3) Select an appropriate object (e.g. movie strip) in the sequencer ( See figure 1). Working within this workspace is explained in :doc:`/extra-tools/python/scripting-workspace`.
 
 .. figure:: img/adapted-workspace.svg
    :alt: Adapted scripting workspace
@@ -17,20 +22,20 @@ Blender exposes 9 time codes in the UI (see :doc:`Movie strip  </setup/organize/
 .. csv-table:: Table 1: Time code fields in UI and from Python API
    :header: "#", "UI field", "Python API (1)"
    :widths: 5, 50,50
- 
+
    0 , Channel (2)           , channel
-   1 , Start                 , frame_start          
+   1 , Start                 , frame_start
    2 , *Visible in strip (3)* , frame_final_start
-   3 , Duration              , frame_final_duration 
-   4 ,                       , frame_duration  
-   5 , End                   , frame_final_end      
-   6 , Strip Offset Start    , frame_offset_start   
-   7 , Strip Offset End      , frame_offset_end     
+   3 , Duration              , frame_final_duration
+   4 ,                       , frame_duration
+   5 , End                   , frame_final_end
+   6 , Strip Offset Start    , frame_offset_start
+   7 , Strip Offset End      , frame_offset_end
    8 , Hold Offset Start     , animation_offset_start
-   9 , Hold Offset End       , animation_offset_end 
-   10, Current Frame         , *calculated (4)*   
-   11,                       , frame_still_start    
-   12,                       , frame_still_end      
+   9 , Hold Offset End       , animation_offset_end
+   10, Current Frame         , *calculated (4)*
+   11,                       , frame_still_start
+   12,                       , frame_still_end
 
 
 If you want to see those values in the side panel, you'll have to extend the existing code; It's rather easy. Select a movie strip and right-click on a timecode field, e.g. Hold Offset Start and choose "Edit Source". The "space_sequencer.py" code will become visible (op open with the Browse Text to be linked button at the top middle). Search in this code (Ctrl + F) for the string "Hold Offset Start". It is about line 1607 (Blender 3.0). Add the following code after the Hold Offset section (about line 1615).
@@ -54,4 +59,3 @@ Run the code Alt + P). The sidebar will be changed. See figure 2. Note that this
    :align: Right
 
    Figure 2: The result of running the above script.
-

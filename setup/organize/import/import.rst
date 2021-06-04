@@ -23,7 +23,7 @@ Importing
 
    It's probably superfluous to mention, but importing your assets will not change them in any way.
 
-In Blender, you can use three methods to import footage.
+There are four methods available to import footage.
 
 1. Drag a video, sound, or image/image sequence on the timeline with the
    `Blender File Browser <https://docs.blender.org/manual/en/dev/editors/file_browser.html>`_.
@@ -32,6 +32,7 @@ In Blender, you can use three methods to import footage.
    Sequencer timeline and locate the desired file with a modified Blender File Browser version.
 3. Drag and drop the desired video, sound, or image file on the sequencer
    timeline from the File Browser of the operating system.
+4. Drag and drop the video with the Asset Manager (available from version 3.0).
 
 .. figure:: img/methods.gif
    :alt: Import methods

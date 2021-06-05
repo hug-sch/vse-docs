@@ -4,10 +4,10 @@ testing
 
 Reference to an internal doc
 
-:doc:`Striptypes </setup/organize/strip-types/striptypes>`
+:doc:`Strip Types </setup/organize/strip-types/index>`
 
 link to an anchor in another doc or in the same doc
- 
+
  :ref:`Time <time-panel>`
 
 anchor is defined as .. _custom-panel:
@@ -21,7 +21,7 @@ table
 .. csv-table:: Table 1: Time code fields in UI and from Python API
    :header: "#", "UI field", "Python API (1)"
    :widths: 5, 50,50
- 
+
    0, Channel (2), channel
    1, row2, value 2
 

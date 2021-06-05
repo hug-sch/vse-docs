@@ -3,20 +3,20 @@ Table 1 shows all the available time codes. The second column is the name from t
 .. csv-table:: Table 1: Time code fields in UI and from Python API
    :header: "#", "UI field", "Python API (1)"
    :widths: 5, 50,50
- 
+
    0 , Channel (2)           , channel
-   1 , Start                 , frame_start          
+   1 , Start                 , frame_start
    2 , *Visible in strip (3)* , frame_final_start
-   3 , Duration              , frame_final_duration 
-   4 ,                       , frame_duration  
-   5 , End                   , frame_final_end      
-   6 , Strip Offset Start    , frame_offset_start   
-   7 , Strip Offset End      , frame_offset_end     
+   3 , Duration              , frame_final_duration
+   4 ,                       , frame_duration
+   5 , End                   , frame_final_end
+   6 , Strip Offset Start    , frame_offset_start
+   7 , Strip Offset End      , frame_offset_end
    8 , Hold Offset Start     , animation_offset_start
-   9 , Hold Offset End       , animation_offset_end 
-   10, Current Frame         , *calculated (4)*   
-   11,                       , frame_still_start    
-   12,                       , frame_still_end      
+   9 , Hold Offset End       , animation_offset_end
+   10, Current Frame         , *calculated (4)*
+   11,                       , frame_still_start
+   12,                       , frame_still_end
 
 If you want to see those values in the side panel, you'll have to extend some code; It's rather easy. Right-click on a timecode filed, e.g. Hold Offset Start and choose "Edit Source". Switch to the text editor in the Scripting workspace, and open the "space_sequencer.py" code (with the Browse Text to be linked button at the top middle). Search in this code for the string "Hold Offset Start". It is about line 1605 (Blender 2.93). Here is the code for the display of the different time codes. Add the following code to display the Still Offset field.
 
@@ -39,7 +39,7 @@ If you want to see those values in the side panel, you'll have to extend some co
 **(4)** The `Current Frame` is not a Python API field on its own but is calculated from `scene.frame_current - frame_final_start`.
 
 
-Movie strips, Sound strips, Scene strips and Image/Sequence strips all share the same time code properties (see :doc:`Striptypes </setup/organize/strip-types/blender-striptypes>`. Color and Text Strips and Adjustment Layers expose only 5 fields: Channel, Start, Duration, End, and Current Frame. There is no need for the Offset fields. Effect strips such as Speed control and Transform do not have time codes on their own. Their timing is controlled by the parent strip.
+Movie strips, Sound strips, Scene strips and Image/Sequence strips all share the same time code properties (see :doc:`Strip types </setup/organize/strip-types/index>`. Color and Text Strips and Adjustment Layers expose only 5 fields: Channel, Start, Duration, End, and Current Frame. There is no need for the Offset fields. Effect strips such as Speed control and Transform do not have time codes on their own. Their timing is controlled by the parent strip.
 
 But why all those time codes? Why do you need them? And what do they mean? Let's begin with the most basic case.
 
@@ -53,7 +53,7 @@ But why all those time codes? Why do you need them? And what do they mean? Let's
 .. figure:: img/time_properties/time_properties_2.png
    :scale: 100%
    :alt: Strip with Start offset = 2
-   
+
    Figure 2: Strip with Start offset = 2
 
 
@@ -72,7 +72,7 @@ But why all those time codes? Why do you need them? And what do they mean? Let's
 .. figure:: img/time_properties/time_properties_3.png
    :scale: 100%
    :alt: Strips
-   
+
    Figure 3: Strips (24 fps and 30 fps) added to project with 30 fps.
 
 2. What about the other strip types?  For an Image strip, the default Duration is 26 frames. For a text field it is 25 frames, independent of the fps? These values are quite arbitrary and seem to be wired in. The Duration for these fields is also somewhat virtual. It seems redundant to create 300 identical frames to have a still image last for 10 seconds. See section <a href="#still_offset">Still Offset</a> for an explanation. What about a Sound strip? An audio file has no frames; only sampled data (see post [Audio Volume](audio_volume.md) for an introduction). I' ll cover this in a later post.
@@ -83,7 +83,7 @@ But why all those time codes? Why do you need them? And what do they mean? Let's
 .. figure:: img/time_properties/time_properties_4.svg
    :scale: 100%
    :alt: strips
-   
+
    Figure 4: Strips with different Offsets as a result of changing Duration or dragging handles.
 
 - Decrease the duration by entering a number smaller than the original duration. A `Strip Offset End` is inserted and the Offset is shown as a small bar (if enabled with View > Show Offsets). Without the Offset bars, you can't really see that the strip has been trimmed.
@@ -121,7 +121,7 @@ There are three kind of Offset fields: Strip Offset, Hold Offset and Still Offse
 *8. Current frame*
 So far, so good. But, let's take a closer look (see figure 2a). The field `Current Frame` indicates 0 (zero) while the play head is at frame 5. A litlle awkward. But, OK. No big deal! `Current Frame` means the position of the play head relative to the start of the active strip. So, the frame counting within the strip starts at 0.
 
-    
+
 Exercise
 
 
@@ -135,9 +135,9 @@ The most obvious but wrong way is to change the strip's `Start` field to frame 1
 
 The code above will align the top strip with the bottom one, but unfortunately by decreasing the `Strip Offset Start`. This is not what you want. The `Start` field should be reduced by 3 frames (the difference between the actual start of both strips). And that brings us to the last confusion in this section? How can you calculate the difference between the actual starts. One technique is the following. Place the play head at the actual start of the top strip (the frame indicated when you select the left handle). Select then the bottom strip. The difference is shown in the UI field `Current Frame`. This field does not mirror the current frame in the timeline (this is shown above the play head) but the (current) frame in the actual strip where the play head is positioned.
 
-# Negative offsets 
-To recapitulate: 
-    You can increase the duration; either by dragging the right handle or by increasing the Duration time code in the side panel. But of course, then your strip in the timeline will reference non-existing frames in the file, so the last frame is extended (you'll get a still image). Strangely enough, you can also drag the left handle to the left. This will increase the duration but apparently not the start position.The newly created frames will also reference non-existing counterparts in the file, so the first image is extended. 
+# Negative offsets
+To recapitulate:
+    You can increase the duration; either by dragging the right handle or by increasing the Duration time code in the side panel. But of course, then your strip in the timeline will reference non-existing frames in the file, so the last frame is extended (you'll get a still image). Strangely enough, you can also drag the left handle to the left. This will increase the duration but apparently not the start position.The newly created frames will also reference non-existing counterparts in the file, so the first image is extended.
 
 
 ## 3 Cut & Hold cut (or is it spli see doc https://docs.blender.org/manual/en/dev/video_editing/sequencer/editing.html)
@@ -235,7 +235,7 @@ Hold offset animation_offset: Trims the media by the start or by the end, preser
 
 https://docs.blender.org/manual/en/dev/video_editing/sequencer/editing.html
 
-And there are more questions. What about audio?  Let's first tackle the problem of trimming and cutting. 
+And there are more questions. What about audio?  Let's first tackle the problem of trimming and cutting.
 
 ## 2. Strip with left and/or right trimming
 
@@ -279,12 +279,11 @@ But what's the difference? In both cases, the original strip could be recreated 
 
 - increment value (e.g. +3): (Original) Start and (Final) End remain unchanged. (Final) Start is incremented (+3) and (Final) Duration is decremented (-3). The (Final) Duration cannot become 0; one frame should remain visible). The Strip Bar Start changes with the (Final) Start and an Overlay bar is added: from Original Start to Final Start, indicating that the strip is shortened. This seems normal behavior.
 
-- decrement value: reverses the effect of the increment operation above BUT the Strip Offset Start value can become negative. The (Final) Start is before the (Original) Start.The (Final) Duration is increased; End is unchanged. Overlay added: from (Final) Start to (Original) Start which means that the overlay runs within the strip. Because the strip starts before the original start, there are no frames available and the first frame is duplicated. There is no change in color of the Strip Bar to indicate this. 
+- decrement value: reverses the effect of the increment operation above BUT the Strip Offset Start value can become negative. The (Final) Start is before the (Original) Start.The (Final) Duration is increased; End is unchanged. Overlay added: from (Final) Start to (Original) Start which means that the overlay runs within the strip. Because the strip starts before the original start, there are no frames available and the first frame is duplicated. There is no change in color of the Strip Bar to indicate this.
 
 - Drag left strip handle to the right: same behavior as increment value. The Strip Offset Start value is incremented.
 - Drag left strip handle to the left: reverses the effect from drag to right BUT you can drag handle before (Original) Start. This resembles (but is not equal) the effect of decrementing the Strip Offset Start value. However, it is the field Still Offset Start (frame_still_start)that is changed. The color of the Strip Bar indicates that the first frame is duplicated.
 
 Strip Offset End
 
-- behaves in the same manner as Strip Offset Start. The Offset cannot be incremented beyond the first frame. 
-
+- behaves in the same manner as Strip Offset Start. The Offset cannot be incremented beyond the first frame.

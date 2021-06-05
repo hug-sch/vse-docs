@@ -3,7 +3,7 @@ Assembling your timeline
 
 .. toctree::
     :maxdepth: 3
-  
+
     adding/adding.rst
     cutting/cutting.rst
     moving/moving.rst
@@ -18,6 +18,6 @@ Strips can be moved in time (left to right on the X axis) or in the display stac
 
 Trimming is the process of removing or adding a portion of the video at its head or tail. This will result in a decrease or increase of the duration of the video.
 
-Slicing (cutting) a video will create two sections of the video, one slice before the cut and another after the cut. 
+Slicing (cutting) a video will create two sections of the video, one slice before the cut and another after the cut.
 
 Grouping is the creating of a metastrip whereby several other strips are grouped together.

@@ -1,7 +1,7 @@
 ***********
 Terminology
 ***********
-The terminology about color is sometimes quite intimidating. Let's take a look at some basic concepts with the help of the well-known color picker. Did you know that Blender has five different `color pickers <https://docs.blender.org/manual/en/dev/interface/controls/templates/color_picker.html>`_ No? You can choose between them in the Preferences panel (Edit > Preferences > Interface). They look rather intuitive to use (see Figure 1) but already loaded with some difficult terminlogy. And even for this simple tool, several questions arise and trying to answer them will get you very fast into deep Blender space!
+The terminology about color is sometimes quite intimidating. Let's take a look at some basic concepts with the help of the well-known color picker. Did you know that Blender has five different :ref:`color pickers <blender_manual:ui-color-picker>` No? You can choose between them in the Preferences panel (Edit > Preferences > Interface). They look rather intuitive to use (see Figure 1) but already loaded with some difficult terminlogy. And even for this simple tool, several questions arise and trying to answer them will get you very fast into deep Blender space!
 
 .. figure:: img/color_picker.svg
    :alt: The Color picker
@@ -17,7 +17,7 @@ The terminology about color is sometimes quite intimidating. Let's take a look a
 
 A lot of questions! Some look trivial and may be far fetched but searching for the answer will provide you with some profound insight into color management and also a few really ugly things. Let's focus on only one question in this post. How can you recreate these panels in Blender? Then, it will be apparent how they differ. That shouldn't be too difficult: a plane or circle with an appropriate material. Or so, you think!
 
-Start Blender. Delete all objects, set the World Background color to black, switch to top view and add 2 circle and 3 plane meshes of 1 unit each. Position them next to each other; the exact location doesn't matter. To get the colors, you need a five materials. Switch to the Shading workspace and create the materials. You could name them according to the cryptic captions of figure 1. 
+Start Blender. Delete all objects, set the World Background color to black, switch to top view and add 2 circle and 3 plane meshes of 1 unit each. Position them next to each other; the exact location doesn't matter. To get the colors, you need a five materials. Switch to the Shading workspace and create the materials. You could name them according to the cryptic captions of figure 1.
 
 .. note::
    You could download a `blend-file <files/terminology.blend>`_ with these materials already set-up.
@@ -30,7 +30,7 @@ Then, how do you make colors out of these numbers? Your first guess could be to 
 
 .. figure:: img/color_picker.png
    :alt: Shading nodes for recreating the color picker
-   
+
    Figure 2: Shading nodes for recreating the (square HV+S) color panel of the color picker.
 
 Note that we use the color cyan as input color. According to the documentation, the Hue parameter specifies the hue *rotation* of the image. 360° are mapped to (0 to 1). The hue shifts of 0 (-180°) and 1 (+180°) have the same result. So, the Cyan color which is at about 180° will be shifted -180° and therefore becomes zero or red at the texture coordinate 0 and again to red (cyan + 180° = 360°) at texture coordinate 1.
@@ -41,7 +41,7 @@ Why do you need the Gamma node? Human vision is not linear. Doubling the light i
 
 .. figure:: img/color_picker_gamma_correction.svg
    :alt: color picker
-   
+
    Figure 3: The original color picker (left), from node tree (above) with Gamma correction (center) and without Gamma correction (right).
 
 The panel in the middle of figure 3 is with gamma encoding. The 'gamma' exponent is set to 2.2, which is defined in the sRGB color model. So, an input intensity of 0.25 is transformed to a output intensity of 0.25\ :sup:`2.2` = 0.047. The result is thus darker (closer to zero); which is very obvious if you compare the two right-most panels of figure 3. But the darkening occurs predominantly in the shadows and midtones.
@@ -56,7 +56,7 @@ The panel in the middle of figure 3 is with gamma encoding. The 'gamma' exponent
    0.500, 	0.218
    0.750, 	0.531
    1.000, 	1.000
-   
+
 
 The material for the Square (HS + V) and the Square (SV + H) color picker is very similar as the one from fig. 2. You have to connect the X and Y coordinates from the plane with the HS or the SV parameters of the Hue Saturation Value node. In figure 1, a blueish color is selected. Search for the little white dot in the different color panels. It is known by the name "Iceberg blue" and has the following specifications, according to the `list of colors at Wikipedia <https://en.wikipedia.org/wiki/Lists_of_colors>`_. Note that we have selected this color also in the Hue-Saturation-Value node. See also Table 2.
 
@@ -75,12 +75,12 @@ The easiest solution is to create three spot lights. So, start Blender, delete t
 1. Switch to top view. This is not really essential but it makes your life much easier to get a spot light projection as a perfect circle.
 2. Add three lights of type spot. Position them at location: Red (0, -0.25, 1), Green (-0.5, 0.5,1) and blue (0.5, 0.5, 1). Select the appropriate color and eventually Power (1000 W) and Spot Shape Size (75°).
 3. Switch to render preview. Are the colored circles visible? NO, because there is no surface to 'shine' on.
-4. Add a plane at location (0,0,0) with the appropriate size. The colored circles become visible. 
+4. Add a plane at location (0,0,0) with the appropriate size. The colored circles become visible.
 5. You need also to position the camera at location (0,0, 10) and change the view to camera view (Alt+Ctrl+0). Then you can render the image.
 
 .. figure:: img/additive_color_mix_3_spots_render.png
    :alt: Additive color mix
-   
+
    Figure 3: Evee render of of the additive color mix of 3 spotlights.
 
 Figure 3 shows a nice additive color mix diagram. Note, however the status bar with extra info concerning the red color (obtained by Right-clicking on the red circle in the render preview).

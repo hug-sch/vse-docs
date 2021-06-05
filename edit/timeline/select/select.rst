@@ -29,9 +29,7 @@ Select random strips
 
 .. figure:: img/select-menu.svg
    :alt: Active vs selected View
-   :scale: 150%
    :align: right
-
 
    Figure 2: Select menu
 
@@ -47,7 +45,7 @@ Invert selection
 Box Selecting strips
    Pressing the :kbd:`B` key will produce a crosshair cursor. You can draw a rectangle selection around a region of strips in your Sequencer window.  All strips that intersect this rectangle (they should not be enclosed) will be selected. The menu equivalent is Select > Box Select (see figure 2).
 
-   The same result could be obtained by just :kbd:`LMB` clicking and dragging the selection over some strips. 
+   The same result could be obtained by just :kbd:`LMB` clicking and dragging the selection over some strips.
 
 Location based selection
 .........................
@@ -126,7 +124,7 @@ Select the strip handles
 The strip handles are the small darker colored bars at the left and right of the strip. You can use them to create :ref:`Offsets <time-panel>` for the strip. You can select the handles-only with several commands (see figure 4).
 
 .. Note::
-   The visualization of the strip handles have been `discussed <https://developer.blender.org/D7401>`_ and reworked already a few times but they still do not look as polished as in some other editors. On HDPI monitors they are quite small and do not scale in relation with the zoom level. The cursor also don't give any clue if it is above the handle or the strip body. 
+   The visualization of the strip handles have been `discussed <https://developer.blender.org/D7401>`_ and reworked already a few times but they still do not look as polished as in some other editors. On HDPI monitors they are quite small and do not scale in relation with the zoom level. The cursor also don't give any clue if it is above the handle or the strip body.
 
 :kbd:`LMB` + Click
    Just like selecting a strip, clicking with the :kbd:`LMB` in the 'neighborhood' of a handle will select this handle. The handle becomes white. Holding down :kbd:`Shift` will select multiple handles.
@@ -145,4 +143,3 @@ Handle
    This command operates on the Active strip. You could choose between Both, Left or Right. This will select the appropriate handles of the active strip itself. Or you can choose Both, Left or Right Neighbor. This will select the handles of the active strip and the appropriate handles of the neighbor strip.
 
    These operators are useful to change the timing of a cut by moving the handles after selecting them.
-

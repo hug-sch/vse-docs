@@ -28,8 +28,11 @@ author = 'hugsch'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
 ]
+
+intersphinx_mapping = {'blender_manual': ('https://docs.blender.org/manual/en/dev/', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

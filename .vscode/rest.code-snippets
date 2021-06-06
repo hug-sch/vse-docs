@@ -44,9 +44,9 @@
   "External link to document": {
 	"prefix": "ext",
 	"body": [
-	  "`${1:text for link} <${2:path & doc name>`_",
+	  "`${1:text for link} <${2:path & doc name}>`_",
 	],
-	"description": "Inserting an external doc link"
+	"description": "Inserting an external link"
   }
   "Link to anchor": {
 	"prefix": "lanc",

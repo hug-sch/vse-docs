@@ -67,9 +67,6 @@ embed svg (with js code) in html; the svg-file is stored in _static folder.
 
     <object data="/_static/include/importing-methods.svg" type="image/svg+xml"></object>
 
+To embed video: add extension
 
-
-image magic: magick input.tif -format "%[fx:resolution.x/resolution.y]" info:
-ffprobe: ffprobe -i PAL_SD_DV25_colorbar.avi
-ffprobe -i pond.dv
-ffmpeg -i Lenna2x1.png
+https://github.com/sphinx-contrib/video

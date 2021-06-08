@@ -1,16 +1,18 @@
 Select
 ------
-Before you can do *anything* with strips, you have to select them (see below). Please, note that there is a difference between a selected strip and the active strip (see figure 1). Selected strips have an orange outline, the active strip has a white outline. There can be only one active strip and the active strip is also a selected strip. Some actions such as Delete will apply to all selected strips. Other actions will only have an effect on the active strip such as scaling or rotating.
-
-.. Note::
-   It is possible to apply an effect to all selected strips instead of only on the active one by pressing the :kbd:`Alt` key. You have to enter the value numerically and then pressing :kbd:`Alt` + :kbd:`Enter` will apply the value to all selected strips. If you change the value by dragging the slider, you have to press :kbd:`Alt` + :kbd:`Enter` twice  to apply the effect to all selected strips. You can also Right Click on any value and choose "Copy to Selected".
+Before you can do *anything* with strips, you have to select them (see below for the different methods of selecting). There is a difference between a selected strip and the active strip (see figure 1). Selected strips have an orange outline, the active and selected strip has a white outline, and white text if available. There is always one and only one strip active. The properties shown in the sidebar belong to this active strip.
 
 .. figure:: img/active-vs-selected.svg
    :alt: Active vs selected View
 
    Figure 1: Active strip versus selected strips
 
-Please, note that - even if no strip is selected - there is still an Active strip from which you can see and modify the properties in the sidebar. For example, in figure 1, the first strip is also the Active strip. Clicking outside the strip area will deselect them all. Even though, if you look at the Sidebar, you can change the properties of the first clip.
+Even if *no* strip is selected, there is an Active strip. For example, in figure 1-a, the second strip is the Active strip. If there is no Text overlay or selection, the only way to know this is by looking at the sidebar. In figure 1-b, it is obvious that Strip 2 is active (white text) and that *only* strip 1 and 3 are selected (orange outline). In figure 1-c, all three strips are selected (orange and white outline) and strip 3 is the active one (white text).
+
+Some actions such as Delete will apply only to the selected strips. Pressing Delete in figure 1-b will only delete strip 1 and strip 3. Other actions will only have an effect on the active strip such as scaling or rotating.
+
+.. Note::
+   Changing a value in the sidebar will normally only change the property of the active strip, even if more strips are selected. It is possible to apply an effect to all selected strips instead of only on the active one by pressing the :kbd:`Alt` key. You have to enter the value numerically and then pressing :kbd:`Alt` + :kbd:`Enter` will apply the value to all selected strips. If you change the value by dragging the slider, you have to press :kbd:`Alt` + :kbd:`Enter` twice  to apply the effect to all selected strips. You can also Right Click on any value and choose "Copy to Selected".
 
 Select one strip
 ................

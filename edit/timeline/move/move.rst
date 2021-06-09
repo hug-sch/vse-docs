@@ -8,13 +8,27 @@ Your timeline is a collection of all kinds of strips, spread in time and over mu
 Theoretically the Timeline window can span the frames from - |infinity| to + |infinity| and from channel 0 to channel + |infinity|. Of course, the Sequencer window only shows a small part of this possible timeline.  Two basic operations are possible with these two windows: move and size.
 
 .. figure:: img/move-size.svg
-   :alt: scrollbars
+   :alt: Sequencer window
 
    Figure 1: Move & size of the Sequencer window
 
 In figure 1, the Sequencer window occupies the area from frame -50 to +75 and the channels 0 - 7 of the timeline window. Within this timeline window you can move the Sequencer window to another area; e.g. (+25, +150, 1, 8). The surface area does not change. You can also size (and move) the Sequencer window and make it bigger (-75, +140, 3, 15).
 
+.. Note::
+   The Sequencer Timeline window is calculated as follows:
+   
+   - Horizontal: from Start to End.
+   - Vertical: from channel 0 to 7.
+
+   This range is *extended* by any strip outside this range. So, if you set your project End to 10 000, the horizontal scrollbar will be very small, even though you only have strips in the range of 0 -250.
+
 To move the Sequencer window you can use a *shortcut key* or the *scrollbars*.
+
+.. hint::
+   If you don't have a 3 button mouse or a numpad (e.g. you are working with a tablet and stylus on a laptop), you can enable ``Emulate 3 Button Mouse`` and/or ``Emulate Numpad`` in the `User Preferences <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_. You can use then the regular numeric keys. Pressing the :kbd:`MMB` is simulated by pressing the :kbd:`Alt` key (not :kbd:`Alt Gr`) and the :kbd:`LMB` (or pressing the stylus) together and drag. 
+
+Numpad + zero
+   Pressing the :kbd:`Numpad zero` will pan the Sequencer window, so that the playhead is at the center. You have to use the numpad, unless you have set ``Emulate Numpad`` in the User Preferences (see note above).
 
 MMB + drag
    Pressing the :kbd:`MMB` and dragging left or right will pan the Sequencer window horizontally. Dragging up or down will move the window vertically. It is not that important where in the sequencer you click (center, top left, ...) because you can keep on dragging beyond the screen border. Of course, vertically, you cannot move further than channel 0, although it is possible to move beyond channel 32 (which is the highest channel you can put strips on).
@@ -24,9 +38,6 @@ Ctrl - MMB + roll
 
 Shift - MMB + roll
    Pressing the :kbd:`Ctrl MMB` and roll with the wheel will pan the Sequencer window vertically. 
-
-.. note::
-   If you don't have a 3 button mouse or if you are working with a tablet and stylus, you can enable ``Emulate 3 Button Mouse`` in the `User Preferences <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_. For panning then, you have to press the :kbd:`Alt` key (not :kbd:`Alt Gr`) and the :kbd:`LMB` together and drag. 
 
 Scrollbars
    You can also use the horizontal or vertical scrollbars to move the timeline. Click at the scrollbar (not the circles) and drag. The horizontal scrollbar gives you an indication of how much and what area the Sequencer window occupies in the Timeline window.
@@ -42,13 +53,5 @@ Because the sequencer window only covers frames 30 - 50, there will be 30% of th
 
 For the vertical scrollbar, the project span is - without any strips - from channel 0 to channel 7. If there are strips above channel 7, then the project span is from channel 0 until that channel.
 
-.. Note::
-   Although the Timeline window could span the area (- |infinity|, + |infinity|, 0, + |infinity|), in practice the Timeline window is calculated as follows:
-   
-   - Horizontal: from Start to End.
-   - Vertical: from channel 0 to 7.
 
-   This range is extended by any strip outside this range.
-
-   So, if you set your project End to 10 000, the horizontal scrollbar will be very small, even though you only have strips in the range of 0 -250.
 

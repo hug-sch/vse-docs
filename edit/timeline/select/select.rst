@@ -49,6 +49,9 @@ Box Selecting strips
 
    The same result could be obtained by just :kbd:`LMB` clicking and dragging the selection over some strips.
 
+Extend/shrink selection
+   
+
 Location based selection
 .........................
 
@@ -79,7 +82,6 @@ Select Linked strips
       Due to a bug at the time of writing, this command gives some unpredictable results. The menu or keyboard commands seem to select random strips. There are also some unexposed keys: L key, and Ctrl - Click (see below)
 Select Linked strips Vertically
    The shortcut key :kbd:`LMB` + Click on a strip will select all above or below it, if the have exactly the same Start and End time. This shortcut is not exposed in the menu.
-
 
 Attribute based selection
 .........................
@@ -115,8 +117,8 @@ Effect/Linked
 Overlap
    Selects any strips that occur on the same frame as the current. Note that the current frame is always in reference to the Start frame of the active strip. It does not correspondent with the playhead position.
 
-Select the strip handles
-........................
+Select strip handles
+....................
 
 .. figure:: img/select-menu-handles.svg
    :alt: Select Handles

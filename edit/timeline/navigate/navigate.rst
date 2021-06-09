@@ -35,7 +35,10 @@ Jump to boundaries
    
    The same could be done by clicking the Jump to Endpoint transport controls in the Timeline Editor
 
-   Pressing :kbd:`PgUp` or :kbd:`PgDn` will move the playhead to the start of the next or previous strip (over all channels). The same could be obtained by holding :kbd:`Ctrl` while dragging with the :kbd:`LMB` in the scrubbing area of the timeline.
+   Pressing :kbd:`PgUp` or :kbd:`PgDn` will move the playhead to the start of the next or previous strip (over all channels). The same could be obtained by holding :kbd:`Ctrl` *after* you have started dragging with the :kbd:`LMB` in the scrubbing area of the timeline.
+
+   Pressing :kbd:`Alt PgUp` or :kbd:`Alt PgDn` will move the playhead to the *center* of the next or previous strip (over all channels).
+
 
 Scrubbing
    Dragging with the :kbd:`LMB` in the scrubbing area at the top of the timeline or with the :kbd:`Shift RMB` in the scrubbing area of the sequencer is often called scrubbing.

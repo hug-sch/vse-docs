@@ -1,3 +1,4 @@
+.. _bpy.types.SceneSequence:
 
 ***********
 Scene Strip
@@ -19,6 +20,9 @@ See the manual to `work with scenes <https://docs.blender.org/manual/en/dev/scen
    Each scene has its own Video Sequencer.
    Scene strips cannot be used to insert the sequence's own scene.
    If you have a 3D animation in scene-1, you can insert it as a scene strip in scene-2 but not in scene-1.
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 

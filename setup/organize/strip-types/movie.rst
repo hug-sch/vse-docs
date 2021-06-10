@@ -1,10 +1,12 @@
+.. _bpy.types.MovieSequence:
 
 ***********
 Movie Strip
 ***********
 
 The input source of a movie strip is a video file with extension
-``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``, ``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm``
+``.mp4``, ``.mpg``, ``.mpeg``, ``.dvd``, ``.vob``,  ``.avi``, ``.mov``,
+``.dv``, ``.ogg``, ``.ogv``, ``.mkv``, ``.flv``, or ``.webm``
 (see `Video formats <https://docs.blender.org/manual/en/dev/files/media/video_formats.html>`_).
 Blender uses the ffmpeg library to process the video files.
 Which codecs are available depends on the operating system and ffmpeg version.
@@ -29,6 +31,10 @@ Unfortunately, the source FPS is not.
    So, you have to convert your clip to a constant frame rate with programs as
    `ffmpeg <https://ffmpeg.org/>`_ or `Handbrake <https://handbrake.fr/>`_
 
+
+Options
+=======
+
 The movie strip is a much-used strip type and has lots of properties.
 They are organized in panels in the sidebar.
 
@@ -47,7 +53,7 @@ They are organized in panels in the sidebar.
 
 In the Compositing panel you can set the properties `Blend` and `Opacity` (see figure 1).
 
-Blend property
+Blend
    When two strips are placed on top of each other, e.g. channel 2 on top of channel 1,
    the strip of channel 1 is completely covered by the strip of channel 2 in the Preview;
    as if channel 1 does not exist.
@@ -60,7 +66,7 @@ Blend property
 
       The blend modes and their functional differences are described in detail in section...
 
-Opacity Property
+Opacity
    The opacity or alpha value of the image is multiplied with this value.
    A value of 1 does not affect the opacity of the strip.
    If the strip is semi-transparent (e.g. alpha=0.6), then it remains semi-transparent.
@@ -86,23 +92,23 @@ The Transform panel contains the Position, Scale, and Rotation properties and th
 .. todo:
    Add a link to the Image Transform menu (Scale to Fit, Scale to Fill, ...).
 
-Position X, Y Property
+Position X, Y
    The dimensions of the view area of the sequencer output are set by the project dimensions;
    e.g. 1920 x 1080 by default (see :doc:`../dir-structure/creating-directory-structure`).
    A movie is centered (and scaled) within this view area. With the position X, Y values,
    you can move the frame along the X and Y axis. The values are expressed in pixels.
 
-Scale X, Y Property
+Scale X, Y
    With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity.
    A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it.
    To scale the frame proportionally, you have to use the same value for X and Y.
 
-Rotation Property
+Rotation
    Rotates the frame along the Z axis; expressed in degrees.
    A negative value will rotate counter clockwise. This value can be > 360°, e.g. in animations,
    you can rotate a frame 3 times around its Z axis by entering the value 1080° = 3 x 360°.
 
-Mirror Property
+Mirror
    Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).
 
 Figure 3 shows an example of a Picture-in-Picture (PIP) setup. There are three channels.
@@ -259,42 +265,64 @@ Channel
    This is because it is used by the Sequencer Display to show a composite of all strips above channel 0.
    The maximum number of channels is 32.
 
-To ease the understanding of these timecodes, you can imagine 4 markers on a movie strip. See figure 9 for some clarification.
+To ease the understanding of these timecodes, you can imagine 4 markers on a movie strip.
+See figure 9 for some clarification.
 
-- First accessible frame (FA): the first frame in the sequence that *could* be displayed; usually also the very first frame of the video.
-- First Visible (FV) frame: the first frame that is actually displayed in the preview. It marks also the beginning of the strip bar.
+- First accessible frame (FA): the first frame in the sequence that *could* be displayed;
+  usually also the very first frame of the video.
+- First Visible (FV) frame: the first frame that is actually displayed in the preview.
+  It marks also the beginning of the strip bar.
 - Last Visible (LV) frame: the last frame of the sequence that is displayed. The end of the blue bar.
 - Last Accessible (LA) frame: the last frame of the sequence that *could* be displayed.
 
 Start
-   This field specifies where the FA frame of the movie strip should be placed on the timeline. Upon adding a movie strip to the sequencer, the Start field is set to the value of the playhead. You can change it manually by entering a different frame number or by moving the strip to another position in the timeline.
+   This field specifies where the FA frame of the movie strip should be placed on the timeline.
+   Upon adding a movie strip to the sequencer, the Start field is set to the value of the playhead.
+   You can change it manually by entering a different frame number
+   or by moving the strip to another position in the timeline.
 
-   Right after adding FV= FA and LV = LA. Because of this, the movie seems to start at the Start position. This is however not always the case.
+   Right after adding FV= FA and LV = LA. Because of this, the movie seems to start at the Start position.
+   This is however not always the case.
 
 Duration
-   This field represents the actual duration; the length of the blue bar; or LV minus FV (see figure 9). You can change the Duration by entering a different value. A smaller value will shorten the strip (LV will be positioned earlier; see figure 9); a larger value will lengthen the strip by repeating the last frame. LV should become larger than LA? So, the Preview window has to display frames that aren't there? This problem is solved via two unexposed fields: *frame_still_start* and *frame_still_end* fields, accessible through the Python API (see further).
+   This field represents the actual duration; the length of the blue bar; or LV minus FV (see figure 9).
+   You can change the Duration by entering a different value.
+   A smaller value will shorten the strip (LV will be positioned earlier; see figure 9);
+   a larger value will lengthen the strip by repeating the last frame. LV should become larger than LA?
+   So, the Preview window has to display frames that aren't there?
+   This problem is solved via two unexposed fields:
+   *frame_still_start* and *frame_still_end* fields, accessible through the Python API (see further).
 
 End
-   Specifies the actual ending or the Last Visible frame (LV) of the strip. This value cannot be edited and is the result of the calculation: Start + Duration - 1.
+   Specifies the actual ending or the Last Visible frame (LV) of the strip.
+   This value cannot be edited and is the result of the calculation: Start + Duration - 1.
 
 Strip Offset Start
-   With this value, you reposition the FV marker. It can be a positive or negative value. If positive, the actual start (FV) of the strip will be further in time. A few frames are skipped and the movie strip starts later (see figure 9). If negative, the FV frame should come before the FA frame (assuming FV = FA initially), which is impossible. As a result, the FA frame will be repeated (see the section on Hold Offset for an explanation).
+   With this value, you reposition the FV marker. It can be a positive or negative value.
+   If positive, the actual start (FV) of the strip will be further in time.
+   A few frames are skipped and the movie strip starts later (see figure 9).
+   If negative, the FV frame should come before the FA frame (assuming FV = FA initially), which is impossible.
+   As a result, the FA frame will be repeated (see the section on Hold Offset for an explanation).
 
 Strip Offset End
-   This field repositions the LV frame. If positive, the strip will be shortened. If negative, the strip is lengthened, thereby repeating (freezing) the LA frame.
+   This field repositions the LV frame. If positive, the strip will be shortened.
+   If negative, the strip is lengthened, thereby repeating (freezing) the LA frame.
 
 .. figure:: img/offset-strip.svg
    :alt: Strip Offset fields
 
    Figure 9: Visualization of the Strip Offset fields.
 
-Both Strip Offset fields can be changed by entering a value or by dragging the left or right strip handles. If Show Overlay is enabled a small bar appears at the bottom or top of the strip bar to indicate the Offsets.
+Both Strip Offset fields can be changed by entering a value or by dragging the left or right strip handles.
+If Show Overlay is enabled a small bar appears at the bottom or top of the strip bar to indicate the Offsets.
 
 Hold Offset Start
    This field will reposition the FA frame.
    It can't be negative because there are no frames available before the FA frame.
    A positive value does something seemingly contra-intuitive: the Duration of the strip is shortened.
-   However, the Start field (where the FA is positioned at the timeline) remains the same and there are fewer frames available to display. So, the strip is shortened but the FA frame will be different.
+   However, the Start field (where the FA is positioned at the timeline)
+   remains the same and there are fewer frames available to display.
+   So, the strip is shortened but the FA frame will be different.
 
 Hold Offset End
    This field will reposition the LA frame. A positive number will reduce the LA value.
@@ -314,11 +342,13 @@ So, the original duration of 10 frames is reduced to two frames.
    Figure 11: Visualization of both Strip and Hold Offset fields.
 
 In the previous text, we mentioned a few times the "freezing" effect or the repeating of the first or last frame.
-This can be done by for example extending the LV frame beyond the LA frame (entering a larger number in the Duration field).
+This can be done by for example extending the LV frame beyond the LA frame
+(entering a larger number in the Duration field).
 Or by dragging the left or right handle beyond the FA or LA frame.
 In figure 12 there is one repeating first frame and two repeating last frames.
 The Still Offset fields are added to the Time panel via a Python script.
-For an in-depth explanation of how to do this, see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.
+For an in-depth explanation of how to do this,
+see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.
 
 .. figure:: img/offset-still.svg
    :alt: Still Offset fields
@@ -357,7 +387,8 @@ Color Space
 MPEG Preseek
    Preseek is used to decide for the fastest way to decode a specific frame.
    It should match the Group of Pictures (GOP) size of the video;
-   see `Bryan Samis blog <https://aws.amazon.com/blogs/media/part-1-back-to-basics-gops-explained/>`_ for an in-depth explanation of GOP.
+   see `Bryan Samis blog <https://aws.amazon.com/blogs/media/part-1-back-to-basics-gops-explained/>`_
+   for an in-depth explanation of GOP.
    Finding the GOP-size of a video however, is not a trivial thing (see the above link for a manual approach).
    Setting preseek to a high value like 200 could negatively impact seek performance.
    Therefore it is limited to max = 50 where it makes little to no difference.
@@ -369,7 +400,8 @@ Stream Index
      With this property, you can select the stream to preview (but again not both at the same time).
      Of course, you can add the same movie strip twice, set the stream index appropriately,
      and use the Picture-in-Picture approach from above. For the inverse:
-     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg/ffmpeg>` to merge two video channels into one container.
+     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg/ffmpeg>`
+     to merge two video channels into one container.
 
 Deinterlace
    Most (old) TV broadcasts use interlaced scan technology.
@@ -378,7 +410,8 @@ Deinterlace
    So, there is a very small time delay between the two fields.
    Most modern TVs and computer screens work with Progressive technology
    where the full image is transmitted at once; line per line.
-   Viewing an interlaced image/movie on a computer monitor shows interlacing artifacts such as saw teeth or combing.
+   Viewing an interlaced image/movie on a computer monitor
+   shows interlacing artifacts such as saw teeth or combing.
 
    Figure 10 shows an interlaced (left) and deinterlaced (right) still from a movie.
    Perhaps you have to zoom in to see the artifacts. In the movie, the blue square is moving.
@@ -415,5 +448,6 @@ Resolution
    Figure 11: Custom Panel
 
 Custom properties are a way to store your own metadata in a strip.
-For example, you could use it to store some copyright information of a strip or instructions for further post-processing.
+For example, you could use it to store some copyright
+information of a strip or instructions for further post-processing.
 More information can be found in the `data-blocks section <https://docs.blender.org/manual/en/dev/files/data_blocks.html#files-data-blocks-custom-properties>`_.

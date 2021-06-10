@@ -1,3 +1,4 @@
+.. _bpy.types.ColorSequence:
 
 ***********
 Color Strip
@@ -24,6 +25,10 @@ You can do some simple math to position the bars exactly.
 Because the height is 1080, the middle bar should be at 1080/2.
 If you want a width of 10 pixels for this bar, you need to subtract additional 5 pixels from top and bottom crop.
 Please, note also that these Color strips should have a blend mode of Overdrop or Alpha Over.
+
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 

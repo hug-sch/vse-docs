@@ -1,3 +1,4 @@
+.. _bpy.types.TextSequence:
 
 **********
 Text Strip
@@ -18,6 +19,10 @@ As is obvious from figure 1, the Text strip is not meant to write essays.
 Even for credit rolls as in figure 1, things get complicated very quickly.
 For small texts however it is ideal. With the Location and Anchor fields,
 you could position the text in the Preview window.
+
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 
@@ -54,7 +59,11 @@ Wrap Width
    The previous effect occurs only with a Center anchor and an X Location of 0.5 (default setting).
    If a left-aligned anchor however is specified, then the X location should be at 0 to have a split at the borders.
 
-Style: Font
+
+Style
+-----
+
+Font
    The default font is Blender's own BMonoFont.
    You could find it in the  ``datafiles/fonts`` folder of your Blender installation.
    Clicking on the Open button will show a File Browser window with probably the Fonts directory of *your* system selected.
@@ -64,33 +73,37 @@ Style: Font
 
    Next to the Font selector, you find the Bold and Italic toggle buttons.
 
-Style: Size
+Size
    Size of the text. The value can vary between 0 and 2000.
    This size is of course different from the point size of a font (e.g. Arial 12).
    The default size of 60 corresponds approximately with a point size of 30.
 
-Style: Color
+Color
    Clicking on the color button will display a standard
    :doc:`Color Picker </edit/color-grading/terminology/terminology>`.
 
-Style: Shadow
+Shadow
    Creates a shadow of the specified color under the text.
    You can change the color and opacity of the shadow with a color selector next to it.
    This opens a standard :doc:`Color Picker </edit/color-grading/terminology/terminology>`.
    You can not change the size nor the orientation of the shadow.
    In combination with a Box (see below), this gives a nice effect.
 
-Style: Boxrip
+Box
    Creates a background for the text to improve the readability and clarity of text in some situations.
    The color and opacity of the box can be adjusted using the color selector.
 
-Style: Box Margin
+Box Margin
    The distance that the box boundaries extend from the boundaries of the font glyphs.
    The distance is measured as a factor of the image's width.
    It is however not obvious how the margin width relates to the width of the text.
    A value of zero creates of course no margin.
 
-Layout: Location X, Y
+
+Layout
+------
+
+Location X, Y
    With the values *X* and *Y* you can position the text in the preview frame.
    The value (0,0) refers to the bottom left and (1,1) to the top right.
    A value of (0.5, 0.5) sets the anchor of the text in the middle of the frame.
@@ -99,7 +112,7 @@ Layout: Location X, Y
    You can specify a location value > 1; effectively writing the text outside of the Preview frame.
    Because you can animate this Location value, this comes in very handy to create an effect of rolling in or out.
 
-Layout: Anchor X, Y
+Anchor X, Y
    Horizontal (Left, Center, Right) or vertical (Top, Center, Bottom) anchor point of the text.
    With this value, you can align the text horizontally or vertically.
    For example, Location X & Y = 0 and Anchor X = Left and Anchor Y = Bottom,

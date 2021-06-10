@@ -47,7 +47,7 @@ You can change the timecode style. It's rather well hidden in User Preferences >
    Compact with Milliseconds, 00:01:6, with fps = 30
    Only Seconds, 1.6,
 
-In Blender, you can choose to show the timeline in seconds or in frames (menu View > Show seconds). In figure 4, the timeline is shown in frames. As a video editor, you probably are most interested in the time. It seems more natural to refer to a video fragment with a time indication, e.g. 00:01:15:10 or 1' 15'' and 10 frames than with a frame number, e.g. frame 55.
+In Blender, you can choose to show the timeline in *seconds* or in *frames*. Use the command :kbd:`Ctrl + T` or the menu View > Show seconds. In figure 4, the timeline is shown in frames. As a video editor, you probably are most interested in the time. It seems more natural to refer to a video fragment with a time indication, e.g. 00:01:15:10 or 1' 15'' and 10 frames than with a frame number, e.g. frame 55.
 
 You cannot enter the SMPTE timecode directly in the side panel, you have to enter the frame number. The conversion from frame to SMPTE code is done by a Python function *smpte_from_frame*. This function takes one parameter (the frame number) and converts it to a timecode.
 

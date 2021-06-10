@@ -18,6 +18,9 @@ In figure 1, the playhead is positioned between frame 3 & 4 and indicates with t
    - If the strip should start at frame 0, then the Current frame should be 4.
    - If the strip starts at frame 5 and the playhead is at frame 8, then the Current Frame = 3.
 
+Jumping
+.......
+
 Jumping to a specific frame
    The Playhead can be set or moved to a new position by pressing or dragging with the  :kbd:`LMB` in the scrubbing area at the top of the timeline. This is the area with the frame numbers or time codes.
 
@@ -39,13 +42,26 @@ Jump to boundaries
 
    Pressing :kbd:`Alt PgUp` or :kbd:`Alt PgDn` will move the playhead to the *center* of the next or previous strip (over all channels).
 
+Using markers
+.............
+In a very long timeline, it could be useful to insert some markers. Markers are used to name specific frames with a meaningful name.
+
+.. figure:: img/markers.svg
+   :alt: Markers
+
+   Figure 1: Markers in the Sequencer
+
 
 Scrubbing
+.........
+
    Dragging with the :kbd:`LMB` in the scrubbing area at the top of the timeline or with the :kbd:`Shift RMB` in the scrubbing area of the sequencer is often called scrubbing.
    
    When you drag with :kbd:`Shift-RMB` directly on a sequence strip, this will show the strip *solo*, (temporarily disregarding effects and other strips, showing only this strip's output). For example, if you have two color strips on top of each other, normally you see the strip from the highest channel in the Preview window. Drag with :kbd:`Shift-RMB` on the lower color strip will show this color strip in the Preview window.
 
 Playing
+.......
+
    Pressing the Play Animation transport controls in the Timeline Editor will start the play from the playhead in forward or reversed direction. Pressing the Pauze transport control will stop the playing.
 
    Start or stop playing could also be initiated with the :kbd:`Spacebar`.

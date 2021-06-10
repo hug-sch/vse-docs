@@ -8,7 +8,6 @@ Timeline basics
     zoom/zoom
     select/select
     navigate/navigate
-    scrub/scrub
   
 The concept *Timeline* can refer to different things. In Blender, it denotes in the first place the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon and used for manipulating keyframes and scrubbing the playhead. This Timeline Editor was originally intended for editing the animations in 3D modeling.
 

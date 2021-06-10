@@ -26,7 +26,7 @@ If you have :doc:`zoomed out <../zoom/zoom>` the strip bars could become pretty 
 Select multiple strips
 ......................
 
-Select random strips
+Select specific strips
     You can :kbd:`Shift` + click consecutively on strips to select them all. The strip that is last clicked will become the active one. If you want another strip to be active, click that strip again (without releasing :kbd:`Shift`). To remove a strip from the collection, make it active and :kbd:`Shift` + click again.
 
 .. figure:: img/select-menu.svg
@@ -62,26 +62,33 @@ Location based selection
 
 With these commands you can select strips, based on their position on the timeline in relation to the playhead or the active strip (see figure 2).
 
-Select all strips at left or right
-   Pressing :kbd:`[` key will select all strips that start after the playhead in all channels. Pressing :kbd:`]` will select all strips that start before the playhead. Please note, that strips running over the playhead will not be selected. If you want those strips in the selection, you first have to select the opposite side and then invert that selection.
+Select all strips based on position of playhead 
+   Pressing :kbd:`[` key will select all strips that *start after* the playhead in all channels. Pressing :kbd:`]` will select all strips that *start before* the playhead. Please note, that strips running over the playhead will not be selected. If you want those strips in the selection, you first have to select the opposite side and then invert that selection (see above).
 
    Users of a non-QWERTY keyboard probably need different keys. For example, on an AZERTY keyboard, you should use the ellipsis ) for the Select left command. You can change the key assignment rather easily in the User Preferences: menu Edit > Preferences > Keymap. Search for "Select Side of frame" and assign a new key.
 
-   The menu equivalent is Select > Side of Frame (see figure 2), with options: Left or Right.
+   You can also use :kbd:`Ctrl + LMB` at the *left* of the playhead to select all strips before the playhead or :kbd:`Ctrl + LMB` at the *right* of the playhead to select all strips after the playhead.
+
+   To select all strips located at the position of the playhead, choose the submenu  *Current Frame*. There is no shortcut key associated by default.
+
+   The menu equivalent is Select > Side of Frame (see figure 2), with options: Left, Right or Current Frame.
 
 Select strips in channel
-   Select strips in the same channel laying left and/or right to active strip.
-   The menu equivalent is Select > Channel (see figure 2), with options: Left, Right or Both Sides. The difference with the previous command is that the active strip is taken as reference; not the playhead.
+   Select strips in the same channel laying left and/or right of the selected strips.
+   The menu equivalent is Select > Channel (see figure 2), with options: Left, Right or Both Sides. The difference with the previous command is that the selection is taken as reference; not the playhead.
 
    Use this command to select all strips in the channel of the active strip by choosing the both sides option.
 
 Select Linked strips
-   :kbd:`Ctrl` - :kbd:`LMB` above one strip will select all strips in the timeline with the same Start and End time.
+   :kbd:`Ctrl + L` will select all the strips in the same channel that are connected with the Active Strip, meaning there are no gaps between them.
+
+   The menu equivalent is: Select > Linked > All.
 
    .. Todo::
-      Due to a bug at the time of writing, this command gives some unpredictable results. The menu or keyboard commands seem to select random strips. There are also some unexposed keys: L key, and Ctrl - Click (see below)
+      The menu Select > Linked > Less and More seem to be doing nothing.
+
 Select Linked strips Vertically
-   The shortcut key :kbd:`LMB` + Click on a strip will select all above or below it, if the have exactly the same Start and End time. This shortcut is not exposed in the menu.
+   The shortcut key :kbd:`LMB` + Click on a strip will select all above and below it, if the have exactly the same Start and End time. The clicked strip becomes selected and active. This shortcut is not exposed in the menu.
 
 Attribute based selection
 .........................
@@ -96,24 +103,23 @@ With these commands you can select strips according to their relation with other
 Type
    Selects all strips of the same type as the active strip within a category. For example, if you have a speed control strip selected, this command will select all other speed control strips but not the Transform or Cross Transition strips.
 Global Type
-   Selects any strips of the same type, e.g. Effect, Image, Movie, etc.
+   With this command you can differentiate between Audio strips and the rest (Movie, Image, Effect, ...). To select all audio strips, make sure that the Active Strip is an audio strip and issue this command.
 
-   .. Warning::
-      This command seems to be broken and selects everything.
 Effect Type
    Selects *all* effect strips. Please note that Text and Color strips are also considered as Effect strips.
 Data
    Selects strips that share the same data, for example, two image strips sharing the same image file. This could be handy if you have used the same file on different places; e.g. a logo image.
 Effect
-   Selects the strip that shares an effect strip.
+   Selects all strips that have the same effect applied as the Active Strip. For example, if the Active Strip has a Blur effect, this command will select all other strips with a Blur effect.
 
-   .. Warning::
-      This command seems to be broken and selects everything.
+
 Effect/Linked
-   Selects the effect strips, if any, linked to the currently selected strip.
+   Selects other strips affected by the active one (sharing some time and below or effect-assigned.
 
-   .. Warning::
-      This command seems to be broken and selects also the adjacent strip.
+   Select all strips within time range and with lower channel of initial selection. Then select effect chains of these strips. 
+
+   .. Todo::
+      Explain in more detail.
 Overlap
    Selects any strips that occur on the same frame as the current. Note that the current frame is always in reference to the Start frame of the active strip. It does not correspondent with the playhead position.
 

@@ -44,20 +44,37 @@ Jump to boundaries
 
 Using markers
 .............
-In a very long timeline, it could be useful to insert some markers. Markers are used to name specific frames with a meaningful name.
+In a very long timeline, it could be useful to insert some markers. Markers are used to name specific frames with a meaningful name. They are shown as small white triangles at the bottom of the Sequencer timeline. In figure 2, the first marker (Appearance dog) is selected. You can see by the white fill-color of the triangle and the white dotted vertical line. The other markers are not selected (only a white outline and black dotted line).
 
 .. figure:: img/markers.svg
    :alt: Markers
 
-   Figure 1: Markers in the Sequencer
+   Figure 2: Markers in the Sequencer timeline
 
+More detailed information is in `Animation & Rigging > Markers <https://docs.blender.org/manual/en/latest/animation/markers.html>`_.  To summarize the most important commands for the Video Sequencer:
+
+.. figure:: img/markers-menu.png
+   :alt: Markers
+   :scale: 50%
+   :align: right
+
+   Figure 3: Markers menu menu
+
+- The display of markers in the timeline can be toggled on or off with the menu View > Show Markers.
+- Add a marker: select the frame and press :kbd:`M`. You can also add markers during playback *while viewing the movie*. Just press :kbd:`M` when the playhead is at the desired frame. The markers have a name like F_514 (frame 514).
+-  Select a marker: :kbd:`LMM + Click` on marker triangle. To select all markers, press :kbd:`A` when over the marker timeline. To select multiple markers, press :kbd:`LMB` and rag over the markers.
+- Rename a marker: select marker and press :kbd:`Ctrl + M`.
+- Move marker: select marker and press :kbd:`G`. Move the markers and :kbd:`LMB + Click` to confirm or :kbd:`RMB + Click` to cancel.
+- Delete marker: select marker and press :kbd:`X`.
 
 Scrubbing
 .........
 
    Dragging with the :kbd:`LMB` in the scrubbing area at the top of the timeline or with the :kbd:`Shift RMB` in the scrubbing area of the sequencer is often called scrubbing.
    
-   When you drag with :kbd:`Shift-RMB` directly on a sequence strip, this will show the strip *solo*, (temporarily disregarding effects and other strips, showing only this strip's output). For example, if you have two color strips on top of each other, normally you see the strip from the highest channel in the Preview window. Drag with :kbd:`Shift-RMB` on the lower color strip will show this color strip in the Preview window.
+   When you drag with :kbd:`Shift-RMB` directly on a sequence strip, this will show the strip *solo*, temporarily disregarding effects and other strips, showing only this strip's output. For example, if you have two color strips on top of each other, normally you see the strip from the highest channel in the Preview window. Drag with :kbd:`Shift-RMB` on the lower color strip will show this color strip in the Preview window.
+
+   Scrubbing a timeline with audio strips can be sometimes annoying. You can toggle on or off the audio while scrubbing with the Playback menu of the Timeline Editor (not the Sequencer editor). 
 
 Playing
 .......

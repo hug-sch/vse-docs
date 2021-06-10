@@ -430,8 +430,12 @@ You can download the test file from figure 10 from the
 
 .. _resolution:
 
-Resolution
-   Dimension (width x height in pixels) of the active strip image output. This property is not editable.
+Resolution & fps
+   Dimension (width x height in pixels) of the active strip image output.
+   Frames per second (fps) of the active strip.
+   
+   These properties are not not editable and should preferably match the settings of the project (see :doc:`see Organize > Import section </setup/organize/import/import.rst` ).
+   
    Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
 
 .. _custom-panel:

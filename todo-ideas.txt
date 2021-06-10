@@ -15,13 +15,14 @@
     (5) problems if source fps mismatches render fps. 
 
 11.Files/movies can be imported from the Asset manager. Has to be included also in the screenshots. Check where the drag/drop from outliner has been stalled (GSOC target).
-12. Description of the Timeline > Playback dropdown (with sync to audio, scrubbing, mute, ...). Where should it land in the tabel of Contents
+12. Description of the Timeline > Playback dropdown (with sync to audio, scrubbing, mute, ...). Where should it land in the table of Contents
 13. Timecode style: very well hidden in User preferences > Animation > Timeline. And see also Interface > Editors > Navigation controls (to remove the move and zoom widgets in the preview?)
 14. Some background info from tin2tin: The use of the word timecode, is typically referred to as embedded in the metadata of a file or as an audio track with the timecode(sounds like the good old noise from a modem). I don't know if the definition is less restricted these days, but you may have to check up on that. There was some discussion when the Time panel was made, whether or not to call it timecode, but for the above mentioned reason it was called time.
-15. Section Timeline > Move. Better the word View (Change view). Move is used for Transform (G). Moving the playhaed is called navigation.
-16. The active strip can also be deselected (Done). 1. active 2. deselected. 3. selected - things can quickly become confusing - ex. if no overlay strip text is displayed, there are no texts to become white, and it is not possible to see what strip is the unselected active strip.
+15. Section Timeline > Move. Better the word View (Change view). Move is used for Transform (G). Moving the playhead is called navigation.
 17. Overlay menu covered?
-18. On 2.2.2 Cutting - In Blender (and other nles) it is called Split/Splitting so it is not mixed up with copy/paste/CUT, where cut means delete. In the old days you would use this thing: microfilmworld.com/16mmand35mmmicrofilmsplicers.aspx to split & splice the film strip. Splitting with the guillotine on the side and splicing with scotch tape.
+
+18. Transform tool no performace hit with addon; see https://developer.blender.org/D11533
+
 
 
 

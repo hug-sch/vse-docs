@@ -1,3 +1,4 @@
+.. _bpy.types.ImageSequence:
 
 **************************
 Image/Image Sequence Strip
@@ -14,9 +15,12 @@ Image and Image Strip are two different strip types.
 Nevertheless, you need the same command to add them to the timeline (see figure 1).
 The :ref:`default <default-color>` color of the Image/Image Sequence strip bar is: :image:`███`
 
-The input source of an Image/Image Sequence strip is a graphics file or a collection of graphics files with extension
-``.BMP``, ``.Iris``, ``.PNG``, ``.JPEG``, ``.JPG2000``, ``.targa``, ``.cineon & DPX``, ``openEXR``, ``Radiance HDR`` or ``.TIFF``.
-For more in-depth information about these formats, see `graphics formats <https://docs.blender.org/manual/en/dev/files/media/image_formats.html>`_.
+The input source of an Image/Image Sequence strip is a graphics file
+or a collection of graphics files with extension
+``.BMP``, ``.Iris``, ``.PNG``, ``.JPEG``, ``.JPG2000``, ``.targa``,
+``.cineon & DPX``, ``openEXR``, ``Radiance HDR`` or ``.TIFF``.
+For more in-depth information about these formats,
+see `graphics formats <https://docs.blender.org/manual/en/dev/files/media/image_formats.html>`_.
 
 
 Image
@@ -42,7 +46,8 @@ The input of an Image Sequence strip is a sequence of graphic files, e.g. *0001.
 Most of the time these files are numbered as in the previous example.
 However, this is not necessary because Blender creates the sequence based on the sort order in the File browser.
 You could name them also as *a.png*, *b.png*, and *c.png*.
-If - by coincidence - you sorted the above files in reversed order, then the sequence will begin with *0003.png* or *c.png*.
+If - by coincidence - you sorted the above files in reversed order,
+then the sequence will begin with *0003.png* or *c.png*.
 
 When this image sequence is added to the timeline, the resulting strip is treated as one movie.
 In the :ref:`Source panel <image-source-panel>` of the sidebar you can retrieve the individual image names.
@@ -52,9 +57,14 @@ You can then enable the Use placeholders checkbox when adding the image strip.
 This will create the image strip with empty -but named- frames for the missing images.
 Suppose 0002.png is missing in the previous example.
 Creating the Image Sequence -- with Use Placeholders checked -- will create a strip of three frames.
-The second frame appears as black but is named 0002.png. Later on, you can add this file to the folder with the others.
+The second frame appears as black but is named 0002.png.
+Later on, you can add this file to the folder with the others.
 This method will only work with correctly numbered sequences.
 Our previous example with *a.png*, *b.png*, *c.png* will not succeed.
+
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 
@@ -79,7 +89,8 @@ Only in the Source panel, there are minor changes.
 
    Figure 2: Source Property
 
-In contrast to the Movie strip, the Source property of the Image Sequence strip is split into a directory and a file component (see figure 2).
+In contrast to the Movie strip, the Source property of the Image Sequence strip
+is split into a directory and a file component (see figure 2).
 
 Directory
    The directory that contains the source files.

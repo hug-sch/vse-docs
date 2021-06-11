@@ -1,3 +1,4 @@
+.. _bpy.types.MaskSequence:
 
 **********
 Mask Strip
@@ -25,6 +26,10 @@ A black color is coded as RGB (0,0,0).
 So, multiplying this color with the background color will result in 0 or black. The mask is opaque.
 
 In the Movie Clip Editor, you can do also tracking. The mask should indeed follow the movement of the dog.
+
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 

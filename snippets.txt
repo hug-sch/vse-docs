@@ -26,7 +26,10 @@ table
    1, row2, value 2
 
 
-code (red color and border)
+red color (presumes the red color entry in the custom css.)
+.. role:: red
+
+:red:`text in red `
 
 ``bpy.context.scene.sequence_editor.active_strip.frame_start``
 

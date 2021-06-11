@@ -58,3 +58,24 @@ The Freeze in the middle of the strip is more complicated. First, you need a Hol
 
 The strip in figure 3 has a brown color because it is an image sequence. You can add the Still Offset fields to the Time panel with a little Python code (see :doc:`useful scripts </extra-tools/python/useful-scripts>` ).
 
+Classic Cuts
+............
+
+Jump Cut
+   A jump cut is a cut in film editing in which a single continuous sequential shot of a subject is broken into two parts, with a piece of footage being removed in order to render the effect of jumping forward in time. ... Jump cuts tend to draw attention to the constructed nature of the film. (From `Wikipedia <https://en.wikipedia.org/wiki/Jump_cut>`_) In essence, a jump cut allows the editor to jump forward in time.
+
+   It can also be used in conversations and interviews, to jump from the perspective of speaker 1 to that of speaker 2.
+
+L-cut and J-cut
+   In an L-cut, you are hearing the audio from the previous shot, even though you are viewing another shot. The name of the L-cut is derived from the shape of the resulting edit (see figure 4)
+
+   A J-Cut is essentially the opposite of an L-Cut. Here you hear the audio before you see the video. So, the audience is is looking at strip 2 but still hearing audio from strip 1 (see figure 4).
+
+   .. figure:: img/j&l-cut.svg
+      :alt: J- & L-cut
+      
+      Figure 4: Example of L- & J-Cut
+
+Action cut
+   An action cut is made when you cut in the middle of an action to another shot that matches the first shot's action.
+

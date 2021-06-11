@@ -1,3 +1,4 @@
+.. _bpy.types.SoundSequence:
 
 ***********
 Sound Strip
@@ -13,7 +14,6 @@ There is no linking between the source video file and the embedded audio.
 So, you can move the sound strip without moving the movie strip and vice versa;
 thereby creating a synchronization problem.
 The :ref:`default <default-color>` color of the Sound strip bar is: :sound:`███`
-
 
 .. warning::
 
@@ -35,6 +35,10 @@ The beeps still occur at 0.27 and 0.73 s but frame 8 and 22 are shifted to the r
 Frame 24 in the project is after all at time code 1 s, so,
 frame 22 is lightly before that at timecode 0.91 s.
 The Sound strip therefore will end at frame 24 because sound cannot be compressed without changing the Pitch.
+
+
+Options
+=======
 
 .. admonition:: Panels documented elsewhere!
 
@@ -118,6 +122,15 @@ Display Waveform
 
 Mono
    Mixdown all audio channels into a single one.
+
+
+Source
+======
+
+.. admonition:: Source Panel
+
+   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Source`
+
 
 Pack
    Packing the sound file means that the sound is embedded -not linked- in the blend-file.

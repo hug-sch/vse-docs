@@ -3,7 +3,7 @@
   Video Editing (updated)
 ###########################
 
-This is the homepage for the refactoring attempt of the Blender Video Sequencer Editor (VSE) Documentation.
+This is the homepage for the refactoring attempt of the Blender Video Sequence Editor (VSE) Documentation.
 The VSE (LTS version 2.93) has lately undergone some drastic changes.
 The time seems ripe to also refactor the documentation.
 This manual follows a workflow oriented approach,

@@ -7,7 +7,7 @@ Montage
     adding/index
     splitting/splitting
     moving/moving
-    trimming/trimming
+    trimming
     grouping/grouping
     deleting/deleting
 

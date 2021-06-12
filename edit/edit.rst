@@ -13,7 +13,7 @@ There is no single optimal workflow for editing your video projects that fits ev
     :maxdepth: 3
   
     timeline/timeline
-    montage/montage
+    montage/index
     effects/effects
     sound/sound
     color-grading/color-grading

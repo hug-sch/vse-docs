@@ -17,7 +17,7 @@ See :doc:`Special workflows </workflow/workflow>` for an example.
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip:
    :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
@@ -30,9 +30,14 @@ There can be multiple data blocks and they are stored within the Blend-file upon
 Two extra properties are added to the Video panel.
 The *Strobe* and *Reverse Frames* properties are the same as in the :ref:`Movie Strip <video-panel>`.
 
-.. admonition:: Video Panel
+Video
+-----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Video`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Video`
 
 .. figure:: img/panel-video-strip-clip.png
    :scale: 50%

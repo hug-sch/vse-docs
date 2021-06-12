@@ -379,7 +379,7 @@ In the previous text, we mentioned a few times the "freezing" effect or the repe
 This can be done by for example extending the LV frame beyond the LA frame
 (entering a larger number in the Duration field).
 Or by dragging the left or right handle beyond the FA or LA frame.
-In figure 12 there is one repeating first frame and two repeating last frames.
+In figure 12 there are two repeating first frame and two repeating last frames.
 The Still Offset fields are added to the Time panel via a Python script.
 For an in-depth explanation of how to do this,
 see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.

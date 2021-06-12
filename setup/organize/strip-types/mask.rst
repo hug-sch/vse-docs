@@ -31,7 +31,7 @@ In the Movie Clip Editor, you can do also tracking. The mask should indeed follo
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip:
    :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
@@ -40,9 +40,15 @@ Options
 
 A Mask panel is added to the Properties (see figure 2)
 
-.. admonition:: Mask Panel
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Mask`
+Mask
+----
+
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Mask`
 
 .. figure:: img/panel-mask.png
    :scale: 50%

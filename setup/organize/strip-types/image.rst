@@ -66,7 +66,7 @@ Our previous example with *a.png*, *b.png*, *c.png* will not succeed.
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip:
    :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
@@ -76,11 +76,17 @@ Options
 
 Only in the Source panel, there are minor changes.
 
+
+Source
+------
+
 .. _image-source-panel:
-.. admonition:: Source Panel
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Source`
+.. admonition:: Reference
+   :class: refbox
 
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
 
 .. figure:: img/panel-source-strip-image.png
    :scale: 50%

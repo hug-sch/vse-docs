@@ -24,7 +24,7 @@ you could position the text in the Preview window.
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip: :ref:`Compositing <compositing-panel>`,
    :ref:`Transform <transform-panel>`, :ref:`Crop <crop-panel>`, :ref:`Video <video-panel>`,
@@ -36,9 +36,15 @@ Options
 
 An Effect panel is added to the Properties (see figure 2).
 
-.. admonition:: Effect Strip Panel
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Effect Strip`
+Effect Strip
+------------
+
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Effect Strip`
 
 .. figure:: img/panel-effect-strip-text-.png
    :scale: 60%
@@ -61,7 +67,7 @@ Wrap Width
 
 
 Style
------
+^^^^^
 
 Font
    The default font is Blender's own BMonoFont.
@@ -101,7 +107,7 @@ Box Margin
 
 
 Layout
-------
+^^^^^^
 
 Location X, Y
    With the values *X* and *Y* you can position the text in the preview frame.

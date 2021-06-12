@@ -30,7 +30,7 @@ Please, note also that these Color strips should have a blend mode of Overdrop o
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip:
    :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
@@ -42,10 +42,15 @@ Options
 
 An Effect panel is added to the Properties.
 
-.. admonition:: Effect Strip Panel
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Effect Strip`
+Effect Strip
+------------
 
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Effect Strip`
 
 .. figure:: img/panel-effect-strip-color.png
    :scale: 50%

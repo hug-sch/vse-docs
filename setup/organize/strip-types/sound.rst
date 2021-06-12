@@ -40,7 +40,7 @@ The Sound strip therefore will end at frame 24 because sound cannot be compresse
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those of the Movie strip:
    :ref:`Time <time-panel>`, :ref:`Source <source-panel>` and :ref:`Custom <custom-panel>`.
@@ -48,9 +48,14 @@ Options
 There are **no** *Compositing*, *Transform*, *Crop*, *Video*, and *Color* panels for the Sound strip.
 The following properties are **specific** for sound strips.
 
-.. admonition:: Sound Panel
+Sound
+-----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Sound`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Sound`
 
 .. figure:: img/panel-sound.svg
    :scale: 80%
@@ -125,12 +130,13 @@ Mono
 
 
 Source
-======
+------
 
-.. admonition:: Source Panel
+.. admonition:: Reference
+   :class: refbox
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Source`
-
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
 
 Pack
    Packing the sound file means that the sound is embedded -not linked- in the blend-file.

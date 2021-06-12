@@ -24,7 +24,7 @@ See the manual to `work with scenes <https://docs.blender.org/manual/en/dev/scen
 Options
 =======
 
-.. admonition:: Panels documented elsewhere!
+.. note:: Panels documented elsewhere!
 
    The following panels are identical to those from the Movie strip:
    ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
@@ -35,9 +35,15 @@ A new property is added to the Time panel: ``Original Frame Range``.
 As the name indicates, this new property shows the number of frames of the original scene held.
 An entirely new Scene panel is also added.
 
-.. admonition:: Scene Panel
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Scene`
+Scene
+-----
+
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Scene`
 
 .. figure:: img/panel-scene.png
    :scale: 50%

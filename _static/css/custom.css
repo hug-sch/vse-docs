@@ -10,7 +10,7 @@
 .scene {color:#828F50;}
 .effect {color:#514A73;}
 .color {color:#8F8F8F;}
-.meta {color:#5B4D91;}
+.meta {color:#5B4D91;}Panel
 .mask {color:#666666;}
 .text {color:#824C8F;}
 
@@ -44,3 +44,11 @@
 .ob {font-style: oblique;}
 .small {font-size: small;}
 .large {font-size: large;}
+
+.rst-content .refbox .admonition-title {background-color: #bbb}
+.rst-content .refbox {
+	-webkit-font-smoothing: antialiased;
+	background-color: #e3e3e3;
+	line-height: 24px;
+	margin-bottom: 24px; padding: 12px;
+}

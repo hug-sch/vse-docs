@@ -38,11 +38,17 @@ Options
 The movie strip is a much-used strip type and has lots of properties.
 They are organized in panels in the sidebar.
 
+
 .. _compositing-panel:
 
-.. admonition:: Compositing Panel
+Compositing
+-----------
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Compositing`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Compositing`
 
 .. figure:: img/panel-compositing.png
    :scale: 50 %
@@ -76,9 +82,14 @@ Opacity
 
 .. _transform-panel:
 
-.. admonition:: Transform Panel
+Transform
+---------
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Transform`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Transform`
 
 .. figure:: img/panel-transform.png
    :scale: 50%
@@ -138,11 +149,17 @@ To tuck the small picture in the top-right corner,
 you have to move it on the X-axis to position: 1024 - (614/2) = 717.
 And on the Y-axis to position 429 - (257/2) = 300.
 
+
 .. _crop-panel:
 
-.. admonition:: Crop Panel
+Crop
+----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Crop`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Crop`
 
 .. figure:: img/panel-crop.png
    :scale: 50%
@@ -174,12 +191,17 @@ This will result in the exact same size but zoomed in.
 
    Figure 5: Crop vs Scale example
 
+
 .. _video-panel:
 
-.. admonition:: Video Panel
+Video
+-----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Video`
+.. admonition:: Reference
+   :class: refbox
 
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Video`
 
 .. figure:: img/panel-video-strip-movie.png
    :scale: 50%
@@ -199,11 +221,17 @@ Reverse Frames
    The strip is played backward starting from the last frame in the sequence to the first frame.
    This will also work with split strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.
 
+
 .. _color-panel:
 
-.. admonition:: Color Panel
+Color
+-----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Color`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Color`
 
 .. figure:: img/panel-color.png
    :scale: 50%
@@ -233,11 +261,17 @@ Convert to Float
    The Convert to Float does not seem to do anything.
    But see Stackexchange: https://blender.stackexchange.com/questions/57528/
 
+
 .. _time-panel:
 
-.. admonition:: Time Panel
+Time
+----
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Time`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:Sidebar --> Strip --> Time`
 
 .. figure:: img/panel-time.png
    :scale: 50%
@@ -360,11 +394,17 @@ Current Frame
    So, if the strip starts at frame 10 and the Playhead is positioned at (timeline) frame 15,
    the Current Frame will be 5.
 
+
 .. _source-panel:
 
-.. admonition:: Source Panel
+Source
+------
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Source`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
 
 .. figure:: img/panel-source-movie-strip.png
    :scale: 50%
@@ -438,11 +478,17 @@ Resolution & fps
    
    Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
 
+
 .. _custom-panel:
 
-.. admonition:: Custom Properties Panel
+Custom Properties
+-----------------
 
-   :menuselection:`--> Sequencer --> Strip --> Sidebar --> Panel --> Custom Properties`
+.. admonition:: Reference
+   :class: refbox
+
+   :View:      Sequencer
+   :Panel:     :menuselection:`Sidebar --> Strip --> Custom Properties`
 
 .. figure:: img/panel-custom.png
    :scale: 50%

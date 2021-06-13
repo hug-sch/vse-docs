@@ -1,15 +1,14 @@
-******************
-Setup your project
-******************
+*****
+Setup
+*****
 
 The proverb "A good start is half the battle", certainly applies to video editing. Setting up your project to *your* needs is key to success. After that, and only then, you should start editing and rendering. 
 
 .. toctree::
    :maxdepth: 3
  
-   organize/organize
-   customize/customize-environment
-   extend/extend-environment
+   environment/index
+   project/index
  
 Any non-trivial video project quickly counts a multitude and variety of files. Organizing them in a way so that they can easily be recognized and retrieved can save you considerable time later on.
 

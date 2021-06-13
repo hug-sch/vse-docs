@@ -15,7 +15,7 @@ e.g. the structure mirrors your workflow for a simple video editing project.
    :numbered: 3
 
    introduction.rst
-   setup/setup
+   setup/index
    edit/edit
    render/render
    workflow/workflow

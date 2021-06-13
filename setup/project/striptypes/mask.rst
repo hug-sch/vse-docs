@@ -10,7 +10,7 @@ There will be nothing in the Mask menu unless you have created a mask in the Mov
 At all other times, it's just a blank menu. If there are multiple masks in the Movie Clip Editor,
 you can choose the appropriate mask from the drop-down menu. These masks could also be used as a modifier.
 
-.. figure:: img/mask.svg
+.. figure:: /images/vse_setup_project_striptypes_mask.svg
    :alt: Masking
 
    Figure 2: Masking with the Movie Clip Editor and the Mask strip
@@ -50,7 +50,7 @@ Mask
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Mask`
 
-.. figure:: img/panel-mask.png
+.. figure:: /images/vse_setup_project_striptypes_panel-mask.png
    :scale: 50%
    :alt: Mask Property of Mask Strip
    :align: Right

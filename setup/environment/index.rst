@@ -1,11 +1,13 @@
-Extend your environment
-=======================
+Setup environment
+=================
 
 .. toctree::
    :maxdepth: 1
  
-   add-ons/add-ons
-   proxies/proxies
+   workspace
+   add-ons
+   preferences
+   proxies
 
 Blender's Video Sequencer is a fairly good editor but, nevertheless, it lacks some (vital) components. An add-on is a piece of software that provides some extra functionality and that can be easily integrated with Blender. For example, sound editing is rather neglected in the VSE. Sound level monitoring, normalizing sound level, however, can easily be done in an open-source package as Audacity. So, there is an add-on to export your sound data to Audacity and importing it back.
 

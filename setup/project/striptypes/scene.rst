@@ -45,7 +45,7 @@ Scene
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Scene`
 
-.. figure:: img/panel-scene.png
+.. figure:: /images/vse_setup_project_striptypes_panel-scene.png
    :scale: 50%
    :alt: Scene Property of Scene Strip
    :align: Right
@@ -75,7 +75,7 @@ Input
    Scene Month-3 contains a Text strip (purple) and a color strip (orange).
    All four scenes have selected the Sequencer as input.
 
-   .. figure:: img/scene.svg
+   .. figure:: /images/vse_setup_project_striptypes_scene.svg
       :alt: Scene containing scene strips
 
       Figure 2: Scene Overview containing four Scene strips

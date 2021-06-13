@@ -1,10 +1,10 @@
-Adding functionality with add-ons
-=================================
+Add-ons
+-------
 
 Add-ons are installed and managed through the Edit > Preferences menu. In figure 1, we have searched for add-ons in the Sequencer category. Unfortunately, there is only one; e.g. the Power Sequencer add-on. Other categories are: 3D-view, Animation, Camera, ... `More details <https://docs.blender.org/manual/en/dev/editors/preferences/addons.html>`_ about this Preferences panel can be found in the manual.
 
-.. figure:: add-ons-panel.svg
-   :alt: Add-ons panel in preferencesPreferences
+.. figure:: /images/vse_setup_environment_add-ons-panel.svg
+   :alt: Add-ons panel in Preferences
 
    Figure 1: The add-ons panel with the Power sequencer add-on selected.
 

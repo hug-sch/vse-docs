@@ -15,7 +15,7 @@ Strip Types
    mask
    text
 
-.. figure:: img/strip-types.svg
+.. figure:: /images/vse_setup_project_striptypes_strip-types.svg
    :alt: Available strip types
 
    Figure 1: Available strip types with color code and properties.

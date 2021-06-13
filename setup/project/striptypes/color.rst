@@ -14,7 +14,7 @@ However, the selected color will also be shown in the lower half of the strip ba
 The Color strip is used to create some custom transitions and in combination
 with the Crop and/or Transform property to create some horizontal or vertical colored bars (see figure 1).
 
-.. figure:: img/color.svg
+.. figure:: /images/vse_setup_project_striptypes_color.svg
    :alt: Use of the Color strip
 
    Figure 1: Possible use of the Color strip
@@ -52,7 +52,7 @@ Effect Strip
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Effect Strip`
 
-.. figure:: img/panel-effect-strip-color.png
+.. figure:: /images/vse_setup_project_striptypes_panel-effect-strip-color.png
    :scale: 50%
    :alt: Effect Strip Property
    :align: right

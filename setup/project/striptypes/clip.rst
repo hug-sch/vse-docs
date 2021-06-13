@@ -39,7 +39,7 @@ Video
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Video`
 
-.. figure:: img/panel-video-strip-clip.png
+.. figure:: /images/vse_setup_project_striptypes_panel-video-strip-clip.png
    :scale: 50%
    :alt: Video Property of Clip Strip
    :align: Right

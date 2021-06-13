@@ -1,7 +1,6 @@
 
-********************
-Organize your assets
-********************
+Setup project
+=============
 
 Even a moderate-sized video project can contain hundreds of assets.
 It's very easy to get lost in that huge amount of source files.
@@ -11,12 +10,12 @@ animations, masks, proxies, and so on.
 .. toctree::
    :maxdepth: 2
 
-   dir-structure/creating-directory-structure
-   strip-types/index
-   import/import
-   dir-structure/creating-test-files
+   directory-structure
+   project-settings
+   import
+   striptypes/index
 
-.. figure:: organize-example.png
+.. figure:: /images/vse_setup_project_organize-example.png
    :align: center
    :alt: Example of a complex timeline
 

@@ -20,7 +20,7 @@ The :ref:`default <default-color>` color of the Sound strip bar is: :sound:`â–ˆâ
    Sometimes, after adding a Movie strip, you will notice that the Movie and Sound strip have not the same length.
    This is the result of a mismatch between the Frame rate (fps) of the project and the video clip.
 
-.. figure:: img/sound.svg
+.. figure:: /images/vse_setup_project_striptypes_sound.svg
    :alt: Synchronization problem
    :align: Right
 
@@ -57,7 +57,7 @@ Sound
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Sound`
 
-.. figure:: img/panel-sound.svg
+.. figure:: /images/vse_setup_project_striptypes_panel-sound.svg
    :scale: 80%
    :alt: Sound Panel
    :align: Right
@@ -84,7 +84,7 @@ Pitch
    The Sound strip appears equally long as before but the sound
    will stop earlier or premature in case of a reduction of the speed.
 
-.. figure:: img/sound-waveform.svg
+.. figure:: /images/vse_setup_project_striptypes_sound-waveform.svg
    :alt: Sound waveform
 
    Figure 3: Sound waveform does not change with pitch change in Blender
@@ -114,7 +114,7 @@ Pan
    you can pan to those with the higher values: -2 (7 o'clock) and +2 (5 o'clock).
    So this value basically represents the angle at which the sound is played. Only works for mono sources.
 
-   .. figure:: img/sound-pan.svg
+   .. figure:: /images/vse_setup_project_striptypes_sound-pan.svg
       :scale: 50%
       :alt: Pan values
 

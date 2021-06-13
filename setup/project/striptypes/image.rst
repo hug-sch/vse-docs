@@ -4,7 +4,7 @@
 Image/Image Sequence Strip
 **************************
 
-.. figure:: img/add-strips.png
+.. figure:: /images/vse_setup_project_striptypes_add-strips.png
    :scale: 50%
    :alt: Add stips
    :align: Right
@@ -88,7 +88,7 @@ Source
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Source`
 
-.. figure:: img/panel-source-strip-image.png
+.. figure:: /images/vse_setup_project_striptypes_panel-source-strip-image.png
    :scale: 50%
    :alt: Source Property of Image Strip
    :align: Right

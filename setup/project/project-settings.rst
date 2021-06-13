@@ -1,7 +1,7 @@
 Project settings
 ----------------
 
-.. figure:: img/project-settings.svg
+.. figure:: /images/vse_setup_project_project-settings.svg
    :alt: Project Settings
    :align: right
    :scale: 40%
@@ -31,7 +31,7 @@ The resolution X and Y refer to the number of pixels in the horizontal and verti
 
 Figure 2 shows these three common resolutions more visually. Note how small the HD resolution is, compared to the UHD or 4K version. Of course, there are many more formats for social media, film theater, .... A rather exhaustive list can be found at `Wikipedia <https://en.wikipedia.org/wiki/List_of_common_resolutions>`_.
 
-.. figure:: img/resolutions.svg
+.. figure:: /images/vse_setup_project_resolutions.svg
    :alt: Resolutions
    :align: right
    :scale: 100%
@@ -42,13 +42,13 @@ You can set the Resolution % (default = 100%) to a lower percentage to render th
 
 Figures 3 - 4 show the render result with the percentage set to 10% and 5% of the 4K image of figure 2. Please note, that a 0% render of the UHD image still gives us an image of 386 x 216 pixels. The images are scaled up to have a clear view and the same dimensions of figure 2. Figure 4 is of course only 192 pixels wide x 108 pixels tall.
 
-.. figure:: img/tree-10.png
+.. figure:: /images/vse_setup_project_tree-10.png
    :alt: Resolutions
    :scale: 200%
 
    Figure 3: Figure 2 rendered at 10%
 
-.. figure:: img/tree-05.png
+.. figure:: /images/vse_setup_project_tree-05.png
    :alt: Resolutions
    :scale: 400%
 
@@ -64,7 +64,7 @@ We tend to view the pixels of our computer display as little squares and for mos
 
 Figure 5 shows an example of a raw image, taken with an *anamorphic lens* with a horizontal compression of 1.33. Anamorphic lenses are typically used in cinema to achieve an ultra wide screen view. To achieve this, the image is horizontally squeezed. Although perhaps not immediately that obvious, figure 5 looks a little bit distorted.
 
-.. figure:: img/anamorphic-squeezed.jpg
+.. figure:: /images/vse_setup_project_anamorphic-squeezed.jpg
    :alt: Image from an anamorphic lens (squeezed)
    :scale: 100%
 
@@ -75,7 +75,7 @@ With ffmpeg, you can retrieve the aspect ratio of this image. The result is:
 ``590x332 [SAR 96:96 DAR 295:166]``
 According to ffmpeg, the image is 590 x 332 pixels (so does Blender)
 
-.. figure:: img/anamorphic-desqueezed.jpg
+.. figure:: /images/vse_setup_project_anamorphic-desqueezed.jpg
    :alt: Image from an anamorphic lens (desueezed)
    :scale: 100%
 

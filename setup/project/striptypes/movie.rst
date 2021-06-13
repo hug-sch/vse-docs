@@ -50,7 +50,7 @@ Compositing
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Compositing`
 
-.. figure:: img/panel-compositing.png
+.. figure:: /images/vse_setup_project_striptypes_panel-compositing.png
    :scale: 50 %
    :alt: Compositing property
    :align: Right
@@ -91,7 +91,7 @@ Transform
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Transform`
 
-.. figure:: img/panel-transform.png
+.. figure:: /images/vse_setup_project_striptypes_panel-transform.png
    :scale: 50%
    :alt: Transform Property
    :align: Right
@@ -126,7 +126,7 @@ Figure 3 shows an example of a Picture-in-Picture (PIP) setup. There are three c
 Channel 1 contains the audio. Channels 2 forms the background.
 Channel 3 contains the foreground picture. This picture is scaled and repositioned to create a PIP.
 
-.. figure:: img/PIP-example.svg
+.. figure:: /images/vse_setup_project_striptypes_PIP-example.svg
    :alt: PIP example
 
    Figure 3: Example of Picture-in-Picture
@@ -161,7 +161,7 @@ Crop
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Crop`
 
-.. figure:: img/panel-crop.png
+.. figure:: /images/vse_setup_project_striptypes_panel-crop.png
    :scale: 50%
    :alt: Crop Property
    :align: Right
@@ -186,7 +186,7 @@ the exact ratio between Left/Right and Top/Bottom depends on the detail you want
 To center on the dog, we need the following crop sizes: Left (670), Right (734), Top (572), and Bottom (29).
 This will result in the exact same size but zoomed in.
 
-.. figure:: img/crop-vs-scale.svg
+.. figure:: /images/vse_setup_project_striptypes_crop-vs-scale.svg
    :alt: Crop vs Scale
 
    Figure 5: Crop vs Scale example
@@ -203,7 +203,7 @@ Video
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Video`
 
-.. figure:: img/panel-video-strip-movie.png
+.. figure:: /images/vse_setup_project_striptypes_panel-video-strip-movie.png
    :scale: 50%
    :alt: Video Property
    :align: Right
@@ -233,7 +233,7 @@ Color
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Color`
 
-.. figure:: img/panel-color.png
+.. figure:: /images/vse_setup_project_striptypes_panel-color.png
    :scale: 50%
    :alt: Color Property
    :align: Right
@@ -273,7 +273,7 @@ Time
    :View:      Sequencer
    :Panel:     :menuselection:Sidebar --> Strip --> Time`
 
-.. figure:: img/panel-time.png
+.. figure:: /images/vse_setup_project_striptypes_panel-time.png
    :scale: 50%
    :alt: Time Property
    :align: Right
@@ -342,7 +342,7 @@ Strip Offset End
    This field repositions the LV frame. If positive, the strip will be shortened.
    If negative, the strip is lengthened, thereby repeating (freezing) the LA frame.
 
-.. figure:: img/offset-strip.svg
+.. figure:: /images/vse_setup_project_striptypes_offset-strip.svg
    :alt: Strip Offset fields
 
    Figure 9: Visualization of the Strip Offset fields.
@@ -362,7 +362,7 @@ Hold Offset End
    This field will reposition the LA frame. A positive number will reduce the LA value.
    The effect is also a shortening of the strip.
 
-.. figure:: img/offset-hold.svg
+.. figure:: /images/vse_setup_project_striptypes_offset-hold.svg
    :alt: Hold Offset fields
 
    Figure 10: Visualization of the Hold Offset fields.
@@ -370,7 +370,7 @@ Hold Offset End
 Of course, you can combine both types of offset. In figure 11, there is a combined offset of 8 frames.
 So, the original duration of 10 frames is reduced to two frames.
 
-.. figure:: img/offset-both.svg
+.. figure:: /images/vse_setup_project_striptypes_offset-both.svg
    :alt: Both Offset fields
 
    Figure 11: Visualization of both Strip and Hold Offset fields.
@@ -384,7 +384,7 @@ The Still Offset fields are added to the Time panel via a Python script.
 For an in-depth explanation of how to do this,
 see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.
 
-.. figure:: img/offset-still.svg
+.. figure:: /images/vse_setup_project_striptypes_offset-still.svg
    :alt: Still Offset fields
 
    Figure 12: Visualization of the Still Offset fields.
@@ -406,7 +406,7 @@ Source
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Source`
 
-.. figure:: img/panel-source-movie-strip.png
+.. figure:: /images/vse_setup_project_striptypes_panel-source-movie-strip.png
    :scale: 50%
    :alt: Source Property
    :align: Right
@@ -459,7 +459,7 @@ Deinterlace
    because the scanned fields are not taken at the same time (one after the other!).
    And with movement, this becomes more apparent.
 
-.. figure:: img/deinterlace.svg
+.. figure:: /images/vse_setup_project_striptypes_deinterlace.svg
    :alt: Interlace vs deinterlace
    :align: Right
 
@@ -490,7 +490,7 @@ Custom Properties
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Custom Properties`
 
-.. figure:: img/panel-custom.png
+.. figure:: /images/vse_setup_project_striptypes_panel-custom.png
    :scale: 50%
    :alt: Custom Property
    :align: Right

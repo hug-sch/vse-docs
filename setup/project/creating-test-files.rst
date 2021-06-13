@@ -1,7 +1,6 @@
 
-*******************
 Creating test files
-*******************
+-------------------
 
 Sometimes you need a test video or test image with a specific resolution,
 duration or framerate and specific content, e.g. gradient color, TV test image,
@@ -69,7 +68,7 @@ The ffmpeg command above does the job but is not very flexible.
 With the following `Python script of Tin2Tin <https://gist.github.com/tin2tin/1eabb233bce24e78d2edf35cb5a435c8>`_,
 you can generate a timecode overlay very easily in Blender.
 
-.. figure:: img/test-files.png
+.. figure:: /images/vse_setup_project_test-files.png
    :align: center
    :alt: Test file from Python scriptExample of a complex timeline
 

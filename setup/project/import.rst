@@ -1,7 +1,5 @@
-
-*******************
-Import your footage
-*******************
+Import footage
+--------------
 
 After setting up a central project directory with all your files
 (see :doc:`Creating a project directory </setup/organize/dir-structure/creating-directory-structure>`),
@@ -10,7 +8,7 @@ you need to (1) import your footage into your project or timeline,
 
 
 Importing
-=========
+.........
 
 .. note::
 
@@ -33,7 +31,7 @@ There are three methods available to import footage. For a detailed description 
 3. Drag and drop the desired video, sound, or image file on the sequencer
    timeline from the File Browser of the operating system.
 
-.. figure:: img/methods.gif
+.. figure:: /images/vse_setup_project_methods.gif
    :alt: Import methods
 
    Figure 1: Three import methods
@@ -54,9 +52,9 @@ There are subtle but sometimes annoying differences between the three methods.
   Probably, for the same reason, it is not possible to add an Image Sequence.
 
 Options
-=======
+.......
 
-.. figure:: img/options-moviestrip.png
+.. figure:: /images/vse_setup_project_options-moviestrip.png
    :alt: Import options Movie strip
    :scale: 70%
    :align: right
@@ -127,7 +125,7 @@ Fit Method
 
         This could result in a distortion of the original image (see figure 3).
 
-    .. figure:: img/scale-methods.svg
+    .. figure:: /images/vse_setup_project_scale-methods.svg
        :alt: Import methods
 
        Figure 3: Three Fit methods
@@ -152,7 +150,7 @@ These options are already described in the properties list of the
 
 
 Organize timeline
-=================
+.................
 
 Working with a long and complex timeline isn't easy.
 Some kind of organization is needed in order to work as efficiently as possible.

@@ -46,7 +46,7 @@ Effect Strip
    :View:      Sequencer
    :Panel:     :menuselection:`Sidebar --> Strip --> Effect Strip`
 
-.. figure:: img/panel-effect-strip-text-.png
+.. figure:: /images/vse_setup_project_striptypes_panel-effect-strip-text-.png
    :scale: 60%
    :alt: Effect Property of Text Strip
    :align: Right

@@ -1,5 +1,5 @@
-Tweaking performance with proxies & cache
-=========================================
+Proxies & cache
+===============
 
 Proxies are low-quality copies of high-quality raw footage. They are used as a substitute to ease the playback of high-quality source videos. Creating proxies can be done by either decreasing the resolution and/or decompressing the source files. They are transcoded in such a way that is optimal for real-time editing.  Nowadays, a 4K video file (3840 × 2160) is no exception anymore. With 30 fps, this can quickly become a burden to your computer's performance.
 
@@ -18,7 +18,7 @@ The use of proxies is much simplified in Blender 2.93 and an average user should
 * ``Use Proxies``: default set to ``True``
 * ``Proxy Settings: Storage``: default set to ``Per Strip`` (see figure 1-a, 1-b and 1-g)
 
-.. figure:: proxies.svg
+.. figure:: /images/vse_setup_environment_proxies.svg
    :alt: Proxies
 
    Figure 1: Overview of the proxy building process.
@@ -40,7 +40,7 @@ The use of proxies is much simplified in Blender 2.93 and an average user should
    .. note::
       You can easily see the effect of the Proxy Render Size in the following example. Create a new Video Editing project. The project resolution is probably 1080p (1920 x 1080). Add a text strip with size 30. Set the zoom to View > Fractional Zoom 1:1. Change the Proxy Render Size and watch the degradation of the image quality.
 
-   .. figure:: proxies-render-size.svg
+   .. figure:: /images/vse_setup_environment_proxies-render-size.svg
       :alt: Example of proxy Render Sizes
 
       Figure 2: Effect on quality of Proxy Render Sizes 100%, 50% and 25%.
@@ -92,7 +92,7 @@ There are two panels:
 
 With the menu View > Show you can visualize the cache. They appear as small colored bars beneath the strips.
 
-.. figure:: cache.svg
+.. figure:: /images/vse_setup_environment_cache.svg
    :alt: Cache settings & bars
 
    Figure 3: Cache settings and cache bars.

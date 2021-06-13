@@ -1,7 +1,5 @@
-
-******************************
-Creating a directory structure
-******************************
+Directory structure
+-------------------
 
 A video project is most likely a combination of several different assets.
 You can separate them into three broad categories.
@@ -32,10 +30,10 @@ It's also good practice to use some kind of naming convention and add metadata.
 Figure 1 shows a possible example, based on our categorization of the assets above.
 The directories are numbered so that they mimic a normal workflow.
 
-.. figure:: img/dir-structure-example.svg
+.. figure:: /images/vse_setup_project_dir-structure-example.svg
    :scale: 50 %
    :alt: Organizing your project
-
+   
    Figure 1: Organizing your project.
 
 Blender does not have a full-blown asset manager yet, but with the File Browser,

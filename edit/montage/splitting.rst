@@ -14,7 +14,7 @@ With the menu :menuselection:`Strip --> Split` or the shortcut key :kbd:`K` you 
 .. warning::
    If you are using the shortcut :kbd:`K`, then it matters which side of the playhead the mouse cursor is (see figure 1). If the cursor is at the left hand side of the playhead, then the left strip is the active one (white outline & text overlay) and therefore also selected. If the mouse cursor is at the right of the playhead, then the right strip is the selected strip (orange outline)  *but* not the active one (no white text overlay). Contrary to what you might suspect, the Time fields then relate to the left strip; not the (selected) right strip. 
 
-.. figure:: img/split.svg
+.. figure:: /images/video_editing_edit_montage_splitting_split.svg
    :alt: Split command
    
    Figure 1: Strip properties before and after Split command
@@ -30,7 +30,7 @@ Hold Split command
 
 The menu :menuselection:`Strip --> Hold Split` or the shortcut :kbd:`Shift-K` splits a strip in two distinct strips; however you will not be able to drag the handles to show the frames past the split of each resulting strip.
 
-.. figure:: img/hold-split.svg
+.. figure:: /images/video_editing_edit_montage_splitting_hold-split.svg
    :alt: Hold Split command
    
    Figure 2: Strip properties before and after Hold Split command
@@ -46,7 +46,7 @@ Freeze frames
 
 Suppose that you have the following strip (see figure 3) and you want to introduce some freeze frames effect.
 
-.. figure:: img/freeze.svg
+.. figure:: /images/video_editing_edit_montage_splitting_freeze.svg
    :alt: Freeze frames
    :align: center
    
@@ -71,7 +71,7 @@ L-cut and J-cut
 
    A J-Cut is essentially the opposite of an L-Cut. Here you hear the audio before you see the video. So, the audience is is looking at strip 2 but still hearing audio from strip 1 (see figure 4).
 
-   .. figure:: img/j&l-cut.svg
+   .. figure:: /images/video_editing_edit_montage_splitting_j-l-cut.svg
       :alt: J- & L-cut
       
       Figure 4: Example of L- & J-Cut

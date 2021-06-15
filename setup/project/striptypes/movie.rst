@@ -13,22 +13,21 @@ Which codecs are available depends on the operating system and ffmpeg version.
 The :ref:`default <default-color>` color of the movie strip bar is: :movie:`███`
 
 Each video file contains a sequence of image frames (the actual movie)
-and some meta-information such as resolution and frame rate (fps).
-The resolution info for example is exposed in the source-panel_.
-Unfortunately, the source FPS is not.
+and some meta-information such as resolution.
+The resolution and framerate (fps or frame per seconds) info is exposed in the source-panel_.
 
 .. warning::
 
-   The Project Settings parameters should be the same as the strip parameters.
+   The Project Settings parameters should preferably be the same as the strip parameters.
    For example, if the project is set to a frame rate of 30 fps, and your clip is only 24 fps,
    then the clip will appear accelerated.
-   A 1 second playback time will contain 30 frames; according to the project settings.
-   But, these 30 frames take 1.2 s in the original footage (30 x 24 fps = 1.2 s).
+   Thirty frames mean 1 second, according to the Project Settings; according to the project settings.
+   But, these 30 frames cover 1.2 s in the original footage (30 x 24 fps = 1.2 s).
    Compressing 1.2s in 1s during playback will induce acceleration.
 
    Also, if your clip has variable framerate; e.g. footage from some smartphones,
    then you'll get an audio sync problem because Blender uses a constant frame rate.
-   So, you have to convert your clip to a constant frame rate with programs as
+   To solve this, you have to convert your clip to a constant frame rate with programs as
    `ffmpeg <https://ffmpeg.org/>`_ or `Handbrake <https://handbrake.fr/>`_
 
 
@@ -36,7 +35,7 @@ Options
 =======
 
 The movie strip is a much-used strip type and has lots of properties.
-They are organized in panels in the sidebar.
+They are organized in panels in the `sidebar <https://docs.blender.org/manual/en/dev/interface/window_system/regions.html>`_.
 
 
 .. _compositing-panel:
@@ -60,23 +59,26 @@ Compositing
 In the Compositing panel you can set the properties `Blend` and `Opacity` (see figure 1).
 
 Blend
-   When two strips are placed on top of each other, e.g. channel 2 on top of channel 1,
-   the strip of channel 1 is completely covered by the strip of channel 2 in the Preview;
-   as if channel 1 does not exist.
-   This is because the Blend Mode of the channel 2 strip is set to *Cross* (default value).
-   The Blend mode of a strip on the upper channel specifies how the strip on a lower channel
-   should combine or blend with the strip on the upper channel. There are plenty of blend modes,
-   such as Replace and Darken but also with less intuitive names such as Color Dodge or Alpha Over.
+   When two strips are placed on top of each other, the strip of the higher channel completely covers the strip below, even if it is much smaller. In the Preview Window you will only see the strip from the higher channel; for example, you can safely delete the strip below without noticing anything.
+   
+   This is because the Blend Mode of the higher channel strip is set to ``Cross``. This is the default value for all strips; except the Text strip which has a default value of ``Alpha Over``.
 
+   The Blend mode of a strip specifies how the strip immediately below should combine or blend with it. There are 27 blend modes, such as ``Color Dodge`` or ``Alpha Over``. They all have unique and sometimes subtle effects. For example, the ``Cross`` and ``Replace`` blend mode seems on first sight exactly the same. The higher channel strip replaces completely the lower channel strip. However, in combination with an Opacity value of zero (see below), both Blend modes have completely different results.
+
+   - Blend mode = Replace + Opacity = 0 --> completely transparent Preview Window 
+   - Blend mode = Cross  + Opacity = 0 --> Preview Window filled with lower strip.
+   
    .. todo::
-
-      The blend modes and their functional differences are described in detail in section...
+      A detailed description of all blend modes will be available soon in chapter Edit > Color Grading.
 
 Opacity
-   The opacity or alpha value of the image is multiplied with this value.
-   A value of 1 does not affect the opacity of the strip.
-   If the strip is semi-transparent (e.g. alpha=0.6), then it remains semi-transparent.
-   A value of zero will make the strip fully transparent because the alpha value of the strips becomes zero.
+   An opaque object is completely impervious to light. You cannot see through it. Opacity is the opposite of transparency. Each pixel in an image can have - besides the Red, Green and Blue values - also an Alpha value, a number between 0 and 1. An  Alpha = 0 indicates a completely transparent image. A completely opaque image has an Alpha = 1.
+
+   .. hint::
+      A simple mnemonic to remember these values: 0 has a peeping hole = see through = transparent.
+
+   The Alpha value of each pixel in the image is multiplied with the Opacity value of this field. A value of 1 does not affect the opacity of the strip. For example, if the strip is semi-transparent (e.g. alpha = 0.6), then it remains semi-transparent (0.6 x 1 = 0.6).
+   A value of zero will make the strip fully transparent because multiplying with zero will always result in zero.
    See :doc:`Mask strips <mask>` for more details on transparency/opacity.
 
 
@@ -105,14 +107,15 @@ The Transform panel contains the Position, Scale, and Rotation properties and th
 
 Position X, Y
    The dimensions of the view area of the sequencer output are set by the project dimensions;
-   e.g. 1920 x 1080 by default (see :doc:`../dir-structure/creating-directory-structure`).
-   A movie is centered (and scaled) within this view area. With the position X, Y values,
-   you can move the frame along the X and Y axis. The values are expressed in pixels.
+   e.g. 1920 x 1080 by default (see :doc:`/setup/project/directory-structure`).
+   A movie is centered (and scaled) within this view area. So, position (0,0) wil refer to the midpoint of the image. With the X, Y values, you can move the frame along the horizontal and vertical axis. The values are expressed in pixels.
 
 Scale X, Y
-   With this value, you can scale the image on the X and Y axis. It is a number between 0 and infinity.
+   With this value, you can scale the image on the X (=horizontal) and Y (=vertical) axis. It is a number between 0 and infinity.
    A scale of 0.5 on the X axis for example will halve the width of the frame. A scale of 2 will double it.
    To scale the frame proportionally, you have to use the same value for X and Y.
+
+   Scaling an image will by no means change the resolution of the image!
 
 Rotation
    Rotates the frame along the Z axis; expressed in degrees.
@@ -122,9 +125,9 @@ Rotation
 Mirror
    Mirrors the image along the X axis (left to right) or the Y axis (top to bottom).
 
-Figure 3 shows an example of a Picture-in-Picture (PIP) setup. There are three channels.
+Figure 3 shows an example of a Picture-in-Picture (PIP) setup. You need the Position, Scale, and Blend mode property to accomplish this. Figure 3 has three channels.
 Channel 1 contains the audio. Channels 2 forms the background.
-Channel 3 contains the foreground picture. This picture is scaled and repositioned to create a PIP.
+Channel 3 contains the foreground picture. This picture is scaled (0.3) and repositioned (717,300) to create a PIP.
 
 .. figure:: /images/vse_setup_project_striptypes_PIP-example.svg
    :alt: PIP example
@@ -132,16 +135,15 @@ Channel 3 contains the foreground picture. This picture is scaled and reposition
    Figure 3: Example of Picture-in-Picture
 
 The "Spring" open-movie in figure 3 has non-default dimensions: 2048 x 858.
-To download this movie, see :doc:`creating test-files - section E) </setup/organize/dir-structure/creating-test-files>`.
-If you add this movie to the default HD timeline (1920 x 1080), it will be scaled.
+To download this movie, see :doc:`creating test-files - section E) </setup/project/ creating-test-files>`.
+If you add this movie to the default FHD timeline (1920 x 1080), it will be scaled.
 The longest dimension (2048) will be scaled to 1920 with a factor of 0.9375 (0.9375 x 2048 = 1920).
 The vertical dimension too will be scaled with the same parameter,
 given a height of 858 * 0.9375 = 804, leaving two transparent bands above and below the video.
 In figure 3 we changed the project dimensions to equal
 the strip dimensions so that the viewport is fully taken by the video.
 
-The foreground picture (same open-movie Spring) is scaled with a factor of 0.3.
-This leads to the following pixel sizes: 2048 x 0.3 = 614 and 858 x 0.3 = 257.
+The foreground picture (from the same open-movie "Spring") is scaled with a factor of 0.3. This leads to the following pixel sizes: 2048 x 0.3 = 614 and 858 x 0.3 = 257.
 If you want to position this strip into the top-right corner, you have to change the X and Y position.
 But how much? The center of each picture is position (0,0).
 So, the background picture runs from bottom-left (-1024,-429) to top-right (1024, 429).
@@ -175,13 +177,14 @@ Left, Right, Top, Bottom
    And as such making this image smaller. Although you can specify a negative number, this does not affect the image.
 
 Crop and Scale are two very much different operations.
-Take a look at figure 5. Both pictures have the same size.
+Take a look at figure 5. Both small pictures have the same size.
 The left one is obtained by scaling to 0.3 of the original 2048 x 858 image,
 resulting in a picture of 614 x 257 pixels (see also figure 3).
 The picture on the right is obtained by cropping.
+
 The combined crop Left and Right should be equal to 2048 - 614 = 1434.
-By cropping 1434 pixels from the left and right, you'll get a resulting picture that is exactly 614 pixels wide.
-The combined crop Top and Bottom should be: 858 - 257 = 601. Of course,
+By cropping 1434 pixels from the left and right (670 + 764), you'll get a resulting picture that is exactly 614 pixels wide.
+The combined crop Top and Bottom should be: 858 - 257 = 601 or 572 + 29. Of course,
 the exact ratio between Left/Right and Top/Bottom depends on the detail you want to have in focus.
 To center on the dog, we need the following crop sizes: Left (670), Right (734), Top (572), and Bottom (29).
 This will result in the exact same size but zoomed in.
@@ -211,15 +214,17 @@ Video
    Figure 6: Video Panel
 
 Strobe
-  The Strobe value indicates that only each nth frame will be displayed.
-  For example, if you set this to 10, the preview will only display frame 1 for the time-lapse 1-10 frames,
-  frame 11 for the time-lapse 11-20, frame 21 for ... It is not really a strobe-effect because the frames 2-9,
+  The Strobe value indicates that only each nth frame will be displayed. By default it's set to 1.
+  For example, if you set this to 10, the preview will only display frame 1 for the range 1-10 frames,
+  frame 11 for the range 11-20, frame 21 for ...
+  
+  It is not really a strobe-effect because the frames 2-9,
   11-19, ... aren't blacked out.  You can easily check this out with the timecode overlay test file
   (see :doc:`Creating test files - section C </setup/organize/dir-structure/creating-test-files>`).
 
 Reverse Frames
-   The strip is played backward starting from the last frame in the sequence to the first frame.
-   This will also work with split strips. However, just pay attention to use the "Hold Split" (Shift + K) cut.
+   The strip is played backwards starting from the last frame in the sequence to the first frame.
+   This will also work with split strips. However, just pay attention to use the "Hold Split" (Shift + K) cut (see /edit/montage/splitting).
 
 
 .. _color-panel:

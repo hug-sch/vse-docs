@@ -63,4 +63,12 @@
 	"description": "Inserting anchor"
   }
 
+  "Menu reference": {
+	"prefix": "men",
+	"body": [
+	  ":menuselection:`${1:menu1} --> ${2:menu2}`",
+	],
+	"description": "Inserting menu"
+  }
+
 }

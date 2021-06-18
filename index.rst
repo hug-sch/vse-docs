@@ -1,22 +1,21 @@
+##################
+Video Editing docs
+##################
 
-###########################
-  Video Editing (updated)
-###########################
+The documentation about video editing in Blender is grouped in two sections:
 
-This is the homepage for the refactoring attempt of the Blender Video Sequence Editor (VSE) Documentation.
-The VSE (LTS version 2.93) has lately undergone some drastic changes.
-The time seems ripe to also refactor the documentation.
-This manual follows a workflow oriented approach,
-e.g. the structure mirrors your workflow for a simple video editing project.
+- Video Sequencer: describes the Video Sequence Editor; Blender's dedicated tool to handle video footage.
+- Video Editing: describes a typical workflow of a video editing project.
+
+When appropriate, links to other sections within the Blender docs are provided; for example the Timeline Editor.
+
+.. todo::
+   This page will be deleted upon integration into the official Blender docs.
 
 .. toctree::
    :caption: Table of Contents
    :maxdepth: 3
-   :numbered: 3
 
-   introduction.rst
-   setup/index
-   edit/edit
-   render/render
-   workflow/workflow
-   extra-tools/extra-tools
+   video_sequencer/index
+   video_editing/index
+   

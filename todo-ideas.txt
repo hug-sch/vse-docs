@@ -24,5 +24,6 @@
 18. Transform tool no performace hit with addon; see https://developer.blender.org/D11533
 
 19. Check for heading underline in the striptypes documents
+Apps: Joplin, Obsidian, Typora
 
 

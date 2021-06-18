@@ -4,24 +4,27 @@ Montage
 .. toctree::
     :maxdepth: 3
 
-    adding/index
-    splitting/splitting
-    moving/moving
+    adding
+    selecting
+    moving
+    splitting
     trimming
-    grouping/grouping
-    deleting/deleting
+    grouping
+    deleting
 
 Montage is the technique of assembling separate clips (video, audio, text, effects) into a coherent sequence. The importance of montage was first demonstrated by the Russian filmmaker Lev Kuleshov in the 1910s and 1920s. Famous is the Kuleshov effect: viewers derive more meaning from the interaction of two sequential shots than from a single shot in isolation (see the `Wikipedia article <https://en.wikipedia.org/wiki/Kuleshov_effect>`_ for a nice illustration). 
 
 Obviously, the first thing in assembling your timeline is adding strips. There are several ways to do this and each has its own advantages and disadvantages.
 
-Strips can be moved in time (left to right on the X axis) or in the display stack (top to bottom on the Y axis).
+Before you can do anything with a strip, you have to select them. There are multiple ways of selecting strips.
+
+Strips can be moved in time (left to right on the X axis) or in the display stack (bottom to top on the Y axis).
+
+Splitting or cutting a strip will create two parts of the strip (before and after the split). There are two variants: Split and Hold Split.
 
 Trimming is the process of removing or adding a portion of the video at its head or tail. This will result in a decrease or increase of the duration of the video.
 
-Slicing (cutting) a video will create two sections of the video, one slice before the cut and another after the cut.
-
-Grouping is the creating of a meta strip whereby several other strips are grouped together.
+Grouping is the creating of a meta strip whereby several strips are grouped together.
 
 .. Hint::
    Creating a good montage is a time consuming process. Therefore, all basic operations (add, split, trim, ...) have an associated shortcut. It pays off to learn these shortcuts, even though the same result could be obtained with the menu and/or mouse.

@@ -1,0 +1,289 @@
+Table 1 shows all the available time codes. The second column is the name from the sidebar and the third column is the name from the Python API.
+
+.. csv-table:: Table 1: Time code fields in UI and from Python API
+   :header: "#", "UI field", "Python API (1)"
+   :widths: 5, 50,50
+
+   0 , Channel (2)           , channel
+   1 , Start                 , frame_start
+   2 , *Visible in strip (3)* , frame_final_start
+   3 , Duration              , frame_final_duration
+   4 ,                       , frame_duration
+   5 , End                   , frame_final_end
+   6 , Strip Offset Start    , frame_offset_start
+   7 , Strip Offset End      , frame_offset_end
+   8 , Hold Offset Start     , animation_offset_start
+   9 , Hold Offset End       , animation_offset_end
+   10, Current Frame         , *calculated (4)*
+   11,                       , frame_still_start
+   12,                       , frame_still_end
+
+If you want to see those values in the side panel, you'll have to extend some code; It's rather easy. Right-click on a timecode filed, e.g. Hold Offset Start and choose "Edit Source". Switch to the text editor in the Scripting workspace, and open the "space_sequencer.py" code (with the Browse Text to be linked button at the top middle). Search in this code for the string "Hold Offset Start". It is about line 1605 (Blender 2.93). Here is the code for the display of the different time codes. Add the following code to display the Still Offset field.
+
+.. code-block:: Python
+
+   split = sub.split(factor=0.5 + max_factor, align=True)
+   split.alignment = 'RIGHT'
+   split.label(text="Still Offset Start")
+   split.prop(strip, "frame_still_start", text=smpte_from_frame(strip.frame_still_start))
+
+   split = sub.split(factor=0.5 + max_factor, align=True)
+   split.alignment = 'RIGHT'
+   split.label(text="End")
+   split.prop(strip, "frame_still_end", text=smpte_from_frame(strip.frame_still_end))
+
+**(2)** The Channel info is shown in the Time Panel but is, of course, not a time code and belongs perhaps better in the Compositing panel.
+
+**(3)** Some Python fields are not exposed in the side panel but can be made visible within the strip itself; e.g. `frame_final_start` is shown at the left border of the strip when you select that strip.
+
+**(4)** The `Current Frame` is not a Python API field on its own but is calculated from `scene.frame_current - frame_final_start`.
+
+
+Movie strips, Sound strips, Scene strips and Image/Sequence strips all share the same time code properties (see :doc:`Strip types </setup/organize/strip-types/index>`. Color and Text Strips and Adjustment Layers expose only 5 fields: Channel, Start, Duration, End, and Current Frame. There is no need for the Offset fields. Effect strips such as Speed control and Transform do not have time codes on their own. Their timing is controlled by the parent strip.
+
+But why all those time codes? Why do you need them? And what do they mean? Let's begin with the most basic case.
+
+*1. Start*
+
+   `Start = frame_start:` the start position (frame number) of the un-edited (un-trimmed, un-cut) strip.
+   `finale_frame_start:` the start position (frame number) of the strip after editing.
+
+1. First and foremost, the `Start` field is NOT the same as the actual start of a strip. It is the original start position of a strip that is not trimmed or cut. If you've added a strip at frame 10 and later on you trimmed that strip with an offset of +2 frames, then the visible strip will start at frame 12 see fig. 2). It's a bit confusing because you see the strip starting at frame 12 in the timeline, while the `Start`field still says frame 10. The `Start`field is stored in Python as `frame_start`.
+
+.. figure:: img/time_properties/time_properties_2.png
+   :scale: 100%
+   :alt: Strip with Start offset = 2
+
+   Figure 2: Strip with Start offset = 2
+
+
+2. The actual start or frame_final_start in Python parlance is also shown at the left border of the strip when selected.
+3. You cannot add a strip before frame 0 (because the play head cannot be moved before frame 0) but you can move it later on. You can add however add a strip past the scene range.
+4. You can change the `Start` field by entering a frame number or by dragging the strip to another location even before frame zero. The Start field becomes then negative.
+5. The first (and last frame) are drawn with a special visual marker, the so-called strip handles. The size and shape of these handles have changed quite a few times. (see for example `D10297 <https://developer.blender.org/D10297>`_. You need these handles to change the position of the first and last (visible) frame (by dragging).
+
+## 2. Duration
+
+>`Duration/Frame_duration:` the original duration in frames of the freshly added, un-edited strip.
+>`final_frame_duration:` the duration of the actual strip, which can be edited (trimmed, ...). The duration that you actually see as the bar length in the VSE.
+
+1. Initially the duration field is set by he number of frames of the added movie. Seems straight forward, isn't it? However, what about strips with a different frame rate (fps)? Suppose that you have created two test-files, both of 10 seconds long, but one with fps = 30 (thus in total 300 frames) and one with fps = 24 (thus, in total 240 frames but still 10 s). Both movies should have a duration of 10 seconds to play at the speed as intended. You can create these test-files quite easily in ffmpeg; [see post](test_files.md). Depending on which movie you added first, the project frame rate will be set to 30 or 24 fps. If the project is 30 fps, then the 24fps test file will only take 8 seconds to finish (8 s x 30 fps = 240 frames), and thus will look accelerated. The only solution is to either convert the test-files to the same fps beforehand in an external tool or to add a Speed Effect strip.
+
+.. figure:: img/time_properties/time_properties_3.png
+   :scale: 100%
+   :alt: Strips
+
+   Figure 3: Strips (24 fps and 30 fps) added to project with 30 fps.
+
+2. What about the other strip types?  For an Image strip, the default Duration is 26 frames. For a text field it is 25 frames, independent of the fps? These values are quite arbitrary and seem to be wired in. The Duration for these fields is also somewhat virtual. It seems redundant to create 300 identical frames to have a still image last for 10 seconds. See section <a href="#still_offset">Still Offset</a> for an explanation. What about a Sound strip? An audio file has no frames; only sampled data (see post [Audio Volume](audio_volume.md) for an introduction). I' ll cover this in a later post.
+
+
+3. You can change the UI field `Duration`, either by entering the number of frames, by dragging the strip handles or by entering Offsets (see figure 4 ).
+
+.. figure:: img/time_properties/time_properties_4.svg
+   :scale: 100%
+   :alt: strips
+
+   Figure 4: Strips with different Offsets as a result of changing Duration or dragging handles.
+
+- Decrease the duration by entering a number smaller than the original duration. A `Strip Offset End` is inserted and the Offset is shown as a small bar (if enabled with View > Show Offsets). Without the Offset bars, you can't really see that the strip has been trimmed.
+- Increase the duration by entering a number greater than the original duration. You'll notice that there is something special about this situation. You want to show more frames than that there really are. It's visually indicated by an empty bar end. In the preview window you can see that the last fame is repeated as a "still" image. And this is exactly what the non-exposed Python field `frame_still_end` is used for.
+- Dragging the right strip handle will decrease (drag left) or increase (drag right) the duration in the same manner as above.
+- Dragging the left strip handle will increase (drag left) or decrease (drag right) the duration in the same manner as above but for the offset fields `frame_still_start`and `Strip Offset Start`.
+
+*3. End*
+
+End/frame_final_end: the actual (e.g. edited) last moment of a strip.
+
+1. The `End` field is not editable. This seems perhaps logical because the `Ènd` of a strip equals the `Start` + `Duration`. Right? Apparently not, see for example fig 2. If you look closely at table 1, you will see that `Start` and `Duration` have two versions in the Python API. The `End` field has only one version: frame_final_end. The `Start`field in the UI refers to the unaltered start -with no trimming for example-  while the `Duration`and `End` fields refer to the actual duration and end of the strip, as you can read off from the timeline. So, the `End` field is indeed the sum of `frame_final_start`+ `frame_final_duration` but the `frame_final_start`is not exposed in the side panel.
+
+2. But, there is no good reason why the `End` field should not be editable. If changing the `Duration` changes the `End`field, the reverse could/should also be the case.
+
+3. Also, don't mix the concepts of "End" field and "Last" field. You can see the latter when you select the right handle of the strip (see for example figure 3). As you can see: End = last + 1. The `End` field refers to the last moment of the last frame which is the same as saying that it points to the beginning of the next frame. The relationship between last frame and End is similar to the timeline of a calendar year. December is the last month. The end of this year is the last moment of December or the beginning of the next year.
+
+*4. Strip Offset Start/End*
+
+There are three kind of Offset fields: Strip Offset, Hold Offset and Still Offset. The names are a bit strange and point to their function. s said before, the Still Offset fields are not exposed in the Strip Properties.
+
+1. Explain the name
+2. Changing by entering value or dragging
+3. Could be negative
+4. Different image of the strip
+
+*5. Hold Offset Start/End*
+
+
+<a name="still_offset"></a>
+*6. Still Offset Start/End*
+
+
+
+*8. Current frame*
+So far, so good. But, let's take a closer look (see figure 2a). The field `Current Frame` indicates 0 (zero) while the play head is at frame 5. A litlle awkward. But, OK. No big deal! `Current Frame` means the position of the play head relative to the start of the active strip. So, the frame counting within the strip starts at 0.
+
+
+Exercise
+
+
+Let's try a little exercise. You want to move strip time_code.001 from fig 3 to start at the same position as time_code.mp4, which is frame 12. How should you do it? I know: you could place the play head at frame 12, select the top strip and press Shift - S to snap the strip to the current frame. Or you can eye-ball it by dragging. But neither of these methods is very accurate on a large timeline. Also, to make our case: let's do the exercise with the Time panel of the UI.
+
+The most obvious but wrong way is to change the strip's `Start` field to frame 12. This will actually move the strip further away. You have to set the actual start field. Doing it in code will also result in an error.
+
+    strip_bottom = bpy.context.scene.sequence_editor.sequences_all['time_code.mp4']
+    strip_top = bpy.context.scene.sequence_editor.sequences_all['time_code.001']
+    strip_top.frame_final_start = strip_bottom.frame_final_start    #wrong!
+
+The code above will align the top strip with the bottom one, but unfortunately by decreasing the `Strip Offset Start`. This is not what you want. The `Start` field should be reduced by 3 frames (the difference between the actual start of both strips). And that brings us to the last confusion in this section? How can you calculate the difference between the actual starts. One technique is the following. Place the play head at the actual start of the top strip (the frame indicated when you select the left handle). Select then the bottom strip. The difference is shown in the UI field `Current Frame`. This field does not mirror the current frame in the timeline (this is shown above the play head) but the (current) frame in the actual strip where the play head is positioned.
+
+# Negative offsets
+To recapitulate:
+    You can increase the duration; either by dragging the right handle or by increasing the Duration time code in the side panel. But of course, then your strip in the timeline will reference non-existing frames in the file, so the last frame is extended (you'll get a still image). Strangely enough, you can also drag the left handle to the left. This will increase the duration but apparently not the start position.The newly created frames will also reference non-existing counterparts in the file, so the first image is extended.
+
+
+## 3 Cut & Hold cut (or is it spli see doc https://docs.blender.org/manual/en/dev/video_editing/sequencer/editing.html)
+
+The `Split/Cut` command splits the selected strip in two at the current frame. This will result in two strips which use the same source, fitting the original strip’s timing and length.
+
+The `Split/Cut Hold`does more or less the same but you will not be able to drag the endpoints to show the frames past the split of each resulting strip. The relative position of the cut is stored in the fields `Hold offset start`for the right  strip and `Hold Offset End`for the left strip.
+
+From the [documentation](https://docs.blender.org/manual/en/dev/video_editing/sequencer/sidebar/strip.html#time):
+
+1. Start: Changes the starting frame number of the strip, which is the same as selecting and moving the strip.
+2. Duration: Changes the length, in frames of the strip. This works by changing the end frame, which is the same as selecting and moving the strip’s right handle.
+3. End: Specifies the ending time and ending frame number for the strip.
+4. Strip Offset Start/End: Can be used to either extend the strip beyond the end frame by repeating the last frame. Or it can be used to shorten the strip, as if you were cropping the end frame. This is the same as adjusting the strip handles.
+5. Hold Offset Start/End: Offset of the uncut strip content.
+6. Current Frame: Position of the Playhead relative to the start of the active strip.
+
+
+nine time codes: frame_start, frame_duration, frame_final_duration, frame_final_start, frame_final_end, frame_offset_start, frame_offset_end, frame_still_start, frame_still_end.
+
+The strip from fig. 1 was originally positioned starting at frame 39, but, due to some trimming and other operations starts now actually at frame 50. The actual duration is 12 frames. The play head is positioned at frame 55, which is the current frame 5, relative to the strip. Table 1 shows all 11 timecodes with their respective values. We will cover them in depth in the following sections.
+
+## 1. The timeline
+As you can see from fig. 1, the timeline codes are given in so called SMPTE-timecodes (first code) and frame numbers (second field). A SMPTE-timecode is a standard format, adopted by the Society of Motion Picture and Television Engineers (SMPTE) in the late 1960's. It is in the format of HH:MM:SS:FF.
+
+
+
+With the following code, you can print the different time codes that Blender uses internally (see [Script Editor](script_editor.md) for an introduction to scripting). For this example, I have dragged the left handle of figure 1 to frame 0 and the right handle to frame 39; extending the original clip with 5 + 5 frames.
+
+    strip = bpy.context.scene.sequence_editor.active_strip
+    print("frame_start: ", strip.frame_start)
+    print("frame_duration: ", strip.frame_duration)
+    print("frame_final_duration: ", strip.frame_final_duration)
+    print("frame_final_start: ", strip.frame_final_start)
+    print("frame_final_end: ", strip.frame_final_end)
+    print("frame_offset_start: ", strip.frame_offset_start)
+    print("frame_offset_end: ", strip.frame_offset_end)
+    print("frame_still_start: ", strip.frame_still_start)
+    print("frame_still_end: ", strip.frame_still_end)
+
+The result is:
+
+    frame_start:  5
+    frame_duration:  30
+    frame_final_duration:  40
+    frame_final_start:  0
+    frame_final_end:  40
+    frame_offset_start:  0
+    frame_offset_end:  0
+    frame_still_start:  5
+    frame_still_end:  5
+
+Please note, the value of  `frame_still_start` and `frame_still_end`. You should interpret these as offsets to the original start and end. Have you ever wondered why you can add a duration to a still image? When you import a still image in the timeline, the default duration is set to 26. But of course, there is only one frame (it should be a very big waste of storage to copy the same image for 24 more frames). The solution is the field `frame_still_end`. Below you'll find the result of the above code run on a fresh imported still image.
+
+    frame_start:  0
+    frame_duration:  1
+    frame_final_duration:  26
+    frame_final_start:  0
+    frame_final_end:  26
+    frame_offset_start:  0
+    frame_offset_end:  0
+    frame_still_start:  0
+    frame_still_end:  25
+
+The original frame duration is 1. The final duration is 26 frames; from frame 0 (`frame_start`) until `frame_start` + offset `frame_still_end` = frame 25. The amount of 26 frames seems to be hard-coded into Blender. The number of 26 seems a bit awkward and probably meant to be 25; which is more of a standard frame rate.
+
+
+!! frame current is frame_display = scene.frame_current - frame_final_start; convert smpte_from_frame(frame_display)
+
+with effect strip : speed control, color, text, adjustment layer (duration=25 in fps = 30) : only channel, start, duration, end, current frame)4 (not offsets)
+
+sound files has the same layout as video
+idem for image but duration is 26 frames
+
+{{< carousel
+    "/images/time_properties/time_code_1a.png"
+    "/images/time_properties/time_code_1b.png"
+    "/images/time_properties/time_code_1c.png"
+>}}
+Figure 1: Simple strip with no cutting or trimming.
+
+<!--{{< figure class="d-block w-100" src="/images/time_code/time_code_1a.png" caption="Figure 1: Simple strip with no cutting or trimming." >}}-->
+
+
+When you add a strip to the timeline, the field `Start` is set to the frame number of the play head. The `Duration` is filled in with the number of frames of the strip and therefore is the `End` also fixed. The `Current Frame`is set to zero. That's all!
+
+5.    As a video editor, you probably are most interested in the SMPTE-timecode. It seems more natural to refer to a video fragment with a time indication, e.g. 00:01:15:10 or 1' 15'' and 10 frames than with a frame number, e.g. frame 55. Blender, however, is in the first place a 3D modeling tool where frame numbers are much more common
+
+from Miadim
+Strip Offset frame_offset: Virtually modifies the input media time. It'll tell to Blender the media is shorter or longer. Values below 0 means the duration is artificially extended and the first/last frame is used to fill this extra time. frame_start is changed.
+
+Hold offset animation_offset: Trims the media by the start or by the end, preserving the frame_start in the VSE. The sequence will still start at the same frame, but its duration will change. Values cannot be below 0.
+
+
+
+https://docs.blender.org/manual/en/dev/video_editing/sequencer/editing.html
+
+And there are more questions. What about audio?  Let's first tackle the problem of trimming and cutting.
+
+## 2. Strip with left and/or right trimming
+
+Figure 3 shows a typical timeline with one strip of 30 frames (or seconds if you like). The original strip started at frame 5 and ended at frame 35. But, there has been some trimming, so that the actual strip - the one that you see in the timeline - starts at frame 12 and ends at frame 32. You can trim a strip by dragging the left and/or right handle or by changing the `Strip Offset Start` or `Strip Offset End` field in the Time panel. Or by cutting the strip, but this brings us into a new unknown territory (see section 3).
+
+![fig 3](/images/time_code.svg)Figure 3: Time codes for a trimmed strip in Blenders's VSE.
+
+You can find the same time codes with different names or interpretation in the Properties panel of the strip (see figure 2) and the Python interface. And here comes the confusion! The UI `Start` field is the same as the `frame_start` Python field and refers to the Start location of the original, untrimmed or uncut strip. From the UI perspective this is confusing because you "see" the strip starting at a different location than indicated in the `Start` field. The UI `Start` field states that the strip starts at frame 5; which is the start position of the original strip and which you can also derive from the Offset Overlay line. But the actual strip (the one that you see) starts at frame 1. This is also visible as a number if you select the left handle. This is the Python `frame_final_start` field but that field isn't exposed in the panel (as mentioned, you could see it if you select the left handle).
+
+The UI `Duration` and `End` field then resembles the actual situation. The original strip had a duration of 30 frames (= the Python `frame_duration`  field), but the actual (trimmed) strip is only 15 frames long (= Python `frame_final_duration` field). So, the UI `Duration` is not the same as the Python `frame_duration` field. The same holds for the `End` field. This is asking for trouble.
+
+![fig 3](../../static/images/time_code_2.png)Figure 3: time_code.mp4 (bottom) is the strip from fig 1. time_code.001 is a different strip with different start and offsets.
+
+---------------------------
+I will use the names Start, Duration and End for the actual start, duration and end of a strip; e.g. the values that correspond to the strip bar in the timeline. Eventually, the prefix Actual could be added to enhance understanding. The prefix "Baseline" is added when referring to the the original Start, Duration and End fields, e.g. the values before any trimming or cutting has taken place. To summarize:
+
+Start = N/A (side panel) = frame_final_start (Python)
+Baseline Start = Start (side panel) = frame_start(Python)
+
+Duration = Duration (side panel) = frame_final_duration (Python)
+Baseline Duration = N/A (side panel) = frame_duration (Python)
+
+End = End (side panel) = frame_final_end (Python)
+Baseline End = N/A (side panel) = N/A (Python)
+
+
+Strip Offset Start: changing this value will recalculate the Start and Duration fields. The End field is left unchanged.
+Strip Offset End: changing this value will recalculate the End and Duration fields. The Start field is left unchanged.
+Hold Offset Start: changing this value will leave the Baseline Start fixed (hold) and will recalculate/decrease the Duration and End fields.
+
+The Hold Offset values seems to have the same effect as the Strip Offset values when applied (incrementing/decrementing) to a regular strip.
+
+However, the Strip Offset values are used to accomplish the effect of splitting (soft cut) a strip. And, the Hold Offset values are used for a hard cut (Hold split).
+
+But what's the difference? In both cases, the original strip could be recreated by zeroing out the Strip Offset or Hold Offset values. The difference seems to lay in the effect of dragging the strip handles and the visual overlay bars. The split command (soft cut) will generate overlay bars and dragging the handles will increase/decrease the strip bar and the overlay bars. The Hold Split (hard cut) command will not generate overlay bars and dragging the handles will create duplicate frames.  There seems also to be a difference when combining Strip Offset with Hold Offset values.
+
+    as Strip Offset End
+
+(Start = Baseline Start + Strip Start Offset)
+(Duration = )
+
+- increment value (e.g. +3): (Original) Start and (Final) End remain unchanged. (Final) Start is incremented (+3) and (Final) Duration is decremented (-3). The (Final) Duration cannot become 0; one frame should remain visible). The Strip Bar Start changes with the (Final) Start and an Overlay bar is added: from Original Start to Final Start, indicating that the strip is shortened. This seems normal behavior.
+
+- decrement value: reverses the effect of the increment operation above BUT the Strip Offset Start value can become negative. The (Final) Start is before the (Original) Start.The (Final) Duration is increased; End is unchanged. Overlay added: from (Final) Start to (Original) Start which means that the overlay runs within the strip. Because the strip starts before the original start, there are no frames available and the first frame is duplicated. There is no change in color of the Strip Bar to indicate this.
+
+- Drag left strip handle to the right: same behavior as increment value. The Strip Offset Start value is incremented.
+- Drag left strip handle to the left: reverses the effect from drag to right BUT you can drag handle before (Original) Start. This resembles (but is not equal) the effect of decrementing the Strip Offset Start value. However, it is the field Still Offset Start (frame_still_start)that is changed. The color of the Strip Bar indicates that the first frame is duplicated.
+
+Strip Offset End
+
+- behaves in the same manner as Strip Offset Start. The Offset cannot be incremented beyond the first frame.

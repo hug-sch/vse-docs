@@ -17,7 +17,7 @@ Please note that there is also a special chapter about the :doc:`Video Sequence 
 This text contains also two supplemental chapters. Chapter :red:`(4)` is about specific workflows. Editing a documentary, an interview or a music video is very different from each other. As said, the sound editing will occur probably much earlier in the workflow for a music video than for a documentary. Chapter :red:`(5)` is about some extra-tools, you may need while editing; e.g. some useful Python or FFMPEG scripts.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered:
 
    setup/index

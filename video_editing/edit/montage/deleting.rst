@@ -1,12 +1,13 @@
 Deleting & Muting & Locking
 ---------------------------
 
-.. figure:: img/delete.svg
+.. figure:: /images/video_editing_edit_montage_delete_delete.svg
    :alt: Strip menu
    :scale: 50%
    :align: right
 
-   Figure 2: Strip menu
+   Figure 1: Strip menu
+
 Deleting one or multiple selected strips is done by pressing the :kbd:`X` key or the :kbd:`Delete` key or with the menu Strip > Delete or the context menu with :kbd:`RMB + Click` (see figure 1).
 
 This Delete operation can of course be undone with the Undo command or :kbd:`Ctrl Z` key. Deleting a strip that has an associated effect (e.g. Glow or Gaussian Blur) will also delete the effect strip.
@@ -15,7 +16,7 @@ The *preferred* key for deletion is X and not Delete because the X key can be ac
 
 |
 
-.. figure:: img/mute-lock.svg
+.. figure:: /images/video_editing_edit_montage_delete_mute-lock.svg
    :alt: Mute-lock menu
    :align: right
 

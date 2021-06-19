@@ -10,7 +10,7 @@ There is no single optimal workflow for editing your video projects that fits ev
 
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
   
     montage/index
     effects/effects

@@ -73,3 +73,11 @@ embed svg (with js code) in html; the svg-file is stored in _static folder.
 To embed video: add extension
 
 https://github.com/sphinx-contrib/video
+
+Change the sort order in VSCode File explorer
+
+Open the Preferences (File > Preferences) and search for explorer.sortorder. 
+Default : by Last modified date
+Mixed: files and folders interwoven, in alphabetical order
+FilesFirst: first files, then folders in alphabetical order
+Type: by extension. Folders bfore filesmodified: idem as Default

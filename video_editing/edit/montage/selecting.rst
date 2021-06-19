@@ -1,15 +1,16 @@
-Select
-------
-Before you can do *anything* with strips, you have to select them (see below for the different methods of selecting). There is a difference between a selected strip and the active strip (see figure 1). Selected strips have an orange outline, the active and selected strip has a white outline, and white text if available. There is always one and only one strip active. The properties shown in the sidebar belong to this active strip.
+Selecting
+---------
+
+Before you can do *anything* with strips, you have to select them (see below for the different methods of selecting). There is a difference between a *selected* strip and the *active* strip (see figure 1). Selected strips have an outline. A selected but not active strip has an orange outline. The active and selected strip has a white outline, and white text if available. There is always one and only one strip active. The properties shown in the sidebar belong to this active strip.
 
 .. _video_editing_edit_timeline_select:
 
-.. figure:: img/active-vs-selected.svg
+.. figure:: /images/video_editing_edit_montage_select_active-vs-selected.svg
    :alt: Active vs selected View
 
    Figure 1: Active strip versus selected strips
 
-Even if *no* strip is selected, there is an Active strip. For example, in figure 1-a, the second strip is the Active strip. If there is no Text overlay or selection, the only way to know this is by looking at the sidebar. In figure 1-b, it is obvious that Strip 2 is active (white text) and that *only* strip 1 and 3 are selected (orange outline). In figure 1-c, all three strips are selected (orange and white outline) and strip 3 is the active one (white text).
+Even if *no* strip is selected, there is an Active strip. For example, in figure 1-a, the second strip is the Active strip. If there is no Text overlay or selection, the only way to know is by looking at the sidebar. In figure 1-b, it is obvious that Strip 2 is active (white text) and that *only* strip 1 and 3 are selected (orange outline). In figure 1-c, all three strips are selected (orange and white outline) and strip 3 is the active one (white text).
 
 Some actions such as Delete will apply only to the selected strips. Pressing Delete in figure 1-b will only delete strip 1 and strip 3. Other actions will only have an effect on the active strip such as scaling or rotating.
 
@@ -31,7 +32,7 @@ Select multiple strips
 Select specific strips
     You can :kbd:`Shift` + click consecutively on strips to select them all. The strip that is last clicked will become the active one. If you want another strip to be active, click that strip again (without releasing :kbd:`Shift`). To remove a strip from the collection, make it active and :kbd:`Shift` + click again.
 
-.. figure:: img/select-menu.svg
+.. figure:: /images/video_editing_edit_montage_select_select-menu.svg
    :alt: Active vs selected View
    :align: right
 
@@ -57,10 +58,10 @@ Extend/shrink selection
 Location based selection
 .........................
 
-.. figure:: img/select-menu-location-based.svg
+.. figure:: /images/video_editing_edit_montage_select_select-menu-location-based.svg
    :alt: Select Location Based
 
-   Figure 2: Select Location Based
+   Figure 3: Select Location Based
 
 With these commands you can select strips, based on their position on the timeline in relation to the playhead or the active strip (see figure 2).
 
@@ -95,10 +96,10 @@ Select Linked strips Vertically
 Attribute based selection
 .........................
 
-.. figure:: img/select-menu-attribute-based.svg
+.. figure:: /images/video_editing_edit_montage_select_select-menu-attribute-based.svg
    :alt: Select Attribute Based
 
-   Figure 3: Select Attribute Based
+   Figure 4: Select Attribute Based
 
 With these commands you can select strips according to their relation with other strips and their strip type. First select a strip and press  :kbd:`Shift-G` or use the menu Select > Grouped (see figure 3).
 
@@ -128,7 +129,7 @@ Overlap
 Select strip handles
 ....................
 
-.. figure:: img/select-menu-handles.svg
+.. figure:: /images/video_editing_edit_montage_select_select-menu-handles.svg
    :alt: Select Handles
 
    Figure 4: Select Handles

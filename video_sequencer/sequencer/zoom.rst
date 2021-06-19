@@ -25,6 +25,7 @@ Figure 1: Annotated video with all the Zoom commands.
    :alt: Back to Previous button
    :scale: 60%
 
+.. _sequencer_full_view:
 Ctrl-Spacebar
    The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels).
 Home

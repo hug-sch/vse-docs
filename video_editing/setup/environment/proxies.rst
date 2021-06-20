@@ -82,6 +82,7 @@ Of course, much depends on the format of the source files. If your source files 
 
 Cache
 -----
+In order for this property to be visible, enable :ref:`Developer Extras <prefs-interface-dev-extras>`.
 
 The biggest impact on playback performance is to allow the Video Sequencer to cache the playback. Because, it is so important, the cache system is designed to work silently in the background without much user interference. In fact, the Cache tab in the sidebar (see figure 3) will only be visible if the Developer Extras are switched on in the Edit > Preferences menu (Interface tab). In every case, the cache system will run silently for your benefit in the background.
 

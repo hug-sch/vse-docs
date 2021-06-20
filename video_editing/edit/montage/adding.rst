@@ -55,6 +55,7 @@ These colors are defined in the User Preferences and can be changed with the men
 The Group 4 strip types are *not* shown in figure 1 and will be discussed in a separate section.
 They presume the existence of one or more of the above basic strips.
 
+.. _name-property:
 Each strip has multiple Properties. Figure 1 shows the Properties of a Movie strip at the right hand side.
 This sidebar can be displayed with :menuselection:`View --> Sidebar` or shortcut key :kbd:`N`.
 All properties are organized in panels, e.g. Compositing, Transform, Crop, ect...

@@ -8,7 +8,7 @@ On top of that, you can create additional files during the edit such as subtitle
 animations, masks, proxies, and so on.
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    directory-structure
    project-settings

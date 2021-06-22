@@ -10,10 +10,10 @@ There is no single optimal workflow for editing your video projects that fits ev
 
 
 .. toctree::
-    :maxdepth: 2
-  
-    montage/index
-    effects/effects
-    color-grading/color-grading
-    sound/sound
+   :hidden:
+
+   montage/index
+   effects/effects
+   color-grading/color-grading
+   sound/sound
   

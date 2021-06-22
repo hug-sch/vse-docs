@@ -37,8 +37,11 @@ The VSE is composed of multiple areas (see figure 2). They are described in more
 
 
 .. toctree::
-   :maxdepth: 3
-
-   header
+   :hidden:
+   
    sequencer/index
+   preview/index
+   sequencer&preview/index
+
+
 

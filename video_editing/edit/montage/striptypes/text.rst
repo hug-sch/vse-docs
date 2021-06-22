@@ -10,7 +10,7 @@ So, its length is limited (511 characters) and 1 line of text (with wrapping).
 Most properties of the text (e.g. Location, Color, ...) can be animated but not the text content or its font.
 The :ref:`default <default-color>` color of the Text strip bar is: :text:`███`.
 
-.. figure:: img/text.svg
+.. figure:: /images/vse_setup_project_striptypes_text.svg
    :alt: Example of text strip
 
    Figure 1: Example of Text strip

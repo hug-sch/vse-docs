@@ -21,7 +21,7 @@ Figure 1: Annotated video with all the Zoom commands.
    Figure 2: Menu View
 
 .. |previous-button| image::
-   img/previous-button.png
+   /images/editors_vse_sequencer_timeline_previous-button.png
    :alt: Back to Previous button
    :scale: 60%
 
@@ -29,10 +29,10 @@ Figure 1: Annotated video with all the Zoom commands.
 Ctrl-Spacebar
    The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels).
 Home
-   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <../move/move>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Most Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
+   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <../move/move>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
 
 NumpadPeriod
-   Pressing the :kbd:`NumpadPeriod` key zooms the timeline to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
+   Pressing the :kbd:`NumpadPeriod` key zooms the Visible Range to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
 
    .. Warning::
       If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad.
@@ -40,10 +40,10 @@ NumpadPeriod
       You can however change these shortcuts or make some of your own. Blender Frenzy has a nice video about creating these `Custom Keymaps <https://www.youtube.com/watch?v=2RtlvZfv8TI>`_.
 
 Numpad +/-
-   Pressing the :kbd:`Numpad +` or :kbd:`Numpad -` key will zoom in or out in small incremental steps (+/- 5 frames, +/- 10 frames, +/- 15 frames, ...), starting from the initial. You can continue pressing the key until you have reached the desired zoom level. 
+   Pressing the :kbd:`Numpad +` or :kbd:`Numpad -` key will zoom in or out in small incremental steps (+/- 5 frames, +/- 10 frames, +/- 15 frames, ...), starting from the current Visible Range. You can continue pressing the key until you have reached the desired zoom level. 
 
 Shift-B
-   After pressing the :kbd:`Shift-B` key (from Box Select), a crosshair cursor appears and you can click and drag to draw a rectangle in the Sequencer window. Upon releasing the mouse button, the Sequencer window is zoomed to this rectangle. The menu equivalent of pressing :kbd:`Shift-B` is: View > Zoom (see figure 2).
+   After pressing the :kbd:`Shift-B` key (from Box Select), a crosshair cursor appears and you can click and drag to draw a rectangle in the Sequencer window. Upon releasing the mouse button, the Visible Range is zoomed to this rectangle. The menu equivalent of pressing :kbd:`Shift-B` is: View > Zoom (see figure 2).
 
 MMB + Wheel Roll
    Scrolling the middle mouse wheel will zoom in horizontally around the playhead. Scrolling towards yourself will zoom out. Scrolling towards the screen will zoom in.
@@ -56,11 +56,11 @@ Ctrl-MMB + drag
    It's important to press the :kbd:`Ctrl-MMB` first and then drag.
 
 Scrollbar circles
-   At the bottom and far right of the sequencer area, there are scrollbars. These scrollbars span the whole available width or height if all strips are visible. The length or the height of the scrollbar gives you an indication how much percentage of the Timeline window is visible. Pressing the :kbd:`Home` key for example will make the scrollbars at full length and height.
+   At the bottom and far right of the sequencer area, there are scrollbars. The length or the height of the scrollbar gives you an indication how much percentage of the Strip Range is visible. Pressing the :kbd:`Home` key for example will make the scrollbars at full length and height because the Visible Range will then be equal to the Strip Range.
 
-   Each scrollbar has a circle at the beginning and end (see figure 3). Dragging these circles will shrink or expand the scrollbar length or height and therefore also the Timeline window. For example, in figure 3, dragging the left zoom circle  to the left, will expand the Timeline window from frame 50 to frame 1 (which is the start of the project). The right zoom circle can be dragged up to frame 485 (End of the project). At that moment the scrollbar is full length and cannot be expanded more.
+   Each scrollbar has a circle at the beginning and end (see figure 3). Dragging these circles will shrink or expand the scrollbar length or height and therefore also the Visible Range. For example, in figure 3, dragging the left zoom circle to the left, will expand the Visible Range from frame 200 to frame 1 (which is the start of the project). The right zoom circle can be dragged to frame 1000 (End of the project). At that moment the scrollbar is full length (you see the complete project Duration). The visible range will then be larger than the Strip Range and will ultimately show you the largest visible Range possible in Blender, which is -500 000 to + 500 000 frames.
 
-.. figure:: img/scrollbars.svg
+.. figure:: /images/editors_vse_sequencer_timeline_scrollbar-circles.svg
    :alt: Scrollbars
    :align: right
 

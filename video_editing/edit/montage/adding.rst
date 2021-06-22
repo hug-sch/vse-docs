@@ -63,17 +63,3 @@ Navigating these panels is explained in `Tabs & panels <https://docs.blender.org
 The top of the sidebar contains the always visible header with the icon of the strip type,
 the name of the strip, and a Mute checkbox. You can name or rename your strips here.
 If the Mute button is checked the strip will still be visible in the Sequencer but will not produce any output.
-
-.. toctree::
-   :maxdepth: 1
-  
-
-   striptypes/movie
-   striptypes/sound
-   striptypes/image
-   striptypes/scene
-   striptypes/clip
-   striptypes/mask
-   striptypes/color
-   striptypes/text
- 

@@ -75,7 +75,7 @@ Opacity
    An opaque object is completely impervious to light. You cannot see through it. Opacity is the opposite of transparency. Each pixel in an image can have - besides the Red, Green and Blue values - also an Alpha value, a number between 0 and 1. An  Alpha = 0 indicates a completely transparent image. A completely opaque image has an Alpha = 1.
 
    .. hint::
-      A simple mnemonic to remember these values: 0 has a peeping hole = see through = transparent.
+      A simple mnemonic to remember these values: 0 is like a peeping hole = see through = transparent.
 
    The Alpha value of each pixel in the image is multiplied with the Opacity value of this field. A value of 1 does not affect the opacity of the strip. For example, if the strip is semi-transparent (e.g. alpha = 0.6), then it remains semi-transparent (0.6 x 1 = 0.6).
    A value of zero will make the strip fully transparent because multiplying with zero will always result in zero.

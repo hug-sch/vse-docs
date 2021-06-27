@@ -13,8 +13,8 @@ animations, masks, proxies, and so on.
    directory-structure
    project-settings
    import
-   striptypes/index
-
+   creating-test-files
+   
 .. figure:: /images/vse_setup_project_organize-example.png
    :align: center
    :alt: Example of a complex timeline

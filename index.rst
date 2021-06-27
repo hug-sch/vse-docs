@@ -15,10 +15,14 @@ Links to other sections within the Blender docs are provided for more general co
 .. toctree::
    :caption: Table of Contents
    :maxdepth: 3
+   :numbered:
+   :hidden:
    
 
    video_sequencer/index
    video_editing/index
+   extra-tools/index
+   workflow/index
 
 .. todo::
    This page will be deleted upon integration into the official Blender docs.

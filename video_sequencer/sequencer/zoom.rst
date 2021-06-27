@@ -1,5 +1,5 @@
 Zoom
-----
+....
 
 In a video project it is important that you can zoom in on the section you're working on. On the other hand it's also important to have an overview of your timeline. Zooming in and out is thus a frequent occurring action.
 
@@ -14,7 +14,7 @@ Figure 1: Annotated video with all the Zoom commands.
    As with all commands in Blender, the interpretation of it depends on the position of the mouse cursor. Pressing :kbd:`Home` when the mouse cursor is over the preview window will only zoom the preview window. To zoom in or out of the Sequencer, your mouse cursor must be over that area.
 
 
-.. figure:: img/menu-view.svg
+.. figure:: /images/editors_vse_sequencer_timeline_menu-view.svg
    :alt: Menu View
    :align: right
 
@@ -25,11 +25,21 @@ Figure 1: Annotated video with all the Zoom commands.
    :alt: Back to Previous button
    :scale: 60%
 
+.. |restore-button| image::
+   /images/editors_vse_sequencer_timeline_restore-button.png
+   :alt: Restore button
+   :scale: 40%
+
+
 .. _sequencer_full_view:
+
 Ctrl-Spacebar
-   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels).
+   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into semi-full view. The header and menus are still visible. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels). Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window.
+
+Alt-Ctrl-Spacebar
+   The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Timeline. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again (no other key will do!) or hover your mouse over the top right corner of the window until the restore button |restore-button| pops up.
 Home
-   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <../move/move>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
+   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <moving>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
 
 NumpadPeriod
    Pressing the :kbd:`NumpadPeriod` key zooms the Visible Range to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
@@ -48,7 +58,7 @@ Shift-B
 MMB + Wheel Roll
    Scrolling the middle mouse wheel will zoom in horizontally around the playhead. Scrolling towards yourself will zoom out. Scrolling towards the screen will zoom in.
 
-   Using the MMB wheel roll in combination with Ctrl or Shift will change the behavior from zoom to move (see :doc:`Moving the Timeline window <../move/move>`).
+   Using the MMB wheel roll in combination with Ctrl or Shift will change the behavior from zoom to move (see :doc:`Moving the Timeline window <moving>`).
 
 Ctrl-MMB + drag
    Pressing :kbd:`Ctrl-MMB` and dragging left will zoom out or dragging right will zoom in. Dragging up will zoom in vertically and dragging down will zoom out vertically.

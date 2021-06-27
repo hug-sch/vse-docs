@@ -147,7 +147,7 @@ Show Cache, Sequence Render Image, Sequence Render Animation, Export Subtitles
 
    - Cache is described in section Video Editing > Setup > Environment > Proxies & Cache.
    - Rendering is described in section Video Editing > Render.
-   - Subtitles are described in video editing > edit > sound.
+   - Subtitles are described in Video Editing > Edit > Sound.
 
    .. todo::
       Add links to those sections 

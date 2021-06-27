@@ -107,7 +107,7 @@ The Transform panel contains the Position, Scale, and Rotation properties and th
 
 Position X, Y
    The dimensions of the view area of the sequencer output are set by the project dimensions;
-   e.g. 1920 x 1080 by default (see :doc:`/setup/project/directory-structure`).
+   e.g. 1920 x 1080 by default (see :doc:`/video_editing/setup/project/directory-structure`).
    A movie is centered (and scaled) within this view area. So, position (0,0) wil refer to the midpoint of the image. With the X, Y values, you can move the frame along the horizontal and vertical axis. The values are expressed in pixels.
 
 Scale X, Y
@@ -135,7 +135,7 @@ Channel 3 contains the foreground picture. This picture is scaled (0.3) and repo
    Figure 3: Example of Picture-in-Picture
 
 The "Spring" open-movie in figure 3 has non-default dimensions: 2048 x 858.
-To download this movie, see :doc:`creating test-files - section E) </setup/project/ creating-test-files>`.
+To download this movie, see :doc:`creating test-files - section E) </video_editing/setup/project/creating-test-files>`.
 If you add this movie to the default FHD timeline (1920 x 1080), it will be scaled.
 The longest dimension (2048) will be scaled to 1920 with a factor of 0.9375 (0.9375 x 2048 = 1920).
 The vertical dimension too will be scaled with the same parameter,
@@ -220,7 +220,7 @@ Strobe
   
   It is not really a strobe-effect because the frames 2-9,
   11-19, ... aren't blacked out.  You can easily check this out with the timecode overlay test file
-  (see :doc:`Creating test files - section C </setup/organize/dir-structure/creating-test-files>`).
+  (see :doc:`Creating test files - section C </video_editing/setup/project/creating-test-files>`).
 
 Reverse Frames
    The strip is played backwards starting from the last frame in the sequence to the first frame.
@@ -276,7 +276,7 @@ Time
    :class: refbox
 
    :View:      Sequencer
-   :Panel:     :menuselection:Sidebar --> Strip --> Time`
+   :Panel:     :menuselection:`Sidebar --> Strip --> Time`
 
 .. figure:: /images/vse_setup_project_striptypes_panel-time.png
    :scale: 50%
@@ -479,7 +479,7 @@ Resolution & fps
    Dimension (width x height in pixels) of the active strip image output.
    Frames per second (fps) of the active strip.
    
-   These properties are not not editable and should preferably match the settings of the project (see :doc:`see Organize > Import section </setup/organize/import/import.rst` ).
+   These properties are not not editable and should preferably match the settings of the project (see :doc:`see Organize > Import section </video_editing/project/import` ).
    
    Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
 

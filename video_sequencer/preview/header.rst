@@ -21,10 +21,7 @@ Fit Preview in Window :kbd:`Home`
 Zoom :kbd:`Shift-B`
    Click and drag to draw a rectangle and zoom to this rectangle. The selected area is centered in the window and the Preview is zoomed with a factor size preview window/ size selected rectangle. This is normally a zoom i, but you can also drag a rectangle selection that is larger than the Preview window (by starting outside the window.
 Fractional Zoom
-   Resize the preview in steps from 1:8 to 8:1 (see figure 1). A fractional zoom of 1:1 (:kbd:`Numpad - 1`) ...
-
-   .. todo::
-      Explain ratios and difference between 1:1 and Fit Preview in Window.
+   Resize the preview (project area) in steps from 1:8 to 8:1 (see figure 1). Suppose that the Project Dimensions are: 640 x 640. A fractional zoom of 1:1 (:kbd:`Numpad - 1`) will resize the project area (see :ref:`Figure 1: Preview Areas <preview-areas>` so that it will cover exactly 640 x 640 pixels in the preview window. If the Preview window is very small, the image will extend beyond the borders. A fractional zoom of 1:2 (1 divided by 2) indicates that the original 640 x 640 will be reduced to half or 320 x 320 pixels. A fractional zoom of 2:1 will double the Project area.
 
 Show Cache, Sequence Render Image, Sequence Render Animation, Export Subtitles
 
@@ -40,15 +37,12 @@ Toggle Sequencer/Preview :kbd:`Ctrl-Tab`
 Display Mode
 ............
 
-Mode to show different aspects of the composite result, for the current frame:
+With the Display Mode button, you can choose between a (default) Image Preview or a Luma Waveform, a Chroma Vectorscope or a Histogram view of the rendered image at the current frame.
 
 Image Preview
    The Image Preview mode shows you what the resulting video will look like when rendered. This is the default working mode. 
 Luma Waveform
-   The Luma Waveform is the graphical representation of the luminance of an image or video. For more detailed information about how to use this tool, see section on Color Grading.
-
-   .. todo::
-      Prepare this section
+   The Luma Waveform is the graphical representation of the luminosity or brightness of an image or video. For more detailed information about how to use this tool, see section on Color Grading. The examples below are very stylized to explain the basic principles and are not representative for real-world images.
 
 .. figure:: /images/editors_vse_preview_luma-waveform.svg
    :alt: Luma Waveform
@@ -56,22 +50,55 @@ Luma Waveform
 
    Figure 2: Luma Waveform and Image preview
 
-   Figure 2 shows two Preview windows: the left one with Display Mode Luma Waveform, the right one with the default display Mode Image Preview. The image is composed of 4 columns with several areas of grey-scale.
+   Figure 2 shows two Preview windows: the left one with Display Mode Luma Waveform, the right one with the default display Mode Image Preview. The image is composed of 4 columns with several areas of grey-scale. The last column also contains the white text "50%".
    
-   The X-axis of the Luma Waveform represents the X-axis of the image. Although you cannot recognize shapes in the Luma Waveform, the 4 columns are discernible because they are very different in luminance.
+   The X-axis of the Luma Waveform represents the X-axis of the image. If the image is 400 pixels wide, so is the Luma Waveform. Although you cannot recognize individual shapes  of the image  (e.g. faces, ...) in the Luma Waveform, the 4 columns are discernible in this example because they vary widely in luminosity. The Y-axis of the Luma Waveform represents luminosity, ranging from zero (black) at the bottom to 1 (white) at the top. There are a few preset values (the red lines) at 0.1, 0.7 and 0.9.
    
-   The Y-axis of the Luma Waveform represents luminance, ranging from zero (black) at the bottom to 1 (white) at the top. The first column (from the left) has a RGB-value (0.5,0.5, 0.5), which is a 50% grey. This luminance value of this column is shown as the little white line at (a). The luminance values for respectively (c), (d) and (e) are 0.8, 0.6 and 0.2. Because the second column contains only those 3 luminance values, the Luma Waveform shows only three small (white) lines at the values 0.8, 0.6 and 0.2.
-   
-   The third column is a gradient, going from almost black to almost white. This column however contains all luminance values within this range. They are represented with several lines, indicating that all those values are in that area.
-   
-   The first column contains also some kind of point-cloud above the 0.5 luminance. This is caused by the anti-alisiad white text (50%). These luminance values (from white to mid-grey) occur in the middle of the column where the text resides.
+   The first column in the image has a RGB-value (0.3, 0.3, 0.3), which is a 70% grey. This is shown by the small white line at (a). For a given position X at the horizontal axis, all the pixels in the vertical axis have the same luminosity value of 0.3. This is the interpretation of the single, small white line for the first 100 X-pixels in the Luma Waveform. 
 
-   With the sample tool (see figure 2) you can determine the Luminance value and other color values of every pixel in the image. :kbd:`LMB-Click` will show this info in the statusbar.
+   The second column contains three small white lines at level 0.2 (d), 0.6 (b) and 0.8 (c). For a given position X (ranging from pixel 100 - 199), there are only three luminosity values, corresponding to the three squares in the image.
+   
+   The third column in the image is a gradient, ranging from black to white. So, for every position X in the range 300-399, there are multiple luminosity values, ranging from black (0) to white (1) and resulting in multiple white lines.   ,  The luminance values for respectively (c), (d) and (e) are 0.8, 0.6 and 0.2. Because the second column contains only those 3 luminance values, the Luma Waveform shows only three small (white) lines at the values 0.8, 0.6 and 0.2.
+   
+   The fourth column has a background of 50% grey, resulting in a single white line at level 0.5. The "point-cloud" above the 0.5 luminosity is caused by the anti-aliased white text (50%). Some X positions (right in the middle of the column) have multiple luminosity values: 0.5 from the background and several from the white, anti-aliased text. These values are all above 0.5 because the text is white and is merged with the 50% grey background.
+
+   With the sample tool you can determine the Luminosity value and other color values of every pixel in the image. Select the Sample tool and :kbd:`LMB-Click` on the image will show this info in the status bar. In figure 2, I've clicked on area (d). In the status bar, you can read the L-value: 0.2.
 
 Chroma Vectorscope
-   Color hue and saturation analyzer.
+   The Chroma Vectorscope is a graphical representation of the Hue and Saturation x Brightness values of an image. The three primary colors (red, green, blue) and the three secondary colors (yellow, cyan, magenta) and the in-betweens are visualized as a hexagon with the aforementioned colors at the vertices.  The center of the hexagon (the red dot) has a saturation x Brightness value of zero (because one or both  are zero, the Hue equals Black). The values at the border have a Saturation x Brightness value of 1. Every dot within the hexagon represent a pixel or a group of pixels with the same hue and saturation x Brightness value. A very dim or desaturated image for example will appear as group of dots near the center. An image with a very saturated (blue) sky, will show show as a bunch of dots near the blue border.
+
+.. figure:: /images/editors_vse_preview_vectorscope.svg
+   :alt: Display Mode Histogram
+
+   Figure 3: Display mode Chroma Vectorscope and Image 
+
+Figure 3 contains 14 different hue and Saturation x Brighness values. Each of them is represented by a small dot. The number of pixels with that particular value does not matter. For example, the small rectangles (e) and (f)  are equally represented by one (small) dot as the larger rectangles (a), ...
+
+Because the rectangles (a), (b), (c), and (d) have all the same (blue-ish) Hue, but a different Saturation x Brightness value, they lie at a line pointing to that Hue at the hexagon border.
+
+
+
 Histogram
-   RGB distribution histogram.
+   The histogram is a graph that visualizes the intensity of the Red, Green and Blue component of a image.
+
+   The X-axis of the histogram ranges from 0 to 1, which are the acceptable intensity values in a display color space. The Y-axis is a quantity measure: how many pixels have this specific Red, Green or Blue intensity.
+
+.. figure:: /images/editors_vse_preview_histogram.svg
+   :alt: Display Mode Histogram
+
+
+Figure 4: Display mode Histogram, together with Sequencer and Image preview
+
+In figure 4, the rendered image is made up of three rectangles. 
+* (a) green RGB(0.2, 0.5, 0.4): 1/8 of the image size
+* (b) purple RGB (0.7, 0.6, 0.9): a quarter of the image size
+* (c) red RGB (0.8, 0.2, 0.3): half of the image size
+
+So, there are 9 RGB components, but only 8 of them are different (the value 0.2 occurs two times). Because rectangle (c) contains half of all pixels in the image, the histogram bars are about 0.5 high and they are drawn at X-location 0.2, 0.3 and 0.8. Rectangle (b) is half the size of (c), and so are the histogram bars. They are drawn at location 0.6, 0.7 and 0.9. Rectangle (a) has one RGB component value in common with rectangle (c). The Red component of (a) is drawn on top of the Green component (c), which results in a yellow bar at postion 0.2.
+
+Finally, there is the transparent area (1/8 of the image size). This is represented by a black color RGB (0,0,0), resulting in a white bar (red on top of green on top of blue) at location 0.
+
+You can always check the RGB value by selecting the Sample tool (default) and :kbd:`LMB-Click`/ In figure4, you can verify that the RBB value of the red rectangle is indeed (0.8, 0.2, 0.3).
 
 
 Display Channels
@@ -81,6 +108,9 @@ Color and Alpha
    Display preview image with transparency over checkerboard pattern.
 Color
    Ignore transparency of preview image (fully transparent areas will be black).
+
+.. todo::
+   Prepare this section
 
 
 Show Overlay
@@ -109,8 +139,3 @@ Metadata
 
 Annotations
    Displays :doc:`Annotations </interface/annotate_tool>` in the preview region.
-
-
-
-   
-For a detailled explanation, see `Display Mode <https://docs.blender.org/manual/en/dev/video_editing/preview/display_mode.html>`_.

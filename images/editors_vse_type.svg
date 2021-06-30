@@ -237,8 +237,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98151455"
-     inkscape:cx="174.02423"
-     inkscape:cy="116.75514"
+     inkscape:cx="907.58442"
+     inkscape:cy="598.66343"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -397,9 +397,16 @@
          style="font-size:7.05556px;fill:#ffff00;stroke-width:0.264583"
          x="361.10733"
          y="198.17821">Scaled Source</tspan></text>
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.793755;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.7625, 0.793755;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect972"
+       width="325.80008"
+       height="224.12914"
+       x="104.0563"
+       y="28.378225" />
     <path
        style="display:inline;fill:none;stroke:#ffff00;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.7625, 0.79375;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend-8-81563-598093374-3)"
-       d="m 129.32865,42.434763 h -23.9766"
+       d="M 129.32865,42.434762 H 102.06231"
        id="path1667-0-3-0-5"
        sodipodi:nodetypes="cc" />
   </g>

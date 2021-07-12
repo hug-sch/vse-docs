@@ -1,0 +1,1 @@
+sphinx-autobuild -a . e:/temp/_build/html --open-browser --watch ./_static/css

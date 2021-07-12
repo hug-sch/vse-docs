@@ -37,7 +37,7 @@ Toggle Sequencer/Preview :kbd:`Ctrl-Tab`
 Display Mode
 ............
 
-With the Display Mode button, you can choose between a (default) Image Preview or a Luma Waveform, a Chroma Vectorscope or a Histogram view of the rendered image at the current frame.
+Mode to show different aspects of the composite result, for the current frame:
 
 Image Preview
    The Image Preview mode shows you what the resulting video will look like when rendered. This is the default working mode. 

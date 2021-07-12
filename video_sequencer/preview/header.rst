@@ -37,7 +37,7 @@ Toggle Sequencer/Preview :kbd:`Ctrl-Tab`
 Display Mode
 ............
 
-Mode to show different aspects of the composite result, for the current frame:
+With the Display Mode button, you can choose between a (default) Image Preview or a Luma Waveform, a Chroma Vectorscope or a Histogram view of the rendered image at the current frame.
 
 Image Preview
    The Image Preview mode shows you what the resulting video will look like when rendered. This is the default working mode. 
@@ -65,7 +65,7 @@ Luma Waveform
    With the sample tool you can determine the Luminosity value and other color values of every pixel in the image. Select the Sample tool and :kbd:`LMB-Click` on the image will show this info in the status bar. In figure 2, I've clicked on area (d). In the status bar, you can read the L-value: 0.2.
 
 Chroma Vectorscope
-   The Chroma Vectorscope is a graphical representation of the Hue and Saturation x Brightness values of an image. The three primary colors (red, green, blue) and the three secondary colors (yellow, cyan, magenta) and the in-betweens are visualized as a hexagon with the aforementioned colors at the vertices.  The center of the hexagon (the red dot) has a saturation x Brightness value of zero (because one or both  are zero, the Hue equals Black). The values at the border have a Saturation x Brightness value of 1. Every dot within the hexagon represent a pixel or a group of pixels with the same hue and saturation x Brightness value. A very dim or desaturated image for example will appear as group of dots near the center. An image with a very saturated (blue) sky, will show show as a bunch of dots near the blue border.
+The Chroma Vectorscope is a graphical representation of the Hue and Saturation x Brightness values of an image. The three primary colors (red, green, blue) and the three secondary colors (yellow, cyan, magenta) and the in-betweens are visualized as a hexagon with the aforementioned colors at the vertices.  The center of the hexagon (the red dot) has a saturation x Brightness value of zero (because one or both  are zero, the Hue equals Black). The values at the border have a Saturation x Brightness value of 1. Every dot within the hexagon represent a pixel or a group of pixels with the same hue and saturation x Brightness value. A very dim or desaturated image for example will appear as group of dots near the center. An image with a very saturated (blue) sky, will show show as a bunch of dots near the blue border.
 
 .. figure:: /images/editors_vse_preview_vectorscope.svg
    :alt: Display Mode Histogram
@@ -76,11 +76,8 @@ Figure 3 contains 14 different hue and Saturation x Brighness values. Each of th
 
 Because the rectangles (a), (b), (c), and (d) have all the same (blue-ish) Hue, but a different Saturation x Brightness value, they lie at a line pointing to that Hue at the hexagon border.
 
-
-
 Histogram
-   The histogram is a graph that visualizes the intensity of the Red, Green and Blue component of a image.
-
+   The histogram is a graph that visualizes the intensity of the Red, Green and Blue component of a image. 
    The X-axis of the histogram ranges from 0 to 1, which are the acceptable intensity values in a display color space. The Y-axis is a quantity measure: how many pixels have this specific Red, Green or Blue intensity.
 
 .. figure:: /images/editors_vse_preview_histogram.svg
@@ -100,42 +97,19 @@ Finally, there is the transparent area (1/8 of the image size). This is represen
 
 You can always check the RGB value by selecting the Sample tool (default) and :kbd:`LMB-Click`/ In figure4, you can verify that the RBB value of the red rectangle is indeed (0.8, 0.2, 0.3).
 
-
 Display Channels
 ................
+
+You can choose between:
 
 Color and Alpha
    Display preview image with transparency over checkerboard pattern.
 Color
    Ignore transparency of preview image (fully transparent areas will be black).
 
-.. todo::
-   Prepare this section
-
-
 Show Overlay
 ............
 
-Overlays are information that is displayed on top of the preview region.
-There is a switch to turn off/on all overlays for the preview region.
+Overlays consist of additional information that is displayed on top of the preview region. With the Show Overlay button, you can switch off or on all overlays for the preview region. With the Overlays button (down pointing arrow) you can chose the type of Overlay: Frame Overlay, Safe Areas, Metadata or annotations. The following Overlays are available.
 
-.. rubric:: Preview Overlays
-
-Frame Overlay
-   Displays the :ref:`Frame Overlay <bpy.types.SequenceEditor.show_overlay>`,
-   to compare the current frame to a reference frame.
-
-.. _bpy.types.SpaceSequenceEditor.show_safe_areas:
-
-Safe Areas
-   Display an overlay on the preview, marking where the title safe regions are.
-
-.. _bpy.types.SpaceSequenceEditor.show_metadata:
-
-Metadata
-   Display Image metadata in the preview area.
-
-.. _bpy.types.SpaceSequenceEditor.show_annotation:
-
-Annotations
-   Displays :doc:`Annotations </interface/annotate_tool>` in the preview region.
+More info about the available options are described in the section:  :menuselection:`Sidebar --> Frame Overlay`.

@@ -57,50 +57,102 @@ By enabling this Frame Overlay setting, you can compare the current frame to a r
 
 The User Interface of this option is however a bit rusty.
 
-Set Overlay region
-   You have to set the Frame Offset (see below) *first*; otherwise you want see much happening. Pressing this button lets you draw a box where you want the Overlay to appear in the Preview. The shortcut is :kbd:`O`. In figure 3, an Overlay Region is drawn at the top-right corner of the Preview.
+.. figure:: /images/editors_vse_preview_sidebar-overlay.svg
+   :alt: Frame Overlay
 
-   This Overlay type (Rectangle) is however not that useful. Suppose, you want to see the mid-region of the reference frame. Therefore, you need to draw a box at the mid-region of the current frame, hiding probably some vital info. Drawing it at the top will reveal this info in the current frame but will show also the less interesting area (top) from the reference frame.
+   Figure 3: Frame Overlay Type: Reference (left), Current (mid), Rectangle (right)
+
+Set Overlay region
+   You have to set the Frame Offset (see below) *first*; otherwise you want see much happening. Pressing the Set Overlay Region button lets you draw a box where you want the Overlay to appear in the Preview. The shortcut is :kbd:`O`. In figure 3, an Overlay Region is drawn at the left side of the Preview.
+
+   This Overlay type (Rectangle) is however not that useful. Suppose, you want to see the mid-region of the reference frame. Therefore, you need to draw a box at the mid-region of the current frame, hiding probably some vital info. Drawing it at the top will move it out of the way but will probably show also the less interesting area (top) from the reference frame.
 
 Frame Offset
-   This slider controls the offset of the reference frame relative to current frame. In figure 3, the current frame is at position 1500 and the reference frame at position 2000, which is an offset of +500 frames from the current frame. Changing the Frame Offset will *not* update in real time the Preview window. To see the result of this change, you have to move the playhead.
+   This slider controls the offset of the reference frame relative to current frame. In figure 3, the current frame is at position 7650 and the reference frame at position 6650 (dashed blue line), which is an offset of -1000 frames from the current frame. Changing the Frame Offset will *not* update in real time the Preview window. To see the result of this change, you have to move the playhead.
 
 Overlay Type
-   
-      Rectangle
-         A rectangle area of the reference frame will be displayed on top of current frame at the same position. This is the case used in figure 3.
-      Reference
-         Only the reference frame is displayed in the preview region. Of course, this is exactly the same as moving the current frame and switching off the frame overlay.
-      Current
-         Only the current frame is displayed in the preview region. The last two options are only useful when working with two preview windows.
+   Rectangle
+      A rectangle area of the reference frame will be displayed on top of current frame at the same position. This is the case used in figure 3 (right handside).
+   Reference
+      Only the reference frame is displayed in the preview region (see figure 3, left handside). Of course, this is exactly the same as moving the current frame and switching off the frame overlay.
+   Current
+         Only the current frame is displayed in the preview region (figure 3, mid section). This is, of course, the default behavior of the Preview.
+
+   .. tip::
+      The last two options are only useful when working with two preview windows.It is possible to have several Sequence Editors opened at the same time and they can use different overlay types. So, the middle sequence editor displays the Current frame, while the left editor displays the Reference frame.
 
 Overlay Lock
    The reference frame is moved in sync with the current frame. With this option, you can (temporary) lock the reference frame to its current position.
 
-   .. tip::
-      It is possible to have several Sequence Editors opened and they can use different overlay types. So it is possible to have current and reference frames displayed in different editor spaces.
 
-Safe Areas
-   A safe area is a screen area that is visible on most devices. Especially, older TV's with rounded corners have a much smaller visible area. This safe area is indicated in Blender by dashed lines (see figure 5) and conform to the European Broadcasting Union (EBU) rules. There are two areas:
+.. admonition:: Reference
+   :class: refbox
+
+   =============   ==========================================================================
+   **Name**:       Safe Areas
+   **Context**:    Video Sequence Editor > Preview
+   **Location**:   Sidebar > View
+   =============   ==========================================================================
+
+.. figure:: /images/editors_vse_preview_sidebar-safe-areas.png
+   :alt: Safe Areas
+   :scale: 50%
+   :align: right
+
+   Figure 4: Safe Areas
+
+A safe area is a screen area that is visible on most devices. Especially, older TV's with rounded corners have a much smaller visible area. This safe area is indicated in Blender by dashed lines (see figure 5) and conform to the European Broadcasting Union (EBU) rules. There are two areas:
    
-   * TitleGraphics  safe area:
-   * Action safe area:
-   * 
-   * . smaller screens have on the Display an overlay on the preview, marking where the title safe regions are.
+Title Safe Margins X & Y
+   See figure 5
+Action Safe Margins X & Y 
+   See figure 5
+Center-Cut Safe Areas
+
 
 
 .. figure:: /images/editors_vse_preview_safe-areas.svg
    :alt: Safe areas
   
 
-   Figure 2: Safe Areas
+   Figure 5: Safe Areas
 
-.. _bpy.types.SpaceSequenceEditor.show_metadata:
+.. admonition:: Reference
+   :class: refbox
 
-Metadata
-   Display Image metadata in the preview area.
+   =============   ==========================================================================
+   **Name**:       Scene Strip Display
+   **Context**:    Video Sequence Editor > Preview
+   **Location**:   Sidebar > View
+   =============   ==========================================================================
 
+.. figure:: /images/editors_vse_preview_sidebar-scene-strip-display.png
+   :alt: Scene Strip Display
+   :scale: 50%
+   :align: right
+
+   Figure 5: Scene Strip Display
+   
+Shading
+   Choice between solid, ....
+Override Scene Settings
+   Settings such as resolution?
+   
 .. _bpy.types.SpaceSequenceEditor.show_annotation:
+
+.. admonition:: Reference
+   :class: refbox
+
+   =============   ==========================================================================
+   **Name**:       Annotations
+   **Context**:    Video Sequence Editor > Preview
+   **Location**:   Sidebar > View
+   =============   ==========================================================================
 
 Annotations
    Displays :doc:`Annotations </interface/annotate_tool>` in the preview region.
+
+   .. _bpy.types.SpaceSequenceEditor.show_metadata:
+
+Metadata
+   Display Image metadata in the preview area.

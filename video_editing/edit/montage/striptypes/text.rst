@@ -43,8 +43,11 @@ Effect Strip
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Effect Strip`
+   =============   ==========================================================================
+   **Name**:       Effect Strip
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-effect-strip-text-.png
    :scale: 60%

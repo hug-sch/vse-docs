@@ -47,8 +47,11 @@ Mask
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Mask`
+   =============   ==========================================================================
+   **Name**:       Mask
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-mask.png
    :scale: 50%

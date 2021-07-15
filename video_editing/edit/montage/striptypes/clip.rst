@@ -36,8 +36,11 @@ Video
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Video`
+   =============   ==========================================================================
+   **Name**:       Video
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-video-strip-clip.png
    :scale: 50%

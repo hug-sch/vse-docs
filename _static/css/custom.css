@@ -41,24 +41,21 @@
 .small {font-size: small;}
 .large {font-size: large;}
 
-/*
-.menuselection{
-   font-style: italic;
+
+/* remove border, whtespace & grid from admonition table */
+.admonition .wy-table-responsive{
+	margin-bottom: 0;
 }
 
-.rst-content dl:not(.docutils) dt {
-	 display: contents;
+.rst-content .admonition table {
+	border: none;
 }
-.rst-content dd {
-	 display: block;
-	 white-space:nowrap
+
+.wy-table-bordered-all td, .rst-content table.docutils td{
+	border: none;
 }
-.rst-content dd p {
-	 display: inline;
-	 white-space:nowrap
+
+.wy-table td, .rst-content table.docutils td{
+	padding: 2px 16px;
 }
-.rst-content .refbox .admonition-title {
-	background-color: #bbb;
-	background:rgb(124, 105, 209);
-}
-*/
+

@@ -46,8 +46,11 @@ Compositing
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Compositing`
+   =============   ==========================================================================
+   **Name**:       Compositing
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-compositing.png
    :scale: 50 %
@@ -90,8 +93,11 @@ Transform
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Transform`
+   =============   ==========================================================================
+   **Name**:       Transform
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-transform.png
    :scale: 50%
@@ -160,8 +166,11 @@ Crop
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Crop`
+   =============   ==========================================================================
+   **Name**:       Crop
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-crop.png
    :scale: 50%
@@ -203,8 +212,11 @@ Video
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Video`
+   =============   ==========================================================================
+   **Name**:       Video
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-video-strip-movie.png
    :scale: 50%
@@ -235,8 +247,11 @@ Color
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Color`
+   =============   ==========================================================================
+   **Name**:       Color
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-color.png
    :scale: 50%
@@ -275,8 +290,11 @@ Time
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Time`
+   =============   ==========================================================================
+   **Name**:       Time
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-time.png
    :scale: 50%
@@ -408,8 +426,11 @@ Source
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
+   =============   ==========================================================================
+   **Name**:       Source
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-source-movie-strip.png
    :scale: 50%
@@ -492,8 +513,11 @@ Custom Properties
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Custom Properties`
+   =============   ==========================================================================
+   **Name**:       Custom
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-custom.png
    :scale: 50%

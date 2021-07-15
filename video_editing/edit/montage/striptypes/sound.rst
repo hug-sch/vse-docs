@@ -54,8 +54,11 @@ Sound
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Sound`
+   =============   ==========================================================================
+   **Name**:       Sound
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-sound.svg
    :scale: 80%
@@ -135,8 +138,11 @@ Source
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
+   =============   ==========================================================================
+   **Name**:       Source
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 Pack
    Packing the sound file means that the sound is embedded -not linked- in the blend-file.

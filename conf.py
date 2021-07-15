@@ -74,4 +74,5 @@ rst_prolog = """
 .. role:: image
 .. role:: text
 .. role:: color
+.. role:: mykey
 """

@@ -85,8 +85,11 @@ Source
 .. admonition:: Reference
    :class: refbox
 
-   :View:      Sequencer
-   :Panel:     :menuselection:`Sidebar --> Strip --> Source`
+   =============   ==========================================================================
+   **Name**:       Source
+   **Context**:    Video Sequence Editor > Sequencer
+   **Location**:   Sidebar > Strip
+   =============   ==========================================================================
 
 .. figure:: /images/vse_setup_project_striptypes_panel-source-strip-image.png
    :scale: 50%

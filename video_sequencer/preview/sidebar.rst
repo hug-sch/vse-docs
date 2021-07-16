@@ -101,21 +101,30 @@ Overlay Lock
 
    Figure 4: Safe Areas
 
-A safe area is a screen area that is visible on most devices. Especially, older TV's with rounded corners have a much smaller visible area. This safe area is indicated in Blender by dashed lines (see figure 5) and conform to the European Broadcasting Union (EBU) rules. There are two areas:
-   
-Title Safe Margins X & Y
-   See figure 5
-Action Safe Margins X & Y 
-   See figure 5
-Center-Cut Safe Areas
-
-
+A safe area is a screen area that is visible on most devices. Especially, older TV's with rounded corners have a much smaller visible area. This safe area is indicated in Blender by dashed lines (see figure 5) and conform to the  `European Broadcasting Union (EBU) <https://tech.ebu.ch/docs/r/r095.pdf>`_ rules. There are two areas:
 
 .. figure:: /images/editors_vse_preview_safe-areas.svg
    :alt: Safe areas
   
 
    Figure 5: Safe Areas
+
+Title Safe Margins X & Y
+   According to the EBU document (where this option is called "Graphics Safe Area"), this is set by default to 5% of the project resolution. All text and graphic elements such as subtitles or a logo must be placed within this area.
+Action Safe Margins X & Y 
+   All major action should be viewable within this area. By default, the Action Safe Margins are set to 3.5% of the the project resolution. The Action Safe Margins are smaller than the Title Safe Margins because loosing some text (or logo) is more harmful than cutting some action.
+Center-Cut Safe Areas
+   This ensures that people who still have old 4×3 TVs or monitors won’t have the text cut off on the sides. By default, this is set to 17.5% of the X project resolution and 5% of the Y axis. Of course, these values are for a 16:9 aspect ratio project. If you want to display a 16:9 image in a 4:3 area, there are two possibilities (see figure 6).
+
+.. figure:: /images/editors_vse_preview_safe-areas-4x3.svg
+   :alt: Safe areas conversion
+  
+   Figure 6: How to fit a 16:9 image in a 4:3 area?
+
+In the left solution of figure 6, the complete 16:9 image is preserved but two black rectangular areas (called letterboxes) are added to the top and bottom. If you want to completely fill the 4:3 area with footage, you need the solution at the right of figure 6. The original 16:9 image is cropped 12.5%, both left and right. Add another 5% for the Title Safe Area and you'll get the default 17.5%.
+
+.. note::
+   Modern TV's and computer monitors have fixed pixel matrix screens and the viewable area is much larger than older CRT (Cathode Ray Tube) screens. So, the safe areas are not that important anymore. However, users are accustomed with the safe area layout. So, following the safe area guides is good practice. Also, from an aesthetic view point it is not advisable to stick text or logos to the very edge of the screen. 
 
 .. admonition:: Reference
    :class: refbox
@@ -132,11 +141,23 @@ Center-Cut Safe Areas
    :align: right
 
    Figure 5: Scene Strip Display
+
    
+With this option, you can control how the images of Scene Strips are displayed in the preview. In figure 1, a scene strip was added to display the orange circle at the left of the intro text. This orange circle was created in the 3D view of another scene; you cannot use the same scene of the sequencer. It's a simple mesh with an orange emission material applied to it.
+
 Shading
-   Choice between solid, ....
+   Shading refers to the way objects are drawn and lit in the 3D View. More info can be found at `Viewport Shading <https://docs.blender.org/manual/en/dev/editors/3dview/display/shading.html#wireframe>`_ 
+
+   Solid: shows the objects from the scene strip as massive objects but without any materials assigned. The lightning, colors and other options could be set in Workbench Render Engine (Properties > Render Tab > Render Engine). 
+   Wireframe: *Does not seem to work!*
+   Material Preview: Renders the scene strip with the Eevee render engine, independent of the render engine that was selected in the scene itself. 
+   Rendered: Render the scene strip with the scene Render Engine (Cycles, Eevee, Workbenck). By default the scene lights are used for lighting. 
+
+
 Override Scene Settings
-   Settings such as resolution?
+   This option is only available, if Solid shading is activated. When enabled, it uses the Workbench render settings from the sequencer scene, *not* the Workbench render settings from the source scene. You can find these settings in the Properties > Render tab > Render Engine.
+   
+
    
 .. _bpy.types.SpaceSequenceEditor.show_annotation:
 

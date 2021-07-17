@@ -1,6 +1,6 @@
 Sidebar
 --------
-The sidebar of the Preview can be toggled with the menu :menuselection:`View --> Sidebar` or with the shortcut :kbd:`N`. You can select one of three tabs: Tool, View or Metadata. Figure 1 shows the side bar of the Preview, but also the side bar of the sequencer. In the Preview side bar, the View tab is activated and the panel View Settings is expanded.
+The sidebar of the Preview can be toggled with the menu :menuselection:`View --> Sidebar` or with the shortcut :kbd:`N`. You can select one of three tabs: Tool, View or Metadata. Figure 1 shows the side bar of the Preview, but also the side bar of the sequencer. In the Preview side bar, the View tab is activated and all panels are expanded. The Safe Areas are enabled and an Annotation is added.
 
 .. figure:: /images/editors_vse_preview_sidebar-overview.svg
    :alt: Sidebar overview
@@ -35,6 +35,9 @@ Channel
       This option should not be interpreted as some kind of "isolation mode". The indicated channel is *not* isolated in the sense that *only* that channel is shown. Each channel is implicitly composited on top of the channel(s) below. A better description could be "show up to channel".
 Show Overexposed
    Shows overexposed (bright) areas using a zebra pattern. When is an area overexposed?  You can set the threshold with the slider. The values 0 - 110 should be interpreted as a percentage of decimal value (0 - 1.1). Whenever the RGB value (any component) of a pixel is greater or equal to the specified threshold, it will be marked (zebra-striped) as overexposed. You can check this easily with a color strip. Set the color for example to bright yellow (RGB = 0.9, 0.9, 0). When the threshold is set to 90, everything will be zebra-striped (supposedly overexposed). From threshold value 91 on, the preview shows a bright yellow color again. A threshold of 0 will disable this filter.
+
+.. note::
+   The following Overlays (Frame Overlay, Safe Area, Annotations, and Metadata) can be made visible with the Show Overlay button (top right of the Preview window).
 
 .. admonition:: Reference
    :class: refbox
@@ -146,13 +149,20 @@ In the left solution of figure 6, the complete 16:9 image is preserved but two b
 With this option, you can control how the images of Scene Strips are displayed in the preview. In figure 1, a scene strip was added to display the orange circle at the left of the intro text. This orange circle was created in the 3D view of another scene; you cannot use the same scene of the sequencer. It's a simple mesh with an orange emission material applied to it.
 
 Shading
-   Shading refers to the way objects are drawn and lit in the 3D View. More info can be found at `Viewport Shading <https://docs.blender.org/manual/en/dev/editors/3dview/display/shading.html#wireframe>`_ 
+   Shading refers to the way objects are drawn and lit in the Preview. More info can be found at `Viewport Shading <https://docs.blender.org/manual/en/dev/editors/3dview/display/shading.html#wireframe>`_ 
 
-   Solid: shows the objects from the scene strip as massive objects but without any materials assigned. The lightning, colors and other options could be set in Workbench Render Engine (Properties > Render Tab > Render Engine). 
-   Wireframe: *Does not seem to work!*
-   Material Preview: Renders the scene strip with the Eevee render engine, independent of the render engine that was selected in the scene itself. 
-   Rendered: Render the scene strip with the scene Render Engine (Cycles, Eevee, Workbenck). By default the scene lights are used for lighting. 
+   * Solid: shows the objects from the scene strip as massive objects but without any materials assigned. The lightning, colors and other options could be set in the Workbench Render Engine (Properties > Render Tab > Render Engine). 
+   * Wireframe: *Does not seem to work!*
+   * Material Preview: Renders the scene strip with the Eevee render engine, independent of the render engine that was selected in the scene itself. 
+   * Rendered: Render the scene strip with the chosen scene Render Engine (Cycles, Eevee, Workbench). By default the scene lights are used for lighting. 
 
+   .. figure:: /images/editors_vse_preview_scene-strip.svg
+      :alt: Scene Strip Display
+
+
+      Figure 5: Scene Strip Display (Solid, Material Preview, Rendered); see also figure 1.
+
+   Note that the image in the Rendered view is slightly different because it is rendered with the render engine of the source scene, which was set to Cycles.
 
 Override Scene Settings
    This option is only available, if Solid shading is activated. When enabled, it uses the Workbench render settings from the sequencer scene, *not* the Workbench render settings from the source scene. You can find these settings in the Properties > Render tab > Render Engine.
@@ -170,10 +180,39 @@ Override Scene Settings
    **Location**:   Sidebar > View
    =============   ==========================================================================
 
-Annotations
-   Displays :doc:`Annotations </interface/annotate_tool>` in the preview region.
+.. figure:: /images/editors_vse_preview_sidebar-annotations.png
+   :alt: Annotations panel
+   :scale: 50%
+   :align: right
 
-   .. _bpy.types.SpaceSequenceEditor.show_metadata:
+   Figure 6: Annotations panel
+
+Annotations
+   With this panel, you can change the appearance of the Annotations that were made in the Preview. More info can be found in the `User Interface section <https://docs.blender.org/manual/en/latest/interface/annotate_tool.html>`_. Using the Annotate tool (in the 3D viewport) is explained in detail in the tutorial by `3DGreenhorn <https://www.youtube.com/watch?v=cVr4pduQJQA>`_.
+
+   To create an Annotation, you have to select the Annotate tool in the :doc:`Toolbar <toolbar.rst>` (shortcut :kbd:`D`) and start drawing. A new data-block is created and made visible in the Annotate panel of the side bar, called "Annotations" in figure 6. You can create multiple data-blocks (e.g. Annotations.001, Annotations.002, ... with the Add New button (see figure 6) or change to another data-block with the drop-down at the left of the header. All newly added annotations in the Preview are stored within the selected data-block. You can *only* display the annotations of *one* data-block at a time. To remove an Annotations data-block, click the Unlink button. That data-block however is not deleted at once (so you can recover it with the drop-down) but is deleted when the Blend-file is saved (unless the Fake User button is enabled).
+
+   Within a data-block , there can be multiple layers. The default name of a layer is "note". You can create multiple layers (e.g. note.001, ...) with the Add New Annotation Layer button (+); for example if you want to use different colors. To remove a layer, click (-). To make a layer invisible in Preview, click the Hide button (eye). One layer can contain multiple annotations. They can be drawn in the Preview at the same frame or at different frames. The color of the annotations is set per layer with the Color picker (at the left of the Note). Also, the Opacity and Thickness are set per layer.
+
+   An annotation, drawn in the Preview, is visible at the frame that it is drawn and stays visible until the next frame *with* an annotation. So, if you have two consecutive annotations (eg. at frame 10 and 11); the first annotation will only be visible for one frame (eg. frame 10), while the second annotation will stay visible (frame 11 to ...). With the Lock Current Frame button, you will freeze the annotations of that specific frame, regardless of previous and later annotations.
+
+Onion Skinning
+   With Onion Skinning, you can make the previous and later annotations of the current frame visible. They appear in the selected colors for a number of frames (Before and After). Setting the Before and After value to zero will show the annotations one frame before and one frame after the current frame. Setting it to a higher number will show them for a longer period before and after. Setting these values to -1 will disable the Onion Skinning in that direction.
+   
+.. figure:: /images/editors_vse_preview_onion-skinning.svg
+   :alt: Onion Skinning
+
+
+   Figure 7: Onion Skinning in the VSE
 
 Metadata
-   Display Image metadata in the preview area.
+   A movie or image strip can contain, in addition to the actual image, some metadata such as the file name, the date created, the camera model, ... Some of this metadata can be made visible in the Preview (see Show Overlay button). The metadata that is shown however is from the strip under the playhead, *not* the active (selected) strip in the sequencer.
+
+   The metadata from a Blender output render is stored in the appropriate fields (camera, time, ...; see `Rendered Output <https://docs.blender.org/manual/en/dev/render/output/properties/metadata.html>`_. Some graphic programs such as Gimp also store some metadata. However, only the text stored in the header field "Comments" is displayed in the Preview and shown in the metadata panel. You cannot edit this value from within Blender. For that, you need an external program such as exiftool.
+
+   The command to change the Comments field is:
+
+   exiftool --comments="My new comment" name-of-file.png
+
+   .. Note::
+      The metadata will only be displayed for the image, that has not been processed by any effect. For example, adding an effect strip (eg. Glow) will hide the metadata from view. Of course, the metadata isn't removed from the file. Hiding the effect strip will display it again.

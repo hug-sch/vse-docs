@@ -80,6 +80,13 @@ Font
    Of course, you can navigate to another folder.
    There you can choose a new font for the selected Text strip.
 
+.. figure:: /images/video_editing_edit_montage_text-strip-fonts-preview.svg
+   :alt: Font selection preview
+   
+   Figure 3: Font selection preview
+
+   If you want to see a preview of the chosen font, click the Thumbnail button in the Header (see figure 3).
+   
    Next to the Font selector, you find the Bold and Italic toggle buttons.
 
 Size

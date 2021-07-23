@@ -34,10 +34,10 @@ Figure 1: Annotated video with all the Zoom commands.
 .. _sequencer_full_view:
 
 Ctrl-Spacebar
-   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into semi-full view. The header and menus are still visible. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels). Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window.
+   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor into semi-full view. The header and menus are still visible. The video in figure 1 is created with this view. You can tell because at the very top, there is a button "Back to Previous" |previous-button|. This full-screen view will help you to keep an overview; especially in the vertical dimension (channels). Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window. You can invoke this command from the menu: View > Area > Toggle Maximize Area.
 
 Alt-Ctrl-Spacebar
-   The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Timeline. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again (no other key will do!) or hover your mouse over the top right corner of the window until the restore button |restore-button| pops up.
+   The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Timeline. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again. *No other key will do!* Or you can hover your mouse over the top right corner of the window until the restore button |restore-button| pops up. *It's very easy to miss!* You can invoke this command from the menu: View > Area > Toggle FullScreen  Area.
 Home
    Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <moving>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
 
@@ -46,6 +46,8 @@ NumpadPeriod
 
    .. Warning::
       If you don't have a numpad, the `Emulate Numpad <https://docs.blender.org/manual/en/dev/editors/preferences/input.html>`_ option in the User Preferences will not help you out. You cannot use the regular period key from the alphanumeric keypad.
+
+      .. _keymaps:
 
       You can however change these shortcuts or make some of your own. Blender Frenzy has a nice video about creating these `Custom Keymaps <https://www.youtube.com/watch?v=2RtlvZfv8TI>`_.
 

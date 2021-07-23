@@ -169,7 +169,7 @@ Override Scene Settings
    
 
    
-.. _bpy.types.SpaceSequenceEditor.show_annotation:
+.. _annotations:
 
 .. admonition:: Reference
    :class: refbox

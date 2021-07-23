@@ -1,7 +1,9 @@
 ***********
 Terminology
 ***********
-The terminology about color is sometimes quite intimidating. Let's take a look at some basic concepts with the help of the well-known color picker. Did you know that Blender has five different :ref:`color pickers <blender_manual:ui-color-picker>` No? You can choose between them in the Preferences panel (Edit > Preferences > Interface). They look rather intuitive to use (see Figure 1) but already loaded with some difficult terminlogy. And even for this simple tool, several questions arise and trying to answer them will get you very fast into deep Blender space!
+The terminology about color is sometimes quite intimidating. Let's take a look at some basic concepts with the help of the well-known color picker. Did you know that Blender has five different :ref:`color pickers <blender_manual:ui-color-picker>` No? You can choose between them in the Preferences panel (Edit > Preferences > Interface). They look rather intuitive to use (see Figure 1) but already loaded with some difficult terminology. And even for this simple tool, several questions arise and trying to answer them will get you very fast into deep Blender space!
+
+.. _color_picker:
 
 .. figure:: img/color_picker.svg
    :alt: The Color picker

@@ -15,18 +15,27 @@ Sidebar - Toolbar
    See :doc:`Sequencer header <../sequencer/header>` for more info.
 
 Preview During Transform
-   Setting this option will change the behavior of dragging the left or right strip handle. Normally, this will extend or reduce the strip length. With this option set, dragging the strip handles will show the frame the strip handle is pointing to in the Preview window. This will allow very precise trimming. The (previous) alternative way to do precise trimming is by scrubbing with the playhead through a strip and finding the exact location. Then, splitting the strip and deleting the redundant part.
+   With this option disabled, dragging the left or right strip handle will extend or reduce the strip length but the current frame in the preview does not change. In other words, the image in the preview does not change during dragging. With the option enabled however, dragging the strip handles will show the frame the strip handle is pointing to in the Preview window. The current frame is temporarily disabled. This will allow very precise trimming. 
 Fit Preview in Window :kbd:`Home`
    Resize the Preview window so that the Project Dimensions area it fits in. Depending on the specific rendered image, the height or the width or both are set equal to the project height or width.
 Zoom :kbd:`Shift-B`
-   Click and drag to draw a rectangle and zoom to this rectangle. The selected area is centered in the window and the Preview is zoomed with a factor size preview window/ size selected rectangle. This is normally a zoom i, but you can also drag a rectangle selection that is larger than the Preview window (by starting outside the window.
+   Click and drag to draw a rectangle and zoom to this rectangle. The selected area is centered in the window and the Preview is zoomed with a factor size preview window/ size selected rectangle. This is normally a zoom in, but you can also drag a rectangle selection that is larger than the Preview window (by starting outside the window; resulting in a zoom out.
 Fractional Zoom
    Resize the preview (project area) in steps from 1:8 to 8:1 (see figure 1). Suppose that the Project Dimensions are: 640 x 640. A fractional zoom of 1:1 (:kbd:`Numpad - 1`) will resize the project area (see :ref:`Figure 1: Preview Areas <preview-areas>` so that it will cover exactly 640 x 640 pixels in the preview window. If the Preview window is very small, the image will extend beyond the borders. A fractional zoom of 1:2 (1 divided by 2) indicates that the original 640 x 640 will be reduced to half or 320 x 320 pixels. A fractional zoom of 2:1 will double the Project area.
+Zoom to Fit
+   The command Zoom to Fit adjusts the largest side of the Preview so that its fits perfectly within the Preview window; e.g. has the same length as the largest side of the Preview window.
+
+Ctrl-Spacebar
+   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor; eg. the Preview, into semi-full view. The header and menus are still visible. At the very top, there is a button "Back to Previous" |previous-button|. Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window. You can invoke this command from the menu: View > Area > Toggle Maximize Area.
+
+Alt-Ctrl-Spacebar
+   The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Preview. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again. *No other key or menu will do! There even isn't the small pop-up in the left top corner as in other maximized windows* You can invoke this command from the menu: View > Area > Toggle FullScreen Area.
+
+   This command can also be useful if you run a dual monitor setup, but you'll first have to add a shortcut to ctrl+alt+space ex. shift+ctrl+alt+space, then you select Window > New Window, move it to the 2. monitor and then hit shift+ctrl+alt+space(windowless) & ctrl+alt+space(headerless fullscreen).
 
 Show Cache, Sequence Render Image, Sequence Render Animation, Export Subtitles
-
-* Rendering is described in section Video Editing > Render.
-* Subtitles are described in Video Editing > Edit > Sound.
+   * Rendering is described in section Video Editing > Render.
+   * Subtitles are described in Video Editing > Edit > Sound.
 
 .. todo::
    Add links to those sections 

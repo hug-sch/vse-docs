@@ -1,6 +1,8 @@
 Proxies & cache
 ===============
 
+.. _proxies:
+
 Proxies are low-quality copies of high-quality raw footage. They are used as a substitute to ease the playback of high-quality source videos. Creating proxies can be done by either decreasing the resolution and/or decompressing the source files. They are transcoded in such a way that is optimal for real-time editing.  Nowadays, a 4K video file (3840 × 2160) is no exception anymore. With 30 fps, this can quickly become a burden to your computer's performance.
 
 
@@ -79,6 +81,7 @@ Of course, much depends on the format of the source files. If your source files 
    .. todo::
       Better explanation of Quality & Time Code; see `Timecode index <https://docs.blender.org/manual/en/dev/video_editing/sequencer/sidebar/proxy.html>`_ .
 
+.. _proxies_cache:
 
 Cache
 -----

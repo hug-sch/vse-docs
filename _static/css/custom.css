@@ -51,11 +51,15 @@
 	border: none;
 }
 
-.wy-table-bordered-all td, .rst-content table.docutils td{
+.wy-table-bordered-all td, .rst-content table.docutils td {
 	border: none;
 }
 
-.wy-table td, .rst-content table.docutils td{
+.wy-table td, .rst-content table.docutils td {
 	padding: 2px 16px;
+}
+
+.small tbody p {
+	font-size:smaller;
 }
 

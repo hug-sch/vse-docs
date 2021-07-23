@@ -1,6 +1,7 @@
 Timeline
 --------
 
+.. _timeline:
 The concept *Timeline* can refer to different things. In Blender, it denotes in the first place the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon and used for manipulating keyframes and scrubbing the playhead (see figure 1). This Timeline Editor was originally intended for editing the animations in 3D modeling. For video editing, this editor is less useful.
 
 .. figure:: /images/editors_vse_timeline-editor.svg

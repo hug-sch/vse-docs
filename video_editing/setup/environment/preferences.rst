@@ -23,7 +23,7 @@ We have listed all settings that apply to the Video Sequence Editor or could be 
    Factor Display, Interface > Editors, Use % instead of range 0 - 1.
    Region Overlap, Interface > Editors, Does not seem to work in VSE?
    Emulate Numpad, Input > Keyboard, If you don't have a numpad.
-   TimeCode Style, Animation > Keyframes, SMPT-timecode; see :ref:`More info <timeline>` 
+   TimeCode Style, Animation > Keyframes, SMPT-timecode formatting; see :ref:`More info <timeline>` 
    Allow Negative Frames, Animation > Timeline, Normally you cannot scrub before frame 0.
    Minimum Grid Spacing, Animation > Keyframes, Give more space for the timecodes
    User Tooltips, Interface > Tooltips,

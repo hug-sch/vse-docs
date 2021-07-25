@@ -25,6 +25,8 @@ Also note that the Start frame of the left and right strip is the same: frame 1;
 
 From either part of the split, you can restore the entire original strip. It suffices to reset the Strip Offset fields to zero. This can also be done by dragging the left or right handle.
 
+.. _hold-split-command:
+
 Hold Split command
 ..................
 

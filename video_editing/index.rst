@@ -2,6 +2,7 @@
 Video Editing
 #############
 
+.. _video-editing:
 The Video Editing documentation is split into 3 chapters, representing a typical workflow in a video editing project: :red:`(1)` Setup, :red:`(2)` Edit and :red:`(3)` Render. You can think of these phases also as : pre-editing, editing and post-editing.
 
 Before even starting to edit a single video, you need to :red:`(1)` setup your :blue:`(1.1)` Work Environment and your specific :blue:`(1.2)` Project. Setting up your work environment includes: :green:`(1.1.1)` Customize the Video Editing Workspace, :green:`(1.1.2)` Install some Add-ons, :green:`(1.1.3)` Manage your User Preferences, and :green:`(1.1.4)` Tweak the Proxies & Cache system. 

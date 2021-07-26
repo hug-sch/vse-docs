@@ -2,6 +2,8 @@
 Video Sequence Editor
 #####################
 
+.. _video-sequence-editor:
+
 Blender is a versatile software used for modeling, sculpting, 2D drawing, animation, and video editing. Most of the work is done in so-called editors: tools for viewing and modifying your work through a specific part of Blender.
 
 There are a couple of editors that can manage video: the `Compositor <https://docs.blender.org/manual/en/dev/editors/compositor.html>`_, the `Movie Clip Editor <https://docs.blender.org/manual/en/dev/editors/clip/index.html>`_, the `Image Editor <https://docs.blender.org/manual/en/dev/editors/image/index.html>`_ (only for still images) and the Video Sequencer. Every editor has a Editor Type selector in the top-left corner (see figure 1). This chapter describes only the Video Sequence Editor (VSE), sometimes shortened to “Sequencer”.

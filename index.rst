@@ -51,4 +51,3 @@ Links to other sections within the Blender docs are provided for more general co
    This page will be deleted upon integration into the official Blender docs.
 
 
-

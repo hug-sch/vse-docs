@@ -37,9 +37,21 @@ Grab - X/Y
 
 Grab - X/Y - number
    Combines the previous two commands. So, G Y 2 will move the strip 2 channels up and G X -10 will move the strip 10 frames to the left.
+   
+   If you want to specify the movement in *seconds*, you can always enter the necessary calculation. Suppose, that your project has a fps = 24, then moving a strip 5 seconds is done by G X 5**24. You have to tap the multiply symbol twice (**)!
 
-   .. todo::
-      If you want to specify the movement in seconds, you can always enter the necessary calculation. Suppose, that your project has a fps = 24, then moving a strip 5 seconds is done by G X 5*24
+.. admonition:: Conflict resolution
+
+   Moving a strip, so that it (partially) overlap with another strip, will create a temporary red outline around the moving strip, indicating that the strip can't be moved there (without overwriting) and will be placed further away and clamped to either side of the overlapping strip.
+   
+   Which side? Two distances are calculated; eg. d1 and d2 in figure 3. Because d2 is smaller than d1, the moving strip-1 will be appended at the end of strip-2 + strip-3 (if there is room). Moving strip-3 between strip-1 and strip-2 is a little more difficult to predict. If d3 < d4, then strip-3 will be placed before strip-1. Otherwise, it will be appended to strip-2.
+
+   .. figure:: /images/video_editing_montage_move-guides-snapping-side.svg
+      :alt: Snapping side
+      :align: center
+
+
+      Figure 3: Snapping side (without guides)
 
 Snapping
 -------- 
@@ -51,32 +63,15 @@ Snapping
 
    Figure 2: Snapping guides
 
-If there is only one strip in the sequencer, then you can move that strip freely around and there will be no snapping. However, most of the time this is not the case and snapping could occur. The moved strip is clamped to another strip and the edges are aligned on consecutive frames. Snapping can also occur with the playhead. The moved strip is then aligned with the playhead. 
+If there is only one strip in the sequencer, then you can move that strip freely around and there will be no snapping. However, most of the time this is not the case and snapping could occur. The moving strip is suddenly clamped to another strip and the edges are aligned on consecutive frames. This occurs whenever those edges are within a distance of less than 15 pixels.
 
-Snapping can be induced by *moving the strip* **or** by *moving the handles* (and thus changing the strip duration). There are currently two modes: with and without snapping guides. You can toggle the snapping guides by clicking on the magnet-icon in the middle of the header or with the shortcut key :kbd:`Shift - Tab` (see figure 2).
+Snapping can also occur with the playhead. The moving strip is then aligned with the playhead, whenever one of the edges is within that distance of 15 pixels. 
 
-Without snapping guides
-.......................
+Snapping can be induced by *moving the strip* **or** by *moving the handles* (and thus changing the strip duration). The snapping can be visualized by a thin white line. Click on the magnet-icon in the middle of the header to turn on the snapping guides. You can also use the shortcut key :kbd:`Shift - Tab`  to toggle (see figure 2).
 
-Moving a strip, so that it (partially) overlap with another strip, will create a temporary red outline around the moved strip, indicating that the strip can't be moved there (without overwriting) and will be moved further away and snapped to either side of the overlapping strip. Which side? The moved strip will snapped to the start of the overlapped strip, if the midpoint of the moved strip is closer to the start of the overlapped strip. Otherwise, it will be snapped to the end of the overlapped strip. Contiguous strips (without any gap between them) are considered as *one* longer strip.
+Holding down the :kbd:`Ctrl` key while moving a strip, will also toggle the *Show Guides* command. So, if *Show Guides* is enabled, you can disable it temporarily while moving the strip by holding down the :kbd:`Ctrl` key.
 
-.. figure:: /images/video_editing_montage_move-guides-snapping-side.png
-   :alt: Snapping side
-   :align: center
-
-
-   Figure 3: Snapping side (without guides)
-
-In figure 3, strip-1 is moved on top of the contiguous strips 2 & 3. Because the midpoint of strip-1 is closer to the Start of the strip-2 + strip-3 combination, it will be snapped to the Start of strip-2.
-
-It is not always easy to see where the moved strip will go. Snapping guides can help here a lot.
-
-With snapping guides
-....................
-
-You can enable the snapping guides with the magnet-button (see figure 2). A thin white guide will appear whenever an edge of the moved strip is close (< 15 pixels) to an edge of another strip (see figure 4). *All* channels are taken into account. So, in a crowded scene, there can be lot of snapping guides (but only those within 15 pixels are shown).
-
-Holding down the :kbd:`Ctrl` key while moving a strip, will toggle the *Show Guides* command. So, if *Show Guides* is enabled, you can disable it while moving the strip by holding down the :kbd:`Ctrl` key.
+The snapping guide will appear whenever an edge of the moving strip is close (< 15 pixels) to an edge of another strip (see figure 4). *All* channels are taken into account. So, in a crowded scene, there can be lot of snapping guides (but only those within 15 pixels are shown).
 
 .. figure:: /images/video_editing_montage_move-snapping-guides.svg
    :alt: Snapping guides
@@ -87,25 +82,25 @@ Figure 4 shows all possible snapping guides with 3 strips. The top-panel represe
 
 (a) The Start frame of strip-3 is snapped to End frame of strip-2. Result: Strip-3 is appended to strip-2. This is in fact the original situation. Because there are no strips to the right of strip-2, this is a legal move and the border of strip-3 is colored in white.
 
-(b) The End frame of strip-3 is snapped to the End frame of strip-2. This could cause an Overwrite of strip-2; so the border of strip-3 is colored red. Result: Strip-3 is moved to the next available location: End frame of strip-2 because the midpoint of strip-3 is closer to the End frame than to the Start frame.
+(b) The End frame of strip-3 is snapped to the End frame of strip-2. This could cause an Overwrite of strip-2; so the border of strip-3 is colored red. Result: because d1 > d2, strip-3 is moved to the next available location: End frame of strip-2.
 
-(c) The Start frame of strip-3 is snapped to Start frame of strip-2. This is again an illegal operation; so the border is red and the result is that strip-3 is appended to strip-2.
+(c) The Start frame of strip-3 is snapped to Start frame of strip-2. This is again an illegal operation; so the border is red. Because d1 < d2, you should expect that strip-2 should be placed before strip-2. However, there is not enough room> and the result is that strip-3 is put back in its original location.
 
 (d) The End frame of strip-3 is snapped to the Start frame of strip-2. This could be a normal operation if the gap between strip-1 and strip-2 was big enough to hold strip-3. Unfortunately, this is not the case; so the border of strip-3 is colored red and the strip is once again appended to the End of strip-2.
 
 (e) The Start frame of strip-3 is snapped to End frame of strip-1. As in (d), this could be a normal operation but again, the gap is not big enough; so strip-3 is moved again to the End of strip-2 and the border is colored red.
 
-(f) The End frame of strip-3 is snapped to the End frame of strip-1. This is an illegal operation because strip-1 could be overwritten. The border is colored red. Strip-3 is moved to the Start frame of strip-1 because the midpoint of strip-3 is closer to the Start than the End frame of strip-1.
+(f) The End frame of strip-3 is snapped to the End frame of strip-1. This is an illegal operation because strip-1 could be overwritten. The border is colored red. Because d1 > d2, it should be moved at the end of strip-1. But there is not enough room; so, the other side is tried, which succeeds.
 
-(g) The Start frame of strip-3 is snapped to Start frame of strip-1. Strip-1 could be overwritten; so the border of strip-3 is red. The result is that strip-3 is moved to the front of strip-1.
+(g) The Start frame of strip-3 is snapped to Start frame of strip-1. Strip-1 could be overwritten; so the border of strip-3 is red. The result is that strip-3 is moved to the front of strip-1, because d1 < d2.>.
 
 (h) The End frame of strip-3 is snapped to the Start frame of strip-1. There is plenty of room before strip-1; so this could be a normal operation (white border). Strip-3 is moved in front of strip-1.
 
-It's a little confusing that for example, the snapping guide in figure 4-e seems to implicate that the moved strip will be inserted between strip-1 and strip-2. As explained, this is not the case, *unless* you activate the Insert-mode (see later).
+It's a little confusing that for example, the snapping guide in figure 4-d and 4-e seems to implicate that the moved strip will be inserted between strip-1 and strip-2. As explained above, this is not the case, *unless* you activate the Insert-mode (see later).
 
 The snapping guide tool has 5 options (see figure 2).
 
-* Current Frame: the playhead (= current frame) is counted as a supplemental edge to snap on. So, the moved strip can either be snapped on to an edge of another strip or to the playhead, whichever is closest to the midpoint of the moved strip.
+* Current Frame: the playhead (= current frame) is counted as a supplemental edge to snap on. So, the moving strip can either be snapped to an edge of another strip or to the playhead, whichever is closest.
   
 * Hold Offset: Strips can be the result of a Hold Split operation (see :ref:`Hold Split <hold-split-command>`). For example, in figure 5, the Hold Offset Start is at frame 1133 while the first 250 frames are freezed.
 
@@ -114,12 +109,17 @@ The snapping guide tool has 5 options (see figure 2).
 
       Figure 5: Snapping to the Hold Offset Start field
 
-* Muted strips/Sound Strips: when you move a strip, most of the time you don't want to snap this strip to Muted (hidden) or Sound strips. These options are disabled by default, but you can swith them on here.
+* Muted strips/Sound Strips: when you move a strip, most of the time you don't want to snap this strip to Muted (hidden) or Sound strips. These options are *not* ignored by default, but you have switch them on here.
   
-* Snap Current Frame to strip start or end:
+* Snap Current Frame to strip start or end: *not* the strips are snapped, but the playhead is snapped to the strip edges while scrubbing. To see this happen, you need to scrub at a low speed; otherwise you will be past the edge before snapping could take place.
 
-.. todo::
-   Research Snap Current Frame option.
+Snap to the playhead
+....................
+
+There is also a special command to snap strips to the playhead. Select one or multiple clips. They can be spread over multiple channels. Press :kbd:`Shift - S` to snap the selection to the playhead.
+
+.. Warning::
+   If multiple strips are selected, all of them will start at the playhead. The relative position to each other will not be preserved and all the strips are spread over different channels. This command is probably only useful for strips that share a common Start frame; eg. Movie strips with their accompanying Sound strips.
 
 Inserting
 ---------
@@ -133,25 +133,17 @@ If you want to insert strip-3 between the other 2 and thus making room by shifti
 
    Figure 6: Inserting a strip
 
-The Insert mode works also with multiple, selected clips. If there are any gaps between the moved strips, these  will be preserved. 
+The Insert mode works also with multiple, selected clips. If there are any gaps between the moving strips, these  will be preserved. 
 
-Snap to the playhead
---------------------
+Remove gaps
+...........
 
-Select one or multiple clips. They can be spread over multiple channels. Press :kbd:`Shift - S` to snap the selection to the playhead.
+Remove blank columns in the timeline window, starting from project Start (usually frame 1). A blank column is a time/frame location where there isn't any strip in any channel. In other words, the Preview window is empty for that time/frame location.
 
-.. Warning::
-   If multiple strips are selected, all of them will start at the playhead. The relative position to each other will not be preserved and all the strips are spread over different channels. This command is probably only useful for strips that share a common Start frame; eg. Movie strips with their accompanying Sound strips.
+You can invoke the command with the menu: Strip > Transform > Remove Gaps or with the :kbd:`Backspace` key. After the command is issued, you can tick the *All Gaps* option to remove other gaps or you can press :kbd:`Backspace` several times to remove the other gaps.
 
 .. note::
    You can move strips between:
    
    * Scenes: copy the strips (:kbd:`Ctrl - C`), switch to the other scene and paste (:kbd:`ctrl - V`). All strip settings will be copied, *except* the animation keyframes.
    * Projects: import the scene with the wanted strips into the current project with the menu File > Append.
-
-Remove gaps
------------
-
-Remove blank columns in the timeline window, starting from project Start (usually frame 1). A blank column is a time/frame location where there isn't any strip in any channel. In other words, the Preview window is empty for that time/frame location.
-
-You can invoke the command with the menu: Strip > Transform > Remove Gaps or with the :kbd:`Backspace` key. After the command is issued, you can tick the *All Gaps* option to remove other gaps or you can press :kbd:`Backspace` several times to remove the other gaps.

@@ -31,17 +31,7 @@ The Color Managed values are the result of applying the View Transform function 
 :ref:`Annotate <tool-annotate>`
    With the Annotate tool, you can draw free-hand annotations onto the Preview window (thus, also outside the Project Preview area). This is a handy tool to give some instructions if you are working in team on a project (or to your later self). These annotations are saved with the Blend-file.
 
-   The Annotations and its Settings are stored in the Annotations panel in the Side bar. To remove all annotations, just click on the Unlink button.
-
-   .. figure:: /images/editors_vse_header_toolbar-annotate.png
-      :alt: Annotate tool
-
-   
-      Figure 2: Annotate Tool
+   The Annotations and its Settings are stored in the :ref:`Annotations panel <annotations>` in the Side bar. To remove all annotations, just click on the Unlink button.
 
    More information about the Annotate tool can be found in the :ref:`User Interface section <tool-annotate>` of the docs.
-
-   .. todo::
-      Link to side bar?
-
 

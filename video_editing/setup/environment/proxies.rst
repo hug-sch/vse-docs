@@ -15,10 +15,10 @@ A very instructive video tutorial (for version 2.92) is made by `Blender Frenzy 
 
 The use of proxies is much simplified in Blender 2.93 and an average user shouldn't be worried about it any longer. Of course, understanding what happens under the hood can't harm! The following default settings take care of this automatic creation of the proxy files and make sure that everything will work right out of the box.
 
-* ``Proxy Setup`` : default set to ``Automatic``
-* ``Proxy Render Size``: default set at ``100%``
-* ``Use Proxies``: default set to ``True``
-* ``Proxy Settings: Storage``: default set to ``Per Strip`` (see figure 1-a, 1-b and 1-g)
+* ``Proxy Setup`` : default set to ``Automatic`` (see figure 1-a)
+* ``Proxy Render Size``: default set at ``100%`` (see figure 1-b)
+* ``Use Proxies``: default set to ``True`` (see figure 1-b)
+* ``Proxy Settings: Storage``: default set to ``Per Strip`` (see figure 1-g)
 
 .. figure:: /images/vse_setup_environment_proxies.svg
    :alt: Proxies
@@ -35,9 +35,9 @@ The use of proxies is much simplified in Blender 2.93 and an average user should
 .. todo::
    At the moment, proxies can only be generated for movie strips, not image sequences! In general, proxies are only used for video files, not audio.
 
-2. The Proxy Render Size is set by default to 100%. You can change it in the View Settings (see figure 1-b) of the Preview window. If 100% is selected, the resolution of the Prview window is set to 100% of the strip resolution AND the original video clip (e.g. testfile_4K_10s_30fps.mp4) will be replaced by the proxy (e.g. proxy_100.avi). If you select afterwards another Proxy Render Size; e.g. 25%, a supplemental proxy will be created (proxy_25.avi) and there will be two proxy files (see figure 1-f) from which the second (25%) will be used for previewing.
+2. The Proxy Render Size is set by default to 100%. You can change it in the View Settings (see figure 1-b) of the Preview window. If 100% is selected, the resolution of the Preview window is set to 100% of the strip resolution AND the original video clip (e.g. testfile_4K_10s_30fps.mp4) will be replaced by the proxy (e.g. proxy_100.avi). If you select afterwards another Proxy Render Size; e.g. 25%, a supplemental proxy will be created (proxy_25.avi) and there will be two proxy files (see figure 1-f) from which the second (25%) will be used for previewing.
 
-   There are 6 Proxy Renders Sizes: No display, Scene size, 25%, 50%, 75%, 100%. Remember that these are View settings are intended to set the resolution of the Preview window. For example, if the strip has a resolution of 1080p (1920 x 1080), then setting the Proxy Render Size to 25% means that the Preview window will have a resolution of 480 x  270. displaying the strip in this low-resolution window will speed up the rendering a little. The setting No display, will set the resolution at zero (=no display!). The setting Scene size will set the resolution the same as the project (see figure 1-h), which can be different from the resolution of the strip.
+   There are 6 Proxy Renders Sizes: No display, Scene size, 25%, 50%, 75%, 100%. Remember that these View settings are intended to set the resolution of the Preview window. For example, if the strip has a resolution of 1080p (1920 x 1080), then setting the Proxy Render Size to 25% means that the Preview window will have a resolution of 480 x  270. Displaying the strip in this low-resolution window will speed up the rendering a little. The setting No display, will set the resolution at zero (=no display!). The setting Scene size will set the resolution the same as the project (see figure 1-h), which can be different from the resolution of the strip.
 
    .. note::
       You can easily see the effect of the Proxy Render Size in the following example. Create a new Video Editing project. The project resolution is probably 1080p (1920 x 1080). Add a text strip with size 30. Set the zoom to View > Fractional Zoom 1:1. Change the Proxy Render Size and watch the degradation of the image quality.
@@ -47,19 +47,20 @@ The use of proxies is much simplified in Blender 2.93 and an average user should
 
       Figure 2: Effect on quality of Proxy Render Sizes 100%, 50% and 25%.
 
-   Reducing the display resolution will certainly reduce the time necessary to draw the display. On the other hand, the source file has a different resolution; so some additional scaling must be done. Perhaps, it also confuses you to have a 100% proxy size. If the display resolution is not changed, how will this help performance? Well, then comes the following default setting into action.
+   Reducing the display resolution will certainly reduce the time necessary to draw the display. On the other hand, the source file has a different resolution; so some additional scaling must be done. Perhaps, it confuses you that there exists a 100% proxy size. What's the use of this? If the display resolution is not changed, how will this help performance? Well, then comes the following default setting into action.
 
 3. The checkbox ``Use proxies`` is enabled by default (see figure 1-b). It's a global setting, meaning that all strips in the project will use proxies. You can reverse this setting per strip (see later). So, if you select the Proxy Render Size of 25% in the View Settings, then the file proxy_25.avi is set as the strip source.
 
 A proxy file can differ in two ways from the source file.
+
 * The resolution; e.g. 25% of the original resolution.
-* The encoding; e.g. only intra-frame compression in stead of intra- and inter-frame compression.
+* The encoding; e.g. only intra-frame compression instead of intra- and inter-frame compression.
 
-Some raw footage is heavily compressed to keep the storage requirements (e.g. smartphone) within reasonable limits. One compression technique that is used by the popular H2.64 codec is inter-frame compression. On an average video, content does not change abruptly from frame to frame. So, in stead of storing each frame fully, we can store only the changes from the previous frame. So, there are a few keyframes (i-frames) in a file, but most frames are delta-frames. This delivers a huge reduction in storage but ... In a typical editing task, you scrub and jump between frames. If most frames are delta-frames however, the software has to regenerate each time that frame by searching for the keyframe and adding all the subsequent changes. That takes time.
+Some raw footage is heavily compressed to keep the storage requirements (e.g. smartphone) within reasonable limits. One compression technique that is used by the popular H2.64 codec is inter-frame compression. On an average video, content does not change abruptly from frame to frame. So, in stead of storing each frame fully, we can store only the changes from the previous frame. So, there are a few frames which contain the full image (i-frames) in a file, but most frames are delta-frames. This results in a huge reduction in storage but ... There is also a downside. In a typical editing task, you scrub and jump between frames. If most frames are delta-frames however, the software has to regenerate each time that frame by searching for the corresponding i-frame and adding all the subsequent changes. That takes time.
 
-A proxy is a transcoded file in which no interframe compression is applied. So, scrubbing will be smoother; each frame has all information it needs to display and does not depend on others. So even if the resolution is the same as the source file (100%), the proxy will still be faster than the original. But ... proxy files are on average much larger than the (inter-frame compressed) source files. In figure 1-d you can see that the original 4K source file is 525 Kib and the proxy_100.avi/proxy_25.avi are respectively 9.2 and 1.5 MiB. So, even the 25% proxy is approximately 3x larger than the original.
+A proxy is a transcoded file in which no interframe compression is applied. So, scrubbing will be smoother; each frame has all information it needs to display and does not depend on others. So even if the resolution is the same as the source file (100%), the proxy will still be faster than the original. However, proxy files are on average much larger than the (inter-frame compressed) source files. In figure 1-d you can see that the original 4K source file is 525 Kib and the proxy_100.avi/proxy_25.avi are respectively 9.2 and 1.5 MiB. So, even the 25% proxy is approximately 3x larger than the original.
 
-Of course, much depends on the format of the source files. If your source files have already an optimized codec for editing (e.g. Apple’s ProRes, Avid’s DNxHD/HR and GoPro’s Cineform), creating proxy files aren't much of help.
+Of course, much depends on the format of the source files. If your source files have already an optimized codec for editing (e.g. Apple’s ProRes, Avid’s DNxHD/HR and GoPro’s Cineform), creating proxy files isn't much of help.
 
 .. todo::
    Better explanation of inner working of proxies; link to external website/tutorial?
@@ -69,9 +70,9 @@ Of course, much depends on the format of the source files. If your source files 
    A. You have to decide if the proxies should be generated Per Strip or globally for the project. If you choose Per Strip, then the Proxy folder (BL_proxy) will be created at the location of the selected strip.  You can override this directory location and name in the panel below with the Custom Proxy Directory checkbox. Or, you can choose Project. The proxy folder BL_proxy will then be created in the directory from the field below. This setting influences also the Automatic setup. The chosen directory will be used for the automatic creation of the BL_proxy directory.
 
    .. note::
-      In general, it is easier to manage, if you have a separate directory for all of your proxies of the same project. It's also advisable to have that folder on a different disk than the Blender program or source files (to minimize the access times).
+      In general, it is easier to manage, if you have a separate directory for all of your proxies of the same project. It's also advisable to have that folder on a different disk than the Blender program or source files (to minimize the disk access time).
 
-   B. If you have opted for a Manual Proxy setup, you have to build your proxy files yourself. Select the strips (it can be more than one!) for which you want to create proxies. With the button ``Set Selected Strip Proxies`` you can enable multiple proxy render sizes (25%, 50%, 75%, 100%). With the Overwrite checkbox, you give permission to overwrite existing proxy-files. You'll use this button to enable these settings for *multiple* selected clips.
+   B. If you have opted for a Manual Proxy setup, you have to build the proxy files yourself. Select the strips (it can be more than one!) for which you want to create proxies. With the button ``Set Selected Strip Proxies`` you can enable multiple proxy render sizes (25%, 50%, 75%, 100%). With the Overwrite checkbox, you give permission to overwrite existing proxy-files. You'll use this button to enable these settings for *multiple* selected clips.
 
    C. The result of pushing the ``Set Selected Strip Proxies`` is that the checkbox next to ``Strip Proxy & Timecode`` is enabled and that the proxy sizes are filled in for all the selected strips. Eventually, you can deviate for the storage directory and filename of an individual strip here.
 
@@ -116,10 +117,10 @@ There are two levels of cache, the first is a RAM cache, this is enabled by defa
 .. todo::
    Summarizing difference between cache, e.g. disk cache and proxies
 
-Proxies only work with movie strips; cache supports all strip types.
-Proxies store result on hard disk; cache store result in RAM (except diskcache)
-Proxies cache only the RAW datafile; cache can store intermediate results
-Proxies are persistent, cache becomes eventually invalidated
+* Proxies only work with movie strips; cache supports all strip types.
+* Proxies store result on hard disk; cache store result in RAM (except diskcache)
+* Proxies cache only the RAW datafile; cache can store intermediate results
+* Proxies are persistent, cache becomes eventually invalidated
 
 
 .. toctree::

@@ -74,10 +74,31 @@ To embed video: add extension
 
 https://github.com/sphinx-contrib/video
 
-Change the sort order in VSCode File explorer
 
-Open the Preferences (File > Preferences) and search for explorer.sortorder. 
-Default : by Last modified date
-Mixed: files and folders interwoven, in alphabetical order
-FilesFirst: first files, then folders in alphabetical order
-Type: by extension. Folders bfore filesmodified: idem as Default
+.. grid:: 2
+
+   .. grid-item-card::
+      :link: video-sequence-editor
+      :link-type: ref
+
+      .. figure:: /images/video_editing_front-image-tools.svg
+         :alt: Tools icon
+         :align: left
+         
+      **Video Sequence Editor**
+      ^^^
+
+      This section describes the Video Sequence Editor; Blender's dedicated *tool* to handle video footage.
+
+   .. grid-item-card::
+      :link: video-editing
+      :link-type: ref
+      
+      .. figure:: /images/video_editing_front-image-edit.svg
+         :alt: Tools icon
+         :align: left
+         
+      **Video Editing**
+      ^^^
+
+      This section describes a typical *workflow* of a video editing project.     

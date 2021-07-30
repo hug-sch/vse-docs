@@ -13,9 +13,7 @@ The :red:`(2)` Editing phase start with the :blue:`(2.1)` montage of the final v
  
 When the editing is complete, you can start :red:`(3)` rendering the project. First, you have to :blue:`(3.1)` choose your codec and probably do some :blue:`(3.2)` post-processing in the compositor or FFMPEG. Sometimes you need subtitles.
 
-Please note that there is also a special chapter about the :doc:`Video Sequence Editor </video_sequencer/index>` . There, you can find detailed info about basic timeline operations such as moving, zooming, and navigating the timeline.
-
-This text contains also two supplemental chapters. Chapter :red:`(4)` is about specific workflows. Editing a documentary, an interview or a music video is very different from each other. As said, the sound editing will occur probably much earlier in the workflow for a music video than for a documentary. Chapter :red:`(5)` is about some extra-tools, you may need while editing; e.g. some useful Python or FFMPEG scripts.
+Please note that there is also a separate chapter about the :doc:`Video Sequence Editor </video_sequencer/index>` . There, you can find detailed info about basic timeline operations such as moving, zooming, and navigating the timeline. And also a separate chapter on :doc:`Extra Tools </extra-tools/index>`, you may need while editing; some useful Python or FFMPEG scripts, and info about ExifTools and MediaInfo.
 
 .. toctree::
    :hidden:

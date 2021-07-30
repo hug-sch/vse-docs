@@ -63,6 +63,10 @@
 	font-size:smaller;
 }
 
+.rst-content div.figure {
+	margin-bottom: 0px;
+}
+
 /*bootstrap*/
 :root {
 	/*--sd-color-card-header: red;*/

@@ -1,5 +1,5 @@
-Setup environment
-=================
+Environment
+===========
 
 .. toctree::
    :maxdepth: 1

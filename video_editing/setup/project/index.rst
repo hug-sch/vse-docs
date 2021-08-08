@@ -1,6 +1,6 @@
 
-Setup project
-=============
+Project
+=======
 
 Even a moderate-sized video project can contain hundreds of assets.
 It's very easy to get lost in that huge amount of source files.

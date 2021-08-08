@@ -63,9 +63,11 @@
 	font-size:smaller;
 }
 
+/* removed because caption below figure was too close
 .rst-content div.figure {
 	margin-bottom: 0px;
 }
+*/
 
 /*bootstrap*/
 :root {

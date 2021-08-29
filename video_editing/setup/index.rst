@@ -13,4 +13,5 @@ Of course, many settings and activities occur at both levels. For example, autom
 .. include:: preferences.rst
 .. include:: add-ons.rst
 .. include:: proxies.rst
+.. include:: directory-structure.rst
 .. include:: project-settings.rst

@@ -1,10 +1,5 @@
-<<<<<<< HEAD:video_editing/setup/workspace.rst
 Workspace
 =========
-=======
-Video Editing Workspace
-=======================
->>>>>>> 7dadd6b807c69187a74f2d21799bcc84ba3b8d10:video_editing/setup/environment/workspace.rst
 
 Upon opening Blender, the `splash screen <https://docs.blender.org/manual/en/dev/interface/window_system/splash.html>`_ gives you the possibility to create a Video Editing project. Choosing this option takes you immediately into the Video Editing workspace. This workspace is a smart combination of five editors: File Browser (top left), Video Sequencer: Preview (top middle), Properties (top right), Video Sequencer: Sequencer (near bottom) and Timeline (bottom). Together they provide you with all the necessary tools to edit your videos.
 

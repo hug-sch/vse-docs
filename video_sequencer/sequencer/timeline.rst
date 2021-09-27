@@ -69,7 +69,6 @@ Please note that in a Move operation, the Visible Range can be moved horizontall
 .. |infinity| unicode:: 0x221E
 
 .. toctree::
-   :maxdepth: 3
 
    move
    zoom

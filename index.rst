@@ -2,11 +2,20 @@
 Video Editing docs
 ++++++++++++++++++
 
+.. toctree::
+   :caption: Table of Contents
+   :hidden:
+   
+   video_sequencer/index
+   video_editing/index
+   extra-tools/index
+   
 This documentation about editing video in Blender is structured in three sections. It's written in a more workflow-oriented approach than the official Blender Reference documentation.
 
 .. figure:: /images/vse_icon_sequencer.svg
    :alt: Sequencer icon
    :align: left
+   :target: /video_sequencer/index.html
 
 **Video Sequence Editor**
 #########################
@@ -16,6 +25,7 @@ This section describes the Video Sequence Editor; sometimes also called the *Seq
 .. figure:: /images/vse_icon_video-editing.svg
    :alt: Sequencer icon
    :align: left
+   :target: /video_editing/index.html
 
 **Video Editing**
 #################
@@ -24,21 +34,10 @@ The Video Editing section is split into 3 chapters, representing a typical workf
 .. figure:: /images/vse_icon_tools.svg
    :alt: Extra tools icon
    :align: left
+   :target: /extra-tools/index.html
 
 **Extra tools**
 ###############
 
 Although Blender's VSE is more than a capable video editor, you will need sometimes some extra-tools to accomplish things such as changing the Exif-data of your source-files, converting media formats, automating some operations. We give a short introduction to the following open-source tools: Python, ffmpeg, MediaInfo, and ExifTools.
-
-
-.. toctree::
-   :caption: Table of Contents
-   :maxdepth: 3
-   :numbered:
-   :hidden:
-   
-
-   video_sequencer/index
-   video_editing/index
-   extra-tools/index
 

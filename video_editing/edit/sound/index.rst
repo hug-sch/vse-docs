@@ -6,7 +6,6 @@ You'll need a cutting edge Audacity build from here to get the playback working:
 
 
 .. toctree::
-    :maxdepth: 3
   
     measuring/volume
     audacity/audacity

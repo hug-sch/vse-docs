@@ -1,8 +1,6 @@
 .. _bpy.types.TextSequence:
-
-**********
 Text Strip
-**********
+,,,,,,,,,,
 
 The Text strip allows you to directly display text in a frame.
 It is meant to display titles or other short text fragments.
@@ -22,7 +20,7 @@ you could position the text in the Preview window.
 
 
 Options
-=======
+^^^^^^^
 
 .. note:: Panels documented elsewhere!
 
@@ -38,7 +36,7 @@ An Effect panel is added to the Properties (see figure 2).
 
 
 Effect Strip
-------------
+^^^^^^^^^^^^
 
 .. admonition:: Reference
    :class: refbox

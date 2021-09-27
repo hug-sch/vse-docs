@@ -1,17 +1,5 @@
 Strip Types
------------
-
-.. toctree::
-   :maxdepth: 1
-
-   movie
-   sound
-   image
-   clip
-   scene
-   color
-   mask
-   text
+...........
 
 .. figure:: /images/vse_setup_project_striptypes_strip-types.svg
    :alt: Available strip types
@@ -51,3 +39,12 @@ Navigating these panels is explained in `Tabs & panels <https://docs.blender.org
 The top of the sidebar contains the always visible header with the icon of the strip type,
 the name of the strip, and a Mute checkbox. You can name or rename your strips here.
 If the Mute button is checked the strip will still be visible in the Sequencer but will not produce any output.
+
+.. include:: movie.rst
+.. include:: sound.rst
+.. include:: image.rst
+.. include:: clip.rst
+.. include:: scene.rst
+.. include:: color.rst
+.. include:: mask.rst
+.. include:: text.rst

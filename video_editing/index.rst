@@ -2,6 +2,13 @@
 Video Editing
 #############
 
+.. toctree::
+   :hidden:
+
+   setup/index
+   edit/index
+   render/index
+   
 .. _video-editing::
 
 The Video Editing documentation is split into 3 chapters, representing a typical workflow in a video editing project: :red:`(1)` Setup, :red:`(2)` Edit and :red:`(3)` Render. You can think of these phases also as : pre-editing, editing and post-editing.
@@ -15,10 +22,3 @@ The :red:`(2)` Editing phase start with the :blue:`(2.1)` montage of the final v
 When the editing is complete, you can start :red:`(3)` rendering the project. First, you have to :blue:`(3.1)` choose your codec and probably do some :blue:`(3.2)` post-processing in the compositor or FFMPEG. Sometimes you need subtitles.
 
 Please note that there is also a separate chapter about the :doc:`Video Sequence Editor </video_sequencer/index>` . There, you can find detailed info about basic timeline operations such as moving, zooming, and navigating the timeline. Also, in a separate chapter are some :doc:`Extra Tools </extra-tools/index>`. You may need them while editing: some useful Python or FFMPEG scripts, and info about ExifTools and MediaInfo.
-
-.. toctree::
-   :hidden:
-
-   setup/index
-   edit/index
-   render/render

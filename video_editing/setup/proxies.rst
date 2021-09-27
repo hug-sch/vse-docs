@@ -126,6 +126,5 @@ There are two levels of cache, the first is a RAM cache, this is enabled by defa
 
 
 .. toctree::
-   :maxdepth: 2
 
    proxies_technical

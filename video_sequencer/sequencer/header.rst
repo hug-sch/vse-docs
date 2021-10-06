@@ -109,6 +109,8 @@ Refresh All
 
    Whenever there are unexpected glitches in the playback, there is a chance that the cache is not updated and you need to do a *Refresh All*. For example, suppose you have a scene strip (see :ref:`Strip types <striptypes>`) in the Sequencer. Changing something in the source scene (e.g. rotating an object) will not force the Sequencer to update the cache. In the Sequencer you will see the object as if not rotated. Moving with the playhead will refresh the cache but not all at once; so there can be glitches (some frames are updated in the cache, others are not). Better is to use the Refresh All button, which will invalidate the cache and rebuild it. Another use case is when you add an image that is changed later on in an external program. Blender has no real way of knowing this. So, the image should be read in again and the cache should be updated.
 
+   Remember that the mouse pointer should be over the correct area: the Sequencer timeline! 
+
 Sync Visible Range
    The VSE is a time based editor. But, so is the Dope Sheet, the Graph Editor, and the Timeline. Finetuning animation is often done in the Graph Editor. So, these two editors should work in synchronization. The playhead is always synchronized between editors. If the playhead is at frame 15 in the Sequencer, then it will also be at frame 15 in the Graph Editor. The Visible Range, however, is not synchronized by default. So, you could see the frames 15 -150 (= Visible Range) in the Sequencer and a totally different Visible Range in the Graph Editor.
    

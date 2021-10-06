@@ -5,12 +5,12 @@ Grouping
 
 Selected strips can easily be grouped together into one so-called meta strip with :kbd:`Ctrl-G`. A Meta Strip is a strip that can contain multiple strips, but is treated as if it was one strip. The max number of strips that can be grouped is 128, due to the max number of available channels in the sequencer. The duration of the Meta strip will span from the earliest Start time until the latest End time of any strip.
 
-.. figure:: /images/video-editing_edit_montage_grouping_meta_example.png
+.. figure:: /images/video_editing_edit_montage_grouping.png
    :align: center
 
    Figure 1: Example of Meta strip.
 
-The Meta strip has a very specific appearance because the channels of the grouped strips are represented by small horizontal bars within the Meta strip. In figure 1, the grouped strips occupy 4 channels, so the Meta strip contains 4 (small) horizontal bars. The grouped strips themselves are represented by their own color in the Meta strip. For example, the two purple areas at the top come from the text strips at channel 6. The color of the Meta strip itself is blueish purple, which covers the areas where no grouped strip is available. If there is only one strip to group, then the color of the Meta strip is very similar to the grouped stripp (most of the time a little darker) aand it's hard to reognize a Meta strip as such.
+The Metaaaa strip has a very specific appearance because the channels of the grouped strips are represented by small horizontal bars within the Meta strip. In figure 1, the grouped strips occupy 4 channels, so the Meta strip contains 4 (small) horizontal bars. The grouped strips themselves are represented by their own color in the Meta strip. For example, the two purple areas at the top come from the text strips at channel 6. The color of the Meta strip itself is blueish purple, which covers the areas where no grouped strip is available. If there is only one strip to group, then the color of the Meta strip is very similar to the grouped strip (most of the time a little darker) and it's hard to recognize a Meta strip as such.
 
 The Meta strip replaces the selected strips in the sequencer timeline and is placed at the channel of the active strip. This could result in somewhat unexpected positions when box selecting the group (the active strip isn't changed by box selecting).
 
@@ -41,6 +41,7 @@ Edit a Meta strip :kbd:`Tab`
    Because of the above, adding a new strip to an existing meta strip should not be done by unMeta, followed by adding the new strip and recreate the Meta strip again. Better is to copy the new strip (on the clipboard), go into the Meta strip (Tab), paste the new strip and go out of the the Meta strip.
 
 The Meta strip is primarily an organization tool but has numerous other use cases.
+
 * If you are using a lot of strips with complicated arrangement, you can group them together using Meta strips. It allows you to reduce the vertical space used in the Sequencer.
 * You can extend the limit of 128 channels with Meta Strips. The grouped strips will occupy only one channel.
 * A Meta strip is a handy way to keep audio and video together in a synced way. Unfortunately, you will loose the advantage of thumnails.

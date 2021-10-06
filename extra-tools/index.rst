@@ -32,5 +32,6 @@ ExifTool is a platform-independent library and a `command-line application <http
    ffmpeg <ffmpeg>
    Script Editor <python-scripting-workspace.rst>
    exiftool
+   annotating-screenshot
 
 

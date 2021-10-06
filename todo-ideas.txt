@@ -1,3 +1,15 @@
+Update to version 3.0
+- grouping.rst: figuur 1 aanpassen met pijlen
+- Channels increased to 128 updated grouping.rst, importing.rst, timeline.rst).
+- TODO: The layout of the speed Effect Strip has been reworked; see https://wiki.blender.org/wiki/Reference/Release_Notes/3.0/VFX & https://developer.blender.org/rBf013e3de81da (f013e3de81)
+- select strips under current frame: updated in selecting.rst
+- VSE: Improved Snapping (https://developer.blender.org/rBfba9cd019f21)
+TODO: enkel  kleine verandering in figuur 2. Er schijnt ook iets mis te zijn met de nummering van de figuren (moving & snapping in 1 rubriek?)
+- Make pasted strip active (https://developer.blender.org/rBd374469f4c04)
+TODO: cut/copy/paste/duplicate is niet vermeld; ook het RMB menu wordt nergens besproken.
+- Draw strips transparent during transform overlap: 
+
+
 1. in text strip-types movie.rst (example PIP) elaborate on the example to position a rotated (!) rectangle in the top-right corner. Need some trigonometric functions.
 2. adding to default start-up template (e.g. proxy off, ...)
 3. Expand extra tools with ffmpeg, handbrake, mediainfo, ...
@@ -23,7 +35,6 @@
 
 18. Transform tool no performace hit with addon; see https://developer.blender.org/D11533
 
-19. Check for heading underline in the striptypes documents
-Apps: Joplin, Obsidian, Typora
+
 
 

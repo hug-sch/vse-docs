@@ -51,7 +51,7 @@ Because each project has a frame-per-seconds `fps` parameter, you can always der
 
 The conversion from frame to SMPTE code is done by a Python function *smpte_from_frame*. This function takes one parameter (the frame number) and converts it to a timecode.
 
-Strips are placed in channels; rows stacked upon each other (see for example figure 2 with 2 channels). There are 32 channels available; although you can zoom out much further. The first channel 0 is unusable as a place to put strips. This is because it is used by the Sequencer Display to show a composite of all strips above channel 0.
+Strips are placed in channels; rows stacked upon each other (see for example figure 2 with 2 channels). There are 128 channels available; although you can zoom out much further. The first channel 0 is unusable as a place to put strips. This is because it is used by the Sequencer Display to show a composite of all strips above channel 0.
 
 Theoretically, the Timeline can span the frames from - |infinity| to + |infinity| and from channel 0 to channel 32. In practice, only a limited amount of frames and channels can be seen in the Sequencer. This range is called the *Visible Range*. There are three basic operations you can perform in the Timeline (see figure 1).
 

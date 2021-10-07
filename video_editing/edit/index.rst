@@ -4,7 +4,7 @@ Edit your project
 
 .. toctree::
    :hidden:
-
+   
    montage/index
    effects/index
    color-grading/index

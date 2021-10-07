@@ -30,7 +30,6 @@ author = 'hugsch'
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    'sphinx_design',
 ]
 
 intersphinx_mapping = {'blender_manual': ('https://docs.blender.org/manual/en/dev/', None)}
@@ -62,7 +61,8 @@ html_static_path = ['_static']
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-html_css_files = [ 'css/custom.css',]
+html_css_files = [ 'css/custom.css',
+                    'theme_overrides.css']
 
 # to support colors?
 rst_prolog = """
@@ -82,7 +82,7 @@ html_theme_options = {
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': 4,
+    'navigation_depth': -1,
     'includehidden': True,
     'titles_only': False
 }

@@ -3,15 +3,18 @@ Montage
 
 .. toctree::
    :hidden:
-
+   
    striptypes/index
    importing
    selecting
    moving
+   snapping
+   inserting
    splitting
    trimming
    grouping
    deleting
+   test
 
 Montage is the technique of assembling separate clips (video, audio, text, effects) into a coherent sequence. The importance of montage was first demonstrated by the Russian filmmaker Lev Kuleshov in the 1910s and 1920s. Famous is the Kuleshov effect: viewers derive more meaning from the interaction of two sequential shots than from a single shot in isolation (see the `Wikipedia article <https://en.wikipedia.org/wiki/Kuleshov_effect>`_ for a nice illustration). 
 

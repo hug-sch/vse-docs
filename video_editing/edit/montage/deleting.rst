@@ -31,3 +31,15 @@ The Lock command prevents the strip from being moved in time or that the duratio
 
 - Lock Strips (:kbd:`Shift-L`): disables the strip from being changed.
 - Unlock Strips (:kbd:`Shift-Alt-L`): enables disabled strips allowing them to be changed.
+
+**Remove gaps**
+
+Remove blank columns in the timeline window, starting from project Start (usually frame 1). A blank column is a time/frame location where there isn't any strip in any channel. In other words, the Preview window is empty for that time/frame location.
+
+You can invoke the command with the menu: Strip > Transform > Remove Gaps or with the :kbd:`Backspace` key. After the command is issued, you can tick the *All Gaps* option to remove other gaps or you can press :kbd:`Backspace` several times to remove the other gaps.
+
+.. note::
+   You can move strips between:
+   
+   * Scenes: copy the strips (:kbd:`Ctrl - C`), switch to the other scene and paste (:kbd:`ctrl - V`). All strip settings will be copied, *except* the animation keyframes.
+   * Projects: import the scene with the wanted strips into the current project with the menu File > Append.

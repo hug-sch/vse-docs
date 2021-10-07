@@ -5,6 +5,7 @@ Video Editing docs
 .. toctree::
    :caption: Table of Contents
    :hidden:
+
    
    video_sequencer/index
    video_editing/index

@@ -1,13 +1,20 @@
-Update to version 3.0
-- grouping.rst: figuur 1 aanpassen met pijlen
-- Channels increased to 128 updated grouping.rst, importing.rst, timeline.rst).
-- TODO: The layout of the speed Effect Strip has been reworked; see https://wiki.blender.org/wiki/Reference/Release_Notes/3.0/VFX & https://developer.blender.org/rBf013e3de81da (f013e3de81)
-- select strips under current frame: updated in selecting.rst
-- VSE: Improved Snapping (https://developer.blender.org/rBfba9cd019f21)
-TODO: enkel  kleine verandering in figuur 2. Er schijnt ook iets mis te zijn met de nummering van de figuren (moving & snapping in 1 rubriek?)
-- Make pasted strip active (https://developer.blender.org/rBd374469f4c04)
-TODO: cut/copy/paste/duplicate is niet vermeld; ook het RMB menu wordt nergens besproken.
-- Draw strips transparent during transform overlap: 
+Update to version 3.0 (see Release Notes https://wiki.blender.org/wiki/Reference/Release_Notes)
+
+- Channels increased to 128: updated grouping.rst, importing.rst, timeline.rst.
+- The layout of the speed Effect Strip has been reworked (TODO); see https://wiki.blender.org/wiki/Reference/Release_Notes/3.0/VFX & https://developer.blender.org/rBf013e3de81da (f013e3de81)
+- select strips under current frame: updated selecting.rst
+- VSE: Improved Snapping (https://developer.blender.org/rBfba9cd019f21). Updated: figuur 1.
+- Make pasted strip active (TODO) (https://developer.blender.org/rBd374469f4c04)
+Cut/copy/paste/duplicate is nergens vermeld in de docs; ook het RMB menu wordt nergens besproken.
+- Draw strips transparent during transform overlap: updated moving.rst
+- Set default sound and video export format (70f890b510): updated project-settings.rst
+- Add transform overwrite mode (59cd9c6da6): updated moving.rst. Updating fig 1 (expanded and menu). The note confict resolution should be updated to cover the 3 modes (red outline stays for shuffle and expand, current situation is shuffle). The expand is covered inthe inserting.rst. Alt key doesn't work any longer.
+
+better called transform???
+- Strip thumbnails (997b5fe45d)
+- Image transform tools (fa2c1698b0)
+- Add color tags to strips (5cebcb415e)
+- Add ASC CDL color correction method (213554f24a)
 
 
 1. in text strip-types movie.rst (example PIP) elaborate on the example to position a rotated (!) rectangle in the top-right corner. Need some trigonometric functions.

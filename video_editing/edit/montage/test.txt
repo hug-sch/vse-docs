@@ -1,0 +1,19 @@
+Placing
+   Import
+   Add
+   Copy-paste
+Move
+   Select
+   Snap
+   Shuffle
+   Insert
+   Overwrite
+Transform
+   Split
+   Trim
+   Group
+Remove
+   Delete
+   Mute
+   Lock
+

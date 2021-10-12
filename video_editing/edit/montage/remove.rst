@@ -1,5 +1,11 @@
-Deleting & Muting & Locking
----------------------------
+Remove
+------
+
+Strips can be removed in three ways;: delete, Mute & Lock.
+
+
+Delete
+......
 
 .. figure:: /images/video_editing_edit_montage_delete_delete.svg
    :alt: Strip menu
@@ -14,7 +20,8 @@ This Delete operation can of course be undone with the Undo command or :kbd:`Ctr
 
 The *preferred* key for deletion is X and not Delete because the X key can be accessed easily with the left hand on a standard (Qwerty) keyboard. That way, you don't have to release the mouse in your right hand (of course, if you are right-handed).
 
-|
+Mute
+....
 
 .. figure:: /images/video_editing_edit_montage_delete_mute-lock.svg
    :alt: Mute-lock menu
@@ -26,6 +33,9 @@ The Mute command will make a strip invisible in the preview. The command was pre
 
 - Mute/Unmute Strips (kbd:`H`, :kbd:`Alt-H`): mute or unmute the selected strips. The strips will be (in) visible in the preview.
 - Mute/Unmute Deselected Strips (:kbd:`Shift-H`, :kbd:`Ctrl-Alt-H`): mute or unmute all strips but the selected.
+
+Lock
+....
 
 The Lock command prevents the strip from being moved in time or that the duration could be changed. The effect of the Lock command is the same as clicking on the Lock symbol in the Time panel (see figure 2) of the strip properties. If you want to apply the Lock on all selected strips, you have to press the :kbd:`Alt` key while clicking the Lock symbol. The strip is shown as striped in the sequencer.
 

@@ -1,15 +1,19 @@
-Importing
----------
+Add
+---
 
-After :doc:`setting up your project </setup/index>`, you should haven an organized directory with all your footage. The first step in Montage is to import this footage into your main timeline.
+After :doc:`setting up your project </setup/index>`, you should haven an organized directory with all your footage. The first step in Montage is to *import* this footage and to *add* some supporting strips (text, color, ...).
+
+Import
+......
 
 .. note::
 
    Blender is - as all video editors nowadays - a non-linear editing (NLE) system. According to `wikipedia <https://en.wikipedia.org/wiki/Non-linear_editing>`_ non-linear editing is a form of offline editing for audio, video, and image editing, where the *original content is not modified in the course of editing*.
 
-There are three methods available to import footage. For a detailed description of these methods and their intricacies, see section :doc:`section Edit > Assembling > Adding </edit/assembling/adding/adding>`.
+There are three methods available to import footage with subtle but sometimes annoying differences between them. 
+`Mikeycal Meyers <https://www.youtube.com/watch?v=zslAZxC29rk>`_ demonstrated them in a short video tutorial.
 
-1. Add a strip with the shortcut key (Shift + A) or the Add menu to the Sequencer timeline and locate the desired file with a modified Blender File Browser version.
+1. Add a strip with the shortcut key (:kbd:`Shift - A` ) or the Add menu to the Sequencer timeline and locate the desired file with a modified Blender File Browser version.
 2. Drag a video, sound, or image/image sequence on the timeline with the `Blender File Browser <https://docs.blender.org/manual/en/dev/editors/file_browser.html>`_. The Blender File Browser is the top-left window in the Video Editing workspace (see figure 1).
 3. Drag and drop the desired video, sound, or image file on the sequencer timeline from the File Browser of the operating system.
 
@@ -18,23 +22,19 @@ There are three methods available to import footage. For a detailed description 
 
    Figure 1: Three import methods
 
-These three import techniques are also clearly explained in a short video by
-`Mikeycal Meyers <https://www.youtube.com/watch?v=zslAZxC29rk>`_.
-
-There are subtle but sometimes annoying differences between the three methods.
-
 - Only with the Add (2nd) method can you add all of the :doc:`available strip types </setup/organize/strip-types/index>`. The other methods only allow adding Movie, Sound, or Image/Image Sequence strips.
 - Also, only the Add method offers the Import options (Scale To Fit, ...). A discussion of these options is in the next section.
 - And also, only the Add method can import multiple files. Although you can select multiple files (as well in the Blender File Browser as in the OS File Browser), only one file (the first selected) is dropped on the timeline.   Probably, for the same reason, it is not possible to add an Image Sequence.
 
-However, all three methods are rather limited, compared to some other video editors.
+.. Warning::
+   All three methods are rather limited, compared to some other video editors.
 
-- Using the Add method with multiple clips will place them one after the other on the timeline, starting at the position of the playhead. If you want them stacked however, you have to add the clips one by one.
-- When there are already strips at the position of the playhead, Blender will add the strips at the first free channel. You cannot choose the channel, you want the clips to be added.
-- The location where you drop the strip is not important. Blender will insert them at the position of the playhead. If, however, you try to drop the strip upon another strip or between strips (hoping that it will insert the strip), nothing will happen. The strip isn't even added.
-- There are  128 channels available for inserting strips, although you can scroll to higher-numbered channels. So, in principle, you cannot add more than 128 strips at the same time position. You can however work around this limitation by using meta strips. Select a few strips and right click. Choose "Make meta strip". Shortcut :kbd:`Ctrl G`. The selected strips collapse into one channel and count also as 1 channel.
-- It is not possible to import/insert strips before or between other strips. You can do that however within the sequencer.
-- For the File Browser Drag method, you need to drag the icon of the file. Trying to drag the name will only invoke a select operation.
+  - Using the Add method with multiple clips will place them one after the other on the timeline, starting at the position of the playhead. If you want them stacked however, you have to add the clips one by one.
+  - When there are already strips at the position of the playhead, Blender will add the strips at the first free channel. You cannot choose the channel, you want the clips to be added.
+  - The location where you drop the strip is not important. Blender will insert them at the position of the playhead. If, however, you try to drop the strip upon another strip or between strips (hoping that it will insert the strip), nothing will happen. The strip isn't even added.
+  - There are  128 channels available for inserting strips, although you can scroll to higher-numbered channels. So, in principle, you cannot add more than 128 strips at the same time position. You can however work around this limitation by using meta strips. Select a few strips and right click. Choose "Make meta strip". Shortcut :kbd:`Ctrl G`. The selected strips collapse into one channel and count also as 1 channel.
+  - It is not possible to import strips before or between other strips. You can do that however within the sequencer.
+  - For the File Browser Drag method, you need to drag the icon of the file. Trying to drag the name will only invoke a select operation.
 
 Some of these limitations are tackled by addons. For example, the `VSE Quick Functions addon <https://github.com/snuq/VSEQF>`_  has the following import additions:
   
@@ -46,7 +46,7 @@ Some of these limitations are tackled by addons. For example, the `VSE Quick Fun
 There is also a working but experimental version of the Three Point Edit method. With this method, you can load a source clip in a separate preview window (e.g. the Movie Clip Editor), scrub in this clip and set the In (Start) and Out (Finish) points and import this part of the source clip into the timeline with various options (import at frame, insert at frame, ..., see above).
 
 Options
-.......
+,,,,,,,
 
 .. figure:: /images/vse_setup_project_options-moviestrip.png
    :alt: Import options Movie strip
@@ -144,7 +144,7 @@ These options are already described in the properties list of the
 
 
 Organize timeline
-.................
+,,,,,,,,,,,,,,,,,
 
 Working with a long and complex timeline isn't easy.
 Some kind of organization is needed in order to work as efficiently as possible.
@@ -182,3 +182,10 @@ When doing fiction, you could organize your footage in:
 - Scene: a situation that plays out in one location in continuity.
 - Shot: a camera set up to cover the entire scene or a part of it.
 - Take: a recorded attempt out of many to get the shot right.
+
+Add
+,,,
+
+With the shortcut key :kbd:`Shift - A` you can add strips without any external source (text, color, ...); see :doc:`Strip types <striptypes/index>` for an in-depth overview of all available types.
+
+The placement of these strips obey the same rules as with importing strips. 

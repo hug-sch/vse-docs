@@ -5,17 +5,12 @@ Montage
    :hidden:
    
    striptypes/index
-   importing
-   selecting
-   moving
-   snapping
-   inserting
-   splitting
-   trimming
-   grouping
-   deleting
-   test
-
+   select
+   add
+   move
+   transform
+   remove
+   
 Montage is the technique of assembling separate clips (video, audio, text, effects) into a coherent sequence. The importance of montage was first demonstrated by the Russian filmmaker Lev Kuleshov in the 1910s and 1920s. Famous is the Kuleshov effect: viewers derive more meaning from the interaction of two sequential shots than from a single shot in isolation (see the `Wikipedia article <https://en.wikipedia.org/wiki/Kuleshov_effect>`_ for a nice illustration). 
 
 Obviously, the first thing in assembling your timeline is importing or adding strips. There are several ways to do this and each has its own advantages and disadvantages.

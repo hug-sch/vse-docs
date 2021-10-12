@@ -1,5 +1,5 @@
-Selecting
----------
+Select
+------
 
 Before you can do *anything* with strips, you have to select them (see below for the different methods of selecting). There is a difference between a *selected* strip and the *active* strip (see figure 1). Selected strips have an outline. A selected but not active strip has an orange outline. The active and selected strip has a white outline, and white text if available. There is always one and only one strip active. The properties shown in the sidebar belong to this active strip.
 

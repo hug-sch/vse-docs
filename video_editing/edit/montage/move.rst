@@ -1,9 +1,9 @@
 Move
 ----
 
-Moving strips in the timeline is of course a basic operation in video editing. Figure 1 shows a few possibilities.
+Moving strips in the timeline is of course a basic operation in video editing. Figure 1 shows a few possibilities. The yellow strip (1) at the left is dragged upon the left red & green strips. Before releasing, strip (2) with the move Cross is temporarily visible. Depending upon the the selected option (shuffle, overwrite, or expand), strips 3, 4 or 5 are the result. 
 
-.. figure:: /images/video_editing_montage_move.png
+.. figure:: /images/video_editing_montage_move.svg
    :alt: Moving strips
  
 
@@ -101,16 +101,16 @@ The snapping guide tool has 5 options (see figure 2).
 
 
 Snap to the playhead
-....................
+   There is also a special command to move and snap strips to the playhead at the same timeline. Select one or multiple clips. They can be spread over multiple channels. Press :kbd:`Shift - S` to snap the selection to the playhead.
 
-There is also a special command to move and snap strips to the playhead at the same timeline. Select one or multiple clips. They can be spread over multiple channels. Press :kbd:`Shift - S` to snap the selection to the playhead.
-
-.. Warning::
-   If multiple strips are selected, all of them will start at the playhead. The relative position to each other will not be preserved and all the strips are spread over different channels (because they will otherwise overlap); even if the snap option Expand or Overwrite is selected. This command is probably only useful for strips that share a common Start frame; eg. Movie strips with their accompanying Sound strips.
+   .. Warning::
+      If multiple strips are selected, all of them will start at the playhead. The relative position to each other will not be preserved and all the strips are spread over different channels (because they will otherwise overlap); even if the snap option Expand or Overwrite is selected. This command is probably only useful for strips that share a common Start frame; eg. Movie strips with their accompanying Sound strips.
 
 
 Shuffle
 .......
+
+With the default Shuffle option selected, moving a strip around will always add the dropped strip to the front or back of another strip, never insert it between strips.
 
 .. admonition:: Conflict resolution
 
@@ -123,26 +123,26 @@ Shuffle
       :align: center
 
 
-      Figure 5: Snapping side (without guides)
+      Figure 5: Inserting strips with the Shuffle option is not possible.
 
 The background of a moving strip is drawn semi-transparent
 if it overlaps with another strip. It's convenient to see what's
 underneath, especially with the Overwrite feature (see below).
 
+Overwrite
+.........
+
+The Overwrite option will replace portions of strips. In figure 1, the yellow strip is dropped upon the red and green strips and will replace the overlapping portions of them. There is no warning, but, of course, you can undo the operation.
+
+Multiple strips can be dropped; each overwriting the portions of strips that they are overlapping.
+
 Expand
 ......
 
-Moving Strip-3 between strip-1 and strip-2 in figure 6 will need an Insert-mode. Simply moving the strip will snap strip-3 to either the Start of strip-1 or the End of strip-2, depending on the mouse position.
+The Expand option will never overwrite any strips but will move them out of place, in case they were overlapping. In figure 1, the dropped yellow strip will *expand* the original red-green sequence by moving the green strip to the right.
 
-If you want to insert strip-3 between the other 2 and thus making room by shifting strip-2 to a later time, you need to hold the :kbd:`Alt` key while moving. Pressing :kbd:`Enter` or :kbd:`LMB - Click` will insert the strip. The message to do this appears at the left side in the header of the preview (see figure 6): *Sequence Slide: -76,0, (G or Alt) Expand to fit ON*. So, pressing the :kbd:`Alt` key while moving will set *Expand to fit ON*. Releasing the key will toggle the message to *Expand to fit OFF*. 
+The exact result of the operation, however, depends upon the drop location. If, for example, the yellow strip is dropped at the beginning of the red strip, then both red & green strips are moved to the right and the yellow strip is placed in front of them. If the yellow strip is dropped at the end of the green strip, then it will be added at the tail of the existing red-green strips. If it is dropped (as in the example of figure 1), then the green strip is moved to the right and the yellow strip is inserted. 
 
-.. figure:: /images/video_editing_montage_move-snapping-insert.svg
-   :alt: Insert mode
-
-   Figure 6: Inserting (expand) a strip
-
-The Insert mode works also with multiple, selected clips. If there are any gaps between the moving strips, these  will be preserved.
+The Expand mode works also with multiple, selected clips. If there are any gaps between the moving strips, these will be preserved.
 
 
-Overwrite
-.........

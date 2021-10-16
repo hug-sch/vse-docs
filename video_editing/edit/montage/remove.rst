@@ -1,7 +1,7 @@
-Remove
-------
+Remove/disable
+--------------
 
-Strips can be removed in three ways;: delete, Mute & Lock.
+Strips can be removed or disabled with the commands delete, Mute, and Lock.
 
 
 Delete

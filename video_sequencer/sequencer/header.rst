@@ -225,8 +225,16 @@ F-curves
    Figure 11: F-curves
 
 Thumbnails
-   For Movie, Image Sequence and Image strips you can display thumbnails. To draw thumbnails, this overlay has to be enabled and the strip bars must be tall enough. 
-   
+   For Movie, Image Sequence and Image strips you can display thumbnails. The example in figure 12 has 30 frames; each with a blue background and the frame number in yellow as foreground. To draw thumbnails, this overlay has to be enabled and the strip bars must be tall enough. In order to be recognizable, a thumbnail channel should be at least about 92 pixels (see figure 12; bottom strip). The width of the thumbnail is calculated in accordance to the aspect ratio of the actual image. In figure 12, the width of the strips at the left side does not vary across zoom level because the strip height isn't changed either. The strip at the top right however has a much larger height, and therefore also a larger width.
+
+   .. figure:: /images/editors_vse_sequencer_timeline_sequencer_thumbnails.svg
+      :alt: Thumbnails
+      :scale: 50%
+      
+   Figure 12: Thumbnails at different zoom levels 
+
+   The number of thumbnails depends on the thumbnail size (see above) and the strip length (which depend on the zoom level). The first frame of the strip is always shown as a thumbnail.
+
    The thumbnails are loaded from source file using separate thread and stored in cache. Cache capacity is limited to 5000 thumbnails and performs cleanup of non visible images when limit is reached.
 
 Grid

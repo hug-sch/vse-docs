@@ -30,10 +30,8 @@ Sidebar :kbd:`N`
    Show or hide the sidebar. You can use the shortcut :kbd:`N` or the Sidebar button (see figure 1) to toggle on or off. This sidebar appears at the right of the sequencer and will show all the properties of the active strip. Please, note that the active strip does *not* need to be a selected strip (see :ref:`Selecting <video_editing_edit_timeline_select>`). A detailled description of all the properties of the various strip types can be found in the :ref:`Video Editing <striptypes>` section.
 
 Tool Settings
-   Show or hide the Tool Settings toolbar. This toolbar is located right below the header.
-   ..todo::
-      At the moment the tool settings only contain the word *Tweak*.
-
+   Show or hide the Tool Settings (below the menu bar). These Tool Settings are mostly used in combination with the Toolbar (:kbd:`T`). For example, if you select the Blade tool in the Toolbar, than you can choose between *Soft* and *Hard* in the Tool Settings.
+  
 .. figure:: /images/editors_vse_header_toolbar-generic.png
    :alt: Toolbar
    :scale: 80%
@@ -238,7 +236,7 @@ Thumbnails
    The thumbnails are loaded from source file using separate thread and stored in cache. Cache capacity is limited to 5000 thumbnails and performs cleanup of non visible images when limit is reached.
 
 Grid
-   If enabled, thin black vertical lines are displayed in the sequencer every *n* frames. The number of frames depend on the zoom levels but starts at every 1000 frames (if zoomed out sufficiently) and decrements while zooming in to 500, 200, 100, 50, 20, 15, 10,5, and eventually stops at every two frames. This grid is a visual aid to recognizing the location of strips in the timeline.
+   If enabled, thin black vertical lines are displayed in the sequencer every *n* frames. The number of frames depend on the zoom levels but starts at every 1000 frames (if zoomed out sufficiently) and decrements while zooming in to 500, 200, 100, 50, 20, 15, 10, 5, and eventually stops at every two frames. This grid is a visual aid to recognizing the location of strips in the timeline.
 
 
 Waveform Display

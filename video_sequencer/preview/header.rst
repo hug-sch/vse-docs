@@ -1,6 +1,12 @@
 Header
 ------
-The Type Selector buttons are identical to those of the Sequencer header. The menu bar is limited to a stripped-down View menu. The Show Overlay button gets the company of the Display buttons (far right). For more general info about the header, see :doc:`Sequencer header <../sequencer/header>`
+.. figure:: /images/editors_vse_preview_header.svg
+   :alt: Header of Preview
+
+
+   Figure 1: Header of the Preview window
+
+The Type Selector buttons are identical to those of the Sequencer header. The menu bar is limited to a stripped-down View menu. The Show Overlay button gets the company of the Display buttons (far right) and the Pivot Point in the middle. For more general info about the Type Selectors, see :doc:`Sequencer header <../sequencer/header>`
 
 View Menu
 .........
@@ -9,7 +15,7 @@ View Menu
    :alt: View menu of Preview
 
 
-   Figure 1: View menu of the Preview window
+   Figure 2: View menu of the Preview window
 
 Sidebar - Toolbar
    See :doc:`Sequencer header <../sequencer/header>` for more info.
@@ -43,6 +49,31 @@ Show Cache, Sequence Render Image, Sequence Render Animation, Export Subtitles
 Toggle Sequencer/Preview :kbd:`Ctrl-Tab`
    Switch the editor display type between Sequencer and Preview.
 
+Pivot Point
+...........
+
+.. figure:: /images/editors_vse_preview_header_pivot-point.png
+   :alt: Pivot Point options
+   :scale: 40%
+   :align: right
+
+
+   Figure 3: Pivot Point options
+
+
+The Pivot Point is primarily used in operations such as Rotate and Scale. It defines the point around which the strip image will be rotated or scaled. Using this selector in the header of the Preview, you can change the location of the pivot point.
+
+The Pivot Point is also extensively used in the 3D Viewport; see `Editors > 3D Viewport <https://docs.blender.org/manual/en/dev/editors/3dview/controls/pivot_point>`_.
+
+Bounding Box center
+   The bounding box is a rectangular box that is wrapped as tightly as possible around the selection.
+Median Point
+   The Median Point is the points that is closest to *all* the origins of the selected strips. You can think of it as the midpoint of the area that is covered with the selected strips.
+2D cursor
+   Sometimes you want to rotate a strip around a specific point in the Preview. Therefore, you can set the 2D Cursor (with the Toolbar) and change the Pivot Point accordingly.
+Individual origins
+   If multiple strips are selected, you may want to rotate or scale these strips around there own origins instead of for example the Median Point of all selected strips. For example, if you have three portrait strip^s of faces, you probably want each face to be rotated around its individual origin.
+
 Display Mode
 ............
 
@@ -57,9 +88,9 @@ Luma Waveform
    :alt: Luma Waveform
  
 
-   Figure 2: Luma Waveform and Image preview
+   Figure 4: Luma Waveform and Image preview
 
-   Figure 2 shows two Preview windows: the left one with Display Mode Luma Waveform, the right one with the default display Mode Image Preview. The image is composed of 4 columns with several areas of grey-scale. The last column also contains the white text "50%".
+   Figure 4 shows two Preview windows: the left one with Display Mode Luma Waveform, the right one with the default display Mode Image Preview. The image is composed of 4 columns with several areas of grey-scale. The last column also contains the white text "50%".
    
    The X-axis of the Luma Waveform represents the X-axis of the image. If the image is 400 pixels wide, so is the Luma Waveform. Although you cannot recognize individual shapes  of the image  (e.g. faces, ...) in the Luma Waveform, the 4 columns are discernible in this example because they vary widely in luminosity. The Y-axis of the Luma Waveform represents luminosity, ranging from zero (black) at the bottom to 1 (white) at the top. There are a few preset values (the red lines) at 0.1, 0.7 and 0.9.
    
@@ -71,7 +102,7 @@ Luma Waveform
    
    The fourth column has a background of 50% grey, resulting in a single white line at level 0.5. The "point-cloud" above the 0.5 luminosity is caused by the anti-aliased white text (50%). Some X positions (right in the middle of the column) have multiple luminosity values: 0.5 from the background and several from the white, anti-aliased text. These values are all above 0.5 because the text is white and is merged with the 50% grey background.
 
-   With the sample tool you can determine the Luminosity value and other color values of every pixel in the image. Select the Sample tool and :kbd:`LMB-Click` on the image will show this info in the status bar. In figure 2, I've clicked on area (d). In the status bar, you can read the L-value: 0.2.
+   With the sample tool you can determine the Luminosity value and other color values of every pixel in the image. Select the Sample tool and :kbd:`LMB-Click` on the image will show this info in the status bar. In figure 4, I've clicked on area (d). In the status bar, you can read the L-value: 0.2.
 
 Chroma Vectorscope
 The Chroma Vectorscope is a graphical representation of the Hue and Saturation x Brightness values of an image. The three primary colors (red, green, blue) and the three secondary colors (yellow, cyan, magenta) and the in-betweens are visualized as a hexagon with the aforementioned colors at the vertices.  The center of the hexagon (the red dot) has a saturation x Brightness value of zero (because one or both  are zero, the Hue equals Black). The values at the border have a Saturation x Brightness value of 1. Every dot within the hexagon represent a pixel or a group of pixels with the same hue and saturation x Brightness value. A very dim or desaturated image for example will appear as group of dots near the center. An image with a very saturated (blue) sky, will show show as a bunch of dots near the blue border.
@@ -79,9 +110,9 @@ The Chroma Vectorscope is a graphical representation of the Hue and Saturation x
 .. figure:: /images/editors_vse_preview_vectorscope.svg
    :alt: Display Mode Histogram
 
-   Figure 3: Display mode Chroma Vectorscope and Image 
+   Figure 4: Display mode Chroma Vectorscope and Image 
 
-Figure 3 contains 14 different hue and Saturation x Brighness values. Each of them is represented by a small dot. The number of pixels with that particular value does not matter. For example, the small rectangles (e) and (f)  are equally represented by one (small) dot as the larger rectangles (a), ...
+Figure 4 contains 14 different hue and Saturation x Brighness values. Each of them is represented by a small dot. The number of pixels with that particular value does not matter. For example, the small rectangles (e) and (f)  are equally represented by one (small) dot as the larger rectangles (a), ...
 
 Because the rectangles (a), (b), (c), and (d) have all the same (blue-ish) Hue, but a different Saturation x Brightness value, they lie at a line pointing to that Hue at the hexagon border.
 
@@ -93,7 +124,7 @@ Histogram
    :alt: Display Mode Histogram
 
 
-Figure 4: Display mode Histogram, together with Sequencer and Image preview
+Figure 5: Display mode Histogram, together with Sequencer and Image preview
 
 In figure 4, the rendered image is made up of three rectangles. 
 * (a) green RGB(0.2, 0.5, 0.4): 1/8 of the image size
@@ -104,7 +135,7 @@ So, there are 9 RGB components, but only 8 of them are different (the value 0.2 
 
 Finally, there is the transparent area (1/8 of the image size). This is represented by a black color RGB (0,0,0), resulting in a white bar (red on top of green on top of blue) at location 0.
 
-You can always check the RGB value by selecting the Sample tool (default) and :kbd:`LMB-Click`/ In figure4, you can verify that the RBB value of the red rectangle is indeed (0.8, 0.2, 0.3).
+You can always check the RGB value by selecting the Sample tool (default) and :kbd:`LMB-Click`/ In figure 5, you can verify that the RBB value of the red rectangle is indeed (0.8, 0.2, 0.3).
 
 Display Channels
 ................
@@ -116,9 +147,23 @@ Color and Alpha
 Color
    Ignore transparency of preview image (fully transparent areas will be black).
 
+Show Gizmo
+..........
+.. figure:: /images/editors_vse_header_preview-gizmo.png
+   :alt: Show Gizmo
+   :scale: 40%
+   :align: right
+
+   Figure 6: Show Gizmo
+
+With Show Gizmo, you can display the Zoom and Move gizmos of the Preview window (the Hand and Magnifying glass; see :doc:`Gizmos <gizmos>` for more info. You can also enable the display of the Active Tools. These are the gizmos that appear around the selected strips when activating a specific tool (e.g. Move, Scale, Rotate).
+
+This setting is global for all scenes.
+
 Show Overlay
 ............
 
 Overlays consist of additional information that is displayed on top of the preview region. With the Show Overlay button, you can switch off or on all overlays for the preview region. With the Overlays button (down pointing arrow) you can chose the type of Overlay: Frame Overlay, Safe Areas, Metadata or annotations. The following Overlays are available.
 
-More info about the available options are described in the section:  :menuselection:`Sidebar --> Frame Overlay`.
+More info about the available options are described in
+:doc:`Section Frame Overlay </video_sequencer/preview/sidebar>`.

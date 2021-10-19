@@ -4,7 +4,7 @@ testing
 
 Reference to an internal doc
 
-:doc:`Strip Types </setup/organize/strip-types/index>`
+:doc:`My setup </video_editing/setup/index>`
 
 link to an anchor in another doc or in the same doc
 

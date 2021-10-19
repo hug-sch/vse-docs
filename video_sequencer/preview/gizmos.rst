@@ -18,7 +18,7 @@ Move
 If you have even zoomed in or moved way to far, press :kbd:`Home` to restore the 100% zoom at the center of the Preview.
 
 .. Hint::
-   Sometimes you need only a very small preview window, for example when checking the sound. The Gizmos can get very much in the way then. Switching them on or off is rather well hidden in the User Preferences > Interface > Editors > Navigation Controls.
+   Sometimes you need only a very small preview window, for example when checking the sound. The Gizmos can get very much in the way then. You can switch them off with the Show Gizmo button in the Header of the Preview or with the rather well hidden option in User Preferences > Interface > Editors > Navigation Controls.
 
    There is also a field called *Gizmo Size* (in User Preferences > Viewport > Display > Gizmo Size). Changing this value will not do anything to the VSE gizmos. It only changes the navigation gizmos in the 3D View.
 

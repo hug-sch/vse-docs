@@ -1,3 +1,5 @@
+.. _striptypes:
+
 Strip Types
 ...........
 

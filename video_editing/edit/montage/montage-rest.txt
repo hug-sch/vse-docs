@@ -39,7 +39,7 @@ If you want to see those values in the side panel, you'll have to extend some co
 **(4)** The `Current Frame` is not a Python API field on its own but is calculated from `scene.frame_current - frame_final_start`.
 
 
-Movie strips, Sound strips, Scene strips and Image/Sequence strips all share the same time code properties (see :doc:`Strip types </setup/organize/strip-types/index>`. Color and Text Strips and Adjustment Layers expose only 5 fields: Channel, Start, Duration, End, and Current Frame. There is no need for the Offset fields. Effect strips such as Speed control and Transform do not have time codes on their own. Their timing is controlled by the parent strip.
+Movie strips, Sound strips, Scene strips and Image/Sequence strips all share the same time code properties (see :doc:`Strip types </video_editing/edit/montage/striptypes/index>`. Color and Text Strips and Adjustment Layers expose only 5 fields: Channel, Start, Duration, End, and Current Frame. There is no need for the Offset fields. Effect strips such as Speed control and Transform do not have time codes on their own. Their timing is controlled by the parent strip.
 
 But why all those time codes? Why do you need them? And what do they mean? Let's begin with the most basic case.
 

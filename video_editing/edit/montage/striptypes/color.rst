@@ -65,7 +65,7 @@ Effect Strip
 Effect Strip
    With the vertical slider, you can set the brightness of the color.
    Clicking on the horizontal slider will display a standard Color Picker.
-   More info about the :doc:`Color Picker </edit/color-grading/terminology/terminology>` in the Color grading section.
+   More info about the :doc:`Color Picker </video_editing/edit/color-grading/terminology/terminology>` in the Color grading section.
    This Color Picker has some additional settings, i.e. opacity.
 
    The existing Color panel has some overlap with the Effect Strip panel, for example, the Saturation field.

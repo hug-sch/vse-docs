@@ -1,7 +1,7 @@
 Sequencer & Preview
 ===================
 
-.. figure:: /images/editors_vse_combi-sequencer-preview.png
+.. figure:: /images/editors_vse_combi-sequencer-preview.svg
    :alt: Combined Sequencer & Preview
 
    Figure 1: Combined Sequencer & Preview

@@ -74,7 +74,7 @@ Volume
    as loud or with value = 0.5 half as loud as the original? Not at all!
 
    For more detailed information about the interpretation of the sound level in terms of decibels;
-   see :doc:`Volume level </edit/sound/measuring/volume>`.
+   see :doc:`Volume level </video_editing/edit/sound/measuring/volume>`.
 
 Pitch
    Pitch (lower versus higher tones) is closely related to the frequency of a sound.
@@ -102,8 +102,8 @@ is about the same and that the sound will stop at ~9.5 s.
 Please, note also that the file is stereo in Audacity but mono in Blender.
 
 So, changing the pitch or duration of a sound file can -and is usually- also done
-with the :doc:`speed control </edit/effects/speed/speed>` in Blender.
-:doc:`Strip types </setup/organize/strip-types/index>`
+with the :doc:`speed control </video_editing/edit/effects/speed/speed>` in Blender.
+:doc:`Strip types </video_editing/edit/montage/striptypes/index>`
 
 Pan
    Depending on your sound system, you have one, two, or more speakers.
@@ -148,7 +148,7 @@ Pack
    Packing the sound file means that the sound is embedded -not linked- in the blend-file.
    This can ease the job of transferring a project to another computer because you have to distribute only one file.
    But, remember, we advocate the use of a single, all-containing project folder
-   (see :doc:`../dir-structure/creating-directory-structure`).
+   (see :doc:`/video_editing/setup/directory-structure`).
    Packing the file will only increase the size of the Blend-file
    and is in any case already included in the distribution of the project folder.
 

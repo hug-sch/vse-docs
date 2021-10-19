@@ -123,4 +123,4 @@ Camera
 
 Volume
    The volume of the original audio can be increased (> 1) or reduced (< 1) with this setting.
-   See :doc:`Volume level </edit/sound/measuring/volume>` for an interpretation of this volume level.
+   See :doc:`Volume level </video_editing/edit/sound/measuring/volume>` for an interpretation of this volume level.

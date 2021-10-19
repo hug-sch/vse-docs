@@ -1,9 +1,21 @@
 Annotating screenshots
 **********************
 
-Adding annotated figures to the Blender documentation can be a labor intensive process; especially if the figure content changes a lot, due to Blender internal development.
+Adding annotated figures to the Blender documentation can be a labor intensive process; especially if the figure content changes a lot, due to Blender internal development. The following text describes an optimized workflow for creating these frequently changing figures in the Blender docs. Most of the time, these figures are based upon a screenshot of some part of the Blender interface; where upon some annotation (coloring, text, arrows, labels, ...) is added.
 
-The following text describes an optimized workflow for creating these frequently changing figures in the Blender docs. Most of the time, these figures are based upon a screenshot of some part of the Blender interface; where upon some annotation (coloring, text, arrows, labels, ...) is added. The basic idea of this workflow is to keep all info into one blend-file (and do all the work in Blender) in stead of dispersing the work and data into several third party programs (blender, screen grabber, graphic editor).
+Embedding the screenshot in SVG
+===============================
+
+1. Create a blend-file with the same name as the figure; e.g. video_editing_setup_workspace.blend. If you have a high resolution monitor, it is perhaps better to set the Edit > Preferences > Interface > Resolution Scale to a higher value (e.g. 1.5) to enhance the readability of the text.
+2. Prepare the Blender environment for the screenshot (e.g. choose workspace, resize, expand or collapse panels, ...).  With the menu Edit > Toggle Full Screen, you can hide hide the title bar where the file location of the Blend-file is displayed. Be sure that your Blender window is maximized (or remember the actual window dimensions).
+3. Take a screenshot. You can use Blender (menu Window > Save Screenshot or Save Screenshot (Editor). The second option will allow you to point to the specific editor, you want a screenshot from. You can also use a dedicated screen-grabber. Be sure that you can recreate this screenshot easily (in case you missed or the Blender UI changes and you need a new screenshot.
+4. Open your SVG paint program; e.g. Inkscape. Paste the screenshot from the clipboard as an embedded image. The overhead of this embedding is reasonable. For example, a PNG file of 105 Kb results in a SVG file of 143 Kb.
+5. Annotate the image. Because SVG is a vector format, these annotations can always be changed without having to recreate everything.
+
+Blender-only solution
+=====================
+
+The basic idea of this workflow is to keep all info into one blend-file (and do all the work in Blender) in stead of dispersing the work and data into several third party programs (blender, screen grabber, graphic editor).
 
 1. Create a blend-file with the same name as the figure; e.g. video_editing_setup_workspace.blend. If you have a high resolution monitor, it is perhaps better to set the Edit > Preferences > Interface > Resolution Scale to a higher value (e.g. 1.5) to enhance the readability of the text. Set the project resolution to the size of your monitor (e.g. 1920 x 1080 or 3840 x 2160 for a 4K monitor). Otherwise, Blender will scale your screenshot, resulting in a blurry output. *Is this correct?*
 2. Prepare the Blender environment for the screenshot (e.g. choose workspace, resize, expand or collapse panels, ...).  With the menu Edit > Toggle Full Screen, you can hide hide the title bar where the file location of the Blend-file is displayed. Be sure that your Blender window is maximized (or remember the actual window dimensions).

@@ -2,6 +2,7 @@ Timeline
 --------
 
 .. _timeline:
+
 The concept *Timeline* can refer to different things. In Blender, it denotes in the first place the `Timeline Editor <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_ , identified by a clock icon and used for manipulating keyframes and scrubbing the playhead (see figure 1). This Timeline Editor was originally intended for editing the animations in 3D modeling. For video editing, this editor is less useful.
 
 .. figure:: /images/editors_vse_timeline-editor.svg
@@ -9,7 +10,7 @@ The concept *Timeline* can refer to different things. In Blender, it denotes in 
 
    Figure 1: The Timeline Editor in Blender
 
-You can find the Timeline Editor also in the :doc:`Video Sequence Editor workspace </video_editing/setup/environment/workspace>`, all the way at the bottom of the screen. Only the header is visible; so you have to drag the horizontal top border to reveal the time units and eventual keyframes.
+You can find the Timeline Editor also in the :doc:`Video Sequence Editor workspace </video_editing/setup/workspace>`, all the way at the bottom of the screen. Only the header is visible; so you have to drag the horizontal top border to reveal the time units and eventual keyframes.
 
 The use of *this* Timeline Editor within the Video Editor workspace is rather *limited* and a case could be made to remove it from the Video Editing workspace. Its functions can easily be overtaken by the Sequencer (see figure 2), which is right on top of it in the Video Editing Workspace.
 

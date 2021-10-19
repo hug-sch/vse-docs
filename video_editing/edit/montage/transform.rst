@@ -58,7 +58,7 @@ Hold Split :kbd:`Shift-K`
 
    The Freeze in the middle of the strip is more complicated. First, you need a Hold Split at frame 6 (playhead at 7) of the original strip. That way there is a Hold flag on frame 6 so that dragging the right handle will duplicate frame 6. You need this Hold flag on the left part of the split e.g. freeze.001. This is a Hold Offset End value of 4 because the original strip was 10 frames long.
 
-   The strip in figure 3 has a brown color because it is an image sequence. You can add the Still Offset fields to the Time panel with a little Python code (see :doc:`useful scripts </extra-tools/python/useful-scripts>` ).
+   The strip in figure 3 has a brown color because it is an image sequence. You can add the Still Offset fields to the Time panel with a little Python code (see :doc:`useful scripts </extra-tools/python-useful-scripts>` ).
 
 
    *Classic Cuts*
@@ -84,7 +84,7 @@ Hold Split :kbd:`Shift-K`
 Trim
 ----
 
-Trimming is changing the duration of a strip by altering the In and Out point. In figure 1, the original strip of channel 2 starts at frame 1 and has a duration of 11138 frames. It is duplicated to channel 3 and trimmed. The new In point is at frame 2226 (1 + Strip Offset Start) and the new Out point at frame 7665 (Duration - Strip Offset End). As already discussed in the section on the :ref:`Time panel <time-panel>` or the :doc:`Split operation  <splitting>` trimming and splitting is done with the use of the Strip Offset fields.
+Trimming is changing the duration of a strip by altering the In and Out point. In figure 1, the original strip of channel 2 starts at frame 1 and has a duration of 11138 frames. It is duplicated to channel 3 and trimmed. The new In point is at frame 2226 (1 + Strip Offset Start) and the new Out point at frame 7665 (Duration - Strip Offset End). As already discussed in the section on the :ref:`Time panel <time-panel>` or the :doc:`Split operation  </video_editing/edit/montage/striptypes/movie>` trimming and splitting is done with the use of the Strip Offset fields.
 
 .. figure:: /images/video_editing_edit_montage_trimming.png
    :alt: Example of trimming
@@ -105,13 +105,14 @@ Trimming of strips is mostly done with the mouse. You can however also change th
     You can select multiple left or right handles of different strips with :kbd:`Shift LMB`. The selected handles are colored: white for the active strip and orange for the non-active strips. :kbd:`LMB Click & drag` on any selected handle will move all selected handles in the same direction as your mouse movement and with the number of frames that the mouse is moved.
 
 .. note::
-    Selecting handles can be done with the :kbd:`LMB`, the special Box Select with Handles (:kbd:`Ctrl B`) or the the menu Select > Handle; see section on :doc:`Selecting <selecting.rst>` for more details.
+    Selecting handles can be done with the :kbd:`LMB`, the special Box Select with Handles (:kbd:`Ctrl B`) or the the menu Select > Handle; see section on :doc:`Selecting <select.rst>` for more details.
 
 :kbd:`LMB Click` on handles and :kbd:`G` (Grab)
     In stead of :kbd:`LMB Click` on handles and dragging, you could also select all handles and press :kbd:`G`. This will result in the same trimming. The advantage is that you don't need to click and drag on a strip area. It is sufficient to press :kbd:`G` and move the mouse (where ever it is positioned).
 
 :kbd:`LMB Click` on strips and :kbd:`E` (Extend)
     You can move or extend/shorten (thus, trimming) selected strips *without* selecting the handles with the :kbd:`E` key or the menu Strip > Transform > Move/Extend from Current Frame key. However, the position of the Current Frame (playhead) and the initial mouse position are important here.
+    
    - If the playhead is outside the range of the selected strips, the :kbd:`E` will move the all selected strips in the direction of the mouse movement. This mimics the move behavior of an entire strip with :kbd:`G` key.
    - If the playhead is within the range of (some) selected strips, the :kbd:`E` key will trim the selected strips. If the mouse is at the left side of the playhead, the IN points of the selected strips will follow the direction of the mouse (as if trimming with the left strip handle). If the mouse is at the right side of the playhead, the OUT point will follow the direction of the mouse (as if trimming with the right strip handle).
 
@@ -181,7 +182,7 @@ The Meta strip is primarily an organization tool but has numerous other use case
 * You can extend the limit of 128 channels with Meta Strips. The grouped strips will occupy only one channel.
 * A Meta strip is a handy way to keep audio and video together in a synced way. Unfortunately, you will loose the advantage of thumnails.
 * You can use it for adding speed effects in a simpler manner. See `Blender Frenzy <https://www.youtube.com/watch?v=jnrOzrPDAA0>`_ for a detailled tutorial about the procedure.
-* One convenient use for Meta strips is when you want to apply the same effect to multiple strips. It is much more convenient to apply a single set of effects to one Meta strip than applying it to each individual strip. It is also possible to do the similar task described above with an :doc:`Adjustment Layer </video_editing/sequencer/strips/adjustment>` effect strip.
+* One convenient use for Meta strips is when you want to apply the same effect to multiple strips. It is much more convenient to apply a single set of effects to one Meta strip than applying it to each individual strip. It is also possible to do the similar task described above with an Adjustment Layer.
 
 
 

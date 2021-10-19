@@ -11,7 +11,7 @@ the Clip strip forms a group where the source of the strip must be generated wit
 The :ref:`default <default-color>` color of the Clip strip bar is: :clip:`███`
 
 The Movie Clip Editor is used for advanced editing such as motion tracking and advanced masking.
-See :doc:`Special workflows </workflow/workflow>` for an example.
+
 
 
 Options

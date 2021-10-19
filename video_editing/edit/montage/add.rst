@@ -1,7 +1,7 @@
 Add
 ---
 
-After :doc:`setting up your project </setup/index>`, you should haven an organized directory with all your footage. The first step in Montage is to *import* this footage and to *add* some supporting strips (text, color, ...).
+After :doc:`setting up your project </video_editing/setup/index>`, you should haven an organized directory with all your footage. The first step in Montage is to *import* this footage and to *add* some supporting strips (text, color, ...).
 
 Import
 ......
@@ -22,7 +22,7 @@ There are three methods available to import footage with subtle but sometimes an
 
    Figure 1: Three import methods
 
-- Only with the Add (2nd) method can you add all of the :doc:`available strip types </setup/organize/strip-types/index>`. The other methods only allow adding Movie, Sound, or Image/Image Sequence strips.
+- Only with the Add (2nd) method can you add all of the :doc:`available strip types </video_editing/edit/montage/striptypes/index>`. The other methods only allow adding Movie, Sound, or Image/Image Sequence strips.
 - Also, only the Add method offers the Import options (Scale To Fit, ...). A discussion of these options is in the next section.
 - And also, only the Add method can import multiple files. Although you can select multiple files (as well in the Blender File Browser as in the OS File Browser), only one file (the first selected) is dropped on the timeline.   Probably, for the same reason, it is not possible to add an Image Sequence.
 
@@ -55,7 +55,7 @@ Options
 
    Figure 2: Import options Movie strip
 
-There are only import options for :doc:`strip types of group 2 </setup/organize/strip-types/index>`:
+There are only import options for :doc:`strip types of group 2 </video_editing/edit/montage/striptypes/index>`:
 Movie, Sound, and Image/Image Sequence because they have an external source.
 
 Relative Path
@@ -132,7 +132,7 @@ Sound
 Use Movie Frame Rate
     This option sets the Scene Frame Rate of the Scene to the frame rate encoded in the added movie file.
     A mismatch of the project and strip frame rate is often the cause of
-    :doc:`synchronizing problems </setup/organize/strip-types/movie>` with the audio.
+    :doc:`synchronizing problems </video_editing/edit/montage/striptypes/movie>` with the audio.
     When a new Blend-file is created, the framerate is by default set to 24 fps.
     Unless this option is enabled, adding a movie with a framerate of 30 fps, will result in this kind of problems.
 
@@ -140,7 +140,7 @@ The Image/Image Sequence strip has no ``Sound`` or ``Use Movie Frame Rate`` opti
 (because they don't make any sense in this context). The ``Use Placeholders`` option is added.
 The Sound strip has in addition no ``Fit method`` option. The options ``Cache`` and ``Mono`` however are added.
 These options are already described in the properties list of the
-:doc:`Image Sequence strip <../strip-types/image>` and :doc:`Sound strip <../strip-types/sound>`.
+:doc:`Image Sequence strip <striptypes/image>` and :doc:`Sound strip <striptypes/sound>`.
 
 
 Organize timeline
@@ -156,7 +156,7 @@ the following tips may offer some help.
   Many editors however group their channels into functional bands: e.g.
   channel 1-5: audio, 5-10: video, 11-15: effects.
   Within each band there can be sub-bands such as background music, voice-over, ambient sounds, ...
-  Take a look at :doc:`Organize your assets </setup/organize/dir-structure/creating-directory-structure>` for a possible categorization.
+  Take a look at :doc:`Organize your assets </video_editing/setup/directory-structure>` for a possible categorization.
 - Some video editing programs link the video and embedded audio strip.
   The advantage of course is that moving one strip will move the other.
   Synchronization issues will less likely appear. In Blender VSE, the video and audio are not linked.

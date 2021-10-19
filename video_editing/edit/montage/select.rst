@@ -24,7 +24,7 @@ As can be seen in figure 1, a strip bar has a 'body' and a left and right handle
 
 However, you can also click (nearby) the handles. This will select the handle. The darker colored small bar will become white and dragging will *extend* or *shorten* the clip (see section about :ref:`Offsets <time-panel>` to understand what is happening. Note that also the Start and/or End date is displayed; even if The Show Overlay button is disabled.
 
-If you have :doc:`zoomed out <../zoom/zoom>` the strip bars could become pretty small and it's a known annoyance to select the handles instead of the entire strip. Once the handles are selected, you have to deselect (clicking in the middle part again won't help) and select the strip a second time to have access to the entire strip.
+If you have :doc:`zoomed out </video_sequencer/sequencer/zoom>` the strip bars could become pretty small and it's a known annoyance to select the handles instead of the entire strip. Once the handles are selected, you have to deselect (clicking in the middle part again won't help) and select the strip a second time to have access to the entire strip.
 
 Select multiple strips
 ......................

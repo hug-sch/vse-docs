@@ -39,7 +39,7 @@ Ctrl-Spacebar
 Alt-Ctrl-Spacebar
    The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Timeline. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again. *No other key will do!* Or you can hover your mouse over the top right corner of the window until the restore button |restore-button| pops up. *It's very easy to miss!* You can invoke this command from the menu: View > Area > Toggle FullScreen  Area.
 Home
-   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <moving>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
+   Pressing the :kbd:`Home` key zooms in on the total project; from Start to End and from channel 0 to channel 7. If some strips are beyond these borders, the range is extended to cover these strips (see section on :doc:`Moving the Timeline window <move>`. Whenever you get lost in your timeline, press the :kbd:`Home` key to get back at the complete picture. Many Zoom commands can also be issued from the menu (see figure 2). The menu equivalent for :kbd:`Home` is: View > Frame All.
 
 NumpadPeriod
    Pressing the :kbd:`NumpadPeriod` key zooms the Visible Range to fit only the selected strips. Please note that this key is the period key on the numpad, not the period key on the alphanumeric keypad. The menu equivalent is: View > Frame Selected (see figure 2).
@@ -60,7 +60,7 @@ Shift-B
 MMB + Wheel Roll
    Scrolling the middle mouse wheel will zoom in horizontally around the playhead. Scrolling towards yourself will zoom out. Scrolling towards the screen will zoom in.
 
-   Using the MMB wheel roll in combination with Ctrl or Shift will change the behavior from zoom to move (see :doc:`Moving the Timeline window <moving>`).
+   Using the MMB wheel roll in combination with Ctrl or Shift will change the behavior from zoom to move (see :doc:`Moving the Timeline window <move>`).
 
 Ctrl-MMB + drag
    Pressing :kbd:`Ctrl-MMB` and dragging left will zoom out or dragging right will zoom in. Dragging up will zoom in vertically and dragging down will zoom out vertically.

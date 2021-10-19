@@ -6,6 +6,7 @@ Gizmos
    :align: right
 
    Figure 1: Gizmos
+
 You can use gizmos to zoom and move the rendered image in the Preview.
 
 Zoom

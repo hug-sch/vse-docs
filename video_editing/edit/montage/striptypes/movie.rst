@@ -113,7 +113,7 @@ The Transform panel contains the Position, Scale, and Rotation properties and th
 
 Position X, Y
    The dimensions of the view area of the sequencer output are set by the project dimensions;
-   e.g. 1920 x 1080 by default (see :doc:`/video_editing/setup/project/directory-structure`).
+   e.g. 1920 x 1080 by default (see :doc:`/video_editing/setup/directory-structure`).
    A movie is centered (and scaled) within this view area. So, position (0,0) wil refer to the midpoint of the image. With the X, Y values, you can move the frame along the horizontal and vertical axis. The values are expressed in pixels.
 
 Scale X, Y
@@ -141,7 +141,7 @@ Channel 3 contains the foreground picture. This picture is scaled (0.3) and repo
    Figure 3: Example of Picture-in-Picture
 
 The "Spring" open-movie in figure 3 has non-default dimensions: 2048 x 858.
-To download this movie, see :doc:`creating test-files - section E) </video_editing/setup/project/creating-test-files>`.
+To download this movie, see :doc:`creating test-files - section E) </video_editing/setup/creating-test-files>`.
 If you add this movie to the default FHD timeline (1920 x 1080), it will be scaled.
 The longest dimension (2048) will be scaled to 1920 with a factor of 0.9375 (0.9375 x 2048 = 1920).
 The vertical dimension too will be scaled with the same parameter,
@@ -232,7 +232,7 @@ Strobe
   
   It is not really a strobe-effect because the frames 2-9,
   11-19, ... aren't blacked out.  You can easily check this out with the timecode overlay test file
-  (see :doc:`Creating test files - section C </video_editing/setup/project/creating-test-files>`).
+  (see :doc:`Creating test files - section C </video_editing/setup/creating-test-files>`).
 
 Reverse Frames
    The strip is played backwards starting from the last frame in the sequence to the first frame.
@@ -304,7 +304,7 @@ Time
    Figure 8: Time Panel
 
 Most - but not all - of the available time codes can be updated in this panel.
-A general introduction of the Timeline and time codes can be found in :doc:`Timeline basics </edit/timeline/timeline>`.
+A general introduction of the Timeline and time codes can be found in :doc:`Timeline basics </video_sequencer/sequencer/timeline>`.
 A clear understanding of these time codes is essential in trimming and freezing clips.
 
 A movie strip is a sequence of frames that is represented by a blue bar in the sequencer.
@@ -405,7 +405,7 @@ Or by dragging the left or right handle beyond the FA or LA frame.
 In figure 12 there are two repeating first frame and two repeating last frames.
 The Still Offset fields are added to the Time panel via a Python script.
 For an in-depth explanation of how to do this,
-see :doc:`section 5 Extra-tools </extra-tools/python/useful-scripts>`.
+see :doc:`section 5 Extra-tools </extra-tools/python-useful-scripts>`.
 
 .. figure:: /images/vse_setup_project_striptypes_offset-still.svg
    :alt: Still Offset fields
@@ -466,7 +466,7 @@ Stream Index
      With this property, you can select the stream to preview (but again not both at the same time).
      Of course, you can add the same movie strip twice, set the stream index appropriately,
      and use the Picture-in-Picture approach from above. For the inverse:
-     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg/ffmpeg>`
+     see :doc:`section Extra tools > ffmpeg </extra-tools/ffmpeg>`
      to merge two video channels into one container.
 
 Deinterlace
@@ -500,7 +500,7 @@ Resolution & fps
    Dimension (width x height in pixels) of the active strip image output.
    Frames per second (fps) of the active strip.
    
-   These properties are not not editable and should preferably match the settings of the project (see :doc:`see Organize > Import section </video_editing/project/import` ).
+   These properties are not not editable and should preferably match the settings of the project (see :doc:`see Organize > Import section </video_editing/edit/montage/add>` ).
    
    Note that scaling the strip will change the visual dimension of the frame but of course not its resolution.
 

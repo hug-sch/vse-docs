@@ -35,7 +35,7 @@ by entering a new Duration or by dragging the strip handles.
 .. note::
 
    The exact numerical Offset is stored in two unexposed fields: *still_offset_start*
-   and *still_offset_end*. See :doc:`Extra Tools > Python > Useful scripts </extra-tools/python/useful-scripts>`
+   and *still_offset_end*. See :doc:`Extra Tools > Python > Useful scripts </extra-tools/python-useful-scripts>`
    to make those timecodes visible in the sidebar and :ref:`Movie strip > Time panel <time-panel>` for an explanation.
 
 

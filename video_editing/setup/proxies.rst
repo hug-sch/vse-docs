@@ -9,7 +9,7 @@ Proxies are low-quality copies of high-quality raw footage. They are used as a s
 
 
 .. note::
-   You can try it yourself by creating a 4K test movie (see :doc:`test files </setup/organize/dir-structure/creating-test-files>`) and adding it to the sequencer. Without proxies you will notice that scrubbing through the strip will stutter. Adding an effect (e.g. Gaussian Blur) will aggravate the problem.
+   You can try it yourself by creating a 4K test movie (see :doc:`test files </video_editing/setup/creating-test-files>`) and adding it to the sequencer. Without proxies you will notice that scrubbing through the strip will stutter. Adding an effect (e.g. Gaussian Blur) will aggravate the problem.
 
 Using a 720p (1280×720) or a more optimized format will reduce the load on your computer. Proxies are only used to speed up the editing. For rendering out the final project, the original, high quality source files are used.
 

@@ -1,4 +1,5 @@
 .. _bpy.types.TextSequence:
+
 Text Strip
 ,,,,,,,,,,
 
@@ -94,12 +95,12 @@ Size
 
 Color
    Clicking on the color button will display a standard
-   :doc:`Color Picker </edit/color-grading/terminology/terminology>`.
+   :doc:`Color Picker </video_editing/edit/color-grading/terminology/terminology>`.
 
 Shadow
    Creates a shadow of the specified color under the text.
    You can change the color and opacity of the shadow with a color selector next to it.
-   This opens a standard :doc:`Color Picker </edit/color-grading/terminology/terminology>`.
+   This opens a standard :doc:`Color Picker </video_editing/edit/color-grading/terminology/terminology>`.
    You can not change the size nor the orientation of the shadow.
    In combination with a Box (see below), this gives a nice effect.
 

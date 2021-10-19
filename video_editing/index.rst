@@ -9,7 +9,7 @@ Video Editing
    edit/index
    render/index
    
-.. _video-editing::
+.. _video-editing:
 
 The Video Editing documentation is split into 3 chapters, representing a typical workflow in a video editing project: :red:`(1)` Setup, :red:`(2)` Edit and :red:`(3)` Render. You can think of these phases also as : pre-editing, editing and post-editing.
 

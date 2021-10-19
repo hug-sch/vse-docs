@@ -32,7 +32,7 @@ Zoom to Fit
    The command Zoom to Fit adjusts the largest side of the Preview so that its fits perfectly within the Preview window; e.g. has the same length as the largest side of the Preview window.
 
 Ctrl-Spacebar
-   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor; eg. the Preview, into semi-full view. The header and menus are still visible. At the very top, there is a button "Back to Previous" |previous-button|. Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window. You can invoke this command from the menu: View > Area > Toggle Maximize Area.
+   The :kbd:`Ctrl-Spacebar` key will switch the window under the mouse cursor; eg. the Preview, into semi-full view. The header and menus are still visible. At the very top, there is a button "Back to Previous". Pressing :kbd:`Ctrl-Spacebar` again or the Back to Previous button will restore the window. You can invoke this command from the menu: View > Area > Toggle Maximize Area.
 
 Alt-Ctrl-Spacebar
    The :kbd:`Alt-Ctrl-Spacebar` key will switch the window under the mouse cursor into full view. All the available screen space is reserved for the Preview. To restore the window, you need to press :kbd:`Alt-Ctrl-Spacebar` again. *No other key or menu will do! There even isn't the small pop-up in the left top corner as in other maximized windows* You can invoke this command from the menu: View > Area > Toggle FullScreen Area.

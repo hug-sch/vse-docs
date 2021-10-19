@@ -42,11 +42,15 @@ The top of the sidebar contains the always visible header with the icon of the s
 the name of the strip, and a Mute checkbox. You can name or rename your strips here.
 If the Mute button is checked the strip will still be visible in the Sequencer but will not produce any output.
 
-.. include:: movie.rst
-.. include:: sound.rst
-.. include:: image.rst
-.. include:: clip.rst
-.. include:: scene.rst
-.. include:: color.rst
-.. include:: mask.rst
-.. include:: text.rst
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   
+   movie
+   sound
+   image
+   clip
+   scene
+   color
+   mask
+   text

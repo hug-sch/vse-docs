@@ -9,10 +9,15 @@ The proverb "A good start is half the battle", certainly applies to video editin
 
 Of course, many settings and activities occur at both levels. For example, automatic proxies can be enabled globally but changed on a per project or even strip basis. The layout of the Video Editing Workspace is defined at Blender level but can be tweaked per project.
 
-.. include:: workspace.rst
-.. include:: preferences.rst
-.. include:: add-ons.rst
-.. include:: proxies.rst
-.. include:: directory-structure.rst
-.. include:: project-settings.rst
-.. include:: creating-test-files.rst
+
+.. toctree::
+   :hidden:
+   
+   workspace
+   preferences
+   add-ons
+   proxies
+   directory-structure
+   project-settings
+   creating-test-files
+   

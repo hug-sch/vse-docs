@@ -46,7 +46,7 @@ Jump to boundaries
 Scrubbing
 ,,,,,,,,,
 
-   Scrubbing is used to quickly review a project in the preview window, without much concern about the exact timing. This can be a very processor intensive job: jumping around and previewing dozens of frames within a split of a second. So, there can be some lag or stuttering. The use of :doc:`proxies </setup/extend/proxies/proxies>` (eventually with a very low resolution) is indicated here.
+   Scrubbing is used to quickly review a project in the preview window, without much concern about the exact timing. This can be a very processor intensive job: jumping around and previewing dozens of frames within a split of a second. So, there can be some lag or stuttering. The use of :doc:`proxies </video_editing/setup/proxies>` (eventually with a very low resolution) is indicated here.
 
    Scrubbing is done by dragging with the :kbd:`LMB` in the scrubbing area (see figure 2, yellow text and arrows) at the top of the timeline or with the :kbd:`Shift RMB` in the scrubbing area of the sequencer (see figure 2, orange text).
 
@@ -64,7 +64,7 @@ Scrubbing
 Playing
 ,,,,,,,
 
-   The Transport controls are located at the very bottom of the Video Editor workspace. They are part of the Timeline Editor. They could also be integrated with the Sequencer; see :doc:`Video Editing Workspace </setup/customize/workspace/video-editing-workspace>`.
+   The Transport controls are located at the very bottom of the Video Editor workspace. They are part of the Timeline Editor. They could also be integrated with the Sequencer; see :doc:`Video Editing Workspace </video_editing/setup/workspace>`.
 
    .. figure:: /images/editors_vse_sequencer_timeline_transport-controls.png 
       :alt: Transport controls
@@ -85,7 +85,8 @@ Playing
    .. todo::
       Insert link to section about keyframes
 
-   The Jump to Endpoint buttons will bring the playhead to the first or last frame in the Framerange (see :doc:`Project settings  /setup/customize/settings/project-settings`). The shortcut keys are: :kbd:`Shift Leftarrow` or :kbd:`Shift Rightarrow`.
+   The Jump to Endpoint buttons will bring the playhead to the first or last frame in the Framerange (see :doc:`Project settings  </video_editing/setup/project-settings>`). The shortcut keys are: :kbd:`Shift Leftarrow` or :kbd:`Shift Rightarrow`.
+   
 
 Playback settings
 ,,,,,,,,,,,,,,,,,

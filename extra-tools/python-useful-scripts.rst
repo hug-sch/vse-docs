@@ -4,7 +4,7 @@ Python
 The following scripts could best be tested in an adapted workspace.
 (1) From an existing video editing project, switch to the Scripting Workspace (eventually, click on the Add Workspace button in the menu bar)
 (2) Replace the 3D Editor window (top left) with the Video Sequencer.
-(3) Select an appropriate object (e.g. movie strip) in the sequencer ( See figure 1). Working within this workspace is explained in :doc:`/extra-tools/python/scripting-workspace`.
+(3) Select an appropriate object (e.g. movie strip) in the sequencer ( See figure 1). Working within this workspace is explained in :doc:`python-scripting-workspace`.
 
 .. figure:: img/adapted-workspace.svg
    :alt: Adapted scripting workspace
@@ -15,7 +15,8 @@ The following scripts could best be tested in an adapted workspace.
 Adding still_offset fields
 ==========================
 
-Blender exposes 9 time codes in the UI (see :doc:`Movie strip  </setup/organize/strip-types/movie>`). There are more available through the Python API. Table 1 shows all the available time codes. The second column is the name from the sidebar (UI) and the third column is the name from the Python API.
+/video_editing/edit/montage/striptypes
+Blender exposes 9 time codes in the UI (see :doc:`Movie strip  </video_editing/edit/montage/striptypes/movie>`). There are more available through the Python API. Table 1 shows all the available time codes. The second column is the name from the sidebar (UI) and the third column is the name from the Python API.
 
 .. csv-table:: Table 1: Time code fields in UI and from Python API
    :header: "#", "UI field", "Python API (1)"

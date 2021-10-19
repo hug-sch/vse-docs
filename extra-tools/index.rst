@@ -14,7 +14,7 @@ FFmpeg
 
 FFmpeg is a open-source framework to work with video and audio. Blender's VSE  uses it heavily through its libraries libavcodec, libavutil, ... 
 
-As an end-use, you probably will use the command line tool `ffmpeg https://ffmpeg.org/ffmpeg.html>`_, the `mediaplayer ffplay <https://ffmpeg.org/ffplay.html>`_, or the multimedia ` stream analyzer ffprobe <https://ffmpeg.org/ffprobe.html>`_.
+As an end-use, you probably will use the command line tool `ffmpeg <https://ffmpeg.org/ffmpeg.html>`_, the `mediaplayer ffplay <https://ffmpeg.org/ffplay.html>`_, or the multimedia ` stream analyzer ffprobe <https://ffmpeg.org/ffprobe.html>`_.
 
 We provide some :doc:`useful scripts <ffmpeg>` that you probably will need in your job as a video editor.
 

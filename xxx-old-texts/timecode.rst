@@ -32,4 +32,4 @@ For the second part: the Start frame becomes 100 and the duration 201, so that t
 
 The *frame_still_start* and *frame_still_end* codes are not exposed in the sidebar and are used to extend a one frame strip, e.g. a still image.
 
-There are 12 timecode fields in Blender. They are discussed in more detail in the section :doc:`Strip types > Movie strips </setup/organize/strip-types/movie>`.
+There are 12 timecode fields in Blender. They are discussed in more detail in the section :doc:`Strip types > Movie strips </video_editing/edit/montage/striptypes/movie>`.

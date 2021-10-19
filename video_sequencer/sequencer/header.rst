@@ -105,7 +105,7 @@ Range
 
       Figure 6: Preview & Render Range
 
-   The Render Range is normally set during the Setup phase of your project (see :doc:`Project Settings </video_editing/setup/project/project-settings>`). They also can be set in different editors: `Properties <https://docs.blender.org/manual/en/dev/render/output/properties/dimensions.html>`_ , and `Timeline <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_.
+   The Render Range is normally set during the Setup phase of your project (see :doc:`Project Settings </video_editing/setup/project-settings>`). They also can be set in different editors: `Properties <https://docs.blender.org/manual/en/dev/render/output/properties/dimensions.html>`_ , and `Timeline <https://docs.blender.org/manual/en/dev/editors/timeline.html>`_.
 
    Set Start Frame :kbd:`Ctrl-Home`
       Set Start of Render Range to the current playhead position.
@@ -192,7 +192,7 @@ On the extreme right in the header, you find the Show Overlay button (see figure
    Figure 9: Preview Overlays
 
 Name
-   Enabling this option will show the name of the strip on top of the stripbar; aligned left at the start of the strip. The name of the strip is set in the Properties (see :ref:`Striptypes <name-property>` )
+   Enabling this option will show the name of the strip on top of the stripbar; aligned left at the start of the strip. The name of the strip is set in the Properties.
 
 Source
    With this option you can show the source filename and path of the strip. The source is set in the :ref:`Source panel <source-panel>`

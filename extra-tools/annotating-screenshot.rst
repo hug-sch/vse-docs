@@ -36,3 +36,12 @@ If you need to update this figure: open the blend-file (eventually into a new ve
 
 .. note::
    Some of the above steps could be done with a Python script. The problem of huge png-files from HD monitors is not solved. Can they be scaled down within Sphinx? I've tried to put Blender into a 1920 x 1080 window on a 4K monitor but that is not very practical.
+
+Test
+
+.. figure:: /_static/images/test.svg
+   :alt: Alt-description
+   :scale: 50%
+   :align: right
+
+   Figure Test with external image

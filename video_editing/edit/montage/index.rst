@@ -7,6 +7,7 @@ Montage
    striptypes/index
    select
    add
+   copy_paste
    move
    transform
    remove

@@ -5,6 +5,6 @@ Effects
     transition/transition
     fade/fade
     speed/speed
-    masking/masking
+    masking
     animating/animating
   

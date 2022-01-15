@@ -26,9 +26,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.60944331"
      inkscape:cx="1299.8138"
-     inkscape:cy="1179.0679"
+     inkscape:cy="588.36489"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="true"
      units="px"
@@ -62,19 +62,24 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="background"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(1.0583378,1.0583301)">
+     id="layer2"
+     inkscape:label="photo">
     <image
        sodipodi:absref="D:\OneDrive\assets\demo-project\1-video\1-2-photo\image1520.png"
        xlink:href="../../../assets/demo-project/1-video/1-2-photo/image1520.png"
-       y="3.1749897"
-       x="3.1999734e-06"
+       y="4.2333207"
+       x="1.058341"
        id="image1629"
        preserveAspectRatio="none"
        height="282.57501"
        width="508" />
+  </g>
+  <g
+     inkscape:label="background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1.0583378,1.0583301)">
     <rect
        style="fill:none;fill-opacity:0.32;stroke:#ff0000;stroke-width:2.11667;stroke-miterlimit:4;stroke-dasharray:12.7, 2.11667;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
        id="rect1633"

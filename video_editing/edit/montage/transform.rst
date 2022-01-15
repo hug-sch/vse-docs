@@ -105,7 +105,7 @@ Trimming of strips is mostly done with the mouse. You can however also change th
     You can select multiple left or right handles of different strips with :kbd:`Shift LMB`. The selected handles are colored: white for the active strip and orange for the non-active strips. :kbd:`LMB Click & drag` on any selected handle will move all selected handles in the same direction as your mouse movement and with the number of frames that the mouse is moved.
 
 .. note::
-    Selecting handles can be done with the :kbd:`LMB`, the special Box Select with Handles (:kbd:`Ctrl B`) or the the menu Select > Handle; see section on :doc:`Selecting <select.rst>` for more details.
+    Selecting handles can be done with the :kbd:`LMB`, the special Box Select with Handles (:kbd:`Ctrl B`) or the the menu Select > Handle; see section on :doc:`Selecting <select>` for more details.
 
 :kbd:`LMB Click` on handles and :kbd:`G` (Grab)
     In stead of :kbd:`LMB Click` on handles and dragging, you could also select all handles and press :kbd:`G`. This will result in the same trimming. The advantage is that you don't need to click and drag on a strip area. It is sufficient to press :kbd:`G` and move the mouse (where ever it is positioned).

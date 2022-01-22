@@ -1,0 +1,30 @@
+
+----------------------
+nice tutorial by Blender Frenzy (https://www.youtube.com/watch?v=GCA5s6qnnIY)
+Trick: move color out of view to have a wipe to transparency; probably better to have transparent color.
+
+
+Is there any way to copy ALL values from one wipe strip to another? 
+You're very welcome! And you're also in luck! For all my tutorials, I've created my own presets for this very same reason. It IS possible to do what you want, but in a slightly round-bout way. Create your iris wipe with an alpha (from a color, moving the color out of the camera view). Then, duplicate your color, wipe, and image/video all together to make a copy of all of them. Then move your new image/video directly above or below the other image/video. Then shift select your color, new image/video, and select the wipe last so it is active. Now press "R" to reassign the wipe to the color and your new image/video. Hope that makes sens and hope it helps! 
+
+Didn't know there was a wipe transition. I always rendered a black and white transition myself and used that as a mask (like you described in another video using geometry nodes) but this solution is way more flexibale. Thanks !
+
+
+Hi,
+I'm trying to understand the difference between Cross and Gamma Cross transition. According to the docs, Gamma Cross is color managed. When I apply a transition (4 frames) to two color strips RGB(0,1,0) and RGB (0,0,1) I get the following results:
+
+Cross transition: color in preview at second frame: RGB(0,0.1843, 0.7490). The same for the CM values and the final render color. With external color picker RGB(0,47,191) or hex 002FBF
+
+Gamma cross: color in preview: RGB(0,0.627, 0.560). The same for the CM values and the final render color. With external color picker: RGB(0,16,143) or hex 00108F.
+
+This seems in line with the assertion that the gamma cross is color managed (darker colors).
+
+
+
+Premiere has cross dissolve and a film dissolve you can use to make a transition between clips.
+
+odd Kopriva says this over at Adobe: The Film Dissolve transition is new in Premiere Pro CS5.5. It’s a dissolve transition that blends in a linear color space (gamma = 1.0). In simple terms, that means that it blends in a more realistic way; basically, dissolves look the way that they should.
+
+Of course cross dissolve was a simple layer transparency change from one to the other
+
+ See http://www.eyemaginary.com/Compositing/EG06-Cross-Dissolve-Without-Cross-Fade.pdf 

@@ -1,11 +1,11 @@
 Animation
 ---------
 
-Blender is a 2D modeling and animation program. So, animation appears in many different places; for example, rigging, 2D animation (grease pencil), physics simulation  & particle systems and, of course, in video editing.
+Blender is a 2D modeling and animation program. So, animation appears in many different places; for example, rigging, 2D animation (grease pencil), physics simulation  & particle systems and, of course, in the Video Sequence Editor.
 
-Animation in the VSE is exclusively achieved with the use of keyframes. Creating and editing keyframes is extensively described in the docs; section `animation & rigging <https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html`_. 
+Animation in the VSE is exclusively achieved with the use of keyframes. Creating and editing keyframes is fully described in the docs; section `animation & rigging <https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html>`_.
 
-Figure 2 shows the result of a simple Fade In and Out animation (menu Add > Fade > Fade In and Out). The default VSE workspace is adapted so that it is a little easier to work with animations. The default General > Animation workspace is preconfigured for working in 3D view, not for animations within the VSE. In figure 2, File Browser window of the default VSE workspace (top left) is replaced with the Graph Editor. The Timeline editor (bottom) is somewhat increased in height and also replaced with the Dope Sheet Editor.
+Figure 2 shows the result of a simple Fade In and Out animation (menu Add > Fade > Fade In and Out). The default VSE workspace is adapted so that it is a little easier to work with animations. The default General > Animation workspace is preconfigured for working in 3D view, not for animations within the VSE. In figure 2, the File Browser window of the default VSE workspace (top left) is replaced with the Graph Editor. The Timeline editor (bottom) is somewhat increased in height and also replaced with the Dope Sheet Editor.
 
 .. figure:: /images/video_editing_edit_effects_animation.svg
    :alt: Animation
@@ -14,7 +14,7 @@ Figure 2 shows the result of a simple Fade In and Out animation (menu Add > Fade
 
 As you can see in the Preview window, the strip with the Blender logo is animated. At frame 0, the logo is invisible (opacity = 0). It becomes gradually more visible until it is completely opaque at frame 13 - 14. Then the Fade Out sets in until the logo disappears at frame 26. This is the result of the standard Fade In and Out effect.
 
-Thanks to the setting Show Overlays > F-curves, you can see this Opacity change in the strip background. For more exact numbers, you have to look at the sidebar for the Opacity property. At frame 20 (but also at frame 7) the Opacity is exact 0.500.  You can tell that there is a keyframe at the Opacity attribute because it is colored (see `keyframes <https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html>`_ for a description of the meaning of the different colors).
+With the setting Show Overlays > F-curves, you can see this Opacity change in the strip background. For more exact numbers, you have to look at the sidebar for the Opacity property. At frame 20 (but also at frame 7) the Opacity is exact 0.500.  You can tell that there is a keyframe at the Opacity attribute because it is colored (see `keyframes <https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html>`_ for a description of the meaning of the different colors).
 
 In total, the animation has 4 keyframes: at frame 0 (opacity = 0), 13 (opacity = 1), 14 (opacity = 1) and 26 (opacity = 0). These keyframes are represented by an orange color in the Properties and with small circles in the Dope Sheet (bottom) and Graph Editor (top left). The Dope Sheet is primarily used for basic operations on keyframes: inserting new keyframes (of the same attribute), deleting, moving, scaling, duplicating (copy/paste) keyframes. More information on the Dope Sheet can be found in Editors > `Dope Sheet <https://docs.blender.org/manual/en/latest/editors/dope_sheet/introduction.html>`_ of the docs.
 

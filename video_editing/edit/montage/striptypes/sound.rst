@@ -102,7 +102,7 @@ is about the same and that the sound will stop at ~9.5 s.
 Please, note also that the file is stereo in Audacity but mono in Blender.
 
 So, changing the pitch or duration of a sound file can -and is usually- also done
-with the :doc:`speed control </video_editing/edit/effects/speed/speed>` in Blender.
+with the :doc:`speed control </video_editing/edit/effects/speed>` in Blender.
 :doc:`Strip types </video_editing/edit/montage/striptypes/index>`
 
 Pan

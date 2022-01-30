@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1178"
+   height="1895.7365"
+   viewBox="0 0 311.67917 501.58028"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="video_editing_edit_effects_speed-control-multiply.svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker4372"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4370" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4362"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4360" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4352"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4350" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3964"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3962" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3954"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3952" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3944"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3942" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3934"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3932" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3393"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3391" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3317"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3315" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3205"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3203" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3127"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3125" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker3298"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3296" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4245"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path4243" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.580739"
+     inkscape:cx="759.60291"
+     inkscape:cy="1486.1718"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4346"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:pagecheckerboard="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid833"
+       dotted="false"
+       originx="-68.791665"
+       originy="-67.99792"
+       units="px"
+       spacingx="5.2916667"
+       spacingy="5.2916667"
+       empspacing="6" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="g4348"
+     inkscape:label="Multipy_offsets"
+     style="display:inline">
+    <g
+       inkscape:label="background"
+       inkscape:groupmode="layer"
+       id="g4170"
+       transform="translate(-68.791664,-67.997917)">
+      <image
+         width="311.67917"
+         height="164.83542"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,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
++eST8fjjjx8R2vfv3x9PP/20Y5MqcaJt61d/9VejKIpYs2ZN7Nu3b6SHS0TMmzcvIiJeeeWVYZEp
+4tBag9/4xjfiwIEDERExf/78ERkj/+O8886LSy+9NIqiiKeeeuqIW723bt0a3/nOd6JSqcRVV101
+7DYsTp9TOWfWSI7vpELT4sWLoyiKWL169VE/XF5++eXYtWtXRERcfPHFuSPkbXHAfXYZGBg44SWy
+v/jFLyIiolwux/jx48/EsDhF7e3tQ9uiqwmrz7x58+LKK6+MTZs2xVNPPWW/CUmuuuqqKJfL0dXV
+Fd///vdtW2e5d77znUMnvStWrBjh0TBocMHiN95446iv9/b2xo4dO6JSqZz0+lucPrNnzx5aR+u5
+55476n5x8PelUikWLVp0pod4TjqVzyeN5PhOGJrq6uqipaUlIiLWr19/1PdUKpVYv359VCqVmD17
+du4IgYiIYVcxedrL2aGlpWVo3a23XqnGyKqtrY3f+q3fioGBgfja177mSZxniaIoolQqRalUGrZm
+DNXl4osvHjr47u3tHZor83Z2uuqqqyIiYteuXfHKK68Ih1VicIHhSZMmHXWbGjVq1NATjI8Vozhz
+zjvvvKGfj3UF9cGDB2Pv3r0RcWgJBqqXRnJiJ1yjafBEKeLQDu1YBhe4am5uHvb0JeDUFUUx9M3G
+m2++OfQhRPV460HelClT4tZbb42IiNWrV5+TiwBWq6Io4gMf+EA0NTXFD37wg9i8efNID4mTMGbM
+mLj77rtjypQpUSqVYu/evbFx48Z4+umno6Ojw3FHlaitrY0pU6ZERMTGjRujqakp3v3ud8eFF14Y
+Y8eOjc7OztiwYUM89dRTsX37dvNW5caOHRsXXXRRFEURK1eudKtjFfnRj34UCxcujPnz58eCBQvi
+xRdfHPb029/8zd+M2tra6OrqGlp+gZFz+JP/6urqjnknw+AV8IMRg+qkkZzYCUNTQ0PD0M979+49
+5j/O4IlvbW1tlMvloXuCgVM3d+7cWLx4cUQcOrA4l3ZSZ4u77roriqKIcrkcEyZMiGnTpkWlUolV
+q1bFo48+as6qyJw5c+Kaa66J7du3x/Lly83NWaBSqUS5XI758+dHpVKJoiiisbExZsyYEddee20s
+X748nnjiCSfBVaCpqWno9pDx48fH5z73uairqxvazsaNGxdTp06NX/u1X4uHH344nn32WdtgFbv8
+8sujXC5HpVI5Yh0gRta6devi4Ycfjttvvz3uvvvuePnll2PLli1RU1MTc+bMidbW1ti5c2f88z//
+c3R3d4/0cM95g2G9KIqYOnVq7Ny584jtqbm5eeg2x8OvgKL6aCQndsLQNGbMmKGfDy+xb3X4Io9j
+xow5p/4R4XSaMGFCfOxjH4uiKOLVV1+Nn/zkJw70qtCll146dHIVcejbxJ///Ofxox/9yK2OVWT0
+6NFxxx13RETEI488Ym7OAv39/bF27dp44YUXYuvWrbF3794YPXp0zJ49O9797nfHxIkT44Ybboie
+np74z//8T/vHEXb4enQ33XRT9Pb2xqOPPhqrV6+OAwcOxMyZM+PDH/5wTJ06NT760Y/Gtm3bYtOm
+TeatChVFEVdeeWVEHFpw2gMTqs9Pf/rT6OnpiTvvvDPmzZs3tEB4RERHR0d85Stfic2bN9u+qsBr
+r70WnZ2dMX78+Hjve98bL7744rAHWRRFEe9///uHrpKxtmd100hO7ISh6XB2UnBmNTQ0xD333BPj
+xo2LXbt2xYMPPmgtmSr11a9+NYqiiDFjxsTEiRPjkksuicWLF8eiRYvi61//evz3f/+3fegIK4oi
+br755pg8eXKsWLHiiCe+UJ3WrFkTa9asOeL3bW1tsWrVqvj0pz8d06dPjxtvvDFWrVoVnZ2dIzBK
+Bh1+G/GoUaPiX//1X4fdtrNu3br4u7/7u/j85z8f9fX1ccMNN8Q//uM/jtRwOY5p06bFO97xjiiK
+wiLgVai2tjbuuuuuuOiii2JgYCCef/756OjoiHK5HDNnzow5c+bE5z73ufje977n6t0q0N/fH088
+8UQsXbo0Zs2aFZ/85Cdj+fLlsW3bthg/fnxce+21sWTJkujv74+amhpX6J5FbFtHd8LQdHh1O94T
+Cw5/7VwqdXC61NfXx7333hutra2xd+/euP/++4eeXED1efbZZ4f993e+85249dZb413velcsXbo0
+Nm7caC2gETZr1qz4jd/4jdi7d29861vfiogj19YaNPh7Bw/Vrbu7Ox599NH4wz/8wxgzZkzMnz8/
+Vq1aNdLDOqcdfgy4c+fOo94a19XVFU8//XS85z3viXe+851RU1Pj6sIqNHg10/79++OFF16wP6wy
+H/rQh+Kiiy6K7u7u+Nu//dsjjjGuuOKK+O3f/u246aabYvv27cd80hlnzk9+8pOYNGlSXHfddbFw
+4cJYuHDhsHV72tra4rXXXotf//Vfd7tjldNITuyET507/JvBcePGHfOgfNy4cRER0dPT42ABTlFd
+XV3cc889MX369Ojq6or777/fE0POMv39/fHv//7vsXv37iiVSnH11VeP9JDOeTfffHMURREvvPBC
+zJo1K37lV35l2J/x48dHxKFvid/6O6rXpk2bhhZVHVyEmpHT2dk5dNLU0dFxzG/lB0+Ky+VyNDY2
+nrHxcXLK5XJceumlURRFPPvss47tq0xDQ0NceeWVURRFLF++PLZs2XLEe5555plYs2ZNVCqVeO97
+3zsCo+RoHnvssfibv/mbWLFiRWzevDm2b98e69evj29+85vx13/910O3zL355psjPFKORyM5sRNe
+0fTGG28MLVw2ZcqUePXVV4/6vubm5mHvB96e2trauOeee2LWrFmxf//+eOCBB456AEH16+/vj/b2
+9mhsbBzaRzJyBu+nv+aaa+Kaa6454vXBg4QpU6bE3XffHRER//Iv/xLPPPPMmRskb8vgwVu5XB7h
+kbBnz57Yv39/NDQ0HPfb256enqGfR40adSaGxv/C4sWLY+zYsVGpVGLlypUjPRzeoqWlZWhdyI0b
+Nx7zfRs3boxFixZFS0tLjBo16rhryXDmbNy48ajzVhRFzJo1K4qiiNdee+3MD4yTppGc2AlDU3d3
+d3R0dERra2vMmTPnqPdoF0URc+bMiaIoYsOGDadloHAuGIxMs2fPju7u7njggQeivb19pIfFKair
+q4uI4y8UyJnx+uuvH/fE9/zzz4/zzjsvenp6YtOmTRHxP08LoXrV19cPfWNovqrDhg0bYtGiRTFx
+4sRjPs558uTJEXHo9tSurq4zPURO4KqrroqIQ1eetbW1nXMnSNXu8DhbU3Ps07nB+H74w0qoXrNn
+z45JkyZFpVKJn//85yM9HI5DIzmxk1oMfPXq1dHa2hqLFy+O//iP/zhioc0FCxZEY2NjVCqVWL16
+9WkZKPxfN3r06PjUpz4VF1xwQfT09MQ//MM/eBJPlTveOj5FUURzc3PMnDkziqIYCheMnK9//evH
+ff2uu+6KJUuWxBtvvBFf+tKXbHtV4kTb2Xve854olUpRqVRi3bp1Z3p4HMXzzz8fixYtimnTpkVz
+c/MR3+QWRRGXXXZZRERs2bIl9u3bN1JD5SgmTpwYc+fOtQh4Fdu2bdvQ1RQXXnhhrF+//oj3DL4W
+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
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+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
+"
+         id="image4168"
+         x="68.791664"
+         y="404.74277" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4310"
+       inkscape:label="bars">
+      <g
+         id="g4236"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,330.23176)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#794c8f;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect4172"
+           width="166.39531"
+           height="26.45833"
+           x="77.007698"
+           y="111.91875" />
+        <g
+           id="g4234"
+           transform="matrix(1.0612015,0,0,1,26.606268,32.701698)"
+           style="display:inline;stroke-width:0.949919">
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4174"
+             width="26.193748"
+             height="26.193748"
+             x="-5.1846566"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#808080;stroke:none;stroke-width:0.251331"
+             x="2.6598237"
+             y="97.749901"
+             id="text4178"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4176"
+               x="2.6598237"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4180"
+             width="26.193748"
+             height="26.193748"
+             x="21.009068"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#808080;stroke:none;stroke-width:0.251331"
+             x="28.85355"
+             y="97.749901"
+             id="text4184"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4182"
+               x="28.85355"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4186"
+             width="26.193748"
+             height="26.193748"
+             x="47.202854"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="55.047276"
+             y="97.749901"
+             id="text4190"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4188"
+               x="55.047276"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4192"
+             width="26.193748"
+             height="26.193748"
+             x="73.396576"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="81.241058"
+             y="97.749901"
+             id="text4196"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4194"
+               x="81.241058"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4198"
+             width="26.193748"
+             height="26.193748"
+             x="99.590363"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="107.43485"
+             y="97.749901"
+             id="text4202"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4200"
+               x="107.43485"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">E</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4204"
+             width="26.193748"
+             height="26.193748"
+             x="125.78409"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="133.62857"
+             y="97.749901"
+             id="text4208"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4206"
+               x="133.62857"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">F</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4210"
+             width="26.193748"
+             height="26.193748"
+             x="151.97781"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="159.8223"
+             y="97.749901"
+             id="text4214"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4212"
+               x="159.8223"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">G</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4216"
+             width="26.193748"
+             height="26.193748"
+             x="178.1716"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="186.01608"
+             y="97.749901"
+             id="text4220"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4218"
+               x="186.01608"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">H</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4222"
+             width="26.193748"
+             height="26.193748"
+             x="204.36533"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#808080;stroke:none;stroke-width:0.251331"
+             x="212.20981"
+             y="97.749901"
+             id="text4226"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4224"
+               x="212.20981"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke:none;stroke-width:0.251331">I</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect4228"
+             width="26.193748"
+             height="26.193748"
+             x="230.55905"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#808080;stroke:none;stroke-width:0.251331"
+             x="237.82799"
+             y="97.621994"
+             id="text4232"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan4230"
+               x="237.82799"
+               y="97.621994"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#808080;stroke:none;stroke-width:0.251331">J</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g4302"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,250.69301)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#4a734d;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect4238"
+           width="167.36324"
+           height="26.45833"
+           x="76.367386"
+           y="111.91875" />
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4252"
+           width="27.796844"
+           height="26.193748"
+           x="76.698006"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="82.534409"
+           y="134.38423"
+           id="text4256"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4254"
+             x="82.534409"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">C</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4258"
+           width="27.796844"
+           height="26.193748"
+           x="104.49483"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="109.51784"
+           y="134.38423"
+           id="text4262"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4260"
+             x="109.51784"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">D</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4264"
+           width="27.796844"
+           height="26.193748"
+           x="132.29172"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="136.50128"
+           y="134.38423"
+           id="text4268"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4266"
+             x="136.50128"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">F</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4270"
+           width="27.796844"
+           height="26.193748"
+           x="160.08853"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="163.48465"
+           y="134.38423"
+           id="text4274"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4272"
+             x="163.48465"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">G</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4276"
+           width="27.796844"
+           height="26.193748"
+           x="187.88535"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="190.46802"
+           y="134.38423"
+           id="text4280"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4278"
+             x="190.46802"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">I</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.258909;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+           id="rect4282"
+           width="27.796844"
+           height="26.193748"
+           x="215.68224"
+           y="112.18333"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <text
+           xml:space="preserve"
+           style="font-size:8.99443px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.258908"
+           x="217.45145"
+           y="134.38423"
+           id="text4286"
+           inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="scale(1.0301463,0.97073586)"><tspan
+             sodipodi:role="line"
+             id="tspan4284"
+             x="217.45145"
+             y="134.38423"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.9889px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.258908">J</tspan></text>
+      </g>
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4352);stop-color:#000000"
+         d="M 249.34664,441.51239 V 417.6766 h -58.21406 v -23.19999"
+         id="path4304"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.264581;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264581;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4362)"
+         d="m 77.222557,442.16511 c 0.10393,-44.63818 0.10393,-44.81254 0.10393,-44.81254"
+         id="path4306"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4372);stop-color:#000000"
+         d="m 162.8954,443.18619 -0.10664,-34.47585 h -28.13658 l -0.0405,-12.55993"
+         id="path4308"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+      <rect
+         style="display:inline;fill:#4f4868;fill-opacity:1;stroke:#9789c6;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect4530"
+         width="56.855682"
+         height="2.6939042"
+         x="233.42805"
+         y="441.90445" />
+      <rect
+         style="display:inline;fill:#4f4868;fill-opacity:1;stroke:#9789c6;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+         id="rect4552"
+         width="56.855682"
+         height="2.6939042"
+         x="6.1515641"
+         y="471.92209" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g4346"
+       inkscape:label="text">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="64.190048"
+         y="363.22733"
+         id="text4314"><tspan
+           sodipodi:role="line"
+           id="tspan4312"
+           x="64.190048"
+           y="363.22733"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0 * 1.5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="20.989393"
+         y="86.535217"
+         id="text4318"><tspan
+           sodipodi:role="line"
+           id="tspan4316"
+           x="20.989393"
+           y="86.535217"
+           style="stroke-width:0.264583" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="122.31309"
+         y="363.22733"
+         id="text4322"><tspan
+           sodipodi:role="line"
+           id="tspan4320"
+           x="122.31309"
+           y="363.22733"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">2 * 1.5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="178.75407"
+         y="363.22733"
+         id="text4326"><tspan
+           sodipodi:role="line"
+           id="tspan4324"
+           x="178.75407"
+           y="363.22733"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">4 * 1.5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffff00;stroke-width:0.264583"
+         x="10.126461"
+         y="491.39386"
+         id="text4334"><tspan
+           sodipodi:role="line"
+           id="tspan4332"
+           x="10.126461"
+           y="491.39386"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;stroke-width:0.264583">Multiply Factor = 1.5 AND Strip Offset Start/End = 2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="75.739235"
+         y="478.04968"
+         id="text4652"><tspan
+           sodipodi:role="line"
+           id="tspan4650"
+           x="75.739235"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="103.85899"
+         y="478.04968"
+         id="text4656"><tspan
+           sodipodi:role="line"
+           id="tspan4654"
+           x="103.85899"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="133.81993"
+         y="478.04968"
+         id="text4660"><tspan
+           sodipodi:role="line"
+           id="tspan4658"
+           x="133.81993"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="160.2659"
+         y="478.04968"
+         id="text4664"><tspan
+           sodipodi:role="line"
+           id="tspan4662"
+           x="160.2659"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="190.22684"
+         y="478.04968"
+         id="text4668"><tspan
+           sodipodi:role="line"
+           id="tspan4666"
+           x="190.22684"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="218.3466"
+         y="478.04968"
+         id="text4676"><tspan
+           sodipodi:role="line"
+           id="tspan4674"
+           x="218.3466"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">5</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="247.30325"
+         y="478.04968"
+         id="text4680"><tspan
+           sodipodi:role="line"
+           id="tspan4678"
+           x="247.30325"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">6</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="275.08826"
+         y="478.04968"
+         id="text4684"><tspan
+           sodipodi:role="line"
+           id="tspan4682"
+           x="275.08826"
+           y="478.04968"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">7</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g3782"
+     inkscape:label="Multipy-0.4"
+     style="display:inline">
+    <g
+       inkscape:label="background"
+       inkscape:groupmode="layer"
+       id="g3638"
+       transform="translate(-68.791664,-67.997917)"
+       sodipodi:insensitive="true">
+      <image
+         width="311.67917"
+         height="164.83542"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,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
++eST8fjjjx8R2vfv3x9PP/20Y5MqcaJt61d/9VejKIpYs2ZN7Nu3b6SHS0TMmzcvIiJeeeWVYZEp
+4tBag9/4xjfiwIEDERExf/78ERkj/+O8886LSy+9NIqiiKeeeuqIW723bt0a3/nOd6JSqcRVV101
+7DYsTp9TOWfWSI7vpELT4sWLoyiKWL169VE/XF5++eXYtWtXRERcfPHFuSPkbXHAfXYZGBg44SWy
+v/jFLyIiolwux/jx48/EsDhF7e3tQ9uiqwmrz7x58+LKK6+MTZs2xVNPPWW/CUmuuuqqKJfL0dXV
+Fd///vdtW2e5d77znUMnvStWrBjh0TBocMHiN95446iv9/b2xo4dO6JSqZz0+lucPrNnzx5aR+u5
+55476n5x8PelUikWLVp0pod4TjqVzyeN5PhOGJrq6uqipaUlIiLWr19/1PdUKpVYv359VCqVmD17
+du4IgYiIYVcxedrL2aGlpWVo3a23XqnGyKqtrY3f+q3fioGBgfja177mSZxniaIoolQqRalUGrZm
+DNXl4osvHjr47u3tHZor83Z2uuqqqyIiYteuXfHKK68Ih1VicIHhSZMmHXWbGjVq1NATjI8Vozhz
+zjvvvKGfj3UF9cGDB2Pv3r0RcWgJBqqXRnJiJ1yjafBEKeLQDu1YBhe4am5uHvb0JeDUFUUx9M3G
+m2++OfQhRPV460HelClT4tZbb42IiNWrV5+TiwBWq6Io4gMf+EA0NTXFD37wg9i8efNID4mTMGbM
+mLj77rtjypQpUSqVYu/evbFx48Z4+umno6Ojw3FHlaitrY0pU6ZERMTGjRujqakp3v3ud8eFF14Y
+Y8eOjc7OztiwYUM89dRTsX37dvNW5caOHRsXXXRRFEURK1eudKtjFfnRj34UCxcujPnz58eCBQvi
+xRdfHPb029/8zd+M2tra6OrqGlp+gZFz+JP/6urqjnknw+AV8IMRg+qkkZzYCUNTQ0PD0M979+49
+5j/O4IlvbW1tlMvloXuCgVM3d+7cWLx4cUQcOrA4l3ZSZ4u77roriqKIcrkcEyZMiGnTpkWlUolV
+q1bFo48+as6qyJw5c+Kaa66J7du3x/Lly83NWaBSqUS5XI758+dHpVKJoiiisbExZsyYEddee20s
+X748nnjiCSfBVaCpqWno9pDx48fH5z73uairqxvazsaNGxdTp06NX/u1X4uHH344nn32WdtgFbv8
+8sujXC5HpVI5Yh0gRta6devi4Ycfjttvvz3uvvvuePnll2PLli1RU1MTc+bMidbW1ti5c2f88z//
+c3R3d4/0cM95g2G9KIqYOnVq7Ny584jtqbm5eeg2x8OvgKL6aCQndsLQNGbMmKGfDy+xb3X4Io9j
+xow5p/4R4XSaMGFCfOxjH4uiKOLVV1+Nn/zkJw70qtCll146dHIVcejbxJ///Ofxox/9yK2OVWT0
+6NFxxx13RETEI488Ym7OAv39/bF27dp44YUXYuvWrbF3794YPXp0zJ49O9797nfHxIkT44Ybboie
+np74z//8T/vHEXb4enQ33XRT9Pb2xqOPPhqrV6+OAwcOxMyZM+PDH/5wTJ06NT760Y/Gtm3bYtOm
+TeatChVFEVdeeWVEHFpw2gMTqs9Pf/rT6OnpiTvvvDPmzZs3tEB4RERHR0d85Stfic2bN9u+qsBr
+r70WnZ2dMX78+Hjve98bL7744rAHWRRFEe9///uHrpKxtmd100hO7ISh6XB2UnBmNTQ0xD333BPj
+xo2LXbt2xYMPPmgtmSr11a9+NYqiiDFjxsTEiRPjkksuicWLF8eiRYvi61//evz3f/+3fegIK4oi
+br755pg8eXKsWLHiiCe+UJ3WrFkTa9asOeL3bW1tsWrVqvj0pz8d06dPjxtvvDFWrVoVnZ2dIzBK
+Bh1+G/GoUaPiX//1X4fdtrNu3br4u7/7u/j85z8f9fX1ccMNN8Q//uM/jtRwOY5p06bFO97xjiiK
+wiLgVai2tjbuuuuuuOiii2JgYCCef/756OjoiHK5HDNnzow5c+bE5z73ufje977n6t0q0N/fH088
+8UQsXbo0Zs2aFZ/85Cdj+fLlsW3bthg/fnxce+21sWTJkujv74+amhpX6J5FbFtHd8LQdHh1O94T
+Cw5/7VwqdXC61NfXx7333hutra2xd+/euP/++4eeXED1efbZZ4f993e+85249dZb413velcsXbo0
+Nm7caC2gETZr1qz4jd/4jdi7d29861vfiogj19YaNPh7Bw/Vrbu7Ox599NH4wz/8wxgzZkzMnz8/
+Vq1aNdLDOqcdfgy4c+fOo94a19XVFU8//XS85z3viXe+851RU1Pj6sIqNHg10/79++OFF16wP6wy
+H/rQh+Kiiy6K7u7u+Nu//dsjjjGuuOKK+O3f/u246aabYvv27cd80hlnzk9+8pOYNGlSXHfddbFw
+4cJYuHDhsHV72tra4rXXXotf//Vfd7tjldNITuyET507/JvBcePGHfOgfNy4cRER0dPT42ABTlFd
+XV3cc889MX369Ojq6or777/fE0POMv39/fHv//7vsXv37iiVSnH11VeP9JDOeTfffHMURREvvPBC
+zJo1K37lV35l2J/x48dHxKFvid/6O6rXpk2bhhZVHVyEmpHT2dk5dNLU0dFxzG/lB0+Ky+VyNDY2
+nrHxcXLK5XJceumlURRFPPvss47tq0xDQ0NceeWVURRFLF++PLZs2XLEe5555plYs2ZNVCqVeO97
+3zsCo+RoHnvssfibv/mbWLFiRWzevDm2b98e69evj29+85vx13/910O3zL355psjPFKORyM5sRNe
+0fTGG28MLVw2ZcqUePXVV4/6vubm5mHvB96e2trauOeee2LWrFmxf//+eOCBB456AEH16+/vj/b2
+9mhsbBzaRzJyBu+nv+aaa+Kaa6454vXBg4QpU6bE3XffHRER//Iv/xLPPPPMmRskb8vgwVu5XB7h
+kbBnz57Yv39/NDQ0HPfb256enqGfR40adSaGxv/C4sWLY+zYsVGpVGLlypUjPRzeoqWlZWhdyI0b
+Nx7zfRs3boxFixZFS0tLjBo16rhryXDmbNy48ajzVhRFzJo1K4qiiNdee+3MD4yTppGc2AlDU3d3
+d3R0dERra2vMmTPnqPdoF0URc+bMiaIoYsOGDadloHAuGIxMs2fPju7u7njggQeivb19pIfFKair
+q4uI4y8UyJnx+uuvH/fE9/zzz4/zzjsvenp6YtOmTRHxP08LoXrV19cPfWNovqrDhg0bYtGiRTFx
+4sRjPs558uTJEXHo9tSurq4zPURO4KqrroqIQ1eetbW1nXMnSNXu8DhbU3Ps07nB+H74w0qoXrNn
+z45JkyZFpVKJn//85yM9HI5DIzmxk1oMfPXq1dHa2hqLFy+O//iP/zhioc0FCxZEY2NjVCqVWL16
+9WkZKPxfN3r06PjUpz4VF1xwQfT09MQ//MM/eBJPlTveOj5FUURzc3PMnDkziqIYCheMnK9//evH
+ff2uu+6KJUuWxBtvvBFf+tKXbHtV4kTb2Xve854olUpRqVRi3bp1Z3p4HMXzzz8fixYtimnTpkVz
+c/MR3+QWRRGXXXZZRERs2bIl9u3bN1JD5SgmTpwYc+fOtQh4Fdu2bdvQ1RQXXnhhrF+//oj3DL4W
+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
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdDxyjgSAAAG2klEQVQEAAAA
+QAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAA
+QAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAgRU2p9PZa
+U1EUERFRKpWiXC5njgkAAACAs5ArmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABACqEJAAAAgBRC
+EwAAAAAphCYAAAAAUghNAAAAAKQQmgAAAABIITQBAAAAkEJoAgAAACCF0AQAAABAipqBgYG39Rcr
+lUpERAwMDERvb2/mmAAAAAA4C7miCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0
+AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMAAAAAKf4fdlOC0UnhubIAAAAASUVORK5CYII=
+"
+         id="image3636"
+         x="68.791664"
+         y="236.644" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g3780"
+       inkscape:label="bars">
+      <g
+         id="g3704"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,162.133)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#794c8f;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect3640"
+           width="277.92847"
+           height="26.45833"
+           x="21.16667"
+           y="111.91875" />
+        <g
+           id="g3702"
+           transform="matrix(1.0612015,0,0,1,26.606268,32.701698)"
+           style="display:inline;stroke-width:0.949919">
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3642"
+             width="26.193748"
+             height="26.193748"
+             x="-5.1846566"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="2.6598237"
+             y="97.749901"
+             id="text3646"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3644"
+               x="2.6598237"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3648"
+             width="26.193748"
+             height="26.193748"
+             x="21.009068"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="28.85355"
+             y="97.749901"
+             id="text3652"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3650"
+               x="28.85355"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3654"
+             width="26.193748"
+             height="26.193748"
+             x="47.202854"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="55.047276"
+             y="97.749901"
+             id="text3658"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3656"
+               x="55.047276"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3660"
+             width="26.193748"
+             height="26.193748"
+             x="73.396576"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="81.241058"
+             y="97.749901"
+             id="text3664"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3662"
+               x="81.241058"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3666"
+             width="26.193748"
+             height="26.193748"
+             x="99.590363"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="107.43485"
+             y="97.749901"
+             id="text3670"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3668"
+               x="107.43485"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">E</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3672"
+             width="26.193748"
+             height="26.193748"
+             x="125.78409"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="133.62857"
+             y="97.749901"
+             id="text3676"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3674"
+               x="133.62857"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">F</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3678"
+             width="26.193748"
+             height="26.193748"
+             x="151.97781"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="159.8223"
+             y="97.749901"
+             id="text3682"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3680"
+               x="159.8223"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">G</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3684"
+             width="26.193748"
+             height="26.193748"
+             x="178.1716"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="186.01608"
+             y="97.749901"
+             id="text3688"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3686"
+               x="186.01608"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">H</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3690"
+             width="26.193748"
+             height="26.193748"
+             x="204.36533"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="212.20981"
+             y="97.749901"
+             id="text3694"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3692"
+               x="212.20981"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">I</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3696"
+             width="26.193748"
+             height="26.193748"
+             x="230.55905"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="237.82799"
+             y="97.621994"
+             id="text3700"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3698"
+               x="237.82799"
+               y="97.621994"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">J</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g3770"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,82.59425)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#4a734d;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect3706"
+           width="277.92847"
+           height="26.45833"
+           x="21.16667"
+           y="111.91875" />
+        <g
+           id="g3768"
+           transform="matrix(1.0612015,0,0,1,26.606268,32.701698)"
+           style="display:inline;stroke-width:0.949919">
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3708"
+             width="26.193748"
+             height="26.193748"
+             x="-5.1846566"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="2.6598237"
+             y="97.749901"
+             id="text3712"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3710"
+               x="2.6598237"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3714"
+             width="26.193748"
+             height="26.193748"
+             x="21.009068"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="28.85355"
+             y="97.749901"
+             id="text3718"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3716"
+               x="28.85355"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3720"
+             width="26.193748"
+             height="26.193748"
+             x="47.202854"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="55.047276"
+             y="97.749901"
+             id="text3724"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3722"
+               x="55.047276"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3726"
+             width="26.193748"
+             height="26.193748"
+             x="73.396576"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="81.241058"
+             y="97.749901"
+             id="text3730"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3728"
+               x="81.241058"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3732"
+             width="26.193748"
+             height="26.193748"
+             x="99.590363"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="107.43485"
+             y="97.749901"
+             id="text3736"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3734"
+               x="107.43485"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3738"
+             width="26.193748"
+             height="26.193748"
+             x="125.78409"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="133.62857"
+             y="97.749901"
+             id="text3742"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3740"
+               x="133.62857"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3744"
+             width="26.193748"
+             height="26.193748"
+             x="151.97781"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="159.8223"
+             y="97.749901"
+             id="text3748"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3746"
+               x="159.8223"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3750"
+             width="26.193748"
+             height="26.193748"
+             x="178.1716"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="186.01608"
+             y="97.749901"
+             id="text3754"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3752"
+               x="186.01608"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3756"
+             width="26.193748"
+             height="26.193748"
+             x="204.36533"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="212.20981"
+             y="97.749901"
+             id="text3760"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3758"
+               x="212.20981"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect3762"
+             width="26.193748"
+             height="26.193748"
+             x="230.55905"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="237.82799"
+             y="97.621994"
+             id="text3766"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan3764"
+               x="237.82799"
+               y="97.621994"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+        </g>
+      </g>
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3934);stop-color:#000000"
+         d="M 107.48624,275.08743 V 251.25164 H 248.30849 V 228.05165"
+         id="path3772"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.264581;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264581;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3944)"
+         d="m 20.983038,274.06635 c 0.10393,-44.63818 0.10393,-44.81254 0.10393,-44.81254"
+         id="path3774"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3964);stop-color:#000000"
+         d="m 45.683008,275.08743 0.224122,-34.47585 h 59.13544 l 0.0851,-12.55993"
+         id="path3778"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="g3634"
+       inkscape:label="text">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="10.126461"
+         y="195.12856"
+         id="text3600"><tspan
+           sodipodi:role="line"
+           id="tspan3598"
+           x="10.126461"
+           y="195.12856"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0 * 0.4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="20.989393"
+         y="86.535217"
+         id="text3604"><tspan
+           sodipodi:role="line"
+           id="tspan3602"
+           x="20.989393"
+           y="86.535217"
+           style="stroke-width:0.264583" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="93.858566"
+         y="195.12856"
+         id="text3608"><tspan
+           sodipodi:role="line"
+           id="tspan3606"
+           x="93.858566"
+           y="195.12856"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">3 * 0.4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="236.66739"
+         y="195.12856"
+         id="text3612"><tspan
+           sodipodi:role="line"
+           id="tspan3610"
+           x="236.66739"
+           y="195.12856"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">8 * 0.4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="10.126461"
+         y="195.12856"
+         id="text3616"><tspan
+           sodipodi:role="line"
+           id="tspan3614"
+           x="10.126461"
+           y="195.12856"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0 * </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffff00;stroke-width:0.264583"
+         x="10.126461"
+         y="323.2951"
+         id="text3620"><tspan
+           sodipodi:role="line"
+           id="tspan3618"
+           x="10.126461"
+           y="323.2951"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;stroke-width:0.264583">Multiply Factor = 0.4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="263.02823"
+         y="233.49162"
+         id="text3628"><tspan
+           sodipodi:role="line"
+           id="tspan3626"
+           x="263.02823"
+           y="233.49162"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">Speed</tspan><tspan
+           sodipodi:role="line"
+           x="263.02823"
+           y="240.54718"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583"
+           id="tspan4154">control</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="239.46681"
+         y="313.42831"
+         id="text3632"><tspan
+           sodipodi:role="line"
+           id="tspan3630"
+           x="239.46681"
+           y="313.42831"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">Target strip</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Multipy-1.3"
+     style="display:inline">
+    <g
+       inkscape:label="background"
+       inkscape:groupmode="layer"
+       id="layer1"
+       transform="translate(-68.791664,-67.997917)">
+      <image
+         width="311.67917"
+         height="164.83542"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,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
++eST8fjjjx8R2vfv3x9PP/20Y5MqcaJt61d/9VejKIpYs2ZN7Nu3b6SHS0TMmzcvIiJeeeWVYZEp
+4tBag9/4xjfiwIEDERExf/78ERkj/+O8886LSy+9NIqiiKeeeuqIW723bt0a3/nOd6JSqcRVV101
+7DYsTp9TOWfWSI7vpELT4sWLoyiKWL169VE/XF5++eXYtWtXRERcfPHFuSPkbXHAfXYZGBg44SWy
+v/jFLyIiolwux/jx48/EsDhF7e3tQ9uiqwmrz7x58+LKK6+MTZs2xVNPPWW/CUmuuuqqKJfL0dXV
+Fd///vdtW2e5d77znUMnvStWrBjh0TBocMHiN95446iv9/b2xo4dO6JSqZz0+lucPrNnzx5aR+u5
+55476n5x8PelUikWLVp0pod4TjqVzyeN5PhOGJrq6uqipaUlIiLWr19/1PdUKpVYv359VCqVmD17
+du4IgYiIYVcxedrL2aGlpWVo3a23XqnGyKqtrY3f+q3fioGBgfja177mSZxniaIoolQqRalUGrZm
+DNXl4osvHjr47u3tHZor83Z2uuqqqyIiYteuXfHKK68Ih1VicIHhSZMmHXWbGjVq1NATjI8Vozhz
+zjvvvKGfj3UF9cGDB2Pv3r0RcWgJBqqXRnJiJ1yjafBEKeLQDu1YBhe4am5uHvb0JeDUFUUx9M3G
+m2++OfQhRPV460HelClT4tZbb42IiNWrV5+TiwBWq6Io4gMf+EA0NTXFD37wg9i8efNID4mTMGbM
+mLj77rtjypQpUSqVYu/evbFx48Z4+umno6Ojw3FHlaitrY0pU6ZERMTGjRujqakp3v3ud8eFF14Y
+Y8eOjc7OztiwYUM89dRTsX37dvNW5caOHRsXXXRRFEURK1eudKtjFfnRj34UCxcujPnz58eCBQvi
+xRdfHPb029/8zd+M2tra6OrqGlp+gZFz+JP/6urqjnknw+AV8IMRg+qkkZzYCUNTQ0PD0M979+49
+5j/O4IlvbW1tlMvloXuCgVM3d+7cWLx4cUQcOrA4l3ZSZ4u77roriqKIcrkcEyZMiGnTpkWlUolV
+q1bFo48+as6qyJw5c+Kaa66J7du3x/Lly83NWaBSqUS5XI758+dHpVKJoiiisbExZsyYEddee20s
+X748nnjiCSfBVaCpqWno9pDx48fH5z73uairqxvazsaNGxdTp06NX/u1X4uHH344nn32WdtgFbv8
+8sujXC5HpVI5Yh0gRta6devi4Ycfjttvvz3uvvvuePnll2PLli1RU1MTc+bMidbW1ti5c2f88z//
+c3R3d4/0cM95g2G9KIqYOnVq7Ny584jtqbm5eeg2x8OvgKL6aCQndsLQNGbMmKGfDy+xb3X4Io9j
+xow5p/4R4XSaMGFCfOxjH4uiKOLVV1+Nn/zkJw70qtCll146dHIVcejbxJ///Ofxox/9yK2OVWT0
+6NFxxx13RETEI488Ym7OAv39/bF27dp44YUXYuvWrbF3794YPXp0zJ49O9797nfHxIkT44Ybboie
+np74z//8T/vHEXb4enQ33XRT9Pb2xqOPPhqrV6+OAwcOxMyZM+PDH/5wTJ06NT760Y/Gtm3bYtOm
+TeatChVFEVdeeWVEHFpw2gMTqs9Pf/rT6OnpiTvvvDPmzZs3tEB4RERHR0d85Stfic2bN9u+qsBr
+r70WnZ2dMX78+Hjve98bL7744rAHWRRFEe9///uHrpKxtmd100hO7ISh6XB2UnBmNTQ0xD333BPj
+xo2LXbt2xYMPPmgtmSr11a9+NYqiiDFjxsTEiRPjkksuicWLF8eiRYvi61//evz3f/+3fegIK4oi
+br755pg8eXKsWLHiiCe+UJ3WrFkTa9asOeL3bW1tsWrVqvj0pz8d06dPjxtvvDFWrVoVnZ2dIzBK
+Bh1+G/GoUaPiX//1X4fdtrNu3br4u7/7u/j85z8f9fX1ccMNN8Q//uM/jtRwOY5p06bFO97xjiiK
+wiLgVai2tjbuuuuuuOiii2JgYCCef/756OjoiHK5HDNnzow5c+bE5z73ufje977n6t0q0N/fH088
+8UQsXbo0Zs2aFZ/85Cdj+fLlsW3bthg/fnxce+21sWTJkujv74+amhpX6J5FbFtHd8LQdHh1O94T
+Cw5/7VwqdXC61NfXx7333hutra2xd+/euP/++4eeXED1efbZZ4f993e+85249dZb413velcsXbo0
+Nm7caC2gETZr1qz4jd/4jdi7d29861vfiogj19YaNPh7Bw/Vrbu7Ox599NH4wz/8wxgzZkzMnz8/
+Vq1aNdLDOqcdfgy4c+fOo94a19XVFU8//XS85z3viXe+851RU1Pj6sIqNHg10/79++OFF16wP6wy
+H/rQh+Kiiy6K7u7u+Nu//dsjjjGuuOKK+O3f/u246aabYvv27cd80hlnzk9+8pOYNGlSXHfddbFw
+4cJYuHDhsHV72tra4rXXXotf//Vfd7tjldNITuyET507/JvBcePGHfOgfNy4cRER0dPT42ABTlFd
+XV3cc889MX369Ojq6or777/fE0POMv39/fHv//7vsXv37iiVSnH11VeP9JDOeTfffHMURREvvPBC
+zJo1K37lV35l2J/x48dHxKFvid/6O6rXpk2bhhZVHVyEmpHT2dk5dNLU0dFxzG/lB0+Ky+VyNDY2
+nrHxcXLK5XJceumlURRFPPvss47tq0xDQ0NceeWVURRFLF++PLZs2XLEe5555plYs2ZNVCqVeO97
+3zsCo+RoHnvssfibv/mbWLFiRWzevDm2b98e69evj29+85vx13/910O3zL355psjPFKORyM5sRNe
+0fTGG28MLVw2ZcqUePXVV4/6vubm5mHvB96e2trauOeee2LWrFmxf//+eOCBB456AEH16+/vj/b2
+9mhsbBzaRzJyBu+nv+aaa+Kaa6454vXBg4QpU6bE3XffHRER//Iv/xLPPPPMmRskb8vgwVu5XB7h
+kbBnz57Yv39/NDQ0HPfb256enqGfR40adSaGxv/C4sWLY+zYsVGpVGLlypUjPRzeoqWlZWhdyI0b
+Nx7zfRs3boxFixZFS0tLjBo16rhryXDmbNy48ajzVhRFzJo1K4qiiNdee+3MD4yTppGc2AlDU3d3
+d3R0dERra2vMmTPnqPdoF0URc+bMiaIoYsOGDadloHAuGIxMs2fPju7u7njggQeivb19pIfFKair
+q4uI4y8UyJnx+uuvH/fE9/zzz4/zzjsvenp6YtOmTRHxP08LoXrV19cPfWNovqrDhg0bYtGiRTFx
+4sRjPs558uTJEXHo9tSurq4zPURO4KqrroqIQ1eetbW1nXMnSNXu8DhbU3Ps07nB+H74w0qoXrNn
+z45JkyZFpVKJn//85yM9HI5DIzmxk1oMfPXq1dHa2hqLFy+O//iP/zhioc0FCxZEY2NjVCqVWL16
+9WkZKPxfN3r06PjUpz4VF1xwQfT09MQ//MM/eBJPlTveOj5FUURzc3PMnDkziqIYCheMnK9//evH
+ff2uu+6KJUuWxBtvvBFf+tKXbHtV4kTb2Xve854olUpRqVRi3bp1Z3p4HMXzzz8fixYtimnTpkVz
+c/MR3+QWRRGXXXZZRERs2bIl9u3bN1JD5SgmTpwYc+fOtQh4Fdu2bdvQ1RQXXnhhrF+//oj3DL4W
+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
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+AAAAKYQmAAAAAFIITQAAAACkEJoAAAAASCE0AQAAAJBCaAIAAAAghdAEAAAAQAqhCQAAAIAUQhMA
+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
+"
+         id="image2729"
+         x="68.791664"
+         y="67.997917" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="bars">
+      <g
+         id="g2910"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,-6.5130829)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#794c8f;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect2874"
+           width="277.92847"
+           height="26.45833"
+           x="21.16667"
+           y="111.91875" />
+        <g
+           id="g1454"
+           transform="matrix(1.0612015,0,0,1,26.606268,32.701698)"
+           style="display:inline;stroke-width:0.949919">
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1088-83-3"
+             width="26.193748"
+             height="26.193748"
+             x="-5.1846566"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="2.6598237"
+             y="97.749901"
+             id="text1092-0-7"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1090-4-8"
+               x="2.6598237"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1793-7"
+             width="26.193748"
+             height="26.193748"
+             x="21.009068"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="28.85355"
+             y="97.749901"
+             id="text1797-2"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1795-1"
+               x="28.85355"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1807-5"
+             width="26.193748"
+             height="26.193748"
+             x="47.202854"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="55.047276"
+             y="97.749901"
+             id="text1811-4"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1809-7"
+               x="55.047276"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1851-0"
+             width="26.193748"
+             height="26.193748"
+             x="73.396576"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="81.241058"
+             y="97.749901"
+             id="text1855-2"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1853-8"
+               x="81.241058"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1857-5"
+             width="26.193748"
+             height="26.193748"
+             x="99.590363"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="107.43485"
+             y="97.749901"
+             id="text1861-9"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1859-7"
+               x="107.43485"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">E</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1863-5"
+             width="26.193748"
+             height="26.193748"
+             x="125.78409"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="133.62857"
+             y="97.749901"
+             id="text1867-6"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1865-8"
+               x="133.62857"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">F</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1869-9"
+             width="26.193748"
+             height="26.193748"
+             x="151.97781"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="159.8223"
+             y="97.749901"
+             id="text1873-1"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1871-9"
+               x="159.8223"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">G</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1875-8"
+             width="26.193748"
+             height="26.193748"
+             x="178.1716"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="186.01608"
+             y="97.749901"
+             id="text1879-0"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1877-9"
+               x="186.01608"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">H</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1881-5"
+             width="26.193748"
+             height="26.193748"
+             x="204.36533"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="212.20981"
+             y="97.749901"
+             id="text1885-7"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1883-3"
+               x="212.20981"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">I</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect1887-0"
+             width="26.193748"
+             height="26.193748"
+             x="230.55905"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="237.82799"
+             y="97.621994"
+             id="text1891-1"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan1889-9"
+               x="237.82799"
+               y="97.621994"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">J</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g2976"
+         transform="matrix(1.0218508,0,0,1.021985,-15.373642,-86.051832)"
+         style="stroke-width:0.978552">
+        <rect
+           style="fill:#4a734d;fill-opacity:1;stroke:none;stroke-width:0.258908;stroke-dasharray:2.07127, 0.258908;stop-color:#000000"
+           id="rect2912"
+           width="277.92847"
+           height="26.45833"
+           x="21.16667"
+           y="111.91875" />
+        <g
+           id="g2974"
+           transform="matrix(1.0612015,0,0,1,26.606268,32.701698)"
+           style="display:inline;stroke-width:0.949919">
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2914"
+             width="26.193748"
+             height="26.193748"
+             x="-5.1846566"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="2.6598237"
+             y="97.749901"
+             id="text2918"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2916"
+               x="2.6598237"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">A</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2920"
+             width="26.193748"
+             height="26.193748"
+             x="21.009068"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="28.85355"
+             y="97.749901"
+             id="text2924"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2922"
+               x="28.85355"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">B</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2926"
+             width="26.193748"
+             height="26.193748"
+             x="47.202854"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="55.047276"
+             y="97.749901"
+             id="text2930"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2928"
+               x="55.047276"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">C</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2932"
+             width="26.193748"
+             height="26.193748"
+             x="73.396576"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="81.241058"
+             y="97.749901"
+             id="text2936"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2934"
+               x="81.241058"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">D</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2938"
+             width="26.193748"
+             height="26.193748"
+             x="99.590363"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="107.43485"
+             y="97.749901"
+             id="text2942"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2940"
+               x="107.43485"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">F</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2944"
+             width="26.193748"
+             height="26.193748"
+             x="125.78409"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="133.62857"
+             y="97.749901"
+             id="text2948"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2946"
+               x="133.62857"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">G</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2950"
+             width="26.193748"
+             height="26.193748"
+             x="151.97781"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="159.8223"
+             y="97.749901"
+             id="text2954"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2952"
+               x="159.8223"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">H</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2956"
+             width="26.193748"
+             height="26.193748"
+             x="178.1716"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="186.01608"
+             y="97.749901"
+             id="text2960"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2958"
+               x="186.01608"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">J</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2962"
+             width="26.193748"
+             height="26.193748"
+             x="204.36533"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="212.20981"
+             y="97.749901"
+             id="text2966"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2964"
+               x="212.20981"
+               y="97.749901"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">J</tspan></text>
+          <rect
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.251332;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+             id="rect2968"
+             width="26.193748"
+             height="26.193748"
+             x="230.55905"
+             y="79.481636"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <text
+             xml:space="preserve"
+             style="font-size:8.73122px;line-height:94.25;font-family:Monoisome;-inkscape-font-specification:Monoisome;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;stroke:none;stroke-width:0.251331"
+             x="237.82799"
+             y="97.621994"
+             id="text2972"
+             inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96"><tspan
+               sodipodi:role="line"
+               id="tspan2970"
+               x="237.82799"
+               y="97.621994"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.4625px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.251331">J</tspan></text>
+        </g>
+      </g>
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4245);stop-color:#000000"
+         d="M 279.24023,106.44135 279.01101,82.605554 H 218.5322 l -0.087,-23.199987"
+         id="path2438"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.264581;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264581;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3298)"
+         d="m 20.983038,105.42027 c 0.10393,-44.638181 0.10393,-44.812538 0.10393,-44.812538"
+         id="path3284"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.264581;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11667, 0.264581;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3317)"
+         d="m 76.141084,105.40481 c 0.0992,-43.439633 0.0992,-43.609308 0.0992,-43.609308"
+         id="path3313"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.11666, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3393);stop-color:#000000"
+         d="M 164.04536,106.44135 163.92689,82.902077 H 132.6681 l -0.045,-23.49651"
+         id="path3389"
+         inkscape:export-filename="C:\Users\Hugo Schouppe\Downloads\path1909-6.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="text">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="10.126461"
+         y="26.482471"
+         id="text2981"><tspan
+           sodipodi:role="line"
+           id="tspan2979"
+           x="10.126461"
+           y="26.482471"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0 * 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="20.989393"
+         y="86.535217"
+         id="text2985"><tspan
+           sodipodi:role="line"
+           id="tspan2983"
+           x="20.989393"
+           y="86.535217"
+           style="stroke-width:0.264583" /></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="66.71965"
+         y="26.482471"
+         id="text3201"><tspan
+           sodipodi:role="line"
+           id="tspan3199"
+           x="66.71965"
+           y="26.482471"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">2 * 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="206.08548"
+         y="26.482471"
+         id="text3283"><tspan
+           sodipodi:role="line"
+           id="tspan3281"
+           x="206.08548"
+           y="26.482471"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">7 * 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="10.126461"
+         y="26.482471"
+         id="text3487"><tspan
+           sodipodi:role="line"
+           id="tspan3485"
+           x="10.126461"
+           y="26.482471"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">0 * 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffff00;stroke-width:0.264583"
+         x="10.126461"
+         y="154.64903"
+         id="text3491"><tspan
+           sodipodi:role="line"
+           id="tspan3489"
+           x="10.126461"
+           y="154.64903"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffff00;stroke-width:0.264583">Multiply Factor = 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="122.95917"
+         y="26.482471"
+         id="text3495"><tspan
+           sodipodi:role="line"
+           id="tspan3493"
+           x="122.95917"
+           y="26.482471"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">4 * 1.3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="235.48425"
+         y="65.453125"
+         id="text3499"><tspan
+           sodipodi:role="line"
+           id="tspan3497"
+           x="235.48425"
+           y="65.453125"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">Speed control</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:94.25;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+         x="239.46681"
+         y="144.78223"
+         id="text3503"><tspan
+           sodipodi:role="line"
+           id="tspan3501"
+           x="239.46681"
+           y="144.78223"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:0.264583">Target strip</tspan></text>
+    </g>
+  </g>
+</svg>

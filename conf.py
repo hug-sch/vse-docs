@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Blender VSE 3.0 documentation'
+project = 'Blender VSE 3.1 documentation'
 copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License'
 author = 'hugsch'
 

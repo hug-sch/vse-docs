@@ -111,3 +111,15 @@ Blur Width: in figure 8, the border of the sweeping line is very sharp (from gre
 Angle: controls the angle of the line for Single and Double transition types. An angle of -45° will show a sweeping triangle from top left to bottom right.
 
 The default Fade automatically calculates a linear fade over the length of the strip. So, if the transition strip is 4 frames, then the Single Fade Type will cover respectively 0, 0.25, 0.50, and 0.75 of the image area for frames 1 to 4 of the transition strip. If the default Fade is not enabled, then you can specify a custom Effect Fader. You can keyframe this field, so that each frame of the transition has a different Fader value. This allows you to create custom ease in or out effects (smaller areas in the beginning and end of the animation).
+
+Sound Crossfade
+...............
+
+The Sound Crossfade transition works by animating the Volume of two overlapping Sound strips to evenly fade between them. Because this simply animates a value it does not create a strip like other effects or transitions. To apply the effect however, the two sound strips have to overlap (you cannot use method 2 from figure 1). To see the F-curves and the sound wave form, you have to enable them in Show Overlay (top right) and Display Waveform (bottom). As you can see in figure 9, the cross fade is implemented by keyframing the volume from the initial value to zero and vice versa. 
+
+.. figure:: /images/video_editing_edit_effects_transition_sound-cross-fade.svg
+   :alt: Sound Cross Fade effect
+
+   Figure 9: Sound Cross Fade effect
+
+   Because both strips in figure 9 have an initial volume = 1, the cross fade goes from 1 to zero for sound-1 and vice versa for sound-2. The animation has an ease in (starting slowly and accelerating) and ease out (slowing down at the end).

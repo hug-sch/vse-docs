@@ -1,29 +1,28 @@
 Speed
 -----
 
-To add a Speed Control strip, you have to select a regular Movie, Image Sequence or Meta strip (in figure 1, this is the Target strip). With the menu :menuselection:`Add --> Effect --> Speed Control`  or :kbd:`Shft A` you can add a Speed control strip (green bar in figure 1). This strip is put above the original target strip and cannot be moved below it (but it can be moved higher up). You can look at it as a modified copy of the target strip, so you can hide the original target strip.
+With the Speed Control strip, you can change the apparent speed of an action in a shot. This is done by inserting or skipping frames in the preview of the strip.
+
+.. figure:: /images/video_editing_edit_effects_speed-control-basic-concepts.svg
+   :alt: Speed Control Basic concepts
+
+   Figure 1: Speed control - basic concepts
+
+The top strip in figure 1 contains the recording of a 0.5 second motion-trajectory of a red ball, recorded in camera with a frame rate of 24 frames per second (fps). This strip is imported in a Blender VSE project with the same frame rate. With a Speed control strip, you can produce the two bottom strips The bottom strip contains a slow-motion of a fragment (the first 6 frames of the original). This is done by inserting a duplicate of each frame.  It takes 0.5 s or 12 frames for the ball to travel half of the original trajectory. The apparent speed of the ball is halved. The mid strip illustrates a time lapse or speed-up. This is done by skipping each other frame in the preview. The trajectory is completed in 0.25 s, whereas in the original strip half a second was needed. The ball seems to move twice as fast.
+
+.. note::
+   The above mentioned method of slow-motion is *not* a real slow-motion (slow-mo). Therefore, you need different recording and presentation frame rates. When you shoot a video, your camera records the action with a certain frame rate; e.g. 24 or 30 images or frames per second. For a regular replay, your presentation frame rate (Blender's project frame rate) need to be the same as the recording frame rate.
+   
+   Suppose however, that the recording frame rate of your camera is 60 fps; so 1 second of actual movement is spread over 60 frames. But, you can import this clip into a Blender project that is set with a 30 fps frame rate. So, in Blender, it will take 2 seconds to play this clip of 60 frames. The movement in the clip seems to be slowed down (1 second of actual movement is spread over 2 seconds of display time). This is real slow-motion; each frame is a real tiny movement. With the Speed Control, you insert duplicate frames; so only half of the movement in figure 1 is real. The other half never actually took place at that moment in time.
+
+To add a Speed Control strip, you have to select a regular Movie, Image Sequence or Meta strip (in figure 2, this is the Target strip). With the menu :menuselection:`Add --> Effect --> Speed Control`  or :kbd:`Shft A` you can add a Speed control strip (green bar in figure 2). This strip is put above the original target strip and cannot be moved below it (but it can be moved higher up). You can look at it as a modified copy of the target strip, so you can hide the original target strip.
 
 .. figure:: /images/video_editing_edit_effects_speed-control-properties.png
    :alt: Speed control properties
    :scale: 50%
    :align: right
 
-   Figure 1: Speed control properties
-
-With the Speed Control strip, you can change the apparent speed of an action in a shot. This is done by inserting or skipping frames in the strip.
-
-.. figure:: /images/video_editing_edit_effects_speed-control-basic-concepts.svg
-   :alt: Speed Control Basic concepts
-
-
-   Figure 2: Speed control - basic concepts
-
-The top strip in figure 2 contains the recording of a 0.5 second motion-trajectory of a red ball, recorded in camera with a frame rate of 24 frames per second (fps). This strip is imported in a Blender VSE project with the same frame rate. With a Speed control strip, you can produce the two bottom strips of each 0.25 s or 6 frames. The left strip contains a slow-motion of a fragment (the first 3 frames of the original). This is done by duplicating each frame.  It takes 0.25 s for the ball to get half way the top; where in the original strip, this occurs after 0.125 s. The bottom right strip is a speed-up. This is done by skipping some frames. The trajectory is completed in 0.25 s, whereas in the original strip half a second was needed.
-
-.. note::
-   The above mentioned method of slow-motion is *not* a real slo-mo. Therefore, you need different recording and presentation frame rates. When you shoot a video, your camera records the action with a certain frame rate; e.g. 24 or 30 images or frames per second (fps). For a regular replay, your presentation frame rate (Blender's project frame rate) need to be the same as the recording frame rate.
-   
-   Suppose however, that the recording frame rate of your camera is 60 fps; so 1 second of actual movement is spread over 60 frames. But, you can import this clip into a Blender project that is set with a 30 fps frame rate. So, in Blender, it will take 2 seconds to play this clip of 60 frames. The movement in the clip seems to be slowed down (1 second of actual movement is spread over 2 seconds of display time). This is real slow-motion; each frame is a real tiny movement. With the Speed Control, you insert duplicate frames; so only half of the movement in figure 2 is real. The other half never actually took place at that moment in time.
+   Figure 2: Speed control properties
 
 Options
 .......
@@ -39,7 +38,7 @@ Stretch
 
    The Speed Control strip in figure 3 seems to play faster because it skips some frames from the original target strip (e.g. C, E, H, and J). It squeezes (stretches) the original target strip of 10 frames into a playback strip of 6 frames; so, its seems to play faster. The playback rate, of course, is always the same and equal to the project's FPS.
 
-   Which frames are skipped and which are displayed? Each frame in the Speed Control strip gets its value, based on its relative position within the strip. For example, the fourth frame (frame 3 because index starts at zero) in the speed strip gets the value F because frame 5 in the target strip is at the same relative position as frame 3 in the Speed Control strip. The formula is: *relative position within speed strip x duration of original target strip*.
+   Which frames are skipped and which are displayed? Each frame in the Speed Control strip gets its value, based on its relative position within the strip. For example, the fourth frame (frame 3 because index starts at zero) in the speed strip gets the value F because frame 5 in the target strip is at the same relative position as frame 3 in the Speed Control strip. The formula is: ``relative position within speed strip * duration of original target strip``.
 
    What will happen if you shorten the original target strip even more, for example up to two frames. The first frame will again contain the value of A because 0/2 * 10 = 0 or the first frame in the target strip. The second frame contains F because 1/2 * 10 = 5 which contains the value F.
 
@@ -56,11 +55,10 @@ Stretch
    In figure 4, the Speed Control strip is twice as large as the original target strip. So, each frame is duplicated, which will reduce the playback speed effectively to half. For example: frame 4 (in speed strip) gets the value of 4/20 (relative position) * 10 (duration of original strip) = 2 or value C. Frame 5 gets the value of 5/20 x 10 =  2.5 or rounded down 2; thus also value C.
 
    .. Important::
-      The Speed Control strip does *not* work with the Strip Offset Start value (or dragging the left handle). A Strip Offset Start value will only shorten the preview by skipping the first frames. Perhaps, this is a good thing because otherwise all strips that are split (cut) would have a speed effect after adding a Speed Control strip.
-   
+      The effect of the stretch option is controlled by the amount of the Strip Offset End. A larger offset results in a faster speed. The Speed Control strip is *not* influenced by a Strip Offset Start, Hold Offset Start, or Hold Offset End. These Offsets will only change the length of the preview by skipping the first or last frames but will have no effect on the speed. 
    
 Multiply
-   If you select the Multiply option, an additional field (Multiply factor) is shown. A multiply factor > 1 will speed up the preview. A factor < 1 will slow down the action. The input for this effect, however, is *not* the entire original target strip but only the visual part of it. Figure 5 shows the result of different Multiply Factors with a Target strip A ... J. 
+   If you select the Multiply option, an additional field (Multiply factor) is shown. A multiply factor > 1 will speed up the preview. A factor < 1 will slow down the action. The input for this effect is the entire original target strip minus the Strip Offset Start, Hold Offset Start and Hold Offset End. The Hold Offset End will reduce the duration of the preview but not the speed effect. Figure 5 shows the result of different Multiply Factors with a Target strip A ... J. 
 
    .. figure:: /images/video_editing_edit_effects_speed-control-multiply.svg
       :alt: Speed Control with multiply option

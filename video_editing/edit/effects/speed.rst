@@ -78,7 +78,9 @@ Multiply
 
 .. raw:: html
 
-   <video controls src="/_static/images/testfile-30-frames.mp4" width ="400"></video>  
+   <video controls src="/_static/videos/video_editing_edit_effects_speed-control-multiply-negative.mp4" width ="640"></video>  
+
+The target strip has a duration of 100 frames (1 - 100). A keyframe is set to the Multiply factor with value = 1 at frame 1 and value = -1 at frame 100. Note that a F-curve appears in the Graph Editor that runs from +1 (frame 1) to -1 (frame 100). It crosses the zero value at about frame 50. So, from frame 50 on, the Multiply factor is negative and the play direction should be reversed. The preview shows a value of about 25. This is because the Multiply factor < 1 in the range 1 -50; so, the speed slows down.
 
 Frame Number
    This option provides you with maximum control. For each position of the playhead (current frame), you can specify a frame number from the target strip to display in the Speed Control strip. Because you can :doc:`keyframe </animation/keyframes/index>` this Frame Number value, you are able to specify custom speed profiles. For example, suppose you want a slo-mo effect of the target strip from figure 2 *but* between frame C and F. So, the 9 available frames from the Speed Control has to be filled with the frames C, D, E, and F.

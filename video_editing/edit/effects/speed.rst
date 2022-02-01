@@ -40,12 +40,9 @@ Stretch
 
    Which frames are skipped and which are displayed? Each frame in the Speed Control strip gets its value, based on its relative position within the strip. For example, the fourth frame (frame 3 because index starts at zero) in the speed strip gets the value F because frame 5 in the target strip is at the same relative position as frame 3 in the Speed Control strip. The formula is: ``relative position within speed strip * duration of original target strip``.
 
-   What will happen if you shorten the original target strip even more, for example up to two frames. The first frame will again contain the value of A because 0/2 * 10 = 0 or the first frame in the target strip. The second frame contains F because 1/2 * 10 = 5 which contains the value F.
+   What will happen if you shorten the original target strip even more, for example up to two frames. The first frame will again contain the value of A because 0/2 * 10 = 0 or the first frame in the target strip. The second frame contains F because 1/2 * 10 = 5 which contains the value F. You could argue that if you want to speed up a 10 frame strip to only two frames, you should choose the first and last frame, in stead of the first and mid one.
 
-   .. note::
-      You could argue that if you want to speed up a 10 frame strip to only two frames, you should choose the first and last frame, in stead of the first and mid one.
-
-   You can also increase the visual duration of the original strip by dragging the right handle to the right or introducing a Still Offset End (see :doc:`Time panel Movie strip <../montage/striptypes/movie>`).  This will introduce a slo-mo effect.
+    You can also increase the visual duration of the original strip by dragging the right handle to the right or introducing a Still Offset End (see :doc:`Time panel Movie strip <../montage/striptypes/movie>`).  This will introduce a slo-mo effect.
 
    .. figure:: /images/video_editing_edit_effects_speed-control-still-offset.svg
       :alt: Speed control with Still Offset End
@@ -55,7 +52,10 @@ Stretch
    In figure 4, the Speed Control strip is twice as large as the original target strip. So, each frame is duplicated, which will reduce the playback speed effectively to half. For example: frame 4 (in speed strip) gets the value of 4/20 (relative position) * 10 (duration of original strip) = 2 or value C. Frame 5 gets the value of 5/20 x 10 =  2.5 or rounded down 2; thus also value C.
 
    .. Important::
-      The effect of the stretch option is controlled by the amount of the Strip Offset End. A larger offset results in a faster speed. The Speed Control strip is *not* influenced by a Strip Offset Start, Hold Offset Start, or Hold Offset End. These Offsets will only change the length of the preview by skipping the first or last frames but will have no effect on the speed. 
+      The effect of the stretch option is controlled by the amount of the Strip Offset End. A larger offset results in a faster speed. The Speed Control strip is *not* influenced by a Strip Offset Start, Hold Offset Start, or Hold Offset End. These Offsets will only change the length of the preview by skipping the first or last frames but will have no effect on the speed.
+
+   .. tip::
+      The Stretch option can be very handy if the video and audio strip haven't the same duration; mostly because of a mismatch between the framerate of the strip and the project. A change in video speed is often less noticeable than a change in audio speed (which will influence the pitch).
    
 Multiply
    If you select the Multiply option, an additional field (Multiply factor) is shown. A multiply factor > 1 will speed up the preview. A factor < 1 will slow down the action. The input for this effect is the entire original target strip minus the Strip Offset Start, Hold Offset Start and Hold Offset End. The Hold Offset End will reduce the duration of the preview but not the speed effect. Figure 5 shows the result of different Multiply Factors with a Target strip A ... J. 
@@ -80,7 +80,7 @@ Multiply
 
    <video controls src="/_static/videos/video_editing_edit_effects_speed-control-multiply-negative.mp4" width ="640"></video>  
 
-The target strip has a duration of 100 frames (1 - 100). A keyframe is set to the Multiply factor with value = 1 at frame 1 and value = -1 at frame 100. Note that a F-curve appears in the Graph Editor that runs from +1 (frame 1) to -1 (frame 100). It crosses the zero value at about frame 50. So, from frame 50 on, the Multiply factor is negative and the play direction should be reversed. The preview shows a value of about 25. This is because the Multiply factor < 1 in the range 1 -50; so, the speed slows down.
+The target strip has a duration of 100 frames (1 - 100). A keyframe is set on the Multiply factor with value = 1 at frame 1 and value = -1 at frame 100. Note that a F-curve appears in the Graph Editor that runs from +1 (frame 1) to -1 (frame 100). It crosses the zero value at about frame 50. So, from frame 50 on, the Multiply factor is negative and the play direction should be reversed. The preview shows a value of about 25. This is because the Multiply factor < 1 in the range 1 -50; so, the speed slows down.
 
 Frame Number
    This option provides you with maximum control. For each position of the playhead (current frame), you can specify a frame number from the target strip to display in the Speed Control strip. Because you can :doc:`keyframe </animation/keyframes/index>` this Frame Number value, you are able to specify custom speed profiles. For example, suppose you want a slo-mo effect of the target strip from figure 2 *but* between frame C and F. So, the 9 available frames from the Speed Control has to be filled with the frames C, D, E, and F.

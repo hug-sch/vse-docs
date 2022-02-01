@@ -71,7 +71,14 @@ Multiply
 
    The bottom panel is a special case because there is a Strip Offset Start and End. Because of these Offsets, the duration of the Speed Control strip is reduced with the sum of both Offsets. The duration of the Target strip, however is only reduced with the strip Offset Start. The first frame (frame 0) of the Target strip has value C. The first two frames (A & B) are no longer accessible. But the last two frames (I & J) - even if they are not visible - are still accessible as frame 7 & 7 to the Speed Control. Because of the Multiply factor of 1.5, the action seems to play faster (frames E & H are skipped).
 
-   You won't get any visual clues in the effect strip that point to the direction or size of the speed effect. You have to deduce it from the preview.
+    You won't get any visual clues in the effect strip that point to the direction or size of the speed effect. You have to deduce it from the preview.
+
+.. note::
+   It is possible to enter and keyframe a negative Multiply value. This will reverse play the strip. See video below, for an example.
+
+.. raw:: html
+
+   <video controls src="/_static/images/testfile-30-frames.mp4" width ="400"></video>  
 
 Frame Number
    This option provides you with maximum control. For each position of the playhead (current frame), you can specify a frame number from the target strip to display in the Speed Control strip. Because you can :doc:`keyframe </animation/keyframes/index>` this Frame Number value, you are able to specify custom speed profiles. For example, suppose you want a slo-mo effect of the target strip from figure 2 *but* between frame C and F. So, the 9 available frames from the Speed Control has to be filled with the frames C, D, E, and F.
@@ -111,7 +118,7 @@ If you want the remaining frames to show in slow motion after the first set is d
 
 
 Creating a Time-Lapse + Freeze + Slow-mo sequence
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 Action movies often use the effect of a speeded action up until a certain momentum, then a freeze for a few seconds, followed by a slow-motion; e.g. bullets flying, impact, and slow-mo explosion.  
 
@@ -150,3 +157,9 @@ For example, if you captured a five-minute video at 30 fps and want to transfer 
 Instead of producing ``5 × 60 × 30 = 9000`` frames, Blender would produce ``9000 / 1.25 = 7200 = 5 × 60 × 24`` frames. In this case, you set a *start* = 1 and *end* = 7200, set your Format output to for example ``jpeg`` 30fps, and image files ``0001.jpg`` through ``7200.jpg`` would be rendered out, but those images cover the entire 9000 frames. The image file ``7200.jpg`` is the same at frame 9000. Be aware that there can be a quality degradation, due to the encoding.
 
 When you read those images back into your film blend-file at 24 fps, the strip will last exactly 5 minutes.
+
+
+
+
+
+

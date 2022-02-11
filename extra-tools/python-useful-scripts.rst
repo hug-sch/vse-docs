@@ -37,7 +37,7 @@ Blender exposes 9 time codes in the UI (see :doc:`Movie strip  </video_editing/e
    12,                       , frame_still_end
 
 
-If you want to see those values in the side panel, you'll have to extend the existing code; It's rather easy. Select a movie strip and right-click on a timecode field, e.g. Hold Offset Start and choose "Edit Source". The "space_sequencer.py" code will become visible (op open with the Browse Text to be linked button at the top middle). Search in this code (Ctrl + F) for the string "Hold Offset Start". It is about line 1607 (Blender 3.0). Add the following code after the Hold Offset section (about line 1615).
+If you want to see those values in the side panel, you'll have to extend the existing code; It's rather easy. Select a movie strip and right-click on a timecode field, e.g. Hold Offset Start and choose "Edit Source". The "space_sequencer.py" code will become visible (op open with the Browse Text to be linked button at the top middle). Search in this code (Ctrl + F) for the string "Hold Offset Start". It is about line 1607 (Blender 3.1). Add the following code after the Hold Offset section (about line 1877).
 
 .. code-block:: Python
 

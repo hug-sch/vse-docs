@@ -30,6 +30,7 @@ author = 'hugsch'
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
+    'sphinx_tabs.tabs',
 ]
 
 intersphinx_mapping = {'blender_manual': ('https://docs.blender.org/manual/en/dev/', None)}
@@ -63,6 +64,10 @@ html_static_path = ['_static']
 # or fully qualified paths (eg. https://...)
 html_css_files = [ 'css/custom.css',
                     'css/theme_overrides.css']
+
+html_js_files = [
+#    'js/myScript.js',
+]
 
 # to support colors?
 rst_prolog = """

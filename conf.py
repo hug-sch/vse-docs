@@ -70,6 +70,10 @@ html_js_files = [
 ]
 
 # to support colors?
+#s5def.txt in  users\...\AppData\Local\Programs
+# \Python\Python38\Lib\site-packages\docutils\parsers\rst\include
+# colors are defined in custom.css
+
 rst_prolog = """
 .. include:: <s5defs.txt>
 .. role:: sound

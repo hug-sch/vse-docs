@@ -4,35 +4,26 @@
 Scene Strip
 ***********
 
-Blender is first and foremost a `3D and 2D modeling <https://docs.blender.org/manual/en/dev/index.html>`_ environment.
-You can create, animate, and render beautiful realistic or stylized scenes with it.
-But, instead of rendering out that scene to a video,
-and then inserting the video file in the sequence editor, you can insert the scene directly.
-Scene strips are a way to insert the render output of another scene into your sequence.
-A typical use case is the creation of a 3D logo or an animated intro of your video.
+Blender is first and foremost a `3D and 2D modeling <https://docs.blender.org/manual/en/dev/index.html>`_ environment. You can create, animate, and render beautiful realistic or stylized 2D and 3D scenes with it. But, instead of rendering out that scene to a video, and then inserting the video file in the sequence editor, you can insert the scene directly. Scene strips are a way to insert the render output of another scene into your sequence. A typical use case is the creation of a 3D logo or an animated intro of your video.
 
-The :ref:`default <default-color>` color of the scene strip bar is: :scene:`███`.
-The strip length is determined by the Start & End frame of the imported scene.
-See the manual to `work with scenes <https://docs.blender.org/manual/en/dev/scene_layout/scene/introduction.html#controls>`_
+The :ref:`default <default-color>` color of the scene strip bar is :scene:`███`.
+The strip length is determined by the Start & End frame of the imported scene (see  `work with scenes <https://docs.blender.org/manual/en/dev/scene_layout/scene/introduction.html#controls>`_ ).
 
-.. warning::
-
-   Each scene has its own Video Sequencer.
-   Scene strips cannot be used to insert the sequence's own scene.
-   If you have a 3D animation in scene-1, you can insert it as a scene strip in scene-2 but not in scene-1.
+.. important::
+   Each scene has its *own* Video Sequencer. Scene strips can *not* be used to insert the sequence's own scene. If you have a 3D animation in *scene-1*, you can insert it as a scene strip in *scene-2* but not in *scene-1*.
 
 Options
 =======
 
 .. note:: Panels documented elsewhere!
 
-   The following panels are identical to those from the Movie strip:
-   ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`,
-   :ref:`Crop <crop-panel>`, :ref:`Video <video-panel>`, :ref:`Color <color-panel>`,
-   :ref:`Time <time-panel>` and :ref:`Custom <custom-panel>`.
+   The following panels are identical to those from the Movie strip:  :ref:`Compositing <compositing-panel>`, :ref:`Transform <transform-panel>`, :ref:`Crop <crop-panel>`, :ref:`Video <video-panel>`, :ref:`Color <color-panel>`, :ref:`Time <time-panel>` and :ref:`Custom <custom-panel>`.
 
-A new property is added to the Time panel: ``Original Frame Range``.
-As the name indicates, this new property shows the number of frames of the original scene held.
+A new property is added to the Time panel: ``Original Frame Range``. As the name indicates, this new property shows the number of frames of the source scene. This field is updated when the source scene changes in length. However, the strip bar length is *not* updated in the sequencer.
+
+.. todo::
+   How can the scene strip length be updated to reflect the actual length of the source scene (same problem as with metastrips).
+
 An entirely new Scene panel is also added.
 
 
@@ -56,15 +47,12 @@ Scene
    Figure 1: Scene Property
 
 Scene
-   Clicking the icon lets you pick the source scene; e.g. Scene1 from a drop-down.
-   With the link/unlink button (X), you can remove the chosen source scene.
-   The stripbar becomes red as a visual indication.
+   Clicking the icon lets you pick the source scene; e.g. Scene1 from a drop-down. With the link/unlink button (X), you can remove the chosen source scene. The stripbar becomes red as a visual indication.
 
 Input
-   You can choose between Camera or Sequencer.
-   The original Scene -where this Scene strip came from- could also have a Video Sequencer with content in it.
-   Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene.
-   In the original scene, you choose the `Post Processing panel <https://docs.blender.org/manual/en/dev/render/output/properties/post_processing.html?highlight=post%20processing%20panel>`_ of the Output Properties.
+   You can choose between Camera or Sequencer. The original source Scene - where the content of this scene strip came from - could also have a Video Sequencer with content in it. Therefore, the output of that scene could be generated from that Video Sequencer or from the camera/compositor of that scene.
+
+   In the source scene, you choose the `Post Processing panel <https://docs.blender.org/manual/en/dev/render/output/properties/post_processing.html?highlight=post%20processing%20panel>`_ of the Output Properties.
    But, of course, it is not a good habit to change that setting from within another scene.
    So, with this input choice, you can choose between the two possibilities.
 

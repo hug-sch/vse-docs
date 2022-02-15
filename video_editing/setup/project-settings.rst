@@ -1,7 +1,14 @@
 Project settings
 ================
 
-The Project Settings for your video project are grouped in the `Output Properties <https://docs.blender.org/manual/en/dev/render/output/index.html>`_ tab of the `Properties Editor <https://docs.blender.org/manual/en/dev/editors/properties_editor.html>`_. This editor is located at the top right area in the default Video Editing workspace and is shared with the other modules, e.g. 3D modeling. The Properties has several categories, which can be chosen via tabs (the icons column to its left). Each tab regroups properties and settings of a data type. For the VSE, only the Output properties are commonly used. This tab is selected by default on opening the Video Editor Workspace.
+.. figure:: /images/video_editing_setup_project-settings-output-categories.png
+   :alt: Output panels
+   :align: right
+   :scale: 40%
+
+   Figure 0: Output panels  
+
+The Project Settings for your video project are grouped in the `Output Properties <https://docs.blender.org/manual/en/dev/render/output/index.html>`_ tab of the `Properties Editor <https://docs.blender.org/manual/en/dev/editors/properties_editor.html>`_. This editor is located at the top right area in the default Video Editing workspace and is shared with the other modules, e.g. 3D modeling. The Properties has several categories, which can be chosen via tabs (the icons column to its left). Each tab regroups properties and settings of a data type. For the VSE, only the Output properties are commonly used. This tab is selected by default on opening the Video Editor Workspace. It contains 6 categories (panels): Format, Frame Range, Stereoscopy, Output, Metadata, & Post Processing.
 
 .. admonition:: Reference
    :class: refbox
@@ -9,7 +16,7 @@ The Project Settings for your video project are grouped in the `Output Propertie
    =============   ==============================================================
    **Name**:       *Dimensions*
    **Context**:    Video Sequence Editor > Properties
-   **Location**:   Tabs > Output Properties
+   **Location**:   Tabs > Output Properties > Format
    =============   ==============================================================
 
 .. figure:: /images/video_editing_setup_project-settings.png
@@ -87,12 +94,6 @@ Aspect X/Y
 RenderRegion/Crop to Render Region
    These options cannot be used in the VSE and, if set, will result in an error message ``Border rendering is not supported by sequencer``.
 
-Frame Start/End/Step
-   The sequencer timeline can contain multiple strips, spread over over several hundreds of frames. You don't need to render all these frames. With the Start and End fields, you can limit the output range.
-
-Step
-   Controls the number of frames to advance by for each frame in the timeline. If the strip in the Sequencer contains 10 frames, then a step of 2 will render 5 frames (frames 1,3,5,7,9).
-
 Frame Rate
    The number of frames that are displayed per second. The drop-down menu gives several common frame rates (23.98, 24, 25, 29.97, 30, ...). These presets refer to the different standards: NTSC (30 fps, mostly in North-America) and PAL/SECAM (25 fps, mostly Europe) and the necessary adjustments made in the 1950's to adapt  to color TV (23.98 and 29.97). Other frame rates can be used by selecting Custom. You can enter then a FPS and base number. The custom framerate is the result of: ``FPS / base number``. For example, to simulate a 25 fps preset, you can enter FPS = 25 and base = 1 or FPS = 50 and base = 2.
 
@@ -115,7 +116,23 @@ Frame Rate
 
       In the section Extra Tools, we have provided a solution to convert a video from variable rate to fixed and to change the FPS.
 
-Time Remapping
+.. admonition:: Reference
+   :class: refbox
+
+   =============   ==============================================================
+   **Name**:       *Dimensions*
+   **Context**:    Video Sequence Editor > Properties
+   **Location**:   Tabs > Output Properties > Frame range
+   =============   ==============================================================
+
+Frame Start/End/Step
+   The sequencer timeline can contain multiple strips, spread over over several hundreds of frames. You don't need to render all these frames. With the Start and End fields, you can limit the output range.
+
+Step
+   Controls the number of frames to advance by for each frame in the timeline. If the strip in the Sequencer contains 10 frames, then a step of 2 will render 5 frames (frames 1,3,5,7,9).
+
+
+Time Stretching
    You can use this to speed up or slow down the playback of the whole project. For example, in figure 7, there are two indicators of the Current Frame. The Playhead is split into a blue line (the old frame number) and a blue box with the new frame number (which you actually see in the preview).
    
    Old
@@ -136,7 +153,7 @@ Time Remapping
    =============   ==============================================================
    **Name**:       *Stereoscopy*
    **Context**:    Video Sequence Editor > Properties
-   **Location**:   Tabs > Output Properties
+   **Location**:   Tabs > Output Properties > Stereoscopy
    =============   ==============================================================
 
 Stereoscopy is a technique to create the illusion of three-dimensional depth from a pair of two-dimensional images. These images resemble the way our left and right eye would perceive the real image. In Blender, it is very easy to create stereoscopic images or movies; just enable the option in Output Properties > Stereoscopy > Stereo 3D. For more information; see `Stereoscopy <https://docs.blender.org/manual/en/dev/render/output/properties/stereoscopy/index.html>`_ in the Blender manual.
@@ -152,7 +169,7 @@ Editing a stereoscopic movie in the Blender VSE is a two-step process:
    =============   ==============================================================
    **Name**:       *Output*
    **Context**:    Video Sequence Editor > Properties
-   **Location**:   Tabs > Output Properties
+   **Location**:   Tabs > Output Properties > Output
    =============   ==============================================================
 
 
@@ -314,7 +331,59 @@ File Format
                Slider: default at 1
 
 
+.. admonition:: Reference
+   :class: refbox
 
+   =============   ==============================================================
+   **Name**:       *Output*
+   **Context**:    Video Sequence Editor > Properties
+   **Location**:   Tabs > Output Properties > Metadata
+   =============   ==============================================================
+
+
+.. todo::
+   Describe metadata
+
+.. admonition:: Reference
+   :class: refbox
+
+   =============   ==============================================================
+   **Name**:       *Output*
+   **Context**:    Video Sequence Editor > Properties
+   **Location**:   Tabs > Output Properties > Post Processing
+   =============   ==============================================================
+
+
+
+
+The Post Processing panel is used to control different options used to process your image after camera rendering have taken place.
+
+   .. figure:: /images/video_editing_setup_project-settings-output-post-processing.png
+      :alt: Post processing options
+      :align: right
+      :scale: 60%
+
+      Figure 12: Post processing options
+
+Compositing
+
+   The output of the render process comes from the the Composite Output node of the compositor. Note that this option should be enabled *but* also the Use Nodes option in the compositor. If both conditions are not fulfilled, then the output of the active camera is used to render the images.
+
+Sequencer
+
+   Renders the output of the Video Sequence editor, instead of the active camera or Compositor. If the sequence contains Scene strips, these will also be rendered as part of the pipeline. If Compositing is enabled (but see above), the Scene strip will be the output of the Compositor.
+
+   If the Video Sequence Editor contains *only* audio strips, then the visual render output comes from the Composite Output node of the compositor or the active camera and the audio from the Sequencer.
+
+   If the Video Sequence Editor is *empty*, then the active camera or Composite Output node is rendered, even if the option Sequencer is enabled.
+
+Dither
+
+    Dithering is a technique for blurring pixels to prevent banding that is seen in areas of gradients, where stair-stepping appears between colors. Banding artifacts are more noticeable when gradients are longer, or less steep. Dithering was developed for graphics with low bit depths, meaning they had a limited range of possible colors.
+
+    Dithering works by taking pixel values and comparing them with a threshold and neighboring pixels then does calculations to generate the appropriate color. Dithering creates the perceived effect of a larger color palette by creating a sort of visual color mixing. For example, if you take a grid and distribute red and yellow pixels evenly across it, the image would appear to be orange.
+
+test
 Some useful links:
 
 * Discrete Cosine Transformation: https://www.youtube.com/watch?v=Q2aEzeMDHMA&t=33s 

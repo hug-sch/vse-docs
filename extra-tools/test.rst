@@ -55,3 +55,17 @@ testing ...
 
    </script>
    
+
+   .. tabs::
+
+   .. tab:: Apples
+
+      .. image:: /images/video_editing_edit_effects_speed-control-properties.png
+
+   .. tab:: Pears
+
+      .. image:: /images/video_editing_edit_effects_speed-control-properties.png
+
+   .. tab:: Oranges
+
+      Oranges are orange.

@@ -1,10 +1,11 @@
-++++++++++++++++++
-Video Editing docs
-++++++++++++++++++
++++++++++++++++++++++++++++
+Blender VSE Unofficial Docs
++++++++++++++++++++++++++++
 
 .. toctree::
    :caption: Table of Contents
    :hidden:
+   :numbered:
 
    
    video_sequencer/index

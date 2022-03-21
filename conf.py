@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Blender VSE 3.1 documentation'
+project = 'Blender VSE Unofficial Documentation'
 copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License'
 author = 'hugsch'
 
@@ -42,7 +42,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'xxx-old-texts']
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -86,6 +85,11 @@ rst_prolog = """
 .. role:: color
 .. role:: mykey
 """
+
+# autonumber figures, tables, etc
+
+# numfig = True
+# numfig_secnum_depth = 2
 
 html_theme_options = {
     # Toc options

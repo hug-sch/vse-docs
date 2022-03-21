@@ -1,8 +1,7 @@
-This documentation about editing video in Blender is structured into four sections:
+The Unofficial Documentation of Blender's Video Sequence Editor is structured into three sections:
 
-1 Video Sequencer: describes the Video Sequence Editor; Blender's dedicated *tool* to handle video footage.
-2 Video Editing: describes the usual *operations* in a video editing project.
-3 Workflow: describes some typical workflows in the video editing industry.
-4 Extra-tools: additional software (eg. ffmpeg, Python, exiftool, ... )
+1. Video Sequencer: describes the Video Sequence Editor; Blender's dedicated *tool* to handle video footage.
+2. Video Editing: describes the usual *operations* in a video editing project.
+3. Extra-tools: additional software (eg. ffmpeg, Python, exiftool, ... )
 
 The  HTML-version of these docs can be found at: https://vse-docs.readthedocs.io/.

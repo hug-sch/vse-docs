@@ -1,5 +1,5 @@
-Adding a Grease Pencil animation to the VSE
--------------------------------------------
+Animation with Grease Pencil
+----------------------------
 To create a Grease Pencil animation over your footage in the Video Sequence Editor, you need two scenes; one for the Grease Pencil animation and one for the Video Sequencer. Let's call them GP-scene and VSE-scene. The GP-scene can copy the settings from the VSE-scene. This will make the framerate, number of frames and resolution of both scenes the same (a camera however is not copied).
 
 .. figure:: /images/video_editing_edit_effects_grease_pencil.svg

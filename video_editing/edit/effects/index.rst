@@ -3,8 +3,8 @@ Effects
 .. toctree::
     :hidden:
   
-    animation in VSE
-    animation in Grease Pencil
+    animation
+    grease_pencil
     transition
     masking
     speed

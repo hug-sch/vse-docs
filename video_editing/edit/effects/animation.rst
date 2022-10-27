@@ -1,5 +1,5 @@
-Animation
----------
+Animation in VSE
+----------------
 
 Blender is a 2D modeling and animation program. So, animation appears in many different places; for example, rigging, 2D animation (grease pencil), physics simulation  & particle systems and, of course, in the Video Sequence Editor.
 

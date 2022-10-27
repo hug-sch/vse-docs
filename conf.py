@@ -30,7 +30,6 @@ author = 'hugsch'
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
-    'sphinx_tabs.tabs',
 ]
 
 intersphinx_mapping = {'blender_manual': ('https://docs.blender.org/manual/en/dev/', None)}

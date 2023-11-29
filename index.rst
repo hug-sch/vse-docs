@@ -41,5 +41,5 @@ The Video Editing section is split into 3 chapters, representing a typical workf
 **Extra tools**
 ###############
 
-Although Blender's VSE is more than a capable video editor, you will need sometimes some extra-tools to accomplish things such as changing the Exif-data of your source-files, converting media formats, automating some operations. We give a short introduction to the following open-source tools: Python, ffmpeg, MediaInfo, and ExifTools.
+Although Blender's VSE is more than a capable video editor, you will need now and then some extra-tools to accomplish things such as changing the Exif-data of your source-files, converting media formats, automating some operations. We give a short introduction to the following open-source tools: Python, ffmpeg, MediaInfo, and ExifTools.
 

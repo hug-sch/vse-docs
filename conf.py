@@ -49,6 +49,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'xxx-old-texts']
 #
 html_theme = 'sphinx_rtd_theme'
 
+
 # Display todos by setting to True
 todo_include_todos = True
 

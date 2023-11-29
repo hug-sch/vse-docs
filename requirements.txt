@@ -14,7 +14,7 @@ MarkupSafe==2.1.1
 
 # Only needed to match the theme used for the official documentation.
 # Without this theme, the default theme will be used.
-# sphinx_rtd_theme==0.5.2
+sphinx_rtd_theme==0.5.2
 
 # For advanced visual design
 # sphinx-design==0.0.2
